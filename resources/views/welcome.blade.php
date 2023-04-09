@@ -1,10 +1,9 @@
 <!DOCTYPE HTML>
-<!-- Base Hotel: HTML Template by Klaye Morrison (http://klayemorrison.com) -->
 <html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Base Hotel - Experience Luxury - HTML Website Template</title>
+    <title>Police officers Mess | MP Police</title>
     <link rel="stylesheet" href="system/css/global.css">
     <link class="colour" rel="stylesheet" href="system/css/colour-blue.css">
     <link class="pattern" rel="stylesheet" href="system/css/pattern-china.css">
