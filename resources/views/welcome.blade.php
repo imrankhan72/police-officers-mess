@@ -23,45 +23,35 @@
         <nav>
             <ul>
                 <li class="mobile"><a href="contact.php" class="navbook">Book Online</a></li>
-                <li><a href="index.html">Home</a>
+                <li><a href="/">Home</a></li>
+                <li><a href="#">About us</a>
                     <ul>
-                        <li><a href="index.html">Home 1 &nbsp;(Default)</a></li>
-                        <li><a href="index2.html">Home 2 &nbsp;(Full Screen)</a></li>
-                        <li><a href="index3.html">Home 3 &nbsp;(Colourful)</a></li>
-                        <li><a href="single.php">Single Page</a></li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Management committee</a></li>
+                        <li><a href="#">Rules & Regulations</a></li>
                     </ul>
                 </li>
-                <li><a href="accommodation.html">Accommodation</a>
+                <li><a href="#">Services</a>
                     <ul>
-                        <li><a href="accommodation.html">Accommodation List 1</a></li>
-                        <li><a href="accommodation2.html">Accommodation List 2</a></li>
-                        <li><a href="room.html">Room Detail 1</a></li>
-                        <li><a href="room2.html">Room Detail 2</a></li>
+                        <li><a href="#">Sports</a></li>
+                        <li><a href="#">Restaurant</a></li>
+                        <li><a href="#">Bars</a></li>
                     </ul>
                 </li>
-                <li><a href="about.html">More Pages</a>
+                <li><a href="#">Facilities</a>
                     <ul>
-                        <li><a href="about.html">About Hotel</a></li>
-                        <li><a href="restaurant.php">Restaurant</a></li>
-                        <li><a href="specials.html">Special Offers</a></li>
-                        <li><a href="gallery.html">Photo Gallery</a></li>
-                        <li><a href="location.html">Location</a></li>
-                        <li><a href="blog.html">Our Blog <i class="fa fa-chevron-right"></i></a>
-                            <ul>
-                                <li><a href="blog.html">Blog Overview</a></li>
-                                <li><a href="blog-post.html">Blog Post</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="guest-book.html">Guest Book</a></li>
-                        <li><a href="faqs.html">FAQs</a></li>
-                        <li><a class="promopopup">Promo Popup</a></li>
+                        <li><a href="#">Sports</a></li>
+                        <li><a href="#">Restaurant</a></li>
+                        <li><a href="#">Bars</a></li>
                     </ul>
                 </li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Pay Bill</a></li>
                 <li><a href="contact.php">Contact</a></li>
             </ul>
             <a id="pull"><i class="fa fa-bars"></i></a>
         </nav>
-        <a href="contact.php" class="book"><span data-hover="Book Online">Book Online</span> <i class="fa fa-check-circle"></i></a>
+        <a href="#" class="book"><span data-hover="Book Online">Book Online</span> <i class="fa fa-check-circle"></i></a>
         <div class="shadow"></div>
     </div>
 </div>
@@ -72,13 +62,13 @@
         <!-- Featured Slider | START -->
         <div id="featured">
             <div class="slider">
-                <div class="item">
-                    <div class="details">
-                        <div class="title"><span>Absolute Waterfront Luxury</span></div>
-                        <div class="buttoncontainer"><a href="about.html" class="button"><span data-hover="Explore The Hotel">Explore The Hotel</span></a></div>
-                    </div>
-                    <img alt="" src="preview/images/hero-location.jpg" width="1800" height="800" />
-                </div>
+{{--                <div class="item">--}}
+{{--                    <div class="details">--}}
+{{--                        <div class="title"><span>Absolute Waterfront Luxury</span></div>--}}
+{{--                        <div class="buttoncontainer"><a href="about.html" class="button"><span data-hover="Explore The Hotel">Explore The Hotel</span></a></div>--}}
+{{--                    </div>--}}
+{{--                    <img alt="" src="preview/images/hero-location.jpg" width="1800" height="800" />--}}
+{{--                </div>--}}
                 <div class="item">
                     <div class="details">
                         <div class="title"><span>Modern Rooms & Spacious Suites</span></div>
@@ -86,13 +76,13 @@
                     </div>
                     <img alt="" src="preview/images/hero-accommodation.jpg" width="1800" height="800" />
                 </div>
-                <div class="item">
-                    <div class="details">
-                        <div class="title"><span>A Gourmet Dining Experience</span></div>
-                        <div class="buttoncontainer"><a href="restaurant.php" class="button"><span data-hover="Read The Menu">Read The Menu</span></a></div>
-                    </div>
-                    <img alt="" src="preview/images/hero-restaurant.jpg" width="1800" height="800" />
-                </div>
+{{--                <div class="item">--}}
+{{--                    <div class="details">--}}
+{{--                        <div class="title"><span>A Gourmet Dining Experience</span></div>--}}
+{{--                        <div class="buttoncontainer"><a href="restaurant.php" class="button"><span data-hover="Read The Menu">Read The Menu</span></a></div>--}}
+{{--                    </div>--}}
+{{--                    <img alt="" src="preview/images/hero-restaurant.jpg" width="1800" height="800" />--}}
+{{--                </div>--}}
             </div>
             <div class="centre">
                 <div class="nav">
@@ -146,18 +136,18 @@
     <!-- Content | START -->
     <main>
         <div class="centre">
-            <h1>Experience Luxury & <strong>Find Your Base</strong></h1>
+            <h1>Welcome to  <strong>Police Officers Mess</strong></h1>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna.</p>
             <!-- USP Boxes | START -->
             <section class="usp">
                 <div class="box">
                     <i class="fa fa-trophy"></i>
-                    <h3>Rated #1 on TripAdvisor</h3>
+                    <h3>All Facilities & Amenities</h3>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id.</p>
                 </div>
                 <div class="box">
                     <i class="fa fa-cutlery"></i>
-                    <h3>Award-Winning Restaurant</h3>
+                    <h3>Award-Winning Mess</h3>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id.</p>
                 </div>
                 <div class="box">
@@ -227,7 +217,7 @@
                         <span class="month">Dec</span>
                         <span class="day">12</span>
                     </div>
-                    <p class="title">Our Latest Hotel Awards</p>
+                    <p class="title">Our Latest  Awards</p>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque...</p>
                 </a>
                 <a href="blog-post.html">
@@ -243,9 +233,9 @@
             <!-- Footer Testimonial | START -->
             <div class="footertestimonial">
                 <i class="fa fa-quote-left"></i>
-                <p class="title">Comfortable & spacious apartment</p>
+                <p class="title">Comfortable & spacious stay</p>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Lorem ipsum dolor sit amet...</p>
-                <div class="author">&ndash; <strong>John Smith</strong> <span>(Sydney, Australia)</span></div>
+                <div class="author">&ndash; <strong>Shri Amit Mishra</strong> <span>(DSP, Bhopal)</span></div>
                 <a href="guest-book.html" class="button"><span data-hover="Read Guest Book">Read Guest Book</span></a>
             </div>
             <!-- Footer Testimonial | END -->
@@ -274,11 +264,11 @@
                 <!-- Subscribe / Social | END -->
                 <!-- Contact Details | START -->
                 <div class="contact">
-                    <p><strong class="phone">+61 8 3456 7890</strong><br />
-                        <a href="mailto:stay@basehotel.com">stay@basehotel.com</a><br /><br />
-                        <i class="fa fa-map-marker"></i> 101 Luxury Street<br />
-                        Perth, WA Australia 6000<br />
-                        <a href="https://www.google.com/maps/dir/Current+Location/-31.957482,115.856868" target="_blank"><strong>Get Directions</strong></a></p>
+                    <p><strong class="phone">+91 8 3456 7890</strong><br />
+                        <a href="mailto:stay@basehotel.com">stay@pom.com</a><br /><br />
+                        <i class="fa fa-map-marker"></i>  7C26+CHF, Jahangirabad, <br />
+                        Bhopal, Madhya Pradesh 462008<br />
+                        <a href="#" target="_blank"><strong>Get Directions</strong></a></p>
                 </div>
                 <!-- Contact Details | END -->
                 <div class="dark"></div>
