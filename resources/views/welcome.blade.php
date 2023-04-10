@@ -62,13 +62,13 @@
         <!-- Featured Slider | START -->
         <div id="featured">
             <div class="slider">
-{{--                <div class="item">--}}
-{{--                    <div class="details">--}}
-{{--                        <div class="title"><span>Absolute Waterfront Luxury</span></div>--}}
-{{--                        <div class="buttoncontainer"><a href="about.html" class="button"><span data-hover="Explore The Hotel">Explore The Hotel</span></a></div>--}}
-{{--                    </div>--}}
-{{--                    <img alt="" src="preview/images/hero-location.jpg" width="1800" height="800" />--}}
-{{--                </div>--}}
+                {{--                <div class="item">--}}
+                {{--                    <div class="details">--}}
+                {{--                        <div class="title"><span>Absolute Waterfront Luxury</span></div>--}}
+                {{--                        <div class="buttoncontainer"><a href="about.html" class="button"><span data-hover="Explore The Hotel">Explore The Hotel</span></a></div>--}}
+                {{--                    </div>--}}
+                {{--                    <img alt="" src="preview/images/hero-location.jpg" width="1800" height="800" />--}}
+                {{--                </div>--}}
                 <div class="item">
                     <div class="details">
                         <div class="title"><span>Modern Rooms & Spacious Suites</span></div>
@@ -76,13 +76,13 @@
                     </div>
                     <img alt="" src="preview/images/hero-accommodation.jpg" width="1800" height="800" />
                 </div>
-{{--                <div class="item">--}}
-{{--                    <div class="details">--}}
-{{--                        <div class="title"><span>A Gourmet Dining Experience</span></div>--}}
-{{--                        <div class="buttoncontainer"><a href="restaurant.php" class="button"><span data-hover="Read The Menu">Read The Menu</span></a></div>--}}
-{{--                    </div>--}}
-{{--                    <img alt="" src="preview/images/hero-restaurant.jpg" width="1800" height="800" />--}}
-{{--                </div>--}}
+                {{--                <div class="item">--}}
+                {{--                    <div class="details">--}}
+                {{--                        <div class="title"><span>A Gourmet Dining Experience</span></div>--}}
+                {{--                        <div class="buttoncontainer"><a href="restaurant.php" class="button"><span data-hover="Read The Menu">Read The Menu</span></a></div>--}}
+                {{--                    </div>--}}
+                {{--                    <img alt="" src="preview/images/hero-restaurant.jpg" width="1800" height="800" />--}}
+                {{--                </div>--}}
             </div>
             <div class="centre">
                 <div class="nav">
@@ -163,7 +163,7 @@
     <!-- Gallery Slider | START -->
     <div id="galleryslider">
         <div class="slidecontainer">
-            <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: relative; inset: auto; z-index: auto; width: 1903px; height: 450px; margin: 0px; overflow: hidden;"><div class="slider" style="text-align: left; float: none; position: absolute; inset: 0px auto auto -341.978px; margin: 0px; width: 9853px; height: 450px; z-index: auto;"><img alt="" data-original="preview/images/gallery-18.jpg" width="900" height="600" src="preview/images/gallery-18.jpg" style="display: block;"><img alt="" data-original="preview/images/gallery-1.jpg" width="900" height="600" src="preview/images/gallery-1.jpg" style="display: block;"><img alt="" data-original="preview/images/gallery-3.jpg" width="900" height="600" src="preview/images/gallery-3.jpg" style="display: block;"><img alt="" data-original="preview/images/gallery-6.jpg" width="600" height="900" src="preview/images/gallery-6.jpg" style="display: block;"><img alt="" data-original="preview/images/gallery-7.jpg" width="600" height="900" src="preview/images/gallery-7.jpg" style="display: block;"><img alt="" data-original="preview/images/gallery-4.jpg" width="900" height="600" src="preview/images/gallery-4.jpg" style="display: block;"><img alt="" data-original="preview/images/gallery-5.jpg" width="900" height="600" src="preview/images/gallery-5.jpg" style="display: block;"></div></div>
+            <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: relative; inset: auto; z-index: auto; width: 100%; height: 450px; margin: 0px; overflow: hidden;"><div class="slider" style="text-align: left; float: none; position: absolute; inset: 0px auto auto -341.978px; margin: 0px; width: 9853px; height: 450px; z-index: auto;"><img alt="" data-original="preview/images/gallery-18.jpg" width="900" height="600" src="preview/images/gallery-18.jpg" style="display: block;"><img alt="" data-original="preview/images/gallery-1.jpg" width="900" height="600" src="preview/images/gallery-1.jpg" style="display: block;"><img alt="" data-original="preview/images/gallery-3.jpg" width="900" height="600" src="preview/images/gallery-3.jpg" style="display: block;"><img alt="" data-original="preview/images/gallery-6.jpg" width="600" height="900" src="preview/images/gallery-6.jpg" style="display: block;"><img alt="" data-original="preview/images/gallery-7.jpg" width="600" height="900" src="preview/images/gallery-7.jpg" style="display: block;"><img alt="" data-original="preview/images/gallery-4.jpg" width="900" height="600" src="preview/images/gallery-4.jpg" style="display: block;"><img alt="" data-original="preview/images/gallery-5.jpg" width="900" height="600" src="preview/images/gallery-5.jpg" style="display: block;"></div></div>
             <div class="centre">
                 <div class="nav">
                     <a class="prev" style="display: block;"><i class="fa fa-chevron-left"></i></a>
