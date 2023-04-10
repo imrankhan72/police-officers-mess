@@ -163,8 +163,8 @@
     <!-- Gallery Slider | START -->
     <div id="galleryslider">
         <div class="slidecontainer">
-            <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: relative; inset: auto; z-index: auto;  height: 450px; margin: 0px; overflow: hidden;">
-                <div class="slider" style="text-align: left; float: none; position: absolute; inset: 0px auto auto -341.978px; margin: 0px; width: 9853px; height: 450px; z-index: auto;">
+            <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: relative; inset: auto; z-index: auto;  height: 450px; width:100%;  margin: 0px; overflow: hidden;">
+                <div class="slider" style="text-align: left; float: none; position: absolute; inset: 0px auto auto; margin: 0px;  height: 450px; z-index: auto;">
                     <img alt="" data-original="preview/images/gallery-18.jpg" width="900" height="600" src="preview/images/gallery-18.jpg" style="display: block;">
                     <img alt="" data-original="preview/images/gallery-1.jpg" width="900" height="600" src="preview/images/gallery-1.jpg" style="display: block;">
                     <img alt="" data-original="preview/images/gallery-3.jpg" width="900" height="600" src="preview/images/gallery-3.jpg" style="display: block;">
