@@ -62,27 +62,27 @@
         <!-- Featured Slider | START -->
         <div id="featured">
             <div class="slider">
-                {{--                <div class="item">--}}
-                {{--                    <div class="details">--}}
-                {{--                        <div class="title"><span>Absolute Waterfront Luxury</span></div>--}}
-                {{--                        <div class="buttoncontainer"><a href="about.html" class="button"><span data-hover="Explore The Hotel">Explore The Hotel</span></a></div>--}}
-                {{--                    </div>--}}
-                {{--                    <img alt="" src="preview/images/hero-location.jpg" width="1800" height="800" />--}}
-                {{--                </div>--}}
-                <div class="item">
-                    <div class="details">
-                        <div class="title"><span>Modern Rooms & Spacious Suites</span></div>
-                        <div class="buttoncontainer"><a href="accommodation.html" class="button"><span data-hover="See Accommodation">See Accommodation</span></a></div>
-                    </div>
-                    <img alt="" src="preview/images/hero-accommodation.jpg" width="1800" height="800" />
-                </div>
-                {{--                <div class="item">--}}
-                {{--                    <div class="details">--}}
-                {{--                        <div class="title"><span>A Gourmet Dining Experience</span></div>--}}
-                {{--                        <div class="buttoncontainer"><a href="restaurant.php" class="button"><span data-hover="Read The Menu">Read The Menu</span></a></div>--}}
-                {{--                    </div>--}}
-                {{--                    <img alt="" src="preview/images/hero-restaurant.jpg" width="1800" height="800" />--}}
-                {{--                </div>--}}
+                                <div class="item">
+                                    <div class="details">
+                                        <div class="title"><span>Absolute Waterfront Luxury</span></div>
+                                        <div class="buttoncontainer"><a href="about.html" class="button"><span data-hover="Explore The Hotel">Explore The Hotel</span></a></div>
+                                    </div>
+                                    <img alt="" src="preview/images/1.JPG" width="1800" height="800" />
+                                </div>
+                                <div class="item">
+                                    <div class="details">
+                                        <div class="title"><span>Modern Rooms & Spacious Suites</span></div>
+                                        <div class="buttoncontainer"><a href="accommodation.html" class="button"><span data-hover="See Accommodation">See Accommodation</span></a></div>
+                                    </div>
+                                    <img alt="" src="preview/images/2.JPG" width="1800" height="800" />
+                                </div>
+                                <div class="item">
+                                    <div class="details">
+                                        <div class="title"><span>A Gourmet Dining Experience</span></div>
+                                        <div class="buttoncontainer"><a href="restaurant.php" class="button"><span data-hover="Read The Menu">Read The Menu</span></a></div>
+                                    </div>
+                                    <img alt="" src="preview/images/3.JPG" width="1800" height="800" />
+                                </div>
             </div>
             <div class="centre">
                 <div class="nav">
@@ -165,13 +165,13 @@
         <div class="slidecontainer">
             <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: relative; inset: auto; z-index: auto;  height: 450px; width:100%;  margin: 0px; overflow: hidden;">
                 <div class="slider" style="text-align: left; float: none; position: absolute; inset: 0px auto auto; margin: 0px;  height: 450px; z-index: auto;">
-                    <img alt="" data-original="preview/images/gallery-18.jpg" width="900" height="600" src="preview/images/gallery-18.jpg" style="display: block;">
-                    <img alt="" data-original="preview/images/gallery-1.jpg" width="900" height="600" src="preview/images/gallery-1.jpg" style="display: block;">
-                    <img alt="" data-original="preview/images/gallery-3.jpg" width="900" height="600" src="preview/images/gallery-3.jpg" style="display: block;">
-                    <img alt="" data-original="preview/images/gallery-6.jpg" width="600" height="900" src="preview/images/gallery-6.jpg" style="display: block;">
-                    <img alt="" data-original="preview/images/gallery-7.jpg" width="600" height="900" src="preview/images/gallery-7.jpg" style="display: block;">
-                    <img alt="" data-original="preview/images/gallery-4.jpg" width="900" height="600" src="preview/images/gallery-4.jpg" style="display: block;">
-                    <img alt="" data-original="preview/images/gallery-18.jpg" width="900" height="600" src="preview/images/gallery-18.jpg" style="display: block;">
+                    <img alt="" data-original="preview/images/6.jpeg" width="900" height="600" src="preview/images/gallery-18.jpg" style="display: block;">
+                    <img alt="" data-original="preview/images/8.jpeg" width="900" height="600" src="preview/images/gallery-1.jpg" style="display: block;">
+                    <img alt="" data-original="preview/images/7.jpeg" width="900" height="600" src="preview/images/gallery-3.jpg" style="display: block;">
+                    <img alt="" data-original="preview/images/8.jpeg" width="600" height="900" src="preview/images/gallery-6.jpg" style="display: block;">
+                    <img alt="" data-original="preview/images/6.jpeg" width="600" height="900" src="preview/images/gallery-7.jpg" style="display: block;">
+                    <img alt="" data-original="preview/images/7.jpeg" width="900" height="600" src="preview/images/gallery-4.jpg" style="display: block;">
+                    <img alt="" data-original="preview/images/8.jpeg" width="900" height="600" src="preview/images/gallery-18.jpg" style="display: block;">
                 </div>
             </div>
             <div class="centre">
@@ -192,10 +192,10 @@
                 <div class="back">
                     <div class="slider">
                         <div class="item">
-                            <img alt="" src="preview/images/special-dine-1200.jpg" width="1200" height="400" />
+                            <img alt="" src="preview/images/9.jpeg" width="1200" height="400" />
                             <div class="details">
                                 <a href="specials.html">
-                                    <div class="title">Family Escape<br />
+                                    <div class="title">Great Facilities<br />
                                         <span>Activity Package</span></div>
                                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna.<br />
                                         <strong>Stay from $249 per night</strong></p>
@@ -204,7 +204,7 @@
                             </div>
                         </div>
                         <div class="item">
-                            <img alt="" src="preview/images/special-spa-1200.jpg" width="1200" height="400" />
+                            <img alt="" src="preview/images/10.jpeg" width="1200" height="400" />
                             <div class="details">
                                 <a href="specials.html">
                                     <div class="title">Rustic Charm<br />
