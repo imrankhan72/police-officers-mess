@@ -64,14 +64,14 @@
             <div class="slider">
                                 <div class="item">
                                     <div class="details">
-                                        <div class="title"><span>Absolute Waterfront Luxury</span></div>
-                                        <div class="buttoncontainer"><a href="about.html" class="button"><span data-hover="Explore The Hotel">Explore The Hotel</span></a></div>
+                                        <div class="title"><span>Police Officers Mess</span></div>
+                                        <div class="buttoncontainer"><a href="about.html" class="button"><span data-hover="Explore The Hotel">Explore The Messl</span></a></div>
                                     </div>
                                     <img alt="" src="preview/images/1.JPG" width="1800" height="800" />
                                 </div>
                                 <div class="item">
                                     <div class="details">
-                                        <div class="title"><span>Modern Rooms & Spacious Suites</span></div>
+                                        <div class="title"><span>Modern & Spacious Dining Hall</span></div>
                                         <div class="buttoncontainer"><a href="accommodation.html" class="button"><span data-hover="See Accommodation">See Accommodation</span></a></div>
                                     </div>
                                     <img alt="" src="preview/images/2.JPG" width="1800" height="800" />
