@@ -65,7 +65,7 @@
                                 <div class="item">
                                     <div class="details">
                                         <div class="title"><span>Police Officers Mess</span></div>
-                                        <div class="buttoncontainer"><a href="about.html" class="button"><span data-hover="Explore The Hotel">Explore The Messl</span></a></div>
+                                        <div class="buttoncontainer"><a href="about.html" class="button"><span data-hover="Explore The Mess">Explore The Mess</span></a></div>
                                     </div>
                                     <img alt="" src="preview/images/1.JPG" width="1800" height="800" />
                                 </div>
