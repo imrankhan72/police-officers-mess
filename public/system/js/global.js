@@ -5,19 +5,19 @@ Base Hotel: HTML Template by Klaye Morrison (http://klayemorrison.com)
 /******************** Document Ready ********************/
 
 $(document).ready(function () {
-	
+
 	'use strict';
-	
+
 	// Desktop Detection - Applies '.hover' class to document if non-touch browser
-	
+
 	if (!('ontouchstart' in document.documentElement)) { document.documentElement.className += 'hover'; }
-	
+
 	/******************** Navigation & General Layout ********************/
-		
+
 	if ($(window).width() > 1024) {
-		
+
 		// Fix Header
-		
+
 		$(window).scroll(function() {
 			if ($(window).scrollTop() > 0 && $(window).height() > 800) {
 				$('#container, #nav').addClass('scroll');
@@ -26,17 +26,17 @@ $(document).ready(function () {
 				$('#container, #nav').removeClass('scroll');
 			}
 		});
-		
+
 		// jQuery Tooltips
-		
+
 		$('#footer .social a, #content .floorplan, #menu .tag, #menu .title a').tooltip({
 			track: true,
 			show: { effect: "fade", delay:0 },
 			hide: { effect: "fade", delay:0 }
 		});
-		
+
 		// Fix Sidebar
-		
+
 		if ($('body').hasClass('layout-sidebar')){
 			var scrolloffsetTop = 50;
 			var scrolloffsetBumper = 120;
@@ -47,14 +47,14 @@ $(document).ready(function () {
 		}
 		var contentheight = $('#left').height()+scrolloffsetTop;
 		var scrollheight = $('#scroll').height()+scrolloffsetTop;
-		
+
 		$(window).scroll(function() {
             if (($(window).height() > scrollheight) && contentheight > scrollheight && ($(window).scrollTop() > $('#left').offset().top-scrolloffsetTop)) {
-                
+
                 $('#scroll').removeClass('relative'); $('#scroll').addClass('fixed');
-                
+
                 // Stop Fixed Sidebar
-				
+
                 var windw = this;
                 $.fn.followTo = function (elem) {
                     var $this = this,
@@ -79,30 +79,30 @@ $(document).ready(function () {
                 };
                 $('#scroll').followTo('#extras');
             }
-                        
+
             else {
                 $('#scroll').removeClass('fixed'); $('#scroll').addClass('relative');
             }
         });
 	}
-		
+
 	// Drop Downs
-	
+
 	$('#nav nav li').hover(
 		function () {
 			if ($(window).width() > 1024) {
 				$(this).find('ul:first').stop().fadeIn(200)
 			}
-		}, 
+		},
 		function () {
 			if ($(window).width() > 1024) {
 				$(this).find('ul:first').stop().fadeOut(200)
 			}
 		}
 	);
-	
+
 	// Mobile Navigation
-	
+
 	var pull = $('#pull');
 	var menu = $('#nav nav ul:first-child');
 	var menuHeight = menu.height();
@@ -111,9 +111,9 @@ $(document).ready(function () {
 		e.preventDefault();
 		menu.slideToggle(300);
 	});
-	
+
 	// Active Navigation
-	
+
     $('#nav nav li a').each(function () {
         if (this.href == window.location.href.split('#')[0]) {
             $(this).parent().addClass('active');
@@ -121,41 +121,41 @@ $(document).ready(function () {
 			$(this).parent().parent().parent().parent().parent().addClass('active');
         }
 	});
-		
+
 	// List Items Hover
-	
+
 	$('#specials.list .details, #rooms.list .details').hover(
 		function () {
 			$(this).parent().addClass('listhover');
-		}, 
+		},
 		function () {
 			$(this).parent().removeClass('listhover');
 		}
 	);
-	
+
 	// FAQs
-	
+
     $('#faqs .question').click(function () {
 		$(this).parent().stop().toggleClass('reveal');
         $(this).parent().find('.answer').stop().toggle(350, 'easeInOutQuart');
     });
-	
+
 	// Languages
-	
+
 	if ($(window).width() <= 1200) {
 		var langpull = $('#language li:first-child');
 		var langmenu = $('#language');
-	
+
 		$(langpull).on('click', function(e) {
 			e.preventDefault();
 			langmenu.toggleClass('langdrop');
 		});
 	}
-	
+
 	/******************** Date Picker ********************/
-	
+
 	// Check Rates & Contact
-	
+
 	if ($(window).width() > 700) {
 		$('#arrival, #contact-arrival').datepicker({
 			minDate: '0M',
@@ -186,9 +186,9 @@ $(document).ready(function () {
 			dateFormat: 'dd M yy'
 		});
 	}
-	
+
 	// Reservations
-	
+
 	if ($(window).width() > 700) {
 		$('#bookingdate').datepicker({
 			minDate: '0M',
@@ -203,9 +203,9 @@ $(document).ready(function () {
 			dateFormat: 'dd MM yy'
 		});
 	}
-	
+
 	/******************** Select Boxes ********************/
-	
+
 	if ($(window).width() > 1024) {
 		$('#check select').selectBoxIt({
 			showEffect: 'fadeIn',
@@ -214,11 +214,11 @@ $(document).ready(function () {
 			hideEffectSpeed: 200
 		});
 	}
-	
+
 	/******************** Caroufredsel ********************/
-	
+
 	// Featured Slider
-	
+
 	if ($('#featured .slider').length) {
 		$('#featured .slider').carouFredSel({
 			responsive: true,
@@ -245,9 +245,9 @@ $(document).ready(function () {
 			next: { button: '#featured .next', key: 'right' }
 		});
 	}
-	
+
 	// Gallery Slider
-	
+
 	var galleryslider = function() {
 		$('#galleryslider .slider').carouFredSel({
 			width: '100%',
@@ -269,18 +269,18 @@ $(document).ready(function () {
 			next: { button: '#galleryslider .next' }
 		});
 	};
-	
+
 	if ($('#galleryslider').hasClass('manual')){
 		galleryslider();
 	}
 	else {
 		var gallery = 'gallery.html #gallery figure:lt(7) img';
 		$('#galleryslider .slider').load(gallery, function() {
-			
+
 			galleryslider();
-			
+
 			// Lazy Load
-			
+
 			$('#galleryslider .slider').find('img').lazyload({
 				effect: 'fadeIn',
 				threshold: 50000,
@@ -291,9 +291,9 @@ $(document).ready(function () {
 			});
 		});
 	}
-	
+
 	// List Items (Specials Slider)
-	
+
 	if ($('#specials .slider').length) {
 		$('#specials .slider').carouFredSel({
 			responsive: true,
@@ -311,9 +311,9 @@ $(document).ready(function () {
 			pagination: { container: '#specials .nav' }
 		});
 	}
-	
+
 	// Slideshow
-	
+
 	if ($('#slideshow .slider').length) {
 		$($('#slideshow .slider')).carouFredSel({
 			responsive: true,
@@ -332,17 +332,17 @@ $(document).ready(function () {
 			prev: { button: '#slideshow .prev', key: 'left' },
 			next: { button: '#slideshow .next', key: 'right' }
 		});
-		
+
 		if($('#slideshow .slider img').length == 1)
 		{
 		   $('#slideshow .nav').hide();
 		}
 	}
-	
+
 	/******************** Photo Gallery ********************/
-	
+
 	// Isotope
-	
+
 	var $container = $('#gallery'),
 	colWidth = function () {
 		var w = $container.width(),
@@ -378,7 +378,7 @@ $(document).ready(function () {
 		return columnWidth;
 	};
 
-	
+
 	function runisotope() {
 		$container.isotope({
 			layoutMode: 'packery',
@@ -392,21 +392,21 @@ $(document).ready(function () {
 	}
 
 	runisotope();
-	
+
 	$(window).resize(function() {
 		runisotope();
     })
-	
+
 	/******************** Lazy Load ********************/
-	
+
 	$('#gallery figure img').lazyload({
 		effect: 'fadeIn',
 		failure_limit: 10,
 		effectspeed: 300
 	});
-	
+
 	/******************** Colorbox ********************/
-	
+
     $('#gallery figure a').colorbox({
         opacity: '.9',
         maxWidth: '86%',
@@ -427,7 +427,7 @@ $(document).ready(function () {
             return title+'<a href="http://www.pinterest.com/pin/create/button/?url='+domain+'&media='+url+'&description='+pintitle+'" target="_blank" data-pin-do="buttonPin" data-pin-config="beside" class="pinit"></a>';
         }
     });
-	
+
 	if ($(window).width() > 460) {
 		$('#testimonialpop').colorbox({
 			iframe:true,
@@ -454,20 +454,27 @@ $(document).ready(function () {
 			}
 		});
 	}
-	
+
 	/******************** Promo Popup ********************/
-	
+
 	// Example (open on click)
-	
+
 	$('.promopopup').click(function() {
 		$('#pop').fadeIn(600, 'easeInOutQuart');
 	});
 	$('.closepop').click(function() {
 		$('#pop').fadeOut(600, 'easeInOutQuart');
 	});
-	
+
+    $('.promopopup').click(function() {
+        $('#pop2').fadeIn(600, 'easeInOutQuart');
+    });
+    $('.closepop').click(function() {
+        $('#pop2').fadeOut(600, 'easeInOutQuart');
+    });
+
 	// Use Cookies (open on load, don't open again for 30 days)
-	
+
 	/*var visited = $.cookie('visited');
 	if ($.cookie(visited)) {
 		if ($.cookie('popit') == null) {
@@ -487,24 +494,24 @@ $(document).ready(function () {
 
 /******************** Window Load ********************/
 $(window).load(function () {
-	
+
 	'use strict';
-	
+
 	// Fixes slider loading issues in some browsers
-	
+
 	$(window).trigger('resize');
-	
+
 	// Testimonials
-	
+
 	$('#testimonials').isotope({
 		layoutMode: 'packery',
 		itemSelector: 'figure',
 		transitionDuration: '0',
 		resizable: false
 	});
-	
+
 	// Refreshes browser when resizing between desktop and tablet. Not necessary, but handy for responsive testing as different JS is being loaded.
-	
+
 	if ($(window).width() > 1024) { var browsersize = 'desktop'; }
 	else { var browsersize = 'tablet'; }
 	$(window).resize(function() {

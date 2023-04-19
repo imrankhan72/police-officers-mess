@@ -637,7 +637,7 @@ article .button { margin:7px 30px 10px 0; float:left; }
 #testimonials figure h2 { padding:0 40px; font:bold 25px/27px 'Open Sans', sans-serif; text-transform:none; letter-spacing:0; }
 #testimonials figure .name { margin-top:-5px; font-size:12px; line-height:17px; font-style:normal; text-transform:uppercase; }
 #testimonials figure .name span { font-size:10px; }
-#testimonials figure:before, #testimonials figure:after { position:absolute; width:40%; height:10px; content:""; left:12px; bottom:2px; background:transparent; transform:skew(-5deg) rotate(-5deg); box-shadow:0 6px 12px rgba(0,0,0,.2); z-index:-1; } 
+#testimonials figure:before, #testimonials figure:after { position:absolute; width:40%; height:10px; content:""; left:12px; bottom:2px; background:transparent; transform:skew(-5deg) rotate(-5deg); box-shadow:0 6px 12px rgba(0,0,0,.2); z-index:-1; }
 #testimonials figure:after { left:auto; right:12px; transform:skew(5deg) rotate(5deg); }
 
 /* 12.2 - Testimonials Cover */
@@ -819,6 +819,25 @@ aside #specials.list .details:after { content:""; width:calc(100% - 12px); heigh
 #pop i.fa-close { padding:10px 12px; font-size:25px; color:#FFF; background:rgba(30,30,30,.5); position:absolute; top:0; right:0; border-radius:0 0 0 5px; z-index:1; cursor:pointer; }
 .hover #pop i.fa-close:hover { background:#333; }
 .hover #pop p.close a:hover { color:rgba(0,0,0,.5); }
+
+
+/******************** 18.0 - PAy bill Popup ********************/
+
+#pop2 { width:450px; background:#FFF; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); -webkit-transform:translate(-50%,-50%); -ms-transform:translate(-50%,-50%); box-shadow:0 0 1px rgba(0,0,0,.3),0 0 30px rgba(0,0,0,.3); outline:9999px solid rgba(30,30,30,.6); display:none; z-index:999999; }
+#pop:before { content:""; width:100%; height:100%; position:absolute; top:0; left:0; opacity:.2; }
+#pop2 .container { padding:40px; }
+#pop2 form { margin-bottom:25px; }
+#pop2 form input { width:100%; height:45px; margin-bottom:7px; padding:0 15px; font:14px/20px 'Open Sans', sans-serif; text-align:center; letter-spacing:.4px; border:none; box-sizing:border-box; border-radius:3px; box-shadow:1px 1px 0 rgba(0,0,0,.1); position:relative; }
+#pop2 form button { width:100%; height:45px; line-height:45px; border-radius:3px; position:relative; }
+#pop2 p { margin-bottom:30px; font:14px/22px 'Open Sans', sans-serif; text-align:center; letter-spacing:.4px; position:relative; }
+#pop2 p.title { margin-bottom:22px; font:600 22px/28px 'Open Sans', sans-serif; text-transform:uppercase; letter-spacing:1.2px; position:relative; }
+#pop2 p.title strong { font-weight:800; }
+#pop2 p.close { margin:0; font-size:12px; font-weight:bold; }
+#pop2 p.close a { cursor:pointer; border-bottom:1px solid rgba(0,0,0,.1); }
+/*#pop2 img { width:100%; height:auto; display:block; position:relative; }*/
+#pop2 i.fa-close { padding:10px 12px; font-size:25px; color:#FFF; background:rgba(30,30,30,.5); position:absolute; top:0; right:0; border-radius:0 0 0 5px; z-index:1; cursor:pointer; }
+/*.hover #pop2 i.fa-close:hover { background:#333; }*/
+/*.hover #pop2 p.close a:hover { color:rgba(0,0,0,.5); }*/
 
 /******************** 19.0 - Footer ********************/
 

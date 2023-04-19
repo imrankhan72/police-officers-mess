@@ -46,12 +46,14 @@
                     </ul>
                 </li>
                 <li><a href="#">Gallery</a></li>
-                <li><a href="#">Pay Bill</a></li>
                 <li><a href="contact.php">Contact</a></li>
+                <li><a href="#" id="pay_bill" >Pay Bill</a></li>
+
             </ul>
             <a id="pull"><i class="fa fa-bars"></i></a>
         </nav>
-        <a href="#" class="book"><span data-hover="Book Online">Book Online</span> <i class="fa fa-check-circle"></i></a>
+        <a href="#" id="book_online" class="book"><span data-hover="Book Online">Book Online</span> <i class="fa fa-check-circle"></i></a>
+
         <div class="shadow"></div>
     </div>
 </div>
@@ -294,21 +296,48 @@
     </footer>
     <!-- Footer | END -->
 </div>
-<!-- Promo Popup | START -->
+<!-- Book Online | START -->
 <div id="pop">
-    <img alt="" src="preview/images/popup.jpg" width="400" height="150" />
     <div class="container">
-        <p class="title"><strong>Our latest special offers,</strong><br />
-            straight to your inbox</p>
-        <p>Stay up to date with the latest specials from Base Hotel. Subscribe and save on your next stay.</p>
+        <p class="title"><strong>Book accommodation</strong></p>
+        <p>Please fill the details below</p>
         <form>
-            <input name="email" type="text" placeholder="Your email address" />
-            <button><span data-hover="Subscribe">Subscribe</span></button>
+            <input name="text" type="text" placeholder="Your Name" />
+            <input name="text" type="text" placeholder="Your Designation" />
+            <input name="number" type="text" placeholder="Your Mobile Number" />
+            <input name="email" type="text" placeholder="Your email" />
+            <button><span data-hover="Subscribe">Submit</span></button>
         </form>
         <p class="close closepop"><a>Continue browsing site</a></p>
         <i class="fa fa-close closepop"></i>
     </div>
 </div>
-<!-- Promo Popup | END -->
+<!-- Book online | END -->
+
+<!-- Pay bill | START -->
+<div id="pop2">
+    <div class="container">
+        <p class="title"><strong>Pay bill</strong></p>
+        <p>Please enter your mobile number</p>
+        <form>
+            <input name="number" type="text" placeholder="Your Mobile Number" />
+            <button><span data-hover="Subscribe">Submit</span></button>
+        </form>
+        <p class="close closepop"><a>Continue browsing site</a></p>
+        <i class="fa fa-close closepop"></i>
+    </div>
+</div>
+<!-- Pay bill | END -->
+
+<script>
+    $("#book_online").click(function(){
+        $("#pop").css("display", "block");;
+    });
+
+    $("#pay_bill").click(function(){
+        // alert("Pay  Bill");
+        $("#pop2").css("display", "block");;
+    });
+</script>
 </body>
 </html>
