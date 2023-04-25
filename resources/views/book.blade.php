@@ -15,11 +15,13 @@
                 <!-- Contact Form | START -->
                 <div id="contact">
                     <img src="https://demo.klayemorrison.com/base-hotel/preview/images/room-deluxe-1200.jpg" width="1200" height="400" alt="" />
-                    <form name="contact" action="/base-hotel/contact.php" method="post">
+                    <form  action="/bookings/store" method="post">
+                        {{@csrf_field()}}
                         <div class="col">
-                            <div class="field mandatory"><input name="contact-name" type="text" placeholder="Your Name" id="contact-name" value="" /></div>
-                            <div class="field mandatory"><input name="contact-email" type="text" placeholder="Email Address" id="contact-email" value="" /></div>
-                            <div class="field mandatory"><input name="contact-phone" type="text" placeholder="Phone Number" id="contact-phone" value="" /></div>
+                            <div class="field mandatory"><input name="name" type="text" placeholder="Name" id="contact-name"  /></div>
+                            <div class="field mandatory"><input name="designation_id" type="text" placeholder="Designation" id="contact-name"  /></div>
+                            <div class="field mandatory"><input name="email" type="text" placeholder="Email Address" id="contact-email" /></div>
+                            <div class="field mandatory"><input name="phone" type="text" placeholder="Phone Number" id="contact-phone"  /></div>
                         </div>
                         <div class="col">
                             <div class="field calendar"><input name="contact-arrival" type="text" placeholder="Arrival Date" id="contact-arrival" value="" readonly /><i class="fa fa-calendar-o"></i></div>
