@@ -3,8 +3,8 @@
         <header>
             <div id="header">
                 <div class="h1">
-                    <h1><span>Contact</span>
-                        <span class="tagline">Get in touch with Base Hotel</span></h1>
+                    <h1><span>Book online</span>
+                        <span class="tagline">Please fill the form below</span></h1>
                 </div>
             </div>
         </header>
