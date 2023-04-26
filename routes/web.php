@@ -3,32 +3,21 @@
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\ProfileController;
+use App\Models\Booking;
 use Illuminate\Foundation\Application;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
 
-Route::get('/', function () {
-    return view('welcome');
+Route::view('/', 'welcome');
+Route::view('/about-us','about');
+Route::view('/book-now','book');
+Route::post('/bookings/store', function (Request $request) {
+    $booking = Booking::create($request->all());
+    return redirect('/otp');
 });
-
-Route::get('/about-us', function () {
-    return view('about');
-});
-
-Route::get('/book-now', function () {
-    return view('book');
-});
+Route::view('/otp','otp');
 
 
 

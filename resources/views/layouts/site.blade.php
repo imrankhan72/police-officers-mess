@@ -12,8 +12,76 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script src="system/js/plugins.js"></script>
     <script src="system/js/global.js"></script>
+    <style>
+        .result {
+            text-align: center;
+            color: orange;
+            font-size: 2em;
+            font-weight: bold;
+            margin-top: 1.5em;
+            display: block;
+        }
 
+        input {
+            border: 0;
+            border-bottom: 2px solid #C0C0C0;
+            outline: 0;
+            color: #111111;
+            width: 37px;
+            padding: 0 5px;
+            margin-right: 10px;
+            text-align: center;
+            font-size: 3em;
+            cursor: pointer;
+            will-change: border;
+            transition: border .3s ease-in-out;
+            -webkit-appearance: none;
+            -moz-appearance: textfield;
+        }
 
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -moz-appearance:textfield;
+            appearance: none;
+            margin: 0;
+        }
+
+        input:focus {
+            border: 0;
+            border-bottom: 2px solid #ff6200;
+        }
+
+        input:disabled {
+            background: #fff;
+        }
+
+        input:last-child {
+            margin-right: 0;
+        }
+
+        .paintOrangeLine {
+            border: 0;
+            border-bottom: 2px solid #ff6200;
+        }
+
+        button {
+            background: #ff6200;
+            color: whiteSmoke;
+            padding: 1em 2em;
+            margin-top: 2em;
+            border: 0;
+            width: 40%;
+            cursor: pointer;
+            transition: opacity .3s ease-in-out;
+            will-change: opacity;
+        }
+
+        button:hover {
+            opacity: .8;
+        }
+    </style>
 </head>
 <body class="fullwidth">
 <!-- Navigation | START -->
@@ -96,55 +164,13 @@
         <!-- Footer Links | START -->
         <div id="footerlinks">
             <div class="centre">
-                <span>Copyright &copy; <script>var d = new Date(); document.write(d.getFullYear());</script> <strong>Police Officers Mess</strong></span><a href="index.html">Home</a><a href="sitemap.html">Sitemap</a>
+                <span>Copyright &copy; <script>var d = new Date(); document.write(d.getFullYear());</script> <strong>Police Officers Mess</strong></span><a href="/">Home</a><a href="sitemap.html">Sitemap</a>
             </div>
         </div>
         <!-- Footer Links | END -->
     </footer>
     <!-- Footer | END -->
 </div>
-<!-- Book Online | START -->
-<div id="pop">
-    <div class="container">
-        <p class="title"><strong>Book accommodation</strong></p>
-        <p>Please fill the details below</p>
-        <form>
-            <input name="text" type="text" placeholder="Your Name" />
-            <input name="text" type="text" placeholder="Your Designation" />
-            <input name="number" type="text" placeholder="Your Mobile Number" />
-            <input name="email" type="text" placeholder="Your email" />
-            <button><span data-hover="Subscribe">Submit</span></button>
-        </form>
-        <p class="close closepop"><a>Continue browsing site</a></p>
-        <i class="fa fa-close closepop"></i>
-    </div>
-</div>
-<!-- Book online | END -->
 
-<!-- Pay bill | START -->
-<div id="pop2">
-    <div class="container">
-        <p class="title"><strong>Pay bill</strong></p>
-        <p>Please enter your mobile number</p>
-        <form>
-            <input name="number" type="text" placeholder="Your Mobile Number" />
-            <button><span data-hover="Subscribe">Submit</span></button>
-        </form>
-        <p class="close closepop"><a>Continue browsing site</a></p>
-        <i class="fa fa-close closepop"></i>
-    </div>
-</div>
-<!-- Pay bill | END -->
-
-<script>
-    $("#book_online").click(function(){
-        $("#pop").css("display", "block");;
-    });
-
-    $("#pay_bill").click(function(){
-        // alert("Pay  Bill");
-        $("#pop2").css("display", "block");;
-    });
-</script>
 </body>
 </html>
