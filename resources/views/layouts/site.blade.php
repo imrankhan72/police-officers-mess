@@ -94,7 +94,7 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="#">About us</a>
                     <ul>
-                        <li><a href="#">Profile</a></li>
+                        <li><a href="/about-us">Profile</a></li>
                         <li><a href="#">Management committee</a></li>
                         <li><a href="#">Rules & Regulations</a></li>
                     </ul>
