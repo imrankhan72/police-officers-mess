@@ -679,8 +679,8 @@ article .button { margin:7px 30px 10px 0; float:left; }
 #contact .field.mandatory:before { content:"\f069"; font-family:FontAwesome; font-size:10px; color:#999; position:absolute; top:10px; left:10px; opacity:.7; }
 #contact .field.mandatory input { padding-left:28px; }
 #contact input, #contact textarea, #contact select { width:100%; height:45px; padding:0 15px; font:14px/20px 'Open Sans', sans-serif; letter-spacing:.4px; border:none; box-sizing:border-box; background:none; z-index:2; position:relative; }
-#contact select { width:31.33%; padding:0 10px; margin-right:2%; background:#FFF; border-radius:3px; box-shadow:1px 1px 0 rgba(0,0,0,.1); float:left; }
-#contact select:last-child { width:33.33%; margin:0; }
+#contact select {  padding:0 10px; margin-top:4px; background:#FFF; border-radius:3px; box-shadow:1px 1px 0 rgba(0,0,0,.1); float:left; }
+#contact select:last-child { margin-top:4px; }
 #contact textarea { height:149px; padding:12px 15px; display:block; }
 #contact .field.calendar input { cursor:pointer; }
 #contact .field i { font-size:16px; color:#CCC; position:absolute; margin-top:14px; right:15px; z-index:1; }

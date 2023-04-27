@@ -18,24 +18,37 @@
                     <form  action="/bookings/store" method="post">
                         {{@csrf_field()}}
                         <div class="col">
+                            <label>Name</label>
                             <div class="field mandatory"><input name="name" type="text" placeholder="Name"   /></div>
-                            <div class="field mandatory"><input name="designation_id" type="text" placeholder="Designation"   /></div>
+                            <label>Designation</label>
+                            <div class="field mandatory"><input name="designation_id" type="text" placeholder="Designation"/></div>
+                            <label>Email</label>
                             <div class="field mandatory"><input name="email" type="text" placeholder="Email Address" /></div>
+                            <label>Mobile</label>
                             <div class="field mandatory"><input name="mobile" type="text" placeholder="Mobile Number"   /></div>
                         </div>
                         <div class="col">
+                            <label class="">From Date</label>
                             <div class="field calendar"><input name="booking_from" type="date" placeholder="From Date"/></div>
+                            <label class="">Till Date</label>
                             <div class="field calendar"><input name="booking_till" type="date" placeholder="Till Date"/></div>
                             <div class="select">
-                                <select name="service_status" class="infants">
-                                    <option  value="1">In Service</option>
-                                    <option  value="2" >Retired</option>
-                                </select>
-                                <select name="booking_for" class="adults">
-                                    <option  value="1" >Room</option>
-                                    <option  value="2">Lawn</option>
-                                    <option  value="3" >Hall</option>
-                                </select>
+                                <div>
+                                    <label >Current Service Status</label>
+                                    <select name="service_status" class="infants">
+                                        <option  value="1">In Service</option>
+                                        <option  value="2" >Retired</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="">Booking Room/Lawn/Hall</label>
+                                    <select name="booking_for" class="adults">
+                                        <option  value="1" >Room</option>
+                                        <option  value="2">Lawn</option>
+                                        <option  value="3" >Hall</option>
+                                    </select>
+                                </div>
+                                <label class="">Booking for</label>
                                 <select name="booking_for_self_guest" class="children">
                                     <option selected value="0">Self</option>
                                     <option  value="1" >Guest</option>
