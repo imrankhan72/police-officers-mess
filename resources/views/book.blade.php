@@ -50,8 +50,11 @@
                                 </div>
                                 <label class="">Booking for</label>
                                 <select name="booking_for_self_guest" class="children">
-                                    <option selected value="0">Self</option>
-                                    <option  value="1" >Guest</option>
+                                    <option selected value="1">Self</option>
+                                    <option  value="2" >Guest</option>
+                                    <option  value="3" >Family</option>
+                                    <option  value="4" >Govt Tour</option>
+                                    <option  value="5" >Personal Tour</option>
                                 </select>
                             </div>
                         </div>
