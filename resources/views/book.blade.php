@@ -56,7 +56,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="field"><textarea name="message" placeholder="Message"></textarea></div>
+                            <div class="field"><textarea name="message" rows="50" placeholder="Message"></textarea></div>
                         </div>
                         <button type="submit"><span data-hover="Send Booking Request">Send Booking Request</span></button>
                     </form>

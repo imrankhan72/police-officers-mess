@@ -4,6 +4,7 @@ use App\Http\Controllers\BookingController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\ProfileController;
 use App\Models\Booking;
+use App\Models\Payment;
 use Illuminate\Foundation\Application;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -24,7 +25,9 @@ Route::view('/otp','otp');
 
 Route::middleware(['auth', 'verified'])->prefix('admin')->group(function () {
     Route::get('/dashboard', function () {
-        return Inertia::render('Dashboard');
+        $bookings= Booking::all();
+        $payments = Payment::all();
+        return Inertia::render('Dashboard', compact('bookings','payments'));
     })->name('dashboard');
     Route::resource('bookings', BookingController::class);
     Route::resource('payments', PaymentController::class);

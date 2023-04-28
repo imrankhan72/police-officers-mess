@@ -13,7 +13,8 @@ class BookingController extends Controller
      */
     public function index()
     {
-        return Inertia::render('Bookings/Index');
+        $bookings= Booking::all();
+        return Inertia::render('Bookings/Index', compact('bookings'));
     }
 
     /**
@@ -37,7 +38,7 @@ class BookingController extends Controller
      */
     public function show(Booking $booking)
     {
-        //
+        return Inertia::render('Bookings/Show', compact('booking'));
     }
 
     /**
