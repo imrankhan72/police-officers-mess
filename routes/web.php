@@ -19,6 +19,7 @@ Route::post('/bookings/store', function (Request $request) {
     return redirect('/otp');
 });
 Route::view('/otp','otp');
+Route::view('/pay-bill','pay-bill');
 
 
 

@@ -115,7 +115,7 @@
                 </li>
                 <li><a href="#">Gallery</a></li>
                 <li><a href="contact.php">Contact</a></li>
-                <li><a href="#" id="pay_bill" >Pay Bill</a></li>
+                <li><a href="/pay-bill" id="pay_bill" >Pay Bill</a></li>
 
             </ul>
             <a id="pull"><i class="fa fa-bars"></i></a>
