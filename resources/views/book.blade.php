@@ -22,6 +22,13 @@
                             <div class="field mandatory"><input name="name" type="text" placeholder="Name"   /></div>
                             <label>Designation</label>
                             <div class="field mandatory"><input name="designation_id" type="text" placeholder="Designation"/></div>
+                            <div>
+                                <label class="" >Current Service Status</label>
+                                <select name="service_status" class="adults">
+                                    <option  value="1">In-Service</option>
+                                    <option  value="2" >Retired</option>
+                                </select>
+                            </div>
                             <label>Email</label>
                             <div class="field mandatory"><input name="email" type="text" placeholder="Email Address" /></div>
                             <label>Mobile</label>
@@ -34,13 +41,6 @@
                             <div class="field calendar"><input name="booking_till" type="date" placeholder="Till Date"/></div>
                             <div class="select">
                                 <div>
-                                    <label >Current Service Status</label>
-                                    <select name="service_status" class="infants">
-                                        <option  value="1">In Service</option>
-                                        <option  value="2" >Retired</option>
-                                    </select>
-                                </div>
-                                <div>
                                     <label class="">Booking Room/Lawn/Hall</label>
                                     <select name="booking_for" class="adults">
                                         <option  value="1" >Room</option>
@@ -48,6 +48,10 @@
                                         <option  value="3" >Hall</option>
                                     </select>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div style="margin-bottom: 60px">
                                 <label class="">Booking for</label>
                                 <select name="booking_for_self_guest" class="children">
                                     <option selected value="1">Self</option>
@@ -57,8 +61,6 @@
                                     <option  value="5" >Personal Tour</option>
                                 </select>
                             </div>
-                        </div>
-                        <div class="col">
                             <div class="field"><textarea name="message" rows="50" placeholder="Message"></textarea></div>
                         </div>
                         <button type="submit"><span data-hover="Send Booking Request">Send Booking Request</span></button>
