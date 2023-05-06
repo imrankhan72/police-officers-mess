@@ -81,6 +81,7 @@
         button:hover {
             opacity: .8;
         }
+
     </style>
 </head>
 <body class="fullwidth">

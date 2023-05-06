@@ -8,6 +8,7 @@ use App\Models\Payment;
 use Illuminate\Foundation\Application;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Http;
 use Inertia\Inertia;
 
 
@@ -19,7 +20,15 @@ Route::post('/bookings/store', function (Request $request) {
     return redirect('/otp');
 });
 Route::view('/otp','otp');
+
 Route::view('/pay-bill','pay-bill');
+Route::post('/bill-details', function (Request $request) {
+      $client_details = Http::get('http://pom.dvinfosoft.com/User_API.asmx/User_Registration?Mobile_No=8106986039')->collect()->first();
+      $hotel_bill_details = Http::get('http://pom.dvinfosoft.com/User_API.asmx/ClientHotelBills?Client_ID=110')->collect();
+      $restaurant_bill_details = Http::get('http://pom.dvinfosoft.com/User_API.asmx/ClientFoodBills?Client_ID=2')->collect();
+      $total_outstanding = Http::get('http://pom.dvinfosoft.com/User_API.asmx/ClientOutStanding?Client_ID=1')->collect()->first();
+      return view('bill_details', compact('client_details','hotel_bill_details', 'restaurant_bill_details','total_outstanding'));
+});
 
 
 
