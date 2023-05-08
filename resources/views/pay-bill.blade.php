@@ -5,7 +5,7 @@
         <div  style="padding-top: 32px; padding-bottom: 32px;">
             <div class="centre">
                 <section>
-                    <form action="/bill-details" method="post">
+                    <form action="/otp?path=pay_bill" method="get">
                         {{csrf_field()}}
                     <h1 class="underline">Please enter the your 10 digit mobile number!</h1>
                     <div class="container">
