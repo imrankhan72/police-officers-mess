@@ -12,27 +12,27 @@
                 </div>
                 <img alt="" src="/preview/images/0.JPG" width="1800" height="800" />
             </div>
-{{--            <div class="item">--}}
-{{--                <div class="details">--}}
-{{--                    <div class="title"><span>Police Officers Mess</span></div>--}}
-{{--                    <div class="buttoncontainer"><a href="about.html" class="button"><span data-hover="Explore The Mess">Explore The Mess</span></a></div>--}}
-{{--                </div>--}}
-{{--                <img alt="" src="/preview/images/1.JPG" width="1800" height="800" />--}}
-{{--            </div>--}}
-{{--            <div class="item">--}}
-{{--                <div class="details">--}}
-{{--                    <div class="title"><span>Modern & Spacious Dining Hall</span></div>--}}
-{{--                    <div class="buttoncontainer"><a href="accommodation.html" class="button"><span data-hover="See Accommodation">See Accommodation</span></a></div>--}}
-{{--                </div>--}}
-{{--                <img alt="" src="/preview/images/2.JPG" width="1800" height="800" />--}}
-{{--            </div>--}}
-{{--            <div class="item">--}}
-{{--                <div class="details">--}}
-{{--                    <div class="title"><span>A Gourmet Dining Experience</span></div>--}}
-{{--                    <div class="buttoncontainer"><a href="restaurant.php" class="button"><span data-hover="Read The Menu">Read The Menu</span></a></div>--}}
-{{--                </div>--}}
-{{--                <img alt="" src="preview/images/3.JPG" width="1800" height="800" />--}}
-{{--            </div>--}}
+            <div class="item">
+                <div class="details">
+                    <div class="title"><span>Police Officers Mess</span></div>
+                    <div class="buttoncontainer"><a href="about.html" class="button"><span data-hover="Explore The Mess">Explore The Mess</span></a></div>
+                </div>
+                <img alt="" src="/preview/images/1.JPG" width="1800" height="800" />
+            </div>
+            <div class="item">
+                <div class="details">
+                    <div class="title"><span>Modern & Spacious Dining Hall</span></div>
+                    <div class="buttoncontainer"><a href="accommodation.html" class="button"><span data-hover="See Accommodation">See Accommodation</span></a></div>
+                </div>
+                <img alt="" src="/preview/images/2.JPG" width="1800" height="800" />
+            </div>
+            <div class="item">
+                <div class="details">
+                    <div class="title"><span>A Gourmet Dining Experience</span></div>
+                    <div class="buttoncontainer"><a href="restaurant.php" class="button"><span data-hover="Read The Menu">Read The Menu</span></a></div>
+                </div>
+                <img alt="" src="preview/images/3.JPG" width="1800" height="800" />
+            </div>
         </div>
         <div class="centre">
             <div class="nav">

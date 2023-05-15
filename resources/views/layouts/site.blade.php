@@ -132,7 +132,7 @@
 {{--    Main content here--}}
 
     <footer>
-        <div id="footer">
+{{--        <div id="footer">--}}
 {{--            <div class="centre">--}}
 {{--                <!-- Subscribe / Social | START -->--}}
 {{--                <div class="news">--}}
@@ -161,7 +161,7 @@
 {{--                <!-- Contact Details | END -->--}}
 {{--                <div class="dark"></div>--}}
 {{--            </div>--}}
-        </div>
+{{--        </div>--}}
         <!-- Footer Links | START -->
         <div id="footerlinks">
             <div class="centre">

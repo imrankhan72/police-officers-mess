@@ -338,7 +338,7 @@ main blockquote { width:40%; margin:0 25px 25px -30px; font:bold 25px/30px 'Open
 #featured .item .details { width:100%; text-align:center; position:absolute; top:50%; margin-top:-82px; }
 #featured .item .title { margin-bottom:22px; display:block; }
 #featured .item .title span { padding:5px 17px 10px; font-size: 40px; letter-spacing:-.5px; background:rgba(255,255,255,.85); box-shadow:1px 1px 0 rgba(0,0,0,.1); border-radius:5px; }
-#featured .item .button { display:inline-block; box-shadow:1px 1px 0 rgba(0,0,0,.2); }
+#featured .item .button { display:inline-block; box-shadow:1px 1px 0 rgba(0,0,0,.2); background-color:#180054; }
 #featured .item img { width:100%; height:auto; min-height:275px; display:block; }
 #featured .nav { height:40px; width:65px; background:#FFF; border-radius:5px; box-shadow:1px 1px 0 rgba(0,0,0,.1); position:absolute; bottom:95px; right:50px; opacity:0; z-index:2; }
 #featured .nav a { width:50%; height:100%; font-size:15px; line-height:40px; color:#000; text-align:center; float:left; display:block; cursor:pointer; opacity:.4; }
