@@ -76,18 +76,18 @@ Base Hotel: HTML Template by Klaye Morrison (http://klayemorrison.com)
 * { margin:0; padding:0; text-decoration:none; list-style:none; outline:none; }
 html, body { width:100%; height:100%; }
 #container { padding-top:110px; position:relative; background:#FFF; }
-.centre { max-width:1200px; margin:auto; padding:0 50px; position:relative; }
+.centre { margin:auto; padding:0 50px; position:relative; }
 a img { border:none; }
 
 /******************** 1.0 - Navigation ********************/
 
-#nav { width:100%; height:110px; position:fixed; background:#FFF; box-shadow:0 0 1px rgba(0,0,0,.2),0 0 15px rgba(0,0,0,.15); z-index:100; -webkit-transform:translateZ(0); }
+#nav { width:100%; height:110px; position:fixed; background:#180054; box-shadow:0 0 1px rgba(0,0,0,.2),0 0 15px rgba(0,0,0,.15); z-index:100; -webkit-transform:translateZ(0); }
 #nav .centre { height:100%; }
 #nav .logo { position:absolute; top:50%; left:50px; transform:translate(0,-50%); -webkit-transform:translate(0,-50%); -ms-transform:translate(0,-50%); }
-#nav nav { position:absolute; top:50%; right:308px; margin-top:-20px; }
+#nav nav { position:absolute; top:50%; right:240px; margin-top:-20px; }
 #nav nav li { float:left; position:relative; }
 #nav nav li.mobile { display:none; }
-#nav nav li a { height:40px; padding:0 14px; font:12px/40px 'Open Sans', sans-serif; color:#000; letter-spacing:.8px; text-transform:uppercase; display:block; position:relative; }
+#nav nav li a { height:40px; padding:0 14px; font:14px/40px 'Open Sans', sans-serif; color:#fff; letter-spacing:.8px; text-transform:uppercase; display:block; position:relative; }
 #nav nav li a:after { content:""; width:calc(100% - 24px); height:2px; position:absolute; bottom:7px; left:12px; }
 #nav nav li.active a { font-weight:800; opacity:1; }
 #pull { width:25px; font-size:25px; position:absolute; top:7px; right:236px; display:none; cursor:pointer; }
@@ -126,7 +126,7 @@ a img { border:none; }
 
 /* 1.3 - Book Button */
 
-#nav .book { width:160px; height:50px; font:800 12px/46px 'Open Sans', sans-serif; letter-spacing:1px; text-transform:uppercase; display:block; border-radius:5px; box-sizing:border-box; position:absolute; top:50%; right:50px; margin-top:-25px; overflow:hidden; border:2px solid }
+#nav .book { width:150px; height:50px; background: white; font:800 12px/46px 'Open Sans', sans-serif; letter-spacing:1px; text-transform:uppercase; display:block; border-radius:5px; box-sizing:border-box; position:absolute; top:50%; right:50px; margin-top:-25px; overflow:hidden; border:2px solid }
 #nav .book span { width:100%; text-indent:15px; position:relative; display:inline-block; }
 #nav .book span:before { color:#FFF; position:absolute; left:0; top:100%; content:attr(data-hover); }
 #nav .book i { font-size:16px; position:absolute; top:15px; right:15px; }
@@ -337,7 +337,7 @@ main blockquote { width:40%; margin:0 25px 25px -30px; font:bold 25px/30px 'Open
 #featured .item { float:left; position:relative; }
 #featured .item .details { width:100%; text-align:center; position:absolute; top:50%; margin-top:-82px; }
 #featured .item .title { margin-bottom:22px; display:block; }
-#featured .item .title span { padding:5px 17px 10px; font:italic 40px/45px 'Poly', georgia; letter-spacing:-.5px; background:rgba(255,255,255,.85); box-shadow:1px 1px 0 rgba(0,0,0,.1); border-radius:5px; }
+#featured .item .title span { padding:5px 17px 10px; font-size: 40px; letter-spacing:-.5px; background:rgba(255,255,255,.85); box-shadow:1px 1px 0 rgba(0,0,0,.1); border-radius:5px; }
 #featured .item .button { display:inline-block; box-shadow:1px 1px 0 rgba(0,0,0,.2); }
 #featured .item img { width:100%; height:auto; min-height:275px; display:block; }
 #featured .nav { height:40px; width:65px; background:#FFF; border-radius:5px; box-shadow:1px 1px 0 rgba(0,0,0,.1); position:absolute; bottom:95px; right:50px; opacity:0; z-index:2; }
@@ -873,7 +873,7 @@ footer { width:100%; background:#444; }
 
 /* 19.3 - Footer Links */
 
-#footerlinks { width:100%; height:70px; font:10px/70px 'Open Sans', sans-serif; color:#FFF; letter-spacing:1.5px; text-align:center; text-transform:uppercase; background:#000; clear:both; }
+#footerlinks { width:100%; height:70px; font:12px/70px 'Open Sans', sans-serif; color:#FFF; letter-spacing:1.5px; text-align:center; text-transform:uppercase; background:#180254;; clear:both; }
 #footerlinks strong { margin-right:12px; font-weight:800; }
 #footerlinks a { padding:10px 12px; color:#FFF; }
 #footerlinks a:last-child { padding-right:0; }
@@ -901,7 +901,7 @@ a, input, button, i, #container, #nav, #nav nav li a:after, #featured .nav, .lis
 /******************** 22.0 - Responsive ********************/
 
 @media only screen and (max-height:800px) {
-#nav { position:absolute; }
+#nav { position:absolute;  }
 #scroll.fixed { position:fixed; top:50px; }
 #scroll.absolute { position:absolute; top:auto; bottom:70px; }
 }

@@ -133,34 +133,34 @@
 
     <footer>
         <div id="footer">
-            <div class="centre">
-                <!-- Subscribe / Social | START -->
-                <div class="news">
-                    <div class="title"><span>News & Offers</span></div>
-                    <div class="subscribe">
-                        <form>
-                            <input name="email" type="text" placeholder="Your email address" />
-                            <button><span data-hover="Sign Up">Sign Up</span></button>
-                        </form>
-                    </div>
-                    <div class="social">
-                        <a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
-                        <a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" title="Pinterest"><i class="fa fa-pinterest-p"></i></a>
-                    </div>
-                </div>
-                <!-- Subscribe / Social | END -->
-                <!-- Contact Details | START -->
-                <div class="contact">
-                    <p><strong class="phone">+91 8 3456 7890</strong><br />
-                        <a href="mailto:stay@basehotel.com">stay@pom.com</a><br /><br />
-                        <i class="fa fa-map-marker"></i>  7C26+CHF, Jahangirabad, <br />
-                        Bhopal, Madhya Pradesh 462008<br />
-                        <a href="#" target="_blank"><strong>Get Directions</strong></a></p>
-                </div>
-                <!-- Contact Details | END -->
-                <div class="dark"></div>
-            </div>
+{{--            <div class="centre">--}}
+{{--                <!-- Subscribe / Social | START -->--}}
+{{--                <div class="news">--}}
+{{--                    <div class="title"><span>News & Offers</span></div>--}}
+{{--                    <div class="subscribe">--}}
+{{--                        <form>--}}
+{{--                            <input name="email" type="text" placeholder="Your email address" />--}}
+{{--                            <button><span data-hover="Sign Up">Sign Up</span></button>--}}
+{{--                        </form>--}}
+{{--                    </div>--}}
+{{--                    <div class="social">--}}
+{{--                        <a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>--}}
+{{--                        <a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>--}}
+{{--                        <a href="#" title="Pinterest"><i class="fa fa-pinterest-p"></i></a>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <!-- Subscribe / Social | END -->--}}
+{{--                <!-- Contact Details | START -->--}}
+{{--                <div class="contact">--}}
+{{--                    <p><strong class="phone">+91 8 3456 7890</strong><br />--}}
+{{--                        <a href="mailto:stay@basehotel.com">stay@pom.com</a><br /><br />--}}
+{{--                        <i class="fa fa-map-marker"></i>  7C26+CHF, Jahangirabad, <br />--}}
+{{--                        Bhopal, Madhya Pradesh 462008<br />--}}
+{{--                        <a href="#" target="_blank"><strong>Get Directions</strong></a></p>--}}
+{{--                </div>--}}
+{{--                <!-- Contact Details | END -->--}}
+{{--                <div class="dark"></div>--}}
+{{--            </div>--}}
         </div>
         <!-- Footer Links | START -->
         <div id="footerlinks">
