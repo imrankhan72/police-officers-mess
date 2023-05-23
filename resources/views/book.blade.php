@@ -63,6 +63,7 @@
                                     <div class="col-sm-6">
                                         <label>Booking for<sup>*</sup></label>
                                         <select name="booking_for_self_guest" class="form-control">
+                                            <option  value="0" >Self</option>
                                             <option  value="1" >Guest</option>
                                             <option  value="2">Family</option>
                                             <option  value="2">Govt Tour</option>
