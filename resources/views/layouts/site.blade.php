@@ -125,11 +125,11 @@
                     <!-- WIDGET MAILCHIMP -->
                     <div class="col-lg-9">
                         <div class="mailchimp">
-                            <h4>News &amp; Offers</h4>
+                            <h4>Pay Bill</h4>
                             <div class="mailchimp-form">
                                 <form action="#" method="POST">
-                                    <input type="text" name="email" placeholder="Your email address" class="input-text">
-                                    <button class="awe-btn">SIGN UP</button>
+                                    <input type="text" name="mobile" placeholder="Your 10 digit mobile number" class="input-text">
+                                    <button class="awe-btn">Submit</button>
                                 </form>
                             </div>
                         </div>

@@ -34,7 +34,7 @@
                                     <form action="/otp?path=pay_bill" method="get">
                                         {{csrf_field()}}
                                     <label>Please enter your 10 digit mobile number<sup>*</sup></label>
-                                    <input name="booking_for" class="form-control"/>
+                                    <input name="booking_for" class="form-control" required/>
                                     <button type="submit" class="awe-btn awe-btn-13">SUBMIT</button>
                                     </form>
                                 </div>
