@@ -72,30 +72,30 @@
                 <nav class="header_menu">
                     <ul class="menu">
                         <li class="current-menu-item"><a href="/">Home </a></li>
-                        <li><a href="about.html">About <span class="fa fa-caret-down"></span></a>
+                        <li><a href="/">About <span class="fa fa-caret-down"></span></a>
                             <ul class="sub-menu">
-                                <li><a href="room-1.html">About Us</a></li>
-                                <li><a href="room-2.html">Management Committee</a></li>
-                                <li><a href="room-3.html">Rules & Regulations</a></li>
+                                <li><a href="/">About Us</a></li>
+                                <li><a href="/">Management Committee</a></li>
+                                <li><a href="/">Rules & Regulations</a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="#">Explore Mess<span class="fa fa-caret-down"></span></a>
                             <ul class="sub-menu">
-                                <li><a href="room-1.html">Accommodations</a></li>
-                                <li><a href="room-2.html">Banquetes & Lawn</a></li>
-                                <li><a href="room-3.html">Tariff</a></li>
+                                <li><a href="/">Accommodations</a></li>
+                                <li><a href="/">Banquetes & Lawn</a></li>
+                                <li><a href="/">Tariff</a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="#">Facilities <span class="fa fa-caret-down"></span></a>
                             <ul class="sub-menu">
-                                <li><a href="room-1.html">Sport</a></li>
-                                <li><a href="room-2.html">Restaurant</a></li>
+                                <li><a href="/">Sport</a></li>
+                                <li><a href="/">Restaurant</a></li>
                             </ul>
                         </li>
                         <li><a href="#">Gallery</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="/">Contact</a></li>
                     </ul>
                 </nav>
                 <!-- END / HEADER MENU -->
