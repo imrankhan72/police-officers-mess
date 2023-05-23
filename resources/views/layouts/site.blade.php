@@ -1,187 +1,240 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Police officers Mess | MP Police</title>
-    <link rel="stylesheet" href="system/css/global.css">
-    <link class="colour" rel="stylesheet" href="system/css/colour-blue.css">
-    <link class="pattern" rel="stylesheet" href="system/css/pattern-china.css">
-    <link class="layout" rel="stylesheet" href="system/css/layout-full.css">
-    <link class="background" rel="stylesheet" href="system/css/backgrounds.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <script src="system/js/plugins.js"></script>
-    <script src="system/js/global.js"></script>
-    <style>
-        .result {
-            text-align: center;
-            color: orange;
-            font-size: 2em;
-            font-weight: bold;
-            margin-top: 1.5em;
-            display: block;
-        }
+    <!-- TITLE -->
+    <title>Police Officers Mess</title>
 
-        input {
-            border: 0;
-            border-bottom: 2px solid #C0C0C0;
-            outline: 0;
-            color: #111111;
-            width: 37px;
-            padding: 0 5px;
-            margin-right: 10px;
-            text-align: center;
-            font-size: 3em;
-            cursor: pointer;
-            will-change: border;
-            transition: border .3s ease-in-out;
-            -webkit-appearance: none;
-            -moz-appearance: textfield;
-        }
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="/assets/images/favicon.png">
 
-        input[type=number]::-webkit-inner-spin-button,
-        input[type=number]::-webkit-outer-spin-button {
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            -moz-appearance:textfield;
-            appearance: none;
-            margin: 0;
-        }
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Hind:400,300,500,600%7cMontserrat:400,700" rel='stylesheet' type='text/css'>
 
-        input:focus {
-            border: 0;
-            border-bottom: 2px solid #ff6200;
-        }
+    <!-- CSS LIBRARY -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/lib/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/lib/font-lotusicon.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/lib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/lib/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/lib/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/lib/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/lib/settings.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/lib/bootstrap-select.min.css">
 
-        input:disabled {
-            background: #fff;
-        }
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
 
-        input:last-child {
-            margin-right: 0;
-        }
-
-        .paintOrangeLine {
-            border: 0;
-            border-bottom: 2px solid #ff6200;
-        }
-
-        button {
-            background: #ff6200;
-            color: whiteSmoke;
-            padding: 1em 2em;
-            margin-top: 2em;
-            border: 0;
-            width: 40%;
-            cursor: pointer;
-            transition: opacity .3s ease-in-out;
-            will-change: opacity;
-        }
-
-        button:hover {
-            opacity: .8;
-        }
-
-    </style>
 </head>
-<body class="fullwidth">
-<!-- Navigation | START -->
-<div id="nav">
-    <div class="centre">
-        <a href="/" class="logo"><img alt="" src="system/images/logo.png" width="260px"  /></a>
-        <nav>
-            <ul>
-                <li class="mobile"><a href="/book-now" class="navbook">Book Online</a></li>
-                <li><a href="/">Home</a></li>
-                <li><a href="#">About us</a>
-                    <ul>
-                        <li><a href="/about-us">Profile</a></li>
-                        <li><a href="#">Management committee</a></li>
-                        <li><a href="#">Rules & Regulations</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Services</a>
-                    <ul>
-                        <li><a href="#">Sports</a></li>
-                        <li><a href="#">Restaurant</a></li>
-                        <li><a href="#">Bars</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Facilities</a>
-                    <ul>
-                        <li><a href="#">Sports</a></li>
-                        <li><a href="#">Restaurant</a></li>
-                        <li><a href="#">Bars</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="contact.php">Contact</a></li>
-                <li><a href="/pay-bill" id="pay_bill" >Pay Bill</a></li>
 
-            </ul>
-            <a id="pull"><i class="fa fa-bars"></i></a>
-        </nav>
-        <a href="/book-now"  class="book"><span data-hover="Book Online">Book Online</span> <i class="fa fa-check-circle"></i></a>
-
-        <div class="shadow"></div>
-    </div>
+<body>
+<!-- PRELOADER -->
+<div id="preloader">
+    <span class="preloader-dot"></span>
 </div>
-<!-- Navigation | END -->
-<div id="container">
-@yield('content')
-{{--    Main content here--}}
+<!-- END / PRELOADER -->
 
-    <footer>
-{{--        <div id="footer">--}}
-{{--            <div class="centre">--}}
-{{--                <!-- Subscribe / Social | START -->--}}
-{{--                <div class="news">--}}
-{{--                    <div class="title"><span>News & Offers</span></div>--}}
-{{--                    <div class="subscribe">--}}
-{{--                        <form>--}}
-{{--                            <input name="email" type="text" placeholder="Your email address" />--}}
-{{--                            <button><span data-hover="Sign Up">Sign Up</span></button>--}}
-{{--                        </form>--}}
-{{--                    </div>--}}
-{{--                    <div class="social">--}}
-{{--                        <a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>--}}
-{{--                        <a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>--}}
-{{--                        <a href="#" title="Pinterest"><i class="fa fa-pinterest-p"></i></a>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--                <!-- Subscribe / Social | END -->--}}
-{{--                <!-- Contact Details | START -->--}}
-{{--                <div class="contact">--}}
-{{--                    <p><strong class="phone">+91 8 3456 7890</strong><br />--}}
-{{--                        <a href="mailto:stay@basehotel.com">stay@pom.com</a><br /><br />--}}
-{{--                        <i class="fa fa-map-marker"></i>  7C26+CHF, Jahangirabad, <br />--}}
-{{--                        Bhopal, Madhya Pradesh 462008<br />--}}
-{{--                        <a href="#" target="_blank"><strong>Get Directions</strong></a></p>--}}
-{{--                </div>--}}
-{{--                <!-- Contact Details | END -->--}}
-{{--                <div class="dark"></div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-        <!-- Footer Links | START -->
-        <div id="footerlinks">
-            <div class="centre">
-                <span>Copyright &copy; <script>var d = new Date(); document.write(d.getFullYear());</script> <strong>Police Officers Mess</strong></span><a href="/">Home</a><a href="sitemap.html">Sitemap</a>
+<!-- PAGE WRAP -->
+<div id="page-wrap">
+
+    <!-- HEADER -->
+    <header id="header">
+
+        <!-- HEADER TOP -->
+        <div class="header_top">
+            <div class="container">
+                <div class="header_left float-left">
+                    <span><i class="lotus-icon-location"></i>  7C26+CHF, Jahangirabad, Bhopal, Madhya Pradesh</span>
+                    <span><i class="lotus-icon-phone"></i> 1-548-854-8898</span>
+                </div>
+                <div class="header_right float-right">
+                        <span class="login-register">
+                            <a class="awe-btn awe-btn-custom" href="/pay-bill" style="border-right:3px solid #2C3F75;"><strong>Pay Bill</strong></a>
+                            <a class="awe-btn awe-btn-custom" href="/book-now"><strong>Apply For Booking</strong></a>
+                        </span>
+                </div>
             </div>
         </div>
-        <!-- Footer Links | END -->
-    </footer>
-    <!-- Footer | END -->
-</div>
-<script>
-    function toggleBillDetails() {
-        var x = document.getElementById("bill_details");
-        if (x.style.display === "none") {
-            x.style.display = "block";
-        } else {
-            x.style.display = "none";
-        }
-    }
-</script>
+        <!-- END / HEADER TOP -->
 
+        <!-- HEADER LOGO & MENU -->
+        <div class="header_content" id="header_content">
+
+            <div class="container">
+                <!-- HEADER LOGO -->
+                <div class="header_logo">
+                    <a href="/"><img src="/assets/images/pom-logo-1.png" alt="logo"></a>
+                </div>
+                <!-- END / HEADER LOGO -->
+
+                <!-- HEADER MENU -->
+                <nav class="header_menu">
+                    <ul class="menu">
+                        <li class="current-menu-item"><a href="/">Home </a></li>
+                        <li><a href="about.html">About <span class="fa fa-caret-down"></span></a>
+                            <ul class="sub-menu">
+                                <li><a href="room-1.html">About Us</a></li>
+                                <li><a href="room-2.html">Management Committee</a></li>
+                                <li><a href="room-3.html">Rules & Regulations</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Explore Mess<span class="fa fa-caret-down"></span></a>
+                            <ul class="sub-menu">
+                                <li><a href="room-1.html">Accommodations</a></li>
+                                <li><a href="room-2.html">Banquetes & Lawn</a></li>
+                                <li><a href="room-3.html">Tariff</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Facilities <span class="fa fa-caret-down"></span></a>
+                            <ul class="sub-menu">
+                                <li><a href="room-1.html">Sport</a></li>
+                                <li><a href="room-2.html">Restaurant</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- END / HEADER MENU -->
+
+                <!-- MENU BAR -->
+                <span class="menu-bars">
+                        <span></span>
+                    </span>
+                <!-- END / MENU BAR -->
+            </div>
+        </div>
+        <!-- END / HEADER LOGO & MENU -->
+
+    </header>
+    <!-- END / HEADER -->
+
+      @yield('content')
+
+    <!-- FOOTER -->
+    <footer id="footer">
+
+        <!-- FOOTER TOP -->
+        <div class="footer_top">
+            <div class="container">
+                <div class="row">
+
+                    <!-- WIDGET MAILCHIMP -->
+                    <div class="col-lg-9">
+                        <div class="mailchimp">
+                            <h4>News &amp; Offers</h4>
+                            <div class="mailchimp-form">
+                                <form action="#" method="POST">
+                                    <input type="text" name="email" placeholder="Your email address" class="input-text">
+                                    <button class="awe-btn">SIGN UP</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END / WIDGET MAILCHIMP -->
+
+                    <!-- WIDGET SOCIAL -->
+                    <div class="col-lg-3">
+                        <div class="social">
+                            <div class="social-content">
+                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END / WIDGET SOCIAL -->
+
+                </div>
+            </div>
+        </div>
+        <!-- END / FOOTER TOP -->
+
+        <!-- FOOTER CENTER -->
+        <div class="footer_center">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xs-12 col-lg-5">
+                        <div class="widget widget_logo">
+                            <div class="widget-logo">
+                                <!--<div class="img">
+                                    <a href="#"><img src="/assets/images/logo-footer.png" alt=""></a>
+                                </div>-->
+                                <div class="text">
+                                    <p><i class="lotus-icon-location"></i>   7C26+CHF, Jahangirabad, <br>Bhopal, Madhya Pradesh</p>
+                                    <p><i class="lotus-icon-phone"></i> 1-548-854-8898</p>
+                                    <p><i class="fa fa-envelope-o"></i> <a href="/cdn-cgi/l/email-protection#caa2afa6a6a58abea2afa6a5bebfb9a2a5beafa6e4a9a5a7"><span class="__cf_email__" data-cfemail="adc5c8c1c1c2edd9c5c8c1c2d9d8dec5c2d9c8c183cec2c0">[email&#160;protected]</span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-4 col-lg-2">
+                        <div class="widget">
+                            <h4 class="widget-title">Page site</h4>
+                            <ul>
+                                <li><a href="#">Accommodations</a></li>
+                                <li><a href="#">Banquetes & Lawn</a></li>
+                                <li><a href="#">Tariff</a></li>
+                                <li><a href="#">Facilities</a></li>
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">Faq's</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-4 col-lg-2">
+                        <div class="widget">
+                            <h4 class="widget-title">ABOUT</h4>
+                            <ul>
+                                <li><a href="">About Us</a></li>
+                                <li><a href="">Committee Member</a></li>
+                                <li><a href="">Rules & Regulations</a></li>
+                                <li><a href="">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- END / FOOTER CENTER -->
+
+        <!-- FOOTER BOTTOM -->
+        <div class="footer_bottom">
+            <div class="container">
+                <p>&copy; 2023 Police Officers' Mess.  All rights reserved.</p>
+            </div>
+        </div>
+        <!-- END / FOOTER BOTTOM -->
+
+    </footer>
+    <!-- END / FOOTER -->
+
+</div>
+<!-- END / PAGE WRAP -->
+
+
+<!-- LOAD JQUERY -->
+<script type="text/javascript" src="/assets/js/lib/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="/assets/js/lib/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/assets/js/lib/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/js/lib/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="/assets/js/lib/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="/assets/js/lib/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="/assets/js/lib/owl.carousel.js"></script>
+<script type="text/javascript" src="/assets/js/lib/jquery.appear.min.js"></script>
+<script type="text/javascript" src="/assets/js/lib/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="/assets/js/lib/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="/assets/js/lib/SmoothScroll.js"></script>
+
+<!-- Custom jQuery -->
+<script type="text/javascript" src="/assets/js/scripts.js"></script>
 </body>
 </html>

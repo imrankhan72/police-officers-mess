@@ -1,21 +1,53 @@
 @extends('layouts.site')
 <!-- Header | START -->
 @section('content')
-    <main>
-        <div  style="padding-top: 32px; padding-bottom: 32px;">
-            <div class="centre">
-                <section>
-                    <form action="/otp?path=pay_bill" method="get">
-                        {{csrf_field()}}
-                    <h1 class="underline">Please enter the your 10 digit mobile number!</h1>
-                    <div class="container">
-                        <input type="text"  name="mobile_no" style="width:40%;height:50px;border-radius:3px;border:rgba(0,0,0,.3) 2px solid; box-sizing:border-box;padding:10px;">
+    <!-- SUB BANNER -->
+    <section class="section-sub-banner awe-parallax bg-16">
+
+        <div class="awe-overlay"></div>
+
+        <div class="sub-banner">
+            <div class="container">
+                <div class="text text-center">
+                    <h2>Pay Bill</h2>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- END / SUB BANNER -->
+
+    <!-- RESERVATION -->
+    <section class="section-reservation-page bg-white">
+
+        <div class="container">
+            <div class="reservation-page">
+                <div class="row">
+                    <!-- CONTENT -->
+                    <div class="col-lg-offset-2 col-lg-10">
+
+                        <div class="reservation_content">
+                            <form  action="/bookings/store" method="post">
+                                {{csrf_field()}}
+                                <div class="reservation-billing-detail">
+                                    <form action="/otp?path=pay_bill" method="get">
+                                        {{csrf_field()}}
+                                    <label>Please enter your 10 digit mobile number<sup>*</sup></label>
+                                    <input name="booking_for" class="form-control"/>
+                                    <button type="submit" class="awe-btn awe-btn-13">SUBMIT</button>
+                                    </form>
+                                </div>
+                            </form>
+                        </div>
+
                     </div>
-                    <button type="submit">SUBMIT</button>
-                    <span class="result"></span>
-                    </form>
-                </section>
+                    <!-- END / CONTENT -->
+
+                </div>
             </div>
         </div>
-    </main>
-@endsection
+
+    </section>
+    <!-- END / RESERVATION -->
+@stop

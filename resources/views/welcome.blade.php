@@ -1,164 +1,513 @@
 @extends('layouts.site')
 <!-- Header | START -->
 @section('content')
-<header>
-    <!-- Featured Slider | START -->
-    <div id="featured">
-        <div class="slider">
-            <div class="item">
-                <div class="details">
-                    <div class="title"><span>Police Officers Mess</span></div>
-                    <div class="buttoncontainer"><a href="about.html" class="button"><span data-hover="Explore The Mess">Explore The Mess</span></a></div>
-                </div>
-                <img alt="" src="/preview/images/0.JPG" width="1800" height="800" />
-            </div>
-            <div class="item">
-                <div class="details">
-                    <div class="title"><span>Police Officers Mess</span></div>
-                    <div class="buttoncontainer"><a href="about.html" class="button"><span data-hover="Explore The Mess">Explore The Mess</span></a></div>
-                </div>
-                <img alt="" src="/preview/images/1.JPG" width="1800" height="800" />
-            </div>
-            <div class="item">
-                <div class="details">
-                    <div class="title"><span>Modern & Spacious Dining Hall</span></div>
-                    <div class="buttoncontainer"><a href="accommodation.html" class="button"><span data-hover="See Accommodation">See Accommodation</span></a></div>
-                </div>
-                <img alt="" src="/preview/images/2.JPG" width="1800" height="800" />
-            </div>
-            <div class="item">
-                <div class="details">
-                    <div class="title"><span>A Gourmet Dining Experience</span></div>
-                    <div class="buttoncontainer"><a href="restaurant.php" class="button"><span data-hover="Read The Menu">Read The Menu</span></a></div>
-                </div>
-                <img alt="" src="preview/images/3.JPG" width="1800" height="800" />
-            </div>
+    <!-- BANNER SLIDER -->
+    <section class="section-slider" style="">
+        <div id="slider-revolution">
+            <ul>
+                <li data-transition="fade">
+                    <img src="/assets/images/slider/img-0.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
+                </li>
+                <li data-transition="fade">
+                    <img src="/assets/images/slider/img-1.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
+                </li>
+                <li data-transition="fade">
+                    <img src="/assets/images/slider/img-2.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
+                </li>
+            </ul>
         </div>
-        <div class="centre">
-            <div class="nav">
-                <a class="prev"><i class="fa fa-chevron-left"></i></a>
-                <a class="next"><i class="fa fa-chevron-right"></i></a>
-            </div>
-        </div>
-    </div>
-</header>
-<!-- Header | END -->
-<!-- Content | START -->
-<main>
-    <div class="centre">
-        <h1>Welcome to  <strong>Police Officers Mess</strong></h1>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna.</p>
-        <!-- USP Boxes | START -->
-        <section class="usp">
-            <div class="box">
-                <i class="fa fa-trophy"></i>
-                <h3>All Facilities & Amenities</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id.</p>
-            </div>
-            <div class="box">
-                <i class="fa fa-cutlery"></i>
-                <h3>Award-Winning Mess</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id.</p>
-            </div>
-            <div class="box">
-                <i class="fa fa-user"></i>
-                <h3>24 Hour Concierge Service</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id.</p>
-            </div>
-        </section>
-        <!-- USP Boxes | END -->
-    </div>
-</main>
-<!-- Content | END -->
-<!-- Gallery Slider | START -->
-<div id="galleryslider">
-    <div class="slidecontainer">
-        <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: relative; inset: auto; z-index: auto;  height: 450px; width:100%;  margin: 0px; overflow: hidden;">
-            <div class="slider" style="text-align: left; float: none; position: absolute; inset: 0px auto auto; margin: 0px;  height: 450px; z-index: auto;">
-                <img alt="" data-original="preview/images/6.jpeg" width="900" height="600" src="preview/images/gallery-18.jpg" style="display: block;">
-                <img alt="" data-original="preview/images/8.jpeg" width="900" height="600" src="preview/images/gallery-1.jpg" style="display: block;">
-                <img alt="" data-original="preview/images/7.jpeg" width="900" height="600" src="preview/images/gallery-3.jpg" style="display: block;">
-                <img alt="" data-original="preview/images/8.jpeg" width="600" height="900" src="preview/images/gallery-6.jpg" style="display: block;">
-                <img alt="" data-original="preview/images/6.jpeg" width="600" height="900" src="preview/images/gallery-7.jpg" style="display: block;">
-                <img alt="" data-original="preview/images/7.jpeg" width="900" height="600" src="preview/images/gallery-4.jpg" style="display: block;">
-                <img alt="" data-original="preview/images/8.jpeg" width="900" height="600" src="preview/images/gallery-18.jpg" style="display: block;">
-            </div>
-        </div>
-        <div class="centre">
-            <div class="nav">
-                <a class="prev" style="display: block;"><i class="fa fa-chevron-left"></i></a>
-                <a class="next" style="display: block;"><i class="fa fa-chevron-right"></i></a>
-            </div>
-        </div>
-    </div>
-    <a href="gallery.html" class="button"><span data-hover="Browse Our Gallery">Browse Our Gallery</span></a>
-</div>
-<!-- Gallery Slider | END -->
-<!-- Sitewide Extras | START -->
-<div id="extras">
-    <div class="centre">
-        <!-- List Items (Specials Slider) | START -->
-        <div id="specials" class="list">
-            <div class="back">
-                <div class="slider">
-                    <div class="item">
-                        <img alt="" src="preview/images/9.jpeg" width="1200" height="400" />
-                        <div class="details">
-                            <a href="specials.html">
-                                <div class="title">Great Facilities<br />
-                                    <span>Activity Package</span></div>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna.<br />
-                                    <strong>Stay from $249 per night</strong></p>
-                                <div class="button"><span data-hover="View Special">View Special</span></div>
-                            </a>
+
+    </section>
+    <!-- END / BANNER SLIDER -->
+
+    <!-- ACCOMDODATIONS -->
+    <section class="section-accomd awe-parallax bg-14">
+        <div class="container">
+            <div class="accomd-modations">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="accomd-modations-header">
+                            <h2 class="heading">WELCOME TO POLICE OFFICERS MESS</h2>
+                            <img src="/assets/images/icon-accmod.png" alt="icon">
+                            <p>Semper ac dolor vitae accumsan. Cras interdum hendrerit lacinia. Phasellus accumsan urna vitae molestie interdum. Nam sed placerat libero, non eleifend dolor.</p>
                         </div>
                     </div>
-                    <div class="item">
-                        <img alt="" src="preview/images/10.jpeg" width="1200" height="400" />
-                        <div class="details">
-                            <a href="specials.html">
-                                <div class="title">Rustic Charm<br />
-                                    <span>Restaurant Package</span></div>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna.<br />
-                                    <strong>Stay from $249 per night</strong></p>
-                                <div class="button"><span data-hover="View Special">View Special</span></div>
-                            </a>
+                    <div class="col-md-12">
+                        <div class="accomd-modations-content owl-single">
+
+                            <div class="row">
+
+                                <!-- ITEM -->
+                                <div class="col-xs-4">
+                                    <div class="accomd-modations-room">
+                                        <div class="img">
+                                            <a href="#"><img src="/assets/images/gallery/img-1.jpg" alt=""></a>
+                                        </div>
+{{--                                        <div class="text">--}}
+{{--                                            <h2><a href="#">Luxury Room</a></h2>--}}
+{{--                                            <p class="price">--}}
+{{--                                                <span class="amout">Rs.320</span>/days--}}
+{{--                                            </p>--}}
+{{--                                        </div>--}}
+                                    </div>
+                                </div>
+                                <!-- END / ITEM -->
+
+                                <!-- ITEM -->
+                                <div class="col-xs-4">
+                                    <div class="accomd-modations-room">
+                                        <div class="img">
+                                            <a href="#"><img src="/assets/images/gallery/img-2.jpg" alt=""></a>
+                                        </div>
+{{--                                        <div class="text">--}}
+{{--                                            <h2><a href="#">Family Room</a></h2>--}}
+{{--                                            <p class="price">--}}
+{{--                                                <span class="amout">Rs.320</span>/days--}}
+{{--                                            </p>--}}
+{{--                                        </div>--}}
+                                    </div>
+                                </div>
+                                <!-- END / ITEM -->
+
+                                <!-- ITEM -->
+                                <div class="col-xs-4">
+                                    <div class="accomd-modations-room">
+                                        <div class="img">
+                                            <a href="#"><img src="/assets/images/gallery/img-3.jpg" alt=""></a>
+                                        </div>
+{{--                                        <div class="text">--}}
+{{--                                            <h2><a href="#">Couple Room</a></h2>--}}
+{{--                                            <p class="price">--}}
+{{--                                                <span class="amout">$Rs.20</span>/days--}}
+{{--                                            </p>--}}
+{{--                                        </div>--}}
+                                    </div>
+                                </div>
+                                <!-- END / ITEM -->
+
+                                <!-- ITEM -->
+                                <div class="col-xs-4">
+                                    <div class="accomd-modations-room">
+                                        <div class="img">
+                                            <a href="#"><img src="/assets/images/gallery/img-4.jpg" alt=""></a>
+                                        </div>
+{{--                                        <div class="text">--}}
+{{--                                            <h2><a href="#">Standard</a></h2>--}}
+{{--                                            <p class="price">--}}
+{{--                                                <span class="amout">Rs.320</span>/day--}}
+{{--                                            </p>--}}
+{{--                                        </div>--}}
+                                    </div>
+                                </div>
+                                <!-- END / ITEM -->
+
+                                <!-- ITEM -->
+                                <div class="col-xs-4">
+                                    <div class="accomd-modations-room">
+                                        <div class="img">
+                                            <a href="#"><img src="/assets/images/gallery/img-5.jpg" alt=""></a>
+                                        </div>
+{{--                                        <div class="text">--}}
+{{--                                            <h2><a href="#">Standard</a></h2>--}}
+{{--                                            <p class="price">--}}
+{{--                                                <span class="amout">Rs.320</span>/day--}}
+{{--                                            </p>--}}
+{{--                                        </div>--}}
+                                    </div>
+                                </div>
+                                <!-- END / ITEM -->
+
+
+                                <!-- ITEM -->
+                                <div class="col-xs-4">
+                                    <div class="accomd-modations-room">
+                                        <div class="img">
+                                            <a href="#"><img src="/assets/images/gallery/img-6.jpg" alt=""></a>
+                                        </div>
+{{--                                        <div class="text">--}}
+{{--                                            <h2><a href="#">Standard</a></h2>--}}
+{{--                                            <p class="price">--}}
+{{--                                                <span class="amout">Rs.320</span>/day--}}
+{{--                                            </p>--}}
+{{--                                        </div>--}}
+                                    </div>
+                                </div>
+                                <!-- END / ITEM -->
+
+
+                            </div>
+
+                            <div class="row">
+
+                                <!-- ITEM -->
+                                <div class="col-xs-4">
+                                    <div class="accomd-modations-room">
+                                        <div class="img">
+                                            <a href="#"><img src="/assets/images/gallery/img-6.jpg" alt=""></a>
+                                        </div>
+{{--                                        <div class="text">--}}
+{{--                                            <h2><a href="#">Luxury Room</a></h2>--}}
+{{--                                            <p class="price">--}}
+{{--                                                <span class="amout">Rs.320</span>/days--}}
+{{--                                            </p>--}}
+{{--                                        </div>--}}
+                                    </div>
+                                </div>
+                                <!-- END / ITEM -->
+
+                                <!-- ITEM -->
+                                <div class="col-xs-4">
+                                    <div class="accomd-modations-room">
+                                        <div class="img">
+                                            <a href="#"><img src="/assets/images/gallery/img-5.jpg" alt=""></a>
+                                        </div>
+{{--                                        <div class="text">--}}
+{{--                                            <h2><a href="#">Family Room</a></h2>--}}
+{{--                                            <p class="price">--}}
+{{--                                                <span class="amout">Rs.320</span>/days--}}
+{{--                                            </p>--}}
+{{--                                        </div>--}}
+                                    </div>
+                                </div>
+                                <!-- END / ITEM -->
+
+                                <!-- ITEM -->
+                                <div class="col-xs-4">
+                                    <div class="accomd-modations-room">
+                                        <div class="img">
+                                            <a href="#"><img src="/assets/images/gallery/img-4.jpg" alt=""></a>
+                                        </div>
+{{--                                        <div class="text">--}}
+{{--                                            <h2><a href="#">Couple Room</a></h2>--}}
+{{--                                            <p class="price">--}}
+{{--                                                <span class="amout">Rs.320</span>/days--}}
+{{--                                            </p>--}}
+{{--                                        </div>--}}
+                                    </div>
+                                </div>
+                                <!-- END / ITEM -->
+
+                                <!-- ITEM -->
+                                <div class="col-xs-4">
+                                    <div class="accomd-modations-room">
+                                        <div class="img">
+                                            <a href="#"><img src="/assets/images/gallery/img-3.jpg" alt=""></a>
+                                        </div>
+{{--                                        <div class="text">--}}
+{{--                                            <h2><a href="#">Standard</a></h2>--}}
+{{--                                            <p class="price">--}}
+{{--                                                <span class="amout">Rs.320</span>/day--}}
+{{--                                            </p>--}}
+{{--                                        </div>--}}
+                                    </div>
+                                </div>
+                                <!-- END / ITEM -->
+
+                                <!-- ITEM -->
+                                <div class="col-xs-4">
+                                    <div class="accomd-modations-room">
+                                        <div class="img">
+                                            <a href="#"><img src="/assets/images/gallery/img-2.jpg" alt=""></a>
+                                        </div>
+{{--                                        <div class="text">--}}
+{{--                                            <h2><a href="#">Standard</a></h2>--}}
+{{--                                            <p class="price">--}}
+{{--                                                <span class="amout">Rs.320</span>/day--}}
+{{--                                            </p>--}}
+{{--                                        </div>--}}
+                                    </div>
+                                </div>
+                                <!-- END / ITEM -->
+
+                                <!-- ITEM -->
+                                <div class="col-xs-4">
+                                    <div class="accomd-modations-room">
+                                        <div class="img">
+                                            <a href="#"><img src="/assets/images/gallery/img-1.jpg" alt=""></a>
+                                        </div>
+{{--                                        <div class="text">--}}
+{{--                                            <h2><a href="#">Standard</a></h2>--}}
+{{--                                            <p class="price">--}}
+{{--                                                <span class="amout">Rs.320</span>/day--}}
+{{--                                            </p>--}}
+{{--                                        </div>--}}
+                                    </div>
+                                </div>
+                                <!-- END / ITEM -->
+
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="nav"></div>
         </div>
-        <!-- List Items (Specials Slider) | END -->
-        <!-- Recent Blog Posts | START -->
-        <div class="recent">
-            <a href="blog-post.html">
-                <div class="date">
-                    <span class="month">Dec</span>
-                    <span class="day">12</span>
+
+    </section>
+    <!-- END / ACCOMD ODATIONS -->
+
+    <!-- ABOUT -->
+    <section class="section-home-about bg-white">
+        <div class="container">
+            <div class="home-about">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="img">
+                            <a href="#"><img src="/assets/images/gallery/popup/img-1.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text">
+                            <h2 class="heading">ABOUT US</h2>
+                            <span class="box-border"></span>
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source</p>
+                            <a href="#" class="awe-btn awe-btn-default">READ MORE</a>
+                        </div>
+                    </div>
                 </div>
-                <p class="title">Our Latest  Awards</p>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque...</p>
-            </a>
-            <a href="blog-post.html">
-                <div class="date">
-                    <span class="month">Nov</span>
-                    <span class="day">27</span>
+            </div>
+        </div>
+    </section>
+    <!-- END / ABOUT -->
+
+    <!-- OUR BEST -->
+    <section class="section-our-best bg-white">
+        <div class="container">
+
+            <div class="our-best">
+                <div class="row">
+
+                    <div class="col-md-6 col-md-push-6">
+                        <div class="img">
+                            <img src="/assets/images/gallery/popup/img-2.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-md-pull-6 ">
+                        <div class="text">
+                            <h2 class="heading">Our Best</h2>
+                            <p>One of Catalina Island's best-loved hotels, Hotel Vista Del Mar is recognized as one of Avalon's leading hotels with gracious island hospitality, thoughtful amenities and distinctive .</p>
+                            <ul>
+                                <li><img src="/assets/images/home/ourbest/icon-3.png" alt="icon">250 Best Rooms  5 Star</li>
+                                <li><img src="/assets/images/home/ourbest/icon-2.png" alt="icon">With Refrigerator</li>
+                                <li><img src="/assets/images/home/ourbest/icon-4.png" alt="icon">Double Whirlpool Jacuzzi Tub</li>
+                                <li><img src="/assets/images/home/ourbest/icon-5.png" alt="icon">Luxurious High Thread Count </li>
+                                <li><img src="/assets/images/home/ourbest/icon-1.png" alt="icon">Breakfast each morning</li>
+                                <li><img src="/assets/images/home/ourbest/icon-6.png" alt="icon">Ocean Views to lotus Hotel</li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
-                <p class="title">Free Wi-Fi in all rooms</p>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque...</p>
-            </a>
+            </div>
+
         </div>
-        <!-- Recent Blog Posts | END -->
-        <!-- Footer Testimonial | START -->
-        <div class="footertestimonial">
-            <i class="fa fa-quote-left"></i>
-            <p class="title">Comfortable & spacious stay</p>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Lorem ipsum dolor sit amet...</p>
-            <div class="author">&ndash; <strong>Shri Amit Mishra</strong> <span>(DSP, Bhopal)</span></div>
-            <a href="guest-book.html" class="button"><span data-hover="Read Guest Book">Read Guest Book</span></a>
+    </section>
+    <!-- END / OUR BEST -->
+
+    <!-- HOME GUEST BOOK -->
+    <div class="section-home-guestbook awe-parallax bg-13">
+        <div class="container">
+            <div class="home-guestbook">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <div class="guestbook-content owl-single">
+                            <!-- ITEM -->
+                            <div class="guestbook-item">
+                                <div class="img">
+                                    <img src="/assets/images/avatar/img-5.jpg" alt="">
+                                </div>
+
+                                <div class="text">
+                                    <p>This is the only place to stay in Catalina! I have stayed in the cheaper hotels and they were fine, but this is just the icing on the cake! After spending the day bike riding and hiking to come back and enjoy a glass of wine while looking out your ocean view window and then to top it all off...</p>
+                                    <span><strong>Seelentag</strong></span><br>
+                                    <span>From Los Angeles, California</span>
+                                </div>
+                            </div>
+                            <!-- ITEM -->
+
+                            <!-- ITEM -->
+                            <div class="guestbook-item">
+                                <div class="img">
+                                    <img src="/assets/images/avatar/img-5.jpg" alt="">
+                                </div>
+
+                                <div class="text">
+                                    <p>This is the only place to stay in Catalina! I have stayed in the cheaper hotels and they were fine, but this is just the icing on the cake! After spending the day bike riding and hiking to come back and enjoy a glass of wine while looking out your ocean view window and then to top it all off...</p>
+                                    <span><strong>Seelentag</strong></span><br>
+                                    <span>From Los Angeles, California</span>
+                                </div>
+                            </div>
+                            <!-- ITEM -->
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <!-- Footer Testimonial | END -->
+
     </div>
-</div>
+    <!-- END / HOME GUEST BOOK -->
+
+    <!-- GALLERY -->
+    <section class="section-gallery bg-white">
+
+        <div class="gallery  no-padding">
+            <h2 class="heading text-center">GALLERY</h2>
+
+            <!-- FILTER -->
+            <div class="gallery-cat text-center">
+                <ul class="list-inline">
+                    <li class="active"><a href="#" data-filter="*">All</a></li>
+                    <li><a href="#" data-filter=".ground">HOTEL &amp; GROUND</a></li>
+                    <li><a href="#" data-filter=".suite">ROOM/SUITE </a></li>
+                    <li><a href="#" data-filter=".bathroom">BATHROOM</a></li>
+                    <li><a href="#" data-filter=".dining">DINING</a></li>
+                </ul>
+            </div>
+            <!-- END / FILTER -->
+
+            <!-- GALLERY CONTENT -->
+            <div class="gallery-content hover-img">
+                <div class="row">
+                    <div class="gallery-isotope col-6 pd-0">
+
+                        <!-- ITEM SIZE -->
+                        <div class="item-size"></div>
+                        <!-- END / ITEM SIZE -->
+                        <!-- ITEM -->
+
+                        <div class="item-isotope suite dining ">
+                            <div class="gallery_item">
+                                <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                    <img src="/assets/images/gallery/img-1.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- END / ITEM -->
+
+                        <!-- ITEM -->
+                        <div class="item-isotope  ground bathroom suite">
+                            <div class="gallery_item">
+                                <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                    <img src="/assets/images/gallery/img-2.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- END / ITEM -->
+
+                        <!-- ITEM -->
+                        <div class="item-isotope ground bathroom dining">
+                            <div class="gallery_item">
+                                <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                    <img src="/assets/images/gallery/img-3.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- END / ITEM -->
+
+                        <!-- ITEM -->
+                        <div class="item-isotope suite dining">
+                            <div class="gallery_item">
+                                <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                    <img src="/assets/images/gallery/img-4.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- END / ITEM -->
+
+                        <!-- ITEM -->
+                        <div class="item-isotope  ground suite dining">
+                            <div class="gallery_item">
+                                <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                    <img src="/assets/images/gallery/img-5.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- END / ITEM -->
+
+                        <!-- ITEM -->
+                        <div class="item-isotope ground bathroom dining">
+                            <div class="gallery_item">
+                                <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                    <img src="/assets/images/gallery/img-6.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- END / ITEM -->
+
+                        <!-- ITEM -->
+                        <div class="item-isotope ground suite dining">
+                            <div class="gallery_item">
+                                <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                    <img src="/assets/images/gallery/img-7.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- END / ITEM -->
+
+                        <!-- ITEM -->
+                        <div class="item-isotope bathroom suite dining">
+                            <div class="gallery_item">
+                                <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                    <img src="/assets/images/gallery/img-8.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- END / ITEM -->
+
+                        <!-- ITEM -->
+                        <div class="item-isotope bathroom suite dining">
+                            <div class="gallery_item">
+                                <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                    <img src="/assets/images/gallery/img-9.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- END / ITEM -->
+
+                        <!-- ITEM -->
+                        <div class="item-isotope ground bathroom">
+                            <div class="gallery_item">
+                                <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                    <img src="/assets/images/gallery/img-10.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- END / ITEM -->
+
+                        <!-- ITEM -->
+                        <div class="item-isotope ground bathroom suite ">
+                            <div class="gallery_item">
+                                <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                    <img src="/assets/images/gallery/img-11.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- END / ITEM -->
+
+                        <!-- ITEM -->
+                        <div class="item-isotope ground bathroom">
+                            <div class="gallery_item">
+                                <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                    <img src="/assets/images/gallery/img-12.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- END / ITEM -->
+
+                    </div>
+                </div>
+
+                <div class="our-gallery text-center">
+                    <a href="#" class="awe-btn awe-btn-default">BROWSE OUR GALLERY</a>
+                </div>
+
+            </div>
+            <!-- GALLERY CONTENT -->
+
+        </div>
+    </section>
+    <!-- END / GALLERY -->
 @endsection
