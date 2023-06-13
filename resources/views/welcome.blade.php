@@ -289,10 +289,10 @@
 
                     <div class="col-md-6 col-md-pull-6 ">
                         <div class="text">
-                            <h2 class="heading">Our Best</h2>
+                            <h2 class="heading">Best Facilities</h2>
                             <p>A police officers mess in Bhopal is a versatile and welcoming establishment, which provides its attendees with a comfortable and enjoyable experience, providing a comfortable and welcoming environment.</p>
                             <ul>
-                                <li><img src="/assets/images/home/ourbest/icon-3.png" alt="icon">250 Best Rooms  5 Star</li>
+                                <li><img src="/assets/images/home/ourbest/icon-3.png" alt="icon">Best Rooms</li>
                                 <li><img src="/assets/images/home/ourbest/icon-2.png" alt="icon">With Refrigerator</li>
                                 <li><img src="/assets/images/home/ourbest/icon-4.png" alt="icon">Double Whirlpool Jacuzzi Tub</li>
                                 <li><img src="/assets/images/home/ourbest/icon-5.png" alt="icon">Luxurious High Thread Count </li>
