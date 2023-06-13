@@ -27,7 +27,7 @@
                     $data = array(
                         array(
                             "Building Name" => "Abhyoday Building",
-                            "Type of Room" => "Sweet Room",
+                            "Type of Room" => "Suite Room",
                             "Govt. Rent" => 4500,
                             "Private Rent" => 1500,
                             "Guest Rent" => 2000,
@@ -59,7 +59,7 @@
                         ),
                         array(
                             "Building Name" => "Rustom Ji Building",
-                            "Type of Room" => "Sweet Room",
+                            "Type of Room" => "Suite Room",
                             "Govt. Rent" => 4500,
                             "Private Rent" => 750,
                             "Guest Rent" => 1750,
@@ -67,7 +67,7 @@
                         ),
                         array(
                             "Building Name" => "B.G. Ghate ANNEXE",
-                            "Type of Room" => "Sweet Room",
+                            "Type of Room" => "Suite Room",
                             "Govt. Rent" => 3000,
                             "Private Rent" => 750,
                             "Guest Rent" => 1500,
