@@ -382,7 +382,7 @@
                         <!-- END / ITEM SIZE -->
                         <!-- ITEM -->
 
-                        <div class="item-isotope suite dining ">
+                        <div class="item-isotope suite  ">
                             <div class="gallery_item">
                                 <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
                                     <img src="/assets/images/gallery/img-1.jpg" alt="">
@@ -392,7 +392,7 @@
                         <!-- END / ITEM -->
 
                         <!-- ITEM -->
-                        <div class="item-isotope  ground bathroom suite">
+                        <div class="item-isotope  ground  suite">
                             <div class="gallery_item">
                                 <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
                                     <img src="/assets/images/gallery/img-2.jpg" alt="">
@@ -402,7 +402,7 @@
                         <!-- END / ITEM -->
 
                         <!-- ITEM -->
-                        <div class="item-isotope ground bathroom dining">
+                        <div class="item-isotope ground ">
                             <div class="gallery_item">
                                 <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
                                     <img src="/assets/images/gallery/img-3.jpg" alt="">
@@ -412,7 +412,7 @@
                         <!-- END / ITEM -->
 
                         <!-- ITEM -->
-                        <div class="item-isotope suite dining">
+                        <div class="item-isotope suite ">
                             <div class="gallery_item">
                                 <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
                                     <img src="/assets/images/gallery/img-4.jpg" alt="">
@@ -422,7 +422,7 @@
                         <!-- END / ITEM -->
 
                         <!-- ITEM -->
-                        <div class="item-isotope  ground suite dining">
+                        <div class="item-isotope  ground suite ">
                             <div class="gallery_item">
                                 <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
                                     <img src="/assets/images/gallery/img-5.jpg" alt="">
@@ -432,7 +432,7 @@
                         <!-- END / ITEM -->
 
                         <!-- ITEM -->
-                        <div class="item-isotope ground bathroom dining">
+                        <div class="item-isotope ground ">
                             <div class="gallery_item">
                                 <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
                                     <img src="/assets/images/gallery/img-6.jpg" alt="">
@@ -442,7 +442,7 @@
                         <!-- END / ITEM -->
 
                         <!-- ITEM -->
-                        <div class="item-isotope ground suite dining">
+                        <div class="item-isotope ground suite">
                             <div class="gallery_item">
                                 <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
                                     <img src="/assets/images/gallery/img-7.jpg" alt="">
@@ -452,7 +452,7 @@
                         <!-- END / ITEM -->
 
                         <!-- ITEM -->
-                        <div class="item-isotope bathroom suite dining">
+                        <div class="item-isotope  suite ">
                             <div class="gallery_item">
                                 <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
                                     <img src="/assets/images/gallery/img-8.jpg" alt="">
@@ -462,7 +462,7 @@
                         <!-- END / ITEM -->
 
                         <!-- ITEM -->
-                        <div class="item-isotope bathroom suite dining">
+                        <div class="item-isotope  suite">
                             <div class="gallery_item">
                                 <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
                                     <img src="/assets/images/gallery/img-9.jpg" alt="">
@@ -472,7 +472,7 @@
                         <!-- END / ITEM -->
 
                         <!-- ITEM -->
-                        <div class="item-isotope ground bathroom">
+                        <div class="item-isotope ground">
                             <div class="gallery_item">
                                 <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
                                     <img src="/assets/images/gallery/img-10.jpg" alt="">
@@ -482,7 +482,7 @@
                         <!-- END / ITEM -->
 
                         <!-- ITEM -->
-                        <div class="item-isotope ground bathroom suite ">
+                        <div class="item-isotope ground dining suite ">
                             <div class="gallery_item">
                                 <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
                                     <img src="/assets/images/gallery/img-11.jpg" alt="">
@@ -492,7 +492,7 @@
                         <!-- END / ITEM -->
 
                         <!-- ITEM -->
-                        <div class="item-isotope ground bathroom">
+                        <div class="item-isotope bathroom">
                             <div class="gallery_item">
                                 <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
                                     <img src="/assets/images/gallery/img-12.jpg" alt="">
