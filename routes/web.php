@@ -5,15 +5,22 @@ use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\ProfileController;
 use App\Models\Booking;
 use App\Models\Payment;
-use Illuminate\Foundation\Application;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Http;
 use Inertia\Inertia;
 
-
 Route::view('/', 'welcome');
 Route::view('/about-us','about');
+Route::view('/management-committee','management-committee');
+Route::view('/rules-regulations','rules-regulations');
+Route::view('/accommodations','accommodations');
+Route::view('/banquets-lawns','banquets-lawns');
+Route::view('/tariff','tariff');
+Route::view('/sports','sports');
+Route::view('/restaurants','restaurants');
+Route::view('/gallery','gallery');
+Route::view('/contact-us','contact-us');
 Route::view('/book-now','book');
 Route::post('/bookings/store', function (Request $request) {
     $booking = Booking::create($request->all());
@@ -29,8 +36,6 @@ Route::post('/bill-details', function (Request $request) {
       $total_outstanding = Http::get('http://pom.dvinfosoft.com/User_API.asmx/ClientOutStanding?Client_ID=1')->collect()->first();
       return view('bill_details', compact('client_details','hotel_bill_details', 'restaurant_bill_details','total_outstanding'));
 });
-
-
 
 
 Route::middleware(['auth', 'verified'])->prefix('admin')->group(function () {

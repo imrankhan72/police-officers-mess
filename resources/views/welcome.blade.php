@@ -29,7 +29,9 @@
                         <div class="accomd-modations-header">
                             <h2 class="heading">WELCOME TO POLICE OFFICERS MESS</h2>
                             <img src="/assets/images/icon-accmod.png" alt="icon">
-                            <p>Semper ac dolor vitae accumsan. Cras interdum hendrerit lacinia. Phasellus accumsan urna vitae molestie interdum. Nam sed placerat libero, non eleifend dolor.</p>
+                            <p>Welcome to Police Officers’ Mess Web Portal. This portal is an initiative of Madhya Pradesh Police to provide an online platform where Police Officers may apply for booking an accommodation for themselves and their guests while on visits to Bhopal.  Officers may also use this portal to apply for Garden/Lawns booking for their personal events and functions.
+                                Apart from that, the portal also offers facilities to the Officer’s to pay their outstanding bills online in secured and hassle-free manner.
+                            </p>
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -260,7 +262,9 @@
                         <div class="text">
                             <h2 class="heading">ABOUT US</h2>
                             <span class="box-border"></span>
-                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source</p>
+                            <p>
+                                The Police Officers Mess located in Bhopal is a prestigious institution designed to provide a comfortable and relaxing environment for Police Officers and their guests. The Mess is equipped with a wide range of facilities that cater to the various needs of its guests.
+                            </p>
                             <a href="#" class="awe-btn awe-btn-default">READ MORE</a>
                         </div>
                     </div>
@@ -279,14 +283,14 @@
 
                     <div class="col-md-6 col-md-push-6">
                         <div class="img">
-                            <img src="/assets/images/gallery/popup/img-2.jpg" alt="">
+                            <img src="/assets/images/gallery/img-11.jpg" alt="">
                         </div>
                     </div>
 
                     <div class="col-md-6 col-md-pull-6 ">
                         <div class="text">
                             <h2 class="heading">Our Best</h2>
-                            <p>One of Catalina Island's best-loved hotels, Hotel Vista Del Mar is recognized as one of Avalon's leading hotels with gracious island hospitality, thoughtful amenities and distinctive .</p>
+                            <p>A police officers mess in Bhopal is a versatile and welcoming establishment, which provides its attendees with a comfortable and enjoyable experience, providing a comfortable and welcoming environment.</p>
                             <ul>
                                 <li><img src="/assets/images/home/ourbest/icon-3.png" alt="icon">250 Best Rooms  5 Star</li>
                                 <li><img src="/assets/images/home/ourbest/icon-2.png" alt="icon">With Refrigerator</li>
@@ -362,7 +366,7 @@
                     <li class="active"><a href="#" data-filter="*">All</a></li>
                     <li><a href="#" data-filter=".ground">HOTEL &amp; GROUND</a></li>
                     <li><a href="#" data-filter=".suite">ROOM/SUITE </a></li>
-                    <li><a href="#" data-filter=".bathroom">BATHROOM</a></li>
+                    <li><a href="#" data-filter=".bathroom">GYM</a></li>
                     <li><a href="#" data-filter=".dining">DINING</a></li>
                 </ul>
             </div>

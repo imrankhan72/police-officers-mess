@@ -74,28 +74,28 @@
                         <li class="current-menu-item"><a href="/">Home </a></li>
                         <li><a href="/">About <span class="fa fa-caret-down"></span></a>
                             <ul class="sub-menu">
-                                <li><a href="/">About Us</a></li>
-                                <li><a href="/">Management Committee</a></li>
-                                <li><a href="/">Rules & Regulations</a></li>
+                                <li><a href="/about-us">About Us</a></li>
+                                <li><a href="/management-committee">Management Committee</a></li>
+                                <li><a href="/rules-regulations">Rules & Regulations</a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="#">Explore Mess<span class="fa fa-caret-down"></span></a>
                             <ul class="sub-menu">
-                                <li><a href="/">Accommodations</a></li>
-                                <li><a href="/">Banquetes & Lawn</a></li>
-                                <li><a href="/">Tariff</a></li>
+                                <li><a href="/accommodations">Accommodations</a></li>
+                                <li><a href="/banquets-lawns">Banquets & Lawn</a></li>
+                                <li><a href="/tariff">Tariff</a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="#">Facilities <span class="fa fa-caret-down"></span></a>
                             <ul class="sub-menu">
-                                <li><a href="/">Sport</a></li>
-                                <li><a href="/">Restaurant</a></li>
+                                <li><a href="/sports">Sport</a></li>
+                                <li><a href="/restaurants">Restaurant</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="/">Contact</a></li>
+                        <li><a href="/gallery">Gallery</a></li>
+                        <li><a href="/contact-us">Contact</a></li>
                     </ul>
                 </nav>
                 <!-- END / HEADER MENU -->
