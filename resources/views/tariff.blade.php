@@ -35,27 +35,27 @@
                         ),
                         array(
                             "Building Name" => "Abhyoday Building",
-                            "Type of Room" => "Single Deluxe Room",
-                            "Govt. Rent" => 7600,
-                            "Private Rent" => 4000,
-                            "Guest Rent" => 1000,
-                            "Permanent Residence" => 1500
+                            "Type of Room" => "Single Deluxe Room Grade-7600",
+                            "Govt. Rent" =>4000 ,
+                            "Private Rent" =>1000 ,
+                            "Guest Rent" =>1500 ,
+                            "Permanent Residence" => ''
                         ),
                         array(
                             "Building Name" => "Abhyoday Building",
-                            "Type of Room" => "Grade",
-                            "Govt. Rent" => 6600,
-                            "Private Rent" => 3000,
-                            "Guest Rent" => 1000,
-                            "Permanent Residence" => 1500
+                            "Type of Room" => "Single Deluxe Room Grade - 6600",
+                            "Govt. Rent" => 3000 ,
+                            "Private Rent" => 1000 ,
+                            "Guest Rent" => 1500,
+                            "Permanent Residence" => ''
                         ),
                         array(
                             "Building Name" => "Abhyoday Building",
-                            "Type of Room" => "Grade",
-                            "Govt. Rent" => 5400,
-                            "Private Rent" => 2000,
-                            "Guest Rent" => 1000,
-                            "Permanent Residence" => 1500
+                            "Type of Room" => "Single Deluxe Room Grade - 5400",
+                            "Govt. Rent" =>2000 ,
+                            "Private Rent" => 1000,
+                            "Guest Rent" => 1500,
+                            "Permanent Residence" => ''
                         ),
                         array(
                             "Building Name" => "Rustom Ji Building",
@@ -75,7 +75,7 @@
                         ),
                         array(
                             "Building Name" => "North Block",
-                            "Type of Room" => "Singal Room",
+                            "Type of Room" => "Single Room",
                             "Govt. Rent" => 2000,
                             "Private Rent" => 500,
                             "Guest Rent" => 1000,
