@@ -337,9 +337,9 @@
                                 </div>
 
                                 <div class="text">
-                                    <p>This is the only place to stay in Catalina! I have stayed in the cheaper hotels and they were fine, but this is just the icing on the cake! After spending the day bike riding and hiking to come back and enjoy a glass of wine while looking out your ocean view window and then to top it all off...</p>
-                                    <span><strong>Seelentag</strong></span><br>
-                                    <span>From Los Angeles, California</span>
+                                   <p>This is the best place to stay in Bhopal! I always stay in Officers' Mess while on a visit to Bhopal ! After spending the day in office routines to come back and enjoy a cup of tea while looking out lower-lake view window and then to top it all off...</p>
+                                    <span><strong>Amit Kumar Verma</strong></span><br>
+                                    <span>Dy.SP, Gwalior</span>
                                 </div>
                             </div>
                             <!-- ITEM -->
