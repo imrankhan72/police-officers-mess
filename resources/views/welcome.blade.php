@@ -293,11 +293,11 @@
                             <p>A police officers mess in Bhopal is a versatile and welcoming establishment, which provides its attendees with a comfortable and enjoyable experience, providing a comfortable and welcoming environment.</p>
                             <ul>
                                 <li><img src="/assets/images/home/ourbest/icon-3.png" alt="icon">Best Rooms</li>
-                                <li><img src="/assets/images/home/ourbest/icon-2.png" alt="icon">With Refrigerator</li>
-                                <li><img src="/assets/images/home/ourbest/icon-4.png" alt="icon">Double Whirlpool Jacuzzi Tub</li>
-                                <li><img src="/assets/images/home/ourbest/icon-5.png" alt="icon">Luxurious High Thread Count </li>
-                                <li><img src="/assets/images/home/ourbest/icon-1.png" alt="icon">Breakfast each morning</li>
-                                <li><img src="/assets/images/home/ourbest/icon-6.png" alt="icon">Ocean Views to lotus Hotel</li>
+                                <li><img src="/assets/images/home/ourbest/icon-2.png" alt="icon">In-room Amenities</li>
+                                <li><img src="/assets/images/home/ourbest/icon-4.png" alt="icon">Wi-Fi</li>
+                                <li><img src="/assets/images/home/ourbest/icon-5.png" alt="icon">Luxurious Interiors </li>
+                                <li><img src="/assets/images/home/ourbest/icon-1.png" alt="icon">Restaurant</li>
+                                <li><img src="/assets/images/home/ourbest/icon-6.png" alt="icon">Lake Views</li>
                             </ul>
                         </div>
                     </div>
@@ -323,9 +323,9 @@
                                 </div>
 
                                 <div class="text">
-                                    <p>This is the only place to stay in Catalina! I have stayed in the cheaper hotels and they were fine, but this is just the icing on the cake! After spending the day bike riding and hiking to come back and enjoy a glass of wine while looking out your ocean view window and then to top it all off...</p>
-                                    <span><strong>Seelentag</strong></span><br>
-                                    <span>From Los Angeles, California</span>
+                                    <p>This is the best place to stay in Bhopal! I always stay in Officers' Mess while on a visit to Bhopal ! After spending the day in office routines to come back and enjoy a cup of tea while looking out lower-lake view window and then to top it all off...</p>
+                                    <span><strong>Amit Kumar Verma</strong></span><br>
+                                    <span>Dy.SP, Gwalior</span>
                                 </div>
                             </div>
                             <!-- ITEM -->
