@@ -382,7 +382,27 @@
                         <!-- END / ITEM SIZE -->
                         <!-- ITEM -->
 
-                        <div class="item-isotope suite  ">
+                        <!-- ITEM -->
+                        <div class="item-isotope  suite">
+                            <div class="gallery_item">
+                                <a href="/assets/images/room/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                    <img src="/assets/images/room/img-1.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- END / ITEM -->
+
+                        <!-- ITEM -->
+                        <div class="item-isotope  suite">
+                            <div class="gallery_item">
+                                <a href="/assets/images/room/img-2.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                    <img src="/assets/images/room/img-2.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- END / ITEM -->
+
+                        <div class="item-isotope  ">
                             <div class="gallery_item">
                                 <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
                                     <img src="/assets/images/gallery/img-1.jpg" alt="">
@@ -392,7 +412,7 @@
                         <!-- END / ITEM -->
 
                         <!-- ITEM -->
-                        <div class="item-isotope  ground  suite">
+                        <div class="item-isotope  ground ">
                             <div class="gallery_item">
                                 <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
                                     <img src="/assets/images/gallery/img-2.jpg" alt="">
@@ -412,7 +432,7 @@
                         <!-- END / ITEM -->
 
                         <!-- ITEM -->
-                        <div class="item-isotope suite ">
+                        <div class="item-isotope ">
                             <div class="gallery_item">
                                 <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
                                     <img src="/assets/images/gallery/img-4.jpg" alt="">
@@ -422,7 +442,7 @@
                         <!-- END / ITEM -->
 
                         <!-- ITEM -->
-                        <div class="item-isotope  ground suite ">
+                        <div class="item-isotope  ground ">
                             <div class="gallery_item">
                                 <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
                                     <img src="/assets/images/gallery/img-5.jpg" alt="">
@@ -442,7 +462,7 @@
                         <!-- END / ITEM -->
 
                         <!-- ITEM -->
-                        <div class="item-isotope ground suite">
+                        <div class="item-isotope ground">
                             <div class="gallery_item">
                                 <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
                                     <img src="/assets/images/gallery/img-7.jpg" alt="">
@@ -452,7 +472,7 @@
                         <!-- END / ITEM -->
 
                         <!-- ITEM -->
-                        <div class="item-isotope  suite ">
+                        <div class="item-isotope  ">
                             <div class="gallery_item">
                                 <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
                                     <img src="/assets/images/gallery/img-8.jpg" alt="">
@@ -462,7 +482,7 @@
                         <!-- END / ITEM -->
 
                         <!-- ITEM -->
-                        <div class="item-isotope  suite">
+                        <div class="item-isotope ">
                             <div class="gallery_item">
                                 <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
                                     <img src="/assets/images/gallery/img-9.jpg" alt="">
@@ -482,7 +502,7 @@
                         <!-- END / ITEM -->
 
                         <!-- ITEM -->
-                        <div class="item-isotope ground dining suite ">
+                        <div class="item-isotope ground dining ">
                             <div class="gallery_item">
                                 <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
                                     <img src="/assets/images/gallery/img-11.jpg" alt="">
