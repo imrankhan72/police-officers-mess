@@ -503,15 +503,7 @@
                         </div>
                         <!-- END / ITEM -->
 
-                        <!-- ITEM -->
-                        <div class="item-isotope ground dining ">
-                            <div class="gallery_item">
-                                <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
-                                    <img src="/assets/images/gallery/img-11.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <!-- END / ITEM -->
+
 
                         <!-- ITEM -->
                         <div class="item-isotope bathroom">
@@ -522,6 +514,18 @@
                             </div>
                         </div>
                         <!-- END / ITEM -->
+
+{{--                        Ground & outside --}}
+                        @for($x = 1; $x <= 6; $x++)
+                            <div class="item-isotope ground">
+                                <div class="gallery_item">
+                                    <a href="/assets/images/new-photos/building-front/{{$x}}.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                        <img src="/assets/images/new-photos/building-front/{{$x}}.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- END / ITEM -->
+                        @endfor
 
                         {{-- Gym--}}
                         @for($x = 1; $x <= 6; $x++)
