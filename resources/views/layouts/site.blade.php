@@ -94,7 +94,7 @@
                                 <li><a href="/restaurants">Restaurant</a></li>
                             </ul>
                         </li>
-                        <li><a href="/gallery">Gallery</a></li>
+{{--                        <li><a href="/gallery">Gallery</a></li>--}}
                         <li><a href="/contact-us">Contact</a></li>
                     </ul>
                 </nav>

@@ -590,9 +590,9 @@
                     </div>
                 </div>
 
-                <div class="our-gallery text-center">
-                    <a href="#" class="awe-btn awe-btn-default">BROWSE OUR GALLERY</a>
-                </div>
+{{--                <div class="our-gallery text-center">--}}
+{{--                    <a href="#" class="awe-btn awe-btn-default">BROWSE OUR GALLERY</a>--}}
+{{--                </div>--}}
 
             </div>
             <!-- GALLERY CONTENT -->
