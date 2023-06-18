@@ -365,9 +365,11 @@
                 <ul class="list-inline">
                     <li class="active"><a href="#" data-filter="*">All</a></li>
                     <li><a href="#" data-filter=".ground">HOTEL &amp; GROUND</a></li>
-                    <li><a href="#" data-filter=".suite">ROOM/SUITE </a></li>
-                    <li><a href="#" data-filter=".bathroom">GYM</a></li>
+                    <li><a href="#" data-filter=".gym">GYM</a></li>
                     <li><a href="#" data-filter=".dining">DINING</a></li>
+                    <li><a href="#" data-filter=".party-hall">Party Hall</a></li>
+                    <li><a href="#" data-filter=".roof-top">ROOF TOP</a></li>
+                    <li><a href="#" data-filter=".rooms">ROOMS</a></li>
                 </ul>
             </div>
             <!-- END / FILTER -->
@@ -521,6 +523,66 @@
                         </div>
                         <!-- END / ITEM -->
 
+                        {{-- Gym--}}
+                        @for($x = 1; $x <= 6; $x++)
+                            <div class="item-isotope gym">
+                                <div class="gallery_item">
+                                    <a href="/assets/images/new-photos/gym/{{$x}}.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                        <img src="/assets/images/new-photos/gym/{{$x}}.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- END / ITEM -->
+                        @endfor
+
+                        {{--    Dining--}}
+                        @for($x = 1; $x <= 6; $x++)
+                            <div class="item-isotope dining">
+                                <div class="gallery_item">
+                                    <a href="/assets/images/new-photos/dining/{{$x}}.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                        <img src="/assets/images/new-photos/dining/{{$x}}.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- END / ITEM -->
+                        @endfor
+
+                        {{--Party Hall--}}
+                        @for($x = 1; $x <= 10; $x++)
+                            <div class="item-isotope party-hall">
+                                <div class="gallery_item">
+                                    <a href="/assets/images/new-photos/party-hall/{{$x}}.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                        <img src="/assets/images/new-photos/party-hall/{{$x}}.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- END / ITEM -->
+                        @endfor
+
+                        {{--    Rooftop--}}
+                        @for($x = 1; $x <= 6; $x++)
+                            <div class="item-isotope roof-top">
+                                <div class="gallery_item">
+                                    <a href="/assets/images/new-photos/rooftop/{{$x}}.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                        <img src="/assets/images/new-photos/rooftop/{{$x}}.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- END / ITEM -->
+                        @endfor
+
+
+                    {{-- Rooms--}}
+                        @for($x = 1; $x <= 12; $x++)
+                        <div class="item-isotope rooms">
+                            <div class="gallery_item">
+                                <a href="/assets/images/new-photos/rooms/{{$x}}.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                    <img src="/assets/images/new-photos/rooms/{{$x}}.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- END / ITEM -->
+                        @endfor
                     </div>
                 </div>
 
