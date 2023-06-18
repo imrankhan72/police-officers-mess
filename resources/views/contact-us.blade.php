@@ -110,13 +110,13 @@
         </section>
         <!-- END / CONTACT -->
 
-        <!-- MAP -->
-        <section class="section-map">
-            <h1 class="element-invisible">Map</h1>
-            <div class="contact-map">
-                <div id="map" data-locations="39.0926986,-94.5747324--39.0912284,-94.5743515" data-center="39.0926986,-94.5747324"></div>
-            </div>
-        </section>
-        <!-- END / MAP -->
+{{--        <!-- MAP -->--}}
+{{--        <section class="section-map">--}}
+{{--            <h1 class="element-invisible">Map</h1>--}}
+{{--            <div class="contact-map">--}}
+{{--                <div id="map" data-locations="39.0926986,-94.5747324--39.0912284,-94.5743515" data-center="39.0926986,-94.5747324"></div>--}}
+{{--            </div>--}}
+{{--        </section>--}}
+{{--        <!-- END / MAP -->--}}
     </main>
 @stop
