@@ -9,10 +9,37 @@
                     <img src="/assets/images/slider/img-00.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
                 </li>
                 <li data-transition="fade">
+                    <img src="/assets/images/slider/img-0.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
+                </li>
+                <li data-transition="fade">
                     <img src="/assets/images/slider/img-1.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
                 </li>
                 <li data-transition="fade">
                     <img src="/assets/images/slider/img-2.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
+                </li>
+                <li data-transition="fade">
+                    <img src="/assets/images/slider/img-3.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
+                </li>
+                <li data-transition="fade">
+                    <img src="/assets/images/slider/img-33.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
+                </li>
+                <li data-transition="fade">
+                    <img src="/assets/images/slider/img-4.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
+                </li>
+                <li data-transition="fade">
+                    <img src="/assets/images/slider/img-5.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
+                </li>
+                <li data-transition="fade">
+                    <img src="/assets/images/slider/img-6.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
+                </li>
+                <li data-transition="fade">
+                    <img src="/assets/images/slider/img-7.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
+                </li>
+                <li data-transition="fade">
+                    <img src="/assets/images/slider/img-77.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
+                </li>
+                <li data-transition="fade">
+                    <img src="/assets/images/slider/img-777.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
                 </li>
             </ul>
         </div>
