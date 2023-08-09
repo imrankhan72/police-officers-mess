@@ -5,6 +5,9 @@
     <section class="section-slider" style="">
         <div id="slider-revolution">
             <ul>
+                 <li data-transition="fade">
+                    <img src="/assets/images/slider/slide-1.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
+                </li>
                 <li data-transition="fade">
                     <img src="/assets/images/slider/img-00.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
                 </li>
