@@ -235,10 +235,6 @@
 <script type="text/javascript" src="/assets/js/lib/SmoothScroll.js"></script>
 
 <!-- Custom jQuery -->
-<script type="text/javascript" src="/assets/js/scripts.js"></script>
-<!-- Start of queryable.xyz script -->
-<script> window.embedId="9a3f5559-e313-4e45-8e92-650918e95c5c"; </script>
-<script src="https://query-able.xyz/embed.js"></script>
-<!-- End of queryable.xyz script -->    
+<script type="text/javascript" src="/assets/js/scripts.js"></script>  
 </body>
 </html>
