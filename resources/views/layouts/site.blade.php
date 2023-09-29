@@ -236,5 +236,9 @@
 
 <!-- Custom jQuery -->
 <script type="text/javascript" src="/assets/js/scripts.js"></script>  
+    <!-- Start of queryable.xyz script -->
+<script> window.embedId="9a3f88e8-ef76-4748-8abe-458ae054c62d"; </script>
+<script src="https://query-able.xyz/embed.js"></script>
+<!-- End of queryable.xyz script -->
 </body>
 </html>
