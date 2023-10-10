@@ -6,6 +6,12 @@
         <div id="slider-revolution">
             <ul>
                  <li data-transition="fade">
+                    <img src="/assets/images/ns-1.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
+                </li>
+                <li data-transition="fade">
+                    <img src="/assets/images/ns-2.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
+                </li>
+                <li data-transition="fade">
                     <img src="/assets/images/slider/slide-1.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
                 </li>
                  <li data-transition="fade">
