@@ -5,6 +5,37 @@
     <section class="section-slider" style="">
         <div id="slider-revolution">
             <ul>
+                 <li data-transition="fade">
+                    <img src="/assets/images/slider/ns-2.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
+                </li>
+                <li data-transition="fade">
+                    <img src="/assets/images/slider/ns-1.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
+                </li>
+                <li data-transition="fade">
+                    <img src="/assets/images/slider/slide-1.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
+                </li>
+                 <li data-transition="fade">
+                    <img src="/assets/images/slider/slide-2.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
+                </li>
+                 <li data-transition="fade">
+                    <img src="/assets/images/slider/slide-3.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
+                </li>
+                 <li data-transition="fade">
+                    <img src="/assets/images/slider/slide-4.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
+                </li>
+                 <li data-transition="fade">
+                    <img src="/assets/images/slider/slide-5.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
+                </li>
+                 <li data-transition="fade">
+                    <img src="/assets/images/slider/slide-6.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
+                </li>
+                 <li data-transition="fade">
+                    <img src="/assets/images/slider/slide-7.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
+                </li>
+                
+                <li data-transition="fade">
+                    <img src="/assets/images/slider/img-00.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
+                </li>
                 <li data-transition="fade">
                     <img src="/assets/images/slider/img-0.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
                 </li>
@@ -13,6 +44,30 @@
                 </li>
                 <li data-transition="fade">
                     <img src="/assets/images/slider/img-2.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
+                </li>
+                <li data-transition="fade">
+                    <img src="/assets/images/slider/img-3.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
+                </li>
+                <li data-transition="fade">
+                    <img src="/assets/images/slider/img-33.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
+                </li>
+                <li data-transition="fade">
+                    <img src="/assets/images/slider/img-4.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
+                </li>
+                <li data-transition="fade">
+                    <img src="/assets/images/slider/img-5.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
+                </li>
+                <li data-transition="fade">
+                    <img src="/assets/images/slider/img-6.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
+                </li>
+                <li data-transition="fade">
+                    <img src="/assets/images/slider/img-7.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
+                </li>
+                <li data-transition="fade">
+                    <img src="/assets/images/slider/img-77.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
+                </li>
+                <li data-transition="fade">
+                    <img src="/assets/images/slider/img-777.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
                 </li>
             </ul>
         </div>
@@ -32,213 +87,6 @@
                             <p> This portal is an initiative of Madhya Pradesh Police to provide an online platform where Police Officers may apply for booking an accommodation for themselves and their guests while on visits to Bhopal.  Officers may also use this portal to apply for Garden/Lawns booking for their personal events and functions.
 
                             </p>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="accomd-modations-content owl-single">
-
-                            <div class="row">
-
-                                <!-- ITEM -->
-                                <div class="col-xs-4">
-                                    <div class="accomd-modations-room">
-                                        <div class="img">
-                                            <a href="#"><img src="/assets/images/gallery/img-1.jpg" alt=""></a>
-                                        </div>
-{{--                                        <div class="text">--}}
-{{--                                            <h2><a href="#">Luxury Room</a></h2>--}}
-{{--                                            <p class="price">--}}
-{{--                                                <span class="amout">Rs.320</span>/days--}}
-{{--                                            </p>--}}
-{{--                                        </div>--}}
-                                    </div>
-                                </div>
-                                <!-- END / ITEM -->
-
-                                <!-- ITEM -->
-                                <div class="col-xs-4">
-                                    <div class="accomd-modations-room">
-                                        <div class="img">
-                                            <a href="#"><img src="/assets/images/gallery/img-2.jpg" alt=""></a>
-                                        </div>
-{{--                                        <div class="text">--}}
-{{--                                            <h2><a href="#">Family Room</a></h2>--}}
-{{--                                            <p class="price">--}}
-{{--                                                <span class="amout">Rs.320</span>/days--}}
-{{--                                            </p>--}}
-{{--                                        </div>--}}
-                                    </div>
-                                </div>
-                                <!-- END / ITEM -->
-
-                                <!-- ITEM -->
-                                <div class="col-xs-4">
-                                    <div class="accomd-modations-room">
-                                        <div class="img">
-                                            <a href="#"><img src="/assets/images/gallery/img-3.jpg" alt=""></a>
-                                        </div>
-{{--                                        <div class="text">--}}
-{{--                                            <h2><a href="#">Couple Room</a></h2>--}}
-{{--                                            <p class="price">--}}
-{{--                                                <span class="amout">$Rs.20</span>/days--}}
-{{--                                            </p>--}}
-{{--                                        </div>--}}
-                                    </div>
-                                </div>
-                                <!-- END / ITEM -->
-
-                                <!-- ITEM -->
-                                <div class="col-xs-4">
-                                    <div class="accomd-modations-room">
-                                        <div class="img">
-                                            <a href="#"><img src="/assets/images/gallery/img-4.jpg" alt=""></a>
-                                        </div>
-{{--                                        <div class="text">--}}
-{{--                                            <h2><a href="#">Standard</a></h2>--}}
-{{--                                            <p class="price">--}}
-{{--                                                <span class="amout">Rs.320</span>/day--}}
-{{--                                            </p>--}}
-{{--                                        </div>--}}
-                                    </div>
-                                </div>
-                                <!-- END / ITEM -->
-
-                                <!-- ITEM -->
-                                <div class="col-xs-4">
-                                    <div class="accomd-modations-room">
-                                        <div class="img">
-                                            <a href="#"><img src="/assets/images/gallery/img-5.jpg" alt=""></a>
-                                        </div>
-{{--                                        <div class="text">--}}
-{{--                                            <h2><a href="#">Standard</a></h2>--}}
-{{--                                            <p class="price">--}}
-{{--                                                <span class="amout">Rs.320</span>/day--}}
-{{--                                            </p>--}}
-{{--                                        </div>--}}
-                                    </div>
-                                </div>
-                                <!-- END / ITEM -->
-
-
-                                <!-- ITEM -->
-                                <div class="col-xs-4">
-                                    <div class="accomd-modations-room">
-                                        <div class="img">
-                                            <a href="#"><img src="/assets/images/gallery/img-6.jpg" alt=""></a>
-                                        </div>
-{{--                                        <div class="text">--}}
-{{--                                            <h2><a href="#">Standard</a></h2>--}}
-{{--                                            <p class="price">--}}
-{{--                                                <span class="amout">Rs.320</span>/day--}}
-{{--                                            </p>--}}
-{{--                                        </div>--}}
-                                    </div>
-                                </div>
-                                <!-- END / ITEM -->
-
-
-                            </div>
-
-                            <div class="row">
-
-                                <!-- ITEM -->
-                                <div class="col-xs-4">
-                                    <div class="accomd-modations-room">
-                                        <div class="img">
-                                            <a href="#"><img src="/assets/images/gallery/img-6.jpg" alt=""></a>
-                                        </div>
-{{--                                        <div class="text">--}}
-{{--                                            <h2><a href="#">Luxury Room</a></h2>--}}
-{{--                                            <p class="price">--}}
-{{--                                                <span class="amout">Rs.320</span>/days--}}
-{{--                                            </p>--}}
-{{--                                        </div>--}}
-                                    </div>
-                                </div>
-                                <!-- END / ITEM -->
-
-                                <!-- ITEM -->
-                                <div class="col-xs-4">
-                                    <div class="accomd-modations-room">
-                                        <div class="img">
-                                            <a href="#"><img src="/assets/images/gallery/img-5.jpg" alt=""></a>
-                                        </div>
-{{--                                        <div class="text">--}}
-{{--                                            <h2><a href="#">Family Room</a></h2>--}}
-{{--                                            <p class="price">--}}
-{{--                                                <span class="amout">Rs.320</span>/days--}}
-{{--                                            </p>--}}
-{{--                                        </div>--}}
-                                    </div>
-                                </div>
-                                <!-- END / ITEM -->
-
-                                <!-- ITEM -->
-                                <div class="col-xs-4">
-                                    <div class="accomd-modations-room">
-                                        <div class="img">
-                                            <a href="#"><img src="/assets/images/gallery/img-4.jpg" alt=""></a>
-                                        </div>
-{{--                                        <div class="text">--}}
-{{--                                            <h2><a href="#">Couple Room</a></h2>--}}
-{{--                                            <p class="price">--}}
-{{--                                                <span class="amout">Rs.320</span>/days--}}
-{{--                                            </p>--}}
-{{--                                        </div>--}}
-                                    </div>
-                                </div>
-                                <!-- END / ITEM -->
-
-                                <!-- ITEM -->
-                                <div class="col-xs-4">
-                                    <div class="accomd-modations-room">
-                                        <div class="img">
-                                            <a href="#"><img src="/assets/images/gallery/img-3.jpg" alt=""></a>
-                                        </div>
-{{--                                        <div class="text">--}}
-{{--                                            <h2><a href="#">Standard</a></h2>--}}
-{{--                                            <p class="price">--}}
-{{--                                                <span class="amout">Rs.320</span>/day--}}
-{{--                                            </p>--}}
-{{--                                        </div>--}}
-                                    </div>
-                                </div>
-                                <!-- END / ITEM -->
-
-                                <!-- ITEM -->
-                                <div class="col-xs-4">
-                                    <div class="accomd-modations-room">
-                                        <div class="img">
-                                            <a href="#"><img src="/assets/images/gallery/img-2.jpg" alt=""></a>
-                                        </div>
-{{--                                        <div class="text">--}}
-{{--                                            <h2><a href="#">Standard</a></h2>--}}
-{{--                                            <p class="price">--}}
-{{--                                                <span class="amout">Rs.320</span>/day--}}
-{{--                                            </p>--}}
-{{--                                        </div>--}}
-                                    </div>
-                                </div>
-                                <!-- END / ITEM -->
-
-                                <!-- ITEM -->
-                                <div class="col-xs-4">
-                                    <div class="accomd-modations-room">
-                                        <div class="img">
-                                            <a href="#"><img src="/assets/images/gallery/img-1.jpg" alt=""></a>
-                                        </div>
-{{--                                        <div class="text">--}}
-{{--                                            <h2><a href="#">Standard</a></h2>--}}
-{{--                                            <p class="price">--}}
-{{--                                                <span class="amout">Rs.320</span>/day--}}
-{{--                                            </p>--}}
-{{--                                        </div>--}}
-                                    </div>
-                                </div>
-                                <!-- END / ITEM -->
-
-                            </div>
-
                         </div>
                     </div>
                 </div>
@@ -292,12 +140,17 @@
                             <h2 class="heading">Best Facilities</h2>
                             <p>A police officers mess in Bhopal is a versatile and welcoming establishment, which provides its attendees with a comfortable and enjoyable experience, providing a comfortable and welcoming environment.</p>
                             <ul>
-                                <li><img src="/assets/images/home/ourbest/icon-3.png" alt="icon">Best Rooms</li>
-                                <li><img src="/assets/images/home/ourbest/icon-2.png" alt="icon">In-room Amenities</li>
-                                <li><img src="/assets/images/home/ourbest/icon-4.png" alt="icon">Wi-Fi</li>
-                                <li><img src="/assets/images/home/ourbest/icon-5.png" alt="icon">Luxurious Interiors </li>
-                                <li><img src="/assets/images/home/ourbest/icon-1.png" alt="icon">Restaurant</li>
-                                <li><img src="/assets/images/home/ourbest/icon-6.png" alt="icon">Lake Views</li>
+                                <li><img src="/assets/images/home/ourbest/icon-1.png" alt="icon">Air Conditioning</li>
+                                <li><img src="/assets/images/home/ourbest/icon-2.png" alt="icon">Bathrrom Slippers</li>
+                                <li><img src="/assets/images/home/ourbest/icon-3.png" alt="icon">Bathroom Amenities</li>
+                                <li><img src="/assets/images/home/ourbest/icon-4.png" alt="icon">Breakfast Buffet </li>
+                                <li><img src="/assets/images/home/ourbest/icon-5.png" alt="icon">Cable Tv</li>
+                                <li><img src="/assets/images/home/ourbest/icon-6.png" alt="icon">Coffee and Tea Facilities</li>
+                                <li><img src="/assets/images/home/ourbest/icon-7.png" alt="icon">Free Wi-fi</li>
+                                <li><img src="/assets/images/home/ourbest/icon-8.png" alt="icon">Complimentary Bottled Water</li>
+                                <li><img src="/assets/images/home/ourbest/icon-9.png" alt="icon">Minibar</li>
+                                <li><img src="/assets/images/home/ourbest/icon-10.png" alt="icon">In-room Safe</li>
+                                <li><img src="/assets/images/home/ourbest/icon-11.png" alt="icon">Work Desk</li>
                             </ul>
                         </div>
                     </div>
@@ -387,7 +240,7 @@
                         <!-- ITEM -->
                         <div class="item-isotope  suite">
                             <div class="gallery_item">
-                                <a href="/assets/images/room/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                <a href="/assets/images/room/img-1.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
                                     <img src="/assets/images/room/img-1.jpg" alt="">
                                 </a>
                             </div>
@@ -397,7 +250,7 @@
                         <!-- ITEM -->
                         <div class="item-isotope  suite">
                             <div class="gallery_item">
-                                <a href="/assets/images/room/img-2.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                <a href="/assets/images/room/img-2.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
                                     <img src="/assets/images/room/img-2.jpg" alt="">
                                 </a>
                             </div>
@@ -406,7 +259,7 @@
 
                         <div class="item-isotope  ">
                             <div class="gallery_item">
-                                <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
                                     <img src="/assets/images/gallery/img-1.jpg" alt="">
                                 </a>
                             </div>
@@ -416,7 +269,7 @@
                         <!-- ITEM -->
                         <div class="item-isotope  ground ">
                             <div class="gallery_item">
-                                <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                <a href="/assets/images/gallery/popup/img-2.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
                                     <img src="/assets/images/gallery/img-2.jpg" alt="">
                                 </a>
                             </div>
@@ -426,7 +279,7 @@
                         <!-- ITEM -->
                         <div class="item-isotope ground ">
                             <div class="gallery_item">
-                                <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                <a href="/assets/images/gallery/popup/img-3.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
                                     <img src="/assets/images/gallery/img-3.jpg" alt="">
                                 </a>
                             </div>
@@ -436,7 +289,7 @@
                         <!-- ITEM -->
                         <div class="item-isotope ">
                             <div class="gallery_item">
-                                <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                <a href="/assets/images/gallery/popup/img-4.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
                                     <img src="/assets/images/gallery/img-4.jpg" alt="">
                                 </a>
                             </div>
@@ -446,7 +299,7 @@
                         <!-- ITEM -->
                         <div class="item-isotope  ground ">
                             <div class="gallery_item">
-                                <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                <a href="/assets/images/gallery/popup/img-5.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
                                     <img src="/assets/images/gallery/img-5.jpg" alt="">
                                 </a>
                             </div>
@@ -456,7 +309,7 @@
                         <!-- ITEM -->
                         <div class="item-isotope ground ">
                             <div class="gallery_item">
-                                <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                <a href="/assets/images/gallery/popup/img-6.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
                                     <img src="/assets/images/gallery/img-6.jpg" alt="">
                                 </a>
                             </div>
@@ -466,7 +319,7 @@
                         <!-- ITEM -->
                         <div class="item-isotope ground">
                             <div class="gallery_item">
-                                <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                <a href="/assets/images/gallery/popup/img-7.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
                                     <img src="/assets/images/gallery/img-7.jpg" alt="">
                                 </a>
                             </div>
@@ -476,7 +329,7 @@
                         <!-- ITEM -->
                         <div class="item-isotope  ">
                             <div class="gallery_item">
-                                <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                <a href="/assets/images/gallery/popup/img-8.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
                                     <img src="/assets/images/gallery/img-8.jpg" alt="">
                                 </a>
                             </div>
@@ -486,7 +339,7 @@
                         <!-- ITEM -->
                         <div class="item-isotope ">
                             <div class="gallery_item">
-                                <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                <a href="/assets/images/gallery/popup/img-9.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
                                     <img src="/assets/images/gallery/img-9.jpg" alt="">
                                 </a>
                             </div>
@@ -496,7 +349,7 @@
                         <!-- ITEM -->
                         <div class="item-isotope ground">
                             <div class="gallery_item">
-                                <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                <a href="/assets/images/gallery/popup/img-10.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
                                     <img src="/assets/images/gallery/img-10.jpg" alt="">
                                 </a>
                             </div>
@@ -508,7 +361,7 @@
                         <!-- ITEM -->
                         <div class="item-isotope bathroom">
                             <div class="gallery_item">
-                                <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                <a href="/assets/images/gallery/popup/img-12.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
                                     <img src="/assets/images/gallery/img-12.jpg" alt="">
                                 </a>
                             </div>
@@ -519,7 +372,7 @@
                         @for($x = 1; $x <= 6; $x++)
                             <div class="item-isotope ground">
                                 <div class="gallery_item">
-                                    <a href="/assets/images/new-photos/building-front/{{$x}}.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                    <a href="/assets/images/new-photos/building-front/{{$x}}.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
                                         <img src="/assets/images/new-photos/building-front/{{$x}}.jpg">
                                     </a>
                                 </div>
@@ -531,7 +384,7 @@
                         @for($x = 1; $x <= 6; $x++)
                             <div class="item-isotope gym">
                                 <div class="gallery_item">
-                                    <a href="/assets/images/new-photos/gym/{{$x}}.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                    <a href="/assets/images/new-photos/gym/{{$x}}.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
                                         <img src="/assets/images/new-photos/gym/{{$x}}.jpg">
                                     </a>
                                 </div>
@@ -543,7 +396,7 @@
                         @for($x = 1; $x <= 6; $x++)
                             <div class="item-isotope dining">
                                 <div class="gallery_item">
-                                    <a href="/assets/images/new-photos/dining/{{$x}}.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                    <a href="/assets/images/new-photos/dining/{{$x}}.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
                                         <img src="/assets/images/new-photos/dining/{{$x}}.jpg">
                                     </a>
                                 </div>
@@ -555,7 +408,7 @@
                         @for($x = 1; $x <= 10; $x++)
                             <div class="item-isotope party-hall">
                                 <div class="gallery_item">
-                                    <a href="/assets/images/new-photos/party-hall/{{$x}}.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                    <a href="/assets/images/new-photos/party-hall/{{$x}}.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
                                         <img src="/assets/images/new-photos/party-hall/{{$x}}.jpg">
                                     </a>
                                 </div>
@@ -567,7 +420,7 @@
                         @for($x = 1; $x <= 6; $x++)
                             <div class="item-isotope roof-top">
                                 <div class="gallery_item">
-                                    <a href="/assets/images/new-photos/rooftop/{{$x}}.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                    <a href="/assets/images/new-photos/rooftop/{{$x}}.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
                                         <img src="/assets/images/new-photos/rooftop/{{$x}}.jpg">
                                     </a>
                                 </div>
@@ -580,7 +433,7 @@
                         @for($x = 1; $x <= 12; $x++)
                         <div class="item-isotope rooms">
                             <div class="gallery_item">
-                                <a href="/assets/images/new-photos/rooms/{{$x}}.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
+                                <a href="/assets/images/new-photos/rooms/{{$x}}.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
                                     <img src="/assets/images/new-photos/rooms/{{$x}}.jpg">
                                 </a>
                             </div>

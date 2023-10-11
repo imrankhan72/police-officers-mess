@@ -235,6 +235,6 @@
 <script type="text/javascript" src="/assets/js/lib/SmoothScroll.js"></script>
 
 <!-- Custom jQuery -->
-<script type="text/javascript" src="/assets/js/scripts.js"></script>
+<script type="text/javascript" src="/assets/js/scripts.js"></script>  
 </body>
 </html>
