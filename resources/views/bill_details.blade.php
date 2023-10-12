@@ -35,6 +35,7 @@
                         </div>
                         <div style="display: flex; margin-top: 16px; ">
                             <form action="/make-payment" method="post">
+                                {{csrf_field()}}
                                 <input type="hidden" name="name" value="{{$client_details['Client_Name']}}">
                                 <input type="hidden" name="amount" value="{{$total_outstanding['Rwmanig_Amount']}}">
                                 <input type="hidden" name="mobile_no" value="{{$mobile_no}}">
