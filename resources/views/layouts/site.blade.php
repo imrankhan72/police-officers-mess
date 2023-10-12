@@ -46,7 +46,7 @@
             <div class="container">
                 <div class="header_left float-left">
                     <span><i class="lotus-icon-location"></i>  7C26+CHF, Jahangirabad, Bhopal, Madhya Pradesh</span>
-                    <span><i class="lotus-icon-phone"></i> 1-548-854-8898</span>
+                    <span><i class="lotus-icon-phone"></i>91 70491 46203</span>
                 </div>
                 <div class="header_right float-right">
                         <span class="login-register">
@@ -85,14 +85,15 @@
                                 <li><a href="/accommodations">Accommodations</a></li>
                                 <li><a href="/banquets-lawns">Banquets & Lawn</a></li>
                                 <li><a href="/tariff">Tariff</a></li>
+                                <li><a href="/restaurants">Restaurant</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="#">Facilities <span class="fa fa-caret-down"></span></a>
-                            <ul class="sub-menu">
-                                <li><a href="/sports">Sport</a></li>
-                                <li><a href="/restaurants">Restaurant</a></li>
-                            </ul>
+                            <a href="/facilities">Facilities <span class="fa fa-caret-down"></span></a>
+{{--                            <ul class="sub-menu">--}}
+{{--                                <li><a href="/sports">Sport</a></li>--}}
+{{--                                <li><a href="/restaurants">Restaurant</a></li>--}}
+{{--                            </ul>--}}
                         </li>
 {{--                        <li><a href="/gallery">Gallery</a></li>--}}
                         <li><a href="/contact-us">Contact</a></li>
@@ -168,8 +169,10 @@
                                 </div>-->
                                 <div class="text">
                                     <p><i class="lotus-icon-location"></i>   7C26+CHF, Jahangirabad, <br>Bhopal, Madhya Pradesh</p>
-                                    <p><i class="lotus-icon-phone"></i> 1-548-854-8898</p>
-                                    <p><i class="fa fa-envelope-o"></i> <a href="/cdn-cgi/l/email-protection#caa2afa6a6a58abea2afa6a5bebfb9a2a5beafa6e4a9a5a7"><span class="__cf_email__" data-cfemail="adc5c8c1c1c2edd9c5c8c1c2d9d8dec5c2d9c8c183cec2c0">[email&#160;protected]</span></a></p>
+                                    <p><i class="lotus-icon-phone"></i> 91 70491 46203</p>
+                                    <p><i class="fa fa-envelope-o"></i>
+                                            <span >policeofficermess1234@gmail.com</span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
