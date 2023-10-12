@@ -118,41 +118,41 @@
     <footer id="footer">
 
         <!-- FOOTER TOP -->
-        <div class="footer_top">
-            <div class="container">
-                <div class="row">
+{{--        <div class="footer_top">--}}
+{{--            <div class="container">--}}
+{{--                <div class="row">--}}
 
-                    <!-- WIDGET MAILCHIMP -->
-                    <div class="col-lg-9">
-                        <div class="mailchimp">
-                            <h4>Pay Bill</h4>
-                            <div class="mailchimp-form">
-                                <form action="#" method="POST">
-                                    <input type="text" name="mobile" placeholder="Your 10 digit mobile number" class="input-text">
-                                    <button class="awe-btn">Submit</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END / WIDGET MAILCHIMP -->
+{{--                    <!-- WIDGET MAILCHIMP -->--}}
+{{--                    <div class="col-lg-9">--}}
+{{--                        <div class="mailchimp">--}}
+{{--                            <h4>Pay Bill</h4>--}}
+{{--                            <div class="mailchimp-form">--}}
+{{--                                <form action="#" method="POST">--}}
+{{--                                    <input type="text" name="mobile" placeholder="Your 10 digit mobile number" class="input-text">--}}
+{{--                                    <button class="awe-btn">Submit</button>--}}
+{{--                                </form>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <!-- END / WIDGET MAILCHIMP -->--}}
 
-                    <!-- WIDGET SOCIAL -->
-                    <div class="col-lg-3">
-                        <div class="social">
-                            <div class="social-content">
-                                <a href="#"><i class="fa fa-pinterest"></i></a>
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END / WIDGET SOCIAL -->
+{{--                    <!-- WIDGET SOCIAL -->--}}
+{{--                    <div class="col-lg-3">--}}
+{{--                        <div class="social">--}}
+{{--                            <div class="social-content">--}}
+{{--                                <a href="#"><i class="fa fa-pinterest"></i></a>--}}
+{{--                                <a href="#"><i class="fa fa-facebook"></i></a>--}}
+{{--                                <a href="#"><i class="fa fa-twitter"></i></a>--}}
+{{--                                <a href="#"><i class="fa fa-google-plus"></i></a>--}}
+{{--                                <a href="#"><i class="fa fa-instagram"></i></a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <!-- END / WIDGET SOCIAL -->--}}
 
-                </div>
-            </div>
-        </div>
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
         <!-- END / FOOTER TOP -->
 
         <!-- FOOTER CENTER -->
@@ -179,12 +179,12 @@
                         <div class="widget">
                             <h4 class="widget-title">Page site</h4>
                             <ul>
-                                <li><a href="#">Accommodations</a></li>
-                                <li><a href="#">Banquetes & Lawn</a></li>
-                                <li><a href="#">Tariff</a></li>
-                                <li><a href="#">Facilities</a></li>
-                                <li><a href="#">Gallery</a></li>
-                                <li><a href="#">Faq's</a></li>
+                                <li><a href="/accomodations">Accommodations</a></li>
+                                <li><a href="/banquets-lawns">Banquetes & Lawn</a></li>
+                                <li><a href="/tariff">Tariff</a></li>
+                                <li><a href="/facilities">Facilities</a></li>
+                                <li><a href="/gallery">Gallery</a></li>
+                                <li><a href="/rules-regulations">Faq's</a></li>
                             </ul>
                         </div>
                     </div>
@@ -193,10 +193,10 @@
                         <div class="widget">
                             <h4 class="widget-title">ABOUT</h4>
                             <ul>
-                                <li><a href="">About Us</a></li>
-                                <li><a href="">Committee Member</a></li>
-                                <li><a href="">Rules & Regulations</a></li>
-                                <li><a href="">Contact Us</a></li>
+                                <li><a href="/about-us">About Us</a></li>
+                                <li><a href="/management-committee">Committee Member</a></li>
+                                <li><a href="/rules-regulations">Rules & Regulations</a></li>
+                                <li><a href="/contact-us">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -235,6 +235,6 @@
 <script type="text/javascript" src="/assets/js/lib/SmoothScroll.js"></script>
 
 <!-- Custom jQuery -->
-<script type="text/javascript" src="/assets/js/scripts.js"></script>  
+<script type="text/javascript" src="/assets/js/scripts.js"></script>
 </body>
 </html>

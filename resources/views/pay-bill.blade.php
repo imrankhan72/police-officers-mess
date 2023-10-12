@@ -28,7 +28,7 @@
                     <div class="col-lg-offset-2 col-lg-10">
 
                         <div class="reservation_content">
-                            <form  action="/bookings/store" method="post">
+                            <form  action="/otp" method="post">
                                 {{csrf_field()}}
                                 <div class="reservation-billing-detail">
                                     <form action="/otp?path=pay_bill" method="get">

@@ -1,21 +1,51 @@
 @extends('layouts.site')
 <!-- Header | START -->
 @section('content')
-    <main>
-        <div  style="padding-top: 32px; padding-bottom: 32px;">
-            <div class="centre">
-                <section>
-                    <form action="/bill-details?path=pay_bill" method="post">
-                        {{csrf_field()}}
-                    <h1 class="underline">Please enter the OTP sent to your mobile number!</h1>
-                    <div class="container">
-                        <input type="text" style="width:40%;height:50px;border-radius:3px;border:rgba(0,0,0,.3) 2px solid; box-sizing:border-box;padding:10px;">
+    <!-- SUB BANNER -->
+    <section class="section-sub-banner awe-parallax bg-16">
+
+        <div class="awe-overlay"></div>
+
+        <div class="sub-banner">
+            <div class="container">
+                <div class="text text-center">
+                    <h2>Verify Phone number</h2>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- END / SUB BANNER -->
+
+    <!-- RESERVATION -->
+    <section class="section-reservation-page bg-white">
+
+        <div class="container">
+            <div class="reservation-page">
+                <div class="row">
+                    <!-- CONTENT -->
+                    <div class="col-lg-offset-2 col-lg-10">
+
+                        <div class="reservation_content">
+                                <div class="reservation-billing-detail">
+                                    <form action="/bill-details?path=pay_bill" method="post">
+                                        {{csrf_field()}}
+                                        <label>Please enter 6 digit OTP sent to your mobile number<sup>*</sup></label>
+                                        <input type="text" name="booking_for" class="form-control" required/>
+                                        <button type="submit" class="awe-btn awe-btn-13">SUBMIT</button>
+                                    </form>
+                                </div>
+
+                        </div>
+
                     </div>
-                    <button>SUBMIT OTP</button>
-                    <span class="result"></span>
-                    </form>
-                </section>
+                    <!-- END / CONTENT -->
+
+                </div>
             </div>
         </div>
-    </main>
-@endsection
+
+    </section>
+    <!-- END / RESERVATION -->
+@stop
