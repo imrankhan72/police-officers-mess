@@ -25,16 +25,26 @@ Route::view('/gallery','gallery');
 Route::view('/contact-us','contact-us');
 Route::view('/book-now','book');
 Route::post('/bookings/store', function (Request $request) {
-    $booking = Booking::create($request->all());
-    return redirect('/otp');
+//    Send email
+    return "email sent";
+//    $booking = Booking::create($request->all());
+//    return redirect('/otp');
 });
 Route::post('/otp',function (Request $request) {
     $mobile_no = $request->get('mobile_no');
      $basic  = new \Vonage\Client\Credentials\Basic("0de3151d", "DnAkZtjsb2gjWvg9");
     $client = new \Vonage\Client($basic);
     $response = $client->sms()->send(
-        new \Vonage\SMS\Message\SMS('919826445006', "Police OFF. Mess", 'OTP for police officers mess is 614219')
+        new \Vonage\SMS\Message\SMS('91'.$request->get('mobile_no'), "Police OFF. Mess", 'OTP for police officers mess is 614219')
     );
+
+    $message = $response->current();
+
+    if ($message->getStatus() == 0) {
+        echo "The message was sent successfully\n";
+    } else {
+        echo "The message failed with status: " . $message->getStatus() . "\n";
+    }
 
     return view('otp', compact('mobile_no'));
 });
