@@ -18,6 +18,7 @@ Route::view('/rules-regulations','rules-regulations');
 Route::view('/accommodations','accommodations');
 Route::view('/banquets-lawns','banquets-lawns');
 Route::view('/tariff','tariff');
+Route::view('/facilities','facilities');
 Route::view('/sports','sports');
 Route::view('/restaurants','restaurants');
 Route::view('/gallery','gallery');
