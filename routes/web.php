@@ -59,7 +59,7 @@ Route::get('/pay-bill',function (){
     return view('pay-bill');
 });
 Route::post('/bill-details', function (Request $request) {
-    $mobile_no = $request->get('mobile_no');
+     $mobile_no = $request->get('mobile_no');
 //    $client_details = Http::get("http://pom.dvinfosoft.com/User_API.asmx/User_Registration?Mobile_No=8106986039")->collect()->first();
     $client_details = Http::get("http://pom.dvinfosoft.com/User_API.asmx/User_Registration?Mobile_No=$mobile_no")->collect()->first();
     $hotel_bill_details = Http::get('http://pom.dvinfosoft.com/User_API.asmx/ClientHotelBills?Client_ID=110')->collect();

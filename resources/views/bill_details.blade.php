@@ -25,6 +25,7 @@
             <div class="reservation-page">
                 <div class="row">
                     <!-- CONTENT -->
+                    @if($client_details)
                     <div class="col-lg-offset-2 col-lg-10">
                         <h3>
                             <strong>Shri {{$client_details['Client_Name']}}</strong>
@@ -135,7 +136,9 @@
 
                     </div>
                     <!-- END / CONTENT -->
-
+                    @else
+                        <h2>Sorry no details found!</h2>
+                    @endif
                 </div>
             </div>
         </div>
