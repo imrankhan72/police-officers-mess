@@ -25,6 +25,12 @@ Route::view('/gallery','gallery');
 Route::view('/contact-us','contact-us');
 Route::view('/book-now','book');
 Route::post('/bookings/store', function (Request $request) {
+    $to = "imrankhan.72@gmail.com";
+    $subject = "My subject";
+    $txt = "Hello world!";
+    $headers = "From: webmaster@pom.com";
+
+    mail($to,$subject,$txt,$headers);
 //    Send email
     return "email sent";
 //    $booking = Booking::create($request->all());
@@ -32,7 +38,7 @@ Route::post('/bookings/store', function (Request $request) {
 });
 Route::post('/otp',function (Request $request) {
     $mobile_no = $request->get('mobile_no');
-     $basic  = new \Vonage\Client\Credentials\Basic("0de3151d", "DnAkZtjsb2gjWvg9");
+    $basic  = new \Vonage\Client\Credentials\Basic("0de3151d", "DnAkZtjsb2gjWvg9");
     $client = new \Vonage\Client($basic);
     $response = $client->sms()->send(
         new \Vonage\SMS\Message\SMS('91'.$request->get('mobile_no'), "Police OFF. Mess", 'OTP for police officers mess is 614219')
@@ -54,11 +60,12 @@ Route::get('/pay-bill',function (){
 });
 Route::post('/bill-details', function (Request $request) {
     $mobile_no = $request->get('mobile_no');
-     $client_details = Http::get('http://pom.dvinfosoft.com/User_API.asmx/User_Registration?Mobile_No=8106986039')->collect()->first();
-      $hotel_bill_details = Http::get('http://pom.dvinfosoft.com/User_API.asmx/ClientHotelBills?Client_ID=110')->collect();
-      $restaurant_bill_details = Http::get('http://pom.dvinfosoft.com/User_API.asmx/ClientFoodBills?Client_ID=2')->collect();
-      $total_outstanding = Http::get('http://pom.dvinfosoft.com/User_API.asmx/ClientOutStanding?Client_ID=1')->collect()->first();
-      return view('bill_details', compact('client_details','hotel_bill_details', 'restaurant_bill_details','total_outstanding', 'mobile_no'));
+//    $client_details = Http::get("http://pom.dvinfosoft.com/User_API.asmx/User_Registration?Mobile_No=8106986039")->collect()->first();
+    $client_details = Http::get("http://pom.dvinfosoft.com/User_API.asmx/User_Registration?Mobile_No=$mobile_no")->collect()->first();
+    $hotel_bill_details = Http::get('http://pom.dvinfosoft.com/User_API.asmx/ClientHotelBills?Client_ID=110')->collect();
+    $restaurant_bill_details = Http::get('http://pom.dvinfosoft.com/User_API.asmx/ClientFoodBills?Client_ID=2')->collect();
+    $total_outstanding = Http::get('http://pom.dvinfosoft.com/User_API.asmx/ClientOutStanding?Client_ID=1')->collect()->first();
+    return view('bill_details', compact('client_details','hotel_bill_details', 'restaurant_bill_details','total_outstanding', 'mobile_no'));
 });
 
 Route::post('/make-payment', function (Request $request) {
