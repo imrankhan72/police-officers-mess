@@ -7,8 +7,8 @@
             <div class="sub-banner">
                 <div class="container">
                     <div class="text text-center">
-                        <h2>ABOUT us</h2>
-                        <p>About The Police Officers Mess</p>
+                        <h2>Facilities</h2>
+                        <p>Facilities in  Officers Mess</p>
                     </div>
                 </div>
 

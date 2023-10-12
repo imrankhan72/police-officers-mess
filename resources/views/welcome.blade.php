@@ -32,7 +32,7 @@
                  <li data-transition="fade">
                     <img src="/assets/images/slider/slide-7.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
                 </li>
-                
+
                 <li data-transition="fade">
                     <img src="/assets/images/slider/img-00.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
                 </li>
@@ -381,7 +381,7 @@
                         @endfor
 
                         {{-- Gym--}}
-                        @for($x = 1; $x <= 6; $x++)
+                        @for($x = 1; $x <= 4; $x++)
                             <div class="item-isotope gym">
                                 <div class="gallery_item">
                                     <a href="/assets/images/new-photos/gym/{{$x}}.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
