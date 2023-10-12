@@ -30,11 +30,11 @@ Route::post('/bookings/store', function (Request $request) {
 });
 Route::post('/otp',function (Request $request) {
     $mobile_no = $request->get('mobile_no');
-//     $basic  = new \Vonage\Client\Credentials\Basic("0de3151d", "DnAkZtjsb2gjWvg9");
-//    $client = new \Vonage\Client($basic);
-//    $response = $client->sms()->send(
-//        new \Vonage\SMS\Message\SMS($mobile_no, "SOLWIN", 'OTP for police officers mess is 614219')
-//    );
+     $basic  = new \Vonage\Client\Credentials\Basic("0de3151d", "DnAkZtjsb2gjWvg9");
+    $client = new \Vonage\Client($basic);
+    $response = $client->sms()->send(
+        new \Vonage\SMS\Message\SMS($mobile_no, "Police OFF. Mess", 'OTP for police officers mess is 614219')
+    );
 
     return view('otp', compact('mobile_no'));
 });
