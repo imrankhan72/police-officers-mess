@@ -28,31 +28,26 @@ Route::post('/bookings/store', function (Request $request) {
     return redirect('/otp');
 });
 Route::post('/otp',function (Request $request) {
-     $basic  = new \Vonage\Client\Credentials\Basic("0de3151d", "DnAkZtjsb2gjWvg9");
-    $client = new \Vonage\Client($basic);
-    $response = $client->sms()->send(
-        new \Vonage\SMS\Message\SMS("919826445006", "SOLWIN", 'OTP for police officers mess is 614219')
-    );
+    $mobile_no = $request->get('mobile_no');
+//     $basic  = new \Vonage\Client\Credentials\Basic("0de3151d", "DnAkZtjsb2gjWvg9");
+//    $client = new \Vonage\Client($basic);
+//    $response = $client->sms()->send(
+//        new \Vonage\SMS\Message\SMS($mobile_no, "SOLWIN", 'OTP for police officers mess is 614219')
+//    );
 
-    $message = $response->current();
-
-    if ($message->getStatus() == 0) {
-        echo "The message was sent successfully\n";
-    } else {
-        echo "The message failed with status: " . $message->getStatus() . "\n";
-    }
-    return view('otp');
+    return view('otp', compact('mobile_no'));
 });
 
 Route::get('/pay-bill',function (){
     return view('pay-bill');
 });
 Route::post('/bill-details', function (Request $request) {
+    $mobile_no = $request->get('mobile_no');
      $client_details = Http::get('http://pom.dvinfosoft.com/User_API.asmx/User_Registration?Mobile_No=8106986039')->collect()->first();
       $hotel_bill_details = Http::get('http://pom.dvinfosoft.com/User_API.asmx/ClientHotelBills?Client_ID=110')->collect();
       $restaurant_bill_details = Http::get('http://pom.dvinfosoft.com/User_API.asmx/ClientFoodBills?Client_ID=2')->collect();
       $total_outstanding = Http::get('http://pom.dvinfosoft.com/User_API.asmx/ClientOutStanding?Client_ID=1')->collect()->first();
-      return view('bill_details', compact('client_details','hotel_bill_details', 'restaurant_bill_details','total_outstanding'));
+      return view('bill_details', compact('client_details','hotel_bill_details', 'restaurant_bill_details','total_outstanding', 'mobile_no'));
 });
 
 Route::post('/make-payment', function (Request $request) {

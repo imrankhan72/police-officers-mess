@@ -37,6 +37,7 @@
                             <form action="/make-payment" method="post">
                                 <input type="hidden" name="name" value="{{$client_details['Client_Name']}}">
                                 <input type="hidden" name="amount" value="{{$total_outstanding['Rwmanig_Amount']}}">
+                                <input type="hidden" name="mobile_no" value="{{$mobile_no}}">
                                 <button type="submit"  class="awe-btn awe-btn-13">
                                     <span data-hover="Pay Now">Pay Now</span>
                                 </button>

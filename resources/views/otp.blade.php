@@ -31,7 +31,8 @@
                                 <div class="reservation-billing-detail">
                                     <form action="/bill-details?path=pay_bill" method="post">
                                         {{csrf_field()}}
-                                        <label>Please enter 6 digit OTP sent to your mobile number<sup>*</sup></label>
+                                        <label>Please enter 6 digit OTP sent to your mobile number ({{$mobile_no}}})<sup>*</sup></label>
+                                        <input type="hidden" name="mobile_no" value="{{$mobile_no}}}">
                                         <input type="text" name="booking_for" class="form-control" required/>
                                         <button type="submit" class="awe-btn awe-btn-13">SUBMIT</button>
                                     </form>
