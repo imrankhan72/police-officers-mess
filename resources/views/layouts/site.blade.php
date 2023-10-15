@@ -84,12 +84,12 @@
                             <ul class="sub-menu">
                                 <li><a href="/accommodations">Accommodations</a></li>
                                 <li><a href="/banquets-lawns">Banquets & Lawn</a></li>
-                                <li><a href="/tariff">Tariff</a></li>
                                 <li><a href="/restaurants">Restaurant</a></li>
+                                <li><a href="/tariff">Tariff</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="/facilities">Facilities <span class="fa fa-caret-down"></span></a>
+                            <a href="/facilities">Facilities</a>
 {{--                            <ul class="sub-menu">--}}
 {{--                                <li><a href="/sports">Sport</a></li>--}}
 {{--                                <li><a href="/restaurants">Restaurant</a></li>--}}
