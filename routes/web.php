@@ -24,17 +24,42 @@ Route::view('/restaurants','restaurants');
 Route::view('/gallery','gallery');
 Route::view('/contact-us','contact-us');
 Route::view('/book-now','book');
-Route::post('/bookings/store', function (Request $request) {
-    $to = "imrankhan.72@gmail.com";
-    $subject = "My subject";
-    $txt = "Hello world!";
-    $headers = "From: webmaster@pom.com";
 
-    mail($to,$subject,$txt,$headers);
-//    Send email
-    return "email sent";
-//    $booking = Booking::create($request->all());
-//    return redirect('/otp');
+function send_sms(){
+//    https://msdgweb.mgov.gov.in/esms/sendsmsrequestDLT?username=DITMP-OCCTNS&password=Cctns@12345&senderid=cctnsd&key=3d8183ac-8495-4e80-ac8a-2362e0da9838&mobileno=9826445006&smsservicetype=unicodeotpmsg&templateid=1307169693372298480&content=Dear Imaad Your login code is 5560 to pay POM bill. Please don't share it with anyone. Regards POMBP
+    $response = Http::post('https://msdgweb.mgov.gov.in/esms/sendsmsrequestDLT?', [
+        'username' => 'DITMP-OCCTNS',
+        'password' => 'Cctns@12345',
+        'senderid'=>'cctnsd',
+        'key'=>'3d8183ac-8495-4e80-ac8a-2362e0da9838',
+        'smsservicetype'=>'unicodeotpmsg',
+        'templateid'=>'1307169693372298480',
+        'content'=>"Dear Imaad Your login code is 5560 to pay POM bill. Please don't share it with anyone. Regards POMBP",
+        'mobileno'=>982644500
+
+    ]);
+}
+Route::get('send_sms',function (){
+
+    $message = "Dear Imaad Your login code is 5560 to pay POM bill. Please don't share it with anyone. Regards POMBP";
+
+
+    return Http::post("https://msdgweb.mgov.gov.in/esms/sendsmsrequestDLT?username=DITMP-OCCTNS&password=Cctns@12345&senderid=cctnsd&key=3d8183ac-8495-4e80-ac8a-2362e0da9838&mobileno=9826445006&smsservicetype=unicodeotpmsg&templateid=1307169693372298480&content=$message", [
+        'username' => 'DITMP-OCCTNSS',
+        'password' => 'Cctns@12345',
+        'senderid'=>'cctnsd',
+        'key'=>'3d8183ac-8495-4e80-ac8a-2362e0da9838',
+        "smsservicetype" =>"singlemsg",
+        'templateid'=>'1307169693372298480',
+        'content'=>"Dear Imaad Your login code is 5560 to pay POM bill. Please don't share it with anyone. Regards POMBP",
+        'mobileno'=>982644500
+    ]);
+
+});
+
+Route::post('/bookings/store', function (Request $request) {
+    $booking = Booking::create($request->all());
+    return "hii";
 });
 Route::post('/otp',function (Request $request) {
     $mobile_no = $request->get('mobile_no');
