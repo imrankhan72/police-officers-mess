@@ -29,7 +29,7 @@
                         "Addl. Director General Of Police (SAF)" => "Vice President",
                         "Addl. Director General Of Police (Planning)" => "Member",
                         "Addl. Director General Of Police (Welfare)" => "Member",
-                        "Addl. Director General Of Police (Management)" => "Member",
+                        "Addl. Director General Of Police (Provisioning)" => "Member",
                         "Addl. Director General Of Police 03 (Nominated by DGP, MP)" => "Member",
                         "City Police Commissioner, Bhopal" => "Member",
                         "Inspector General Of Police (SAF, Bhopal Range)" => "Member",

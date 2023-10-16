@@ -138,7 +138,7 @@
                     <div class="col-md-6 col-md-pull-6 ">
                         <div class="text">
                             <h2 class="heading">Best Facilities</h2>
-                            <p>A police officers mess in Bhopal is a versatile and welcoming establishment, which provides its attendees with a comfortable and enjoyable experience, providing a comfortable and welcoming environment.</p>
+                            <p>Police Officers' Mess is a versatile and welcoming establishment, which provides its guests with a comfortable and enjoyable experience, providing the best facilities and relaxing stay.</p>
                             <ul>
                                 <li><img src="/assets/images/home/ourbest/icon-1.png" alt="icon">Air Conditioning</li>
                                 <li><img src="/assets/images/home/ourbest/icon-2.png" alt="icon">Bathrrom Slippers</li>

@@ -34,10 +34,22 @@
                         <div class="text" style="margin-top: 0px">
                             <h2 class="heading">Accommodation at Police Officers Mess</h2>
                             <div class="desc">
-                                <p>The Police Officers Mess located in Bhopal is a prestigious institution designed to provide a comfortable and relaxing environment for Police Officers and their guests. The Mess is equipped with a wide range of facilities that cater to the various needs of its guests. .  </p>
-                                <p>The Mess features a spacious and well-equipped party hall and beautifully landscaped garden with a lake view, perfect for hosting social events and gatherings. The dining hall is elegantly furnished, providing a pleasant atmosphere for enjoying meals with colleagues or guests. The Mess also offers cozy and comfortable stay rooms for its members, including single and suite options.</p>
-                                <p>For those looking to unwind and socialize, the Mess features a mini party area and a lounge. The Doom area provides a tranquil setting for meditation and reflection. Additionally, there is a gym available for those who wish to maintain their fitness regimen.
-                                    A police officers mess in Bhopal is a versatile and welcoming establishment, which provides its attendees with a comfortable and enjoyable experience, providing a comfortable and welcoming environment.</p>
+                                <p>Police Officers' Mess provides comfortable and well-equipped accommodations for Police Officers and sometimes other law enforcement personnel. These accommodations are designed to offer a comfortable and safe environment for officers who may be on duty or on call, away from their regular homes.</p>
+                                <p>Some common features of police officers' mess accommodations may include:</p>
+                                <ol style="font-size: 16px">
+                                    <li><b>Private Bedrooms:</b> Each officer has their private bedroom with a comfortable bed, linens, and storage space for personal belongings.</li>
+                                    <li><b>En-Suite Bathrooms:</b> Rooms have en-suite bathrooms for added privacy and convenience.</li>
+                                    <li><b>Dining Facilities: </b>The Mess has dining areas where officers can have their meals.</li>
+                                    <li><b>Recreation Areas:</b> The Mess offers recreational facilities like a lounge with TV, billiards, or other forms of entertainment to help officers relax during their downtime.</li>
+                                    <li><b>Fitness Facilities:</b> The Mess has a well-equipped Gym to help officers stay fit and healthy.</li>
+                                    <li><b>Internet and Communication:</b> Mess accommodation also offers internet access and communication facilities to stay connected with the outside world.</li>
+                                    <li><b>Security:</b> Security is a top priority, with secure access control to ensure the safety of officers and their belongings.</li>
+                                    <li><b>Cleaning and Maintenance:</b> Regular cleaning and maintenance are usually provided to keep the accommodations in good condition.</li>
+                                    <li><b>Laundry Facilities:</b> Messes often have laundry facilities or access to nearby laundry services.</li>
+                                </ol>
+                                <p>
+                                    The primary goal is to provide a supportive and comfortable environment for officers who may need to stay on-site for extended periods.
+                                </p>
                             </div>
                         </div>
 
