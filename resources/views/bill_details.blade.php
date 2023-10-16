@@ -32,27 +32,26 @@
                             <span>({{$client_details['Rank']}}, {{$client_details['Posting']}})</span>
                         </h3>
                         <div id="content">
-                            <h4>Total Outstanding: <strong>Rs: {{$total_outstanding['Rwmanig_Amount']}} /-</strong></h4>
+                            <h4>Total Outstanding:
+                                @if($total_outstanding)
+                                <strong>Rs: {{$total_outstanding['Rwmanig_Amount']}} /-</strong>
+                                @endif
+                            </h4>
                         </div>
                         <div style="display: flex; margin-top: 16px; ">
                             <form action="/make-payment" method="post">
                                 {{csrf_field()}}
                                 <input type="hidden" name="name" value="{{$client_details['Client_Name']}}">
-                                <input type="hidden" name="amount" value="{{$total_outstanding['Rwmanig_Amount']}}">
+                                <input type="hidden" name="amount" value=" @if($total_outstanding) {{$total_outstanding['Rwmanig_Amount']}} @endif">
                                 <input type="hidden" name="mobile_no" value="{{$mobile_no}}">
                                 <button type="submit"  class="awe-btn awe-btn-13">
                                     <span data-hover="Pay Now">Pay Now</span>
                                 </button>
                             </form>
-
-{{--                            <div class="buttoncontainer" onclick="toggleBillDetails()" style="padding-bottom: 32px;">--}}
-{{--                                <button class="awe-btn awe-btn-13">--}}
-{{--                                    <span data-hover="See Bill Details">See Bill Details</span>--}}
-{{--                                </button>--}}
-{{--                            </div>--}}
                         </div>
 
                         <div id="bill_details" style=" padding-top: 32px;">
+                            @if($hotel_bill_details)
                             <div class="container">
                                 <h5>Hotel Bill Details</h5>
                                 <table  class="table">
@@ -94,44 +93,48 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <div class="container">
-                                <h5>Restaurant Bill Details</h5>
-                                <table class="table">
-                                    <tbody>
-                                    <tr>
-                                        <th>Bill NO.</th>
-                                        <th>Bill date</th>
-                                        <th>Bill time</th>
-                                        <th>Table NO.</th>
-                                        <th>Net total</th>
-                                        <th>Table name</th>
-                                    </tr>
-                                    @foreach($restaurant_bill_details  as $restaurant_bill)
-                                        <tr>
-                                            <td>
-                                                {{$restaurant_bill['Bill_No']}}
-                                            </td>
-                                            <td>
-                                                {{$restaurant_bill['Bill_Date']}}
-                                            </td>
-                                            <td>
-                                                {{$restaurant_bill['Bill_Time']}}
-                                            </td>
-                                            <td >
-                                                {{$restaurant_bill['Table_No']}}
-                                            </td>
-                                            <td >
-                                                {{$restaurant_bill['Net_Total']}}
-                                            </td>
-                                            <td >
-                                                {{$restaurant_bill['Table_Name']}}
-                                            </td>
+                            @endif
 
+                            @if($restaurant_bill_details)
+                                <div class="container">
+                                    <h5>Restaurant Bill Details</h5>
+                                    <table class="table">
+                                        <tbody>
+                                        <tr>
+                                            <th>Bill NO.</th>
+                                            <th>Bill date</th>
+                                            <th>Bill time</th>
+                                            <th>Table NO.</th>
+                                            <th>Net total</th>
+                                            <th>Table name</th>
                                         </tr>
-                                    @endforeach
-                                    </tbody>
-                                </table>
-                            </div>
+                                        @foreach($restaurant_bill_details  as $restaurant_bill)
+                                            <tr>
+                                                <td>
+                                                    {{$restaurant_bill['Bill_No']}}
+                                                </td>
+                                                <td>
+                                                    {{$restaurant_bill['Bill_Date']}}
+                                                </td>
+                                                <td>
+                                                    {{$restaurant_bill['Bill_Time']}}
+                                                </td>
+                                                <td >
+                                                    {{$restaurant_bill['Table_No']}}
+                                                </td>
+                                                <td >
+                                                    {{$restaurant_bill['Net_Total']}}
+                                                </td>
+                                                <td >
+                                                    {{$restaurant_bill['Table_Name']}}
+                                                </td>
+
+                                            </tr>
+                                        @endforeach
+                                        </tbody>
+                                    </table>
+                                </div>
+                            @endif
                         </div>
 
                     </div>

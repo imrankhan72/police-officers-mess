@@ -88,10 +88,12 @@ Route::get('/pay-bill',function (){
 Route::post('/bill-details', function (Request $request) {
      $mobile_no = $request->get('mobile_no');
 //    $client_details = Http::get("http://pom.dvinfosoft.com/User_API.asmx/User_Registration?Mobile_No=8106986039")->collect()->first();
+
     $client_details = Http::get("http://pom.dvinfosoft.com/User_API.asmx/User_Registration?Mobile_No=$mobile_no")->collect()->first();
-    $hotel_bill_details = Http::get('http://pom.dvinfosoft.com/User_API.asmx/ClientHotelBills?Client_ID=110')->collect();
-    $restaurant_bill_details = Http::get('http://pom.dvinfosoft.com/User_API.asmx/ClientFoodBills?Client_ID=2')->collect();
-    $total_outstanding = Http::get('http://pom.dvinfosoft.com/User_API.asmx/ClientOutStanding?Client_ID=1')->collect()->first();
+    $client_id = $client_details['Client_ID'];
+    $hotel_bill_details = Http::get("http://pom.dvinfosoft.com/User_API.asmx/ClientHotelBills?Client_ID=$client_id")->collect();
+    $restaurant_bill_details = Http::get("http://pom.dvinfosoft.com/User_API.asmx/ClientFoodBills?Client_ID=$client_id")->collect();
+    $total_outstanding = Http::get("http://pom.dvinfosoft.com/User_API.asmx/ClientOutStanding?Client_ID=$client_id")->collect()->first();
     return view('bill_details', compact('client_details','hotel_bill_details', 'restaurant_bill_details','total_outstanding', 'mobile_no'));
 });
 
