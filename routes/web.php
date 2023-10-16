@@ -44,7 +44,7 @@ Route::get('send_sms',function (){
     $message = "Dear Imaad Your login code is 5560 to pay POM bill. Please don't share it with anyone. Regards POMBP";
 
 
-    return Http::post("https://msdgweb.mgov.gov.in/esms/sendsmsrequestDLT?username=DITMP-OCCTNS&password=Cctns@12345&senderid=cctnsd&key=3d8183ac-8495-4e80-ac8a-2362e0da9838&mobileno=9826445006&smsservicetype=unicodeotpmsg&templateid=1307169693372298480&content=$message"
+    return Http::timeout(500)->post("https://msdgweb.mgov.gov.in/esms/sendsmsrequestDLT?username=DITMP-OCCTNS&password=Cctns@12345&senderid=cctnsd&key=3d8183ac-8495-4e80-ac8a-2362e0da9838&mobileno=9826445006&smsservicetype=unicodeotpmsg&templateid=1307169693372298480&content=$message"
 //        , [
 //        'username' => 'DITMP-OCCTNSS',
 //        'password' => 'Cctns@12345',
