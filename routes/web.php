@@ -61,25 +61,16 @@ Route::get('send_sms',function (){
 
 Route::post('/bookings/store', function (Request $request) {
     $booking = Booking::create($request->all());
-    return "hii";
+    return back()->with('message','Your booking has been created. We will contact you soon');
 });
+
+
 Route::post('/otp',function (Request $request) {
     $mobile_no = $request->get('mobile_no');
-    $basic  = new \Vonage\Client\Credentials\Basic("0de3151d", "DnAkZtjsb2gjWvg9");
-    $client = new \Vonage\Client($basic);
-    $response = $client->sms()->send(
-        new \Vonage\SMS\Message\SMS('91'.$request->get('mobile_no'), "Police OFF. Mess", 'OTP for police officers mess is 614219')
-    );
-
-    $message = $response->current();
-
-    if ($message->getStatus() == 0) {
-        echo "The message was sent successfully\n";
-    } else {
-        echo "The message failed with status: " . $message->getStatus() . "\n";
-    }
-
-    return view('otp', compact('mobile_no'));
+    $otp_code = rand(11111,9999999);
+    $message = "Dear user Your login code is $otp_code to pay POM bill. Please dont share it with anyone. Regards POMBPL siddh";
+    //$response = Http::post("http://redirect.ds3.in/submitsms.jsp?user=mpcult&key=50b09e3748XX&mobile=+91$mobile_no&message=$message&senderid=depcmp&accusage=1&entityid=1201159222234637814&tempid=1207169726108149036");
+    return view('otp', compact('mobile_no', 'otp_code'));
 });
 
 Route::get('/pay-bill',function (){
@@ -87,6 +78,11 @@ Route::get('/pay-bill',function (){
 });
 Route::post('/bill-details', function (Request $request) {
      $mobile_no = $request->get('mobile_no');
+
+//     if($request->get('entered_otp') !== $request->get('otp_code')){
+//         return back()->with('message', 'Wrong OTP');
+//     }
+
 //    $client_details = Http::get("http://pom.dvinfosoft.com/User_API.asmx/User_Registration?Mobile_No=8106986039")->collect()->first();
 
     $client_details = Http::get("http://pom.dvinfosoft.com/User_API.asmx/User_Registration?Mobile_No=$mobile_no")->collect()->first();
@@ -94,27 +90,32 @@ Route::post('/bill-details', function (Request $request) {
     $hotel_bill_details = Http::get("http://pom.dvinfosoft.com/User_API.asmx/ClientHotelBills?Client_ID=$client_id")->collect();
     $restaurant_bill_details = Http::get("http://pom.dvinfosoft.com/User_API.asmx/ClientFoodBills?Client_ID=$client_id")->collect();
     $total_outstanding = Http::get("http://pom.dvinfosoft.com/User_API.asmx/ClientOutStanding?Client_ID=$client_id")->collect()->first();
+    if (!$total_outstanding){
+        $total_outstanding = $hotel_bill_details->sum('NetAmt') + $restaurant_bill_details->sum('NetAmt');
+    }else{
+        $total_outstanding =  $total_outstanding['Rwmanig_Amount'];
+    }
     return view('bill_details', compact('client_details','hotel_bill_details', 'restaurant_bill_details','total_outstanding', 'mobile_no'));
 });
 
-Route::post('/make-payment', function (Request $request) {
-    $payment = $request->get('amount');
-    $gateway_charges = $payment*.0243;
-    $gst = $gateway_charges*.18;
-    $fees = $payment+$gateway_charges+$gst;
-    $api = new Api(env('RAZORPAY_KEY'), env('RAZORPAY_KEY_SECRET'));
-    $payment_options = array( 'upi'=>'1', 'wallet'=>'1','netbanking'=>'1', 'card'=>'1');
-
-    $response = $api->paymentLink->create(array('amount'=>round($fees*100), 'currency'=>'INR', 'accept_partial'=>false,
-        'description' => "Bill payment for police officers mess ", 'customer' => array('name'=>$request->get('name'),
-            'email' => 'bill@pom.mppoice.gov.in', 'contact'=>'9826445006'),
-        'notify'=>array('sms'=>true, 'email'=>false) , 'reminder_enable'=>false ,
-        'options'=>array('checkout'=>array('method'=>$payment_options)),
-        'callback_url' => "https://online.dpvipralawcollege.ac.in/success",
-        'callback_method'=>'get'));
-    $payment_link = $response['short_url'];
-    return redirect()->away($payment_link);
-//    return Inertia::render('MakePayment', compact('payment', 'payment_link', 'payment_method', 'gst' ));
+Route::get('/make-payment', function (Request $request) {
+//    $payment = $request->get('amount');
+//    $gateway_charges = $payment*.0243;
+//    $gst = $gateway_charges*.18;
+//    $fees = $payment+$gateway_charges+$gst;
+//    $api = new Api(env('RAZORPAY_KEY'), env('RAZORPAY_KEY_SECRET'));
+//    $payment_options = array( 'upi'=>'1', 'wallet'=>'1','netbanking'=>'1', 'card'=>'1');
+//
+//    $response = $api->paymentLink->create(array('amount'=>round($fees*100), 'currency'=>'INR', 'accept_partial'=>false,
+//        'description' => "Bill payment for police officers mess ", 'customer' => array('name'=>$request->get('name'),
+//            'email' => 'bill@pom.mppoice.gov.in', 'contact'=>'9826445006'),
+//        'notify'=>array('sms'=>true, 'email'=>false) , 'reminder_enable'=>false ,
+//        'options'=>array('checkout'=>array('method'=>$payment_options)),
+//        'callback_url' => "https://online.dpvipralawcollege.ac.in/success",
+//        'callback_method'=>'get'));
+//    $payment_link = $response['short_url'];
+//    return redirect()->away($payment_link);
+   return view('make_payment');
 });
 
 Route::get('/{payment}/success', function (Request $request, Payment $payment) {

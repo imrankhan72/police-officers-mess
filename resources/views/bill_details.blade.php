@@ -34,15 +34,15 @@
                         <div id="content">
                             <h4>Total Outstanding:
                                 @if($total_outstanding)
-                                <strong>Rs: {{$total_outstanding['Rwmanig_Amount']}} /-</strong>
+                                <strong>Rs: {{$total_outstanding}} /-</strong>
                                 @endif
                             </h4>
                         </div>
                         <div style="display: flex; margin-top: 16px; ">
-                            <form action="/make-payment" method="post">
+                            <form action="/make-payment" method="get">
                                 {{csrf_field()}}
                                 <input type="hidden" name="name" value="{{$client_details['Client_Name']}}">
-                                <input type="hidden" name="amount" value=" @if($total_outstanding) {{$total_outstanding['Rwmanig_Amount']}} @endif">
+                                <input type="hidden" name="amount" value=" @if($total_outstanding) {{$total_outstanding}} @endif">
                                 <input type="hidden" name="mobile_no" value="{{$mobile_no}}">
                                 <button type="submit"  class="awe-btn awe-btn-13">
                                     <span data-hover="Pay Now">Pay Now</span>
