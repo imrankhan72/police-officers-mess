@@ -25,43 +25,28 @@ Route::view('/gallery','gallery');
 Route::view('/contact-us','contact-us');
 Route::view('/book-now','book');
 
-function send_sms(){
-//    https://msdgweb.mgov.gov.in/esms/sendsmsrequestDLT?username=DITMP-OCCTNS&password=Cctns@12345&senderid=cctnsd&key=3d8183ac-8495-4e80-ac8a-2362e0da9838&mobileno=9826445006&smsservicetype=unicodeotpmsg&templateid=1307169693372298480&content=Dear Imaad Your login code is 5560 to pay POM bill. Please don't share it with anyone. Regards POMBP
-    $response = Http::post('https://msdgweb.mgov.gov.in/esms/sendsmsrequestDLT?', [
-        'username' => 'DITMP-OCCTNS',
-        'password' => 'Cctns@12345',
-        'senderid'=>'cctnsd',
-        'key'=>'3d8183ac-8495-4e80-ac8a-2362e0da9838',
-        'smsservicetype'=>'unicodeotpmsg',
-        'templateid'=>'1307169693372298480',
-        'content'=>"Dear Imaad Your login code is 5560 to pay POM bill. Please don't share it with anyone. Regards POMBP",
-        'mobileno'=>982644500
 
-    ]);
-}
 Route::get('send_sms',function (){
 
     $message = "Dear Imaad Your login code is 5560 to pay POM bill. Please don't share it with anyone. Regards POMBP";
-
-
-    return Http::timeout(500)->post("https://msdgweb.mgov.gov.in/esms/sendsmsrequestDLT?username=DITMP-OCCTNS&password=Cctns@12345&senderid=cctnsd&key=3d8183ac-8495-4e80-ac8a-2362e0da9838&mobileno=9826445006&smsservicetype=unicodeotpmsg&templateid=1307169693372298480&content=$message"
-//        , [
-//        'username' => 'DITMP-OCCTNSS',
-//        'password' => 'Cctns@12345',
-//        'senderid'=>'cctnsd',
-//        'key'=>'3d8183ac-8495-4e80-ac8a-2362e0da9838',
-//        "smsservicetype" =>"singlemsg",
-//        'templateid'=>'1307169693372298480',
-//        'content'=>"Dear Imaad Your login code is 5560 to pay POM bill. Please don't share it with anyone. Regards POMBP",
-//        'mobileno'=>982644500
-//    ]
+    return Http::timeout(500)->post("https://msdgweb.mgov.gov.in/esms/sendsmsrequestDLT", [
+        'username' => 'DITMP-OCCTNSS',
+        'password' => 'Cctns@12345',
+        'senderid'=>'cctnsd',
+        'key'=>'3d8183ac-8495-4e80-ac8a-2362e0da9838',
+        "smsservicetype" =>"singlemsg",
+        'templateid'=>'1307169693372298480',
+        'content'=>"Dear Imaad Your login code is 5560 to pay POM bill. Please don't share it with anyone. Regards POMBP",
+        'mobileno'=>982644500,
+        'message'=> $message
+    ]
     );
 
 });
 
 Route::post('/bookings/store', function (Request $request) {
     $booking = Booking::create($request->all());
-    return back()->with('message','Your booking has been created. We will contact you soon');
+    return back()->with('message','Your booking request has been created. We will contact you soon');
 });
 
 

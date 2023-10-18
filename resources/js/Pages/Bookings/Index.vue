@@ -62,7 +62,7 @@ defineProps({
                                                 </svg>
                                                 <p>
                                                     Received on
-                                                    <time datetime="2020-01-07">April 28, 2023</time>
+                                                    <time datetime="2020-01-07">{{booking.created_at}}</time>
                                                 </p>
                                             </div>
                                         </div>

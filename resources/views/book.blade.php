@@ -22,6 +22,11 @@
     <section class="section-reservation-page bg-white">
 
         <div class="container">
+            @if(Session::has('message'))
+                <div class="alert alert-success">
+                    <strong>Success!</strong> {{Session::get('message')}}.
+                </div>
+            @endif
             <div class="reservation-page">
                 <div class="row">
                     <!-- CONTENT -->
@@ -36,9 +41,9 @@
 
                                 <label>Booking For<sup>*</sup></label>
                                 <select name="booking_for" class="form-control">
-                                    <option  value="1" >Room</option>
-                                    <option  value="2">Lawn</option>
-                                    <option  value="3" >Hall</option>
+                                    <option  value="Room" >Room</option>
+                                    <option  value="Lawn">Lawn</option>
+                                    <option  value="Hall" >Hall</option>
                                 </select>
 
                                 <div class="row">
@@ -63,11 +68,11 @@
                                     <div class="col-sm-6">
                                         <label>Booking for<sup>*</sup></label>
                                         <select name="booking_for_self_guest" class="form-control">
-                                            <option  value="0" >Self</option>
-                                            <option  value="1" >Guest</option>
-                                            <option  value="2">Family</option>
-                                            <option  value="2">Govt Tour</option>
-                                            <option  value="2">Private Tour</option>
+                                            <option  value="Self" >Self</option>
+                                            <option  value="Guest" >Guest</option>
+                                            <option  value="Family">Family</option>
+                                            <option  value="Govt Tour">Govt Tour</option>
+                                            <option  value="Private Tou">Private Tour</option>
                                         </select>
                                     </div>
                                 </div>

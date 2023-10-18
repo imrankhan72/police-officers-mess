@@ -56,7 +56,7 @@ defineProps({
                                         <p class="text-2xl font-semibold text-gray-900">{{payments.length}}</p>
                                         <div class="absolute inset-x-0 bottom-0 bg-gray-50 px-4 py-4 sm:px-6">
                                             <div class="text-sm">
-                                                <a href="/payments" class="font-medium text-indigo-600 hover:text-indigo-500"> View all<span class="sr-only"> Total Semesters</span></a>
+                                                <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500"> View all<span class="sr-only"> Total Semesters</span></a>
                                             </div>
                                         </div>
                                     </dd>
@@ -76,7 +76,7 @@ defineProps({
                                         <p class="text-2xl font-semibold text-gray-900">20</p>
                                         <div class="absolute inset-x-0 bottom-0 bg-gray-50 px-4 py-4 sm:px-6">
                                             <div class="text-sm">
-                                                <a href="/bookings" class="font-medium text-indigo-600 hover:text-indigo-500"> View all<span class="sr-only"> Total Payments</span></a>
+                                                <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500"> View all<span class="sr-only"> Total Payments</span></a>
                                             </div>
                                         </div>
                                     </dd>
@@ -94,9 +94,7 @@ defineProps({
                                 <div class="px-4 py-4 sm:px-6">
                                     <div class="flex items-center justify-between">
                                         <p class="truncate text-sm font-medium text-indigo-600">{{booking.name}}</p>
-                                        <div class="ml-2 flex flex-shrink-0">
-                                            <p class="inline-flex rounded-full bg-green-100 px-2 text-xs font-semibold leading-5 text-green-800">Confirmed</p>
-                                        </div>
+
                                     </div>
                                     <div class="mt-2 sm:flex sm:justify-between">
                                         <div class="sm:flex">
@@ -122,7 +120,8 @@ defineProps({
                                             </svg>
                                             <p>
                                                 Received on
-                                                <time datetime="2020-01-07">April 28, 2023</time>
+                                                <time datetime="2020-01-07">{{booking.created_at}}</time>
+
                                             </p>
                                         </div>
                                     </div>
