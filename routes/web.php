@@ -51,7 +51,7 @@ Route::get('gcd',function (Request $request){
 
 Route::get('call_gcd',function (Request $request){
 
-    $response = Http::get('https://pom.bharatunited.com/gcd', [
+ return Http::get('https://pom.bharatunited.com/gcd', [
         'mobile_no' => 8220291274
     ]);
 });
