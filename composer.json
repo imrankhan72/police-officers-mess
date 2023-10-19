@@ -13,7 +13,8 @@
         "laravel/tinker": "^2.8",
         "razorpay/razorpay": "^2.8",
         "tightenco/ziggy": "^1.0",
-        "vonage/client": "^4.0"
+        "vonage/client": "^4.0",
+      "ext-curl": "*"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
