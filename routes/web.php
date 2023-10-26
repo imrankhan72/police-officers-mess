@@ -33,7 +33,7 @@ function sendSingleSMS($username, $encryp_password, $senderid, $message, $mobile
         'password' => trim($encryp_password),
         'senderid' => trim($senderid),
         'content' => trim($message),
-        'smsservicetype' => 'singlemsg',
+        "smsservicetype" =>"singlemsg",
         'mobileno' => trim($mobileno),
         'key' => trim($key),
         'templateid' => trim($templateid),
