@@ -25,20 +25,32 @@ Route::view('/gallery','gallery');
 Route::view('/contact-us','contact-us');
 Route::view('/book-now','book');
 
+function sendSingleSMS($username, $encryp_password, $senderid, $message, $mobileno, $deptSecureKey, $templateid) {
+    $key = hash('sha512', trim($username) . trim($senderid) . trim($message) . trim($deptSecureKey));
+
+    $data = [
+        'username' => trim($username),
+        'password' => trim($encryp_password),
+        'senderid' => trim($senderid),
+        'content' => trim($message),
+        'smsservicetype' => 'singlemsg',
+        'mobileno' => trim($mobileno),
+        'key' => trim($key),
+        'templateid' => trim($templateid),
+    ];
+
+    $response = Http::post('https://msdgweb.mgov.gov.in/esms/sendsmsrequestDLT', $data);
+
+    // Output the result from the server
+    echo $response->body();
+}
+
 Route::get('send_sms',function (){
-    $message = "Dear Imaad Your login code is 5560 to pay POM bill. Please don't share it with anyone. Regards POMBP";
-    return Http::timeout(500)->post("https://msdgweb.mgov.gov.in/esms/sendsmsrequestDLT", [
-        'username' => 'DITMP-OCCTNSS',
-        'password' => 'Cctns@12345',
-        'senderid'=>'cctnsd',
-        'key'=>'3d8183ac-8495-4e80-ac8a-2362e0da9838',
-        "smsservicetype" =>"singlemsg",
-        'templateid'=>'1307169693372298480',
-        'content'=>"Dear Imaad Your login code is 5560 to pay POM bill. Please don't share it with anyone. Regards POMBP",
-        'mobileno'=>982644500,
-        'message'=> $message
-    ]
-    );
+    $message = "Dear Imaad Your login code is 5560 to pay POM bill. Please don't share it with anyone. Regards POMBPL";
+
+    // Call the sendSingleSMS function
+    sendSingleSMS('DITMP-OCCTNS', sha1(trim('Cctns@12345')), 'OCCTNS', $message, '9826445006', '3d8183ac-8495-4e80-ac8a-2362e0da9838', '1307169693372298480');
+
 
 });
 
