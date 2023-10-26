@@ -77,24 +77,6 @@ $data = array(
 post_to_url("https://msdgweb.mgov.gov.in/esms/sendsmsrequestDLT",$data); //calling post_to_url to send sms
 }
 
-function sendOtpSMS($username,$encryp_password,$senderid,$message,$mobileno,$deptSecureKey,$templateid){
-    $key=hash('sha512',trim($username).trim($senderid).trim($message).trim($deptSecureKey));
-
-    $data = array(
-        "username" => trim($username),
-        "password" => trim($encryp_password),
-        "senderid" => trim($senderid),
-        "content" => trim($message),
-        "smsservicetype" =>"otpmsg",
-        "mobileno" =>trim($mobileno),
-        "key" => trim($key),
-        "templateid"=> trim($templateid)
-
-    );
-    post_to_url("https://msdgweb.mgov.gov.in/esms/sendsmsrequestDLT",$data); //calling post_to_url to send otp sms
-}
-
-
 sendSingleSMS('DITMP-OCCTNS',sha1(trim('Cctns@12345')),'OCCTNS',$message,'9826445006','3d8183ac-8495-4e80-ac8a-2362e0da9838','1307169693372298480');
 
 //sendOtpSMS($username,$encryp_password,$senderid,$message,$mobileno,$deptSecureKey,$templateid);
