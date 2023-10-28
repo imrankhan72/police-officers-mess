@@ -25,25 +25,7 @@ Route::view('/gallery','gallery');
 Route::view('/contact-us','contact-us');
 Route::view('/book-now','book');
 
-function sendSingleSMS($username, $encryp_password, $senderid, $message, $mobileno, $deptSecureKey, $templateid) {
-    $key = hash('sha512', trim($username) . trim($senderid) . trim($message) . trim($deptSecureKey));
 
-    $data = [
-        'username' => trim($username),
-        'password' => trim($encryp_password),
-        'senderid' => trim($senderid),
-        'content' => trim($message),
-        "smsservicetype" =>"singlemsg",
-        'mobileno' => trim($mobileno),
-        'key' => trim($key),
-        'templateid' => trim($templateid),
-    ];
-
-    $response = Http::post('https://msdgweb.mgov.gov.in/esms/sendsmsrequestDLT', $data);
-
-    // Output the result from the server
-    echo $response->body();
-}
 
 Route::get('send_sms',function (){
     $message = "Dear Imaad Your login code is 5560 to pay POM bill. Please don't share it with anyone. Regards POMBPL";
