@@ -1,5 +1,5 @@
 <?php
-//    header('Content-Type: text/html;');
+    header('Content-Type: text/html;');
 //    $username='DITMP-OCCTNS'; //username of the department
 //    $password='Cctns@12345'; //password of the department
 //    $senderid='OCCTNS'; //senderid of the deparment
