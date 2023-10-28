@@ -1,15 +1,15 @@
 <?php
     header('Content-Type: text/html;');
-//    $username='DITMP-OCCTNS'; //username of the department
-//    $password='Cctns@12345'; //password of the department
-//    $senderid='OCCTNS'; //senderid of the deparment
-//    $message="Dear Bhaskar Your login code is 5560 to pay POM bill. Please don't share it with anyone. Regards POMBPL"; //message content
-//    $messageUnicode="à¤®à¥‹à¤¬à¤¾à¤‡à¤²à¤¸à¥‡à¤µà¤¾à¤®à¥‡à¤‚à¤†à¤ªà¤•à¤¾à¤¸à¥à¤µà¤¾à¤—à¤¤à¤¹à¥ˆ "; //message content in unicode
-//    $mobileno="919826445006"; //if single sms need to be send use mobileno keyword
-//    $mobileNos= "86XXXXXX72,79XXXXXX00"; //if bulk sms need to send use mobileNos as keyword and mobile number seperated by commas as value
-//    $deptSecureKey= '3d8183ac-8495-4e80-ac8a-2362e0da9838'; //departsecure key for encryption of message...
-//    $encryp_password=sha1(trim($password));
-//    $templateid='1307169693372298480'; //your DLT registered templateid for this perticular message
+   $username='DITMP-OCCTNS'; //username of the department
+   $password='Cctns@12345'; //password of the department
+   $senderid='OCCTNS'; //senderid of the deparment
+   $message="Dear Bhaskar Your login code is 5560 to pay POM bill. Please don't share it with anyone. Regards POMBPL"; //message content
+   $messageUnicode="à¤®à¥‹à¤¬à¤¾à¤‡à¤²à¤¸à¥‡à¤µà¤¾à¤®à¥‡à¤‚à¤†à¤ªà¤•à¤¾à¤¸à¥à¤µà¤¾à¤—à¤¤à¤¹à¥ˆ "; //message content in unicode
+   $mobileno="919826445006"; //if single sms need to be send use mobileno keyword
+   $mobileNos= "86XXXXXX72,79XXXXXX00"; //if bulk sms need to send use mobileNos as keyword and mobile number seperated by commas as value
+   $deptSecureKey= '3d8183ac-8495-4e80-ac8a-2362e0da9838'; //departsecure key for encryption of message...
+   $encryp_password=sha1(trim($password));
+   $templateid='1307169693372298480'; //your DLT registered templateid for this perticular message
 
 
 
