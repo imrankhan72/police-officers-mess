@@ -33,6 +33,7 @@
     curl_close($post);
     }
 
+
     //Function to send single sms
     function sendSingleSMS($username,$encryp_password,$senderid,$message,$mobileno,$deptSecureKey,$templateid){
     $key=hash('sha512',trim($username).trim($senderid).trim($message).trim($deptSecureKey));
