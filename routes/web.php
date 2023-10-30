@@ -27,25 +27,53 @@ Route::view('/book-now','book');
 
 
 
-Route::get('send_sms',function (){
-    $message = "Dear Imaad Your login code is 5560 to pay POM bill. Please don't share it with anyone. Regards POMBPL";
-
-    // Call the sendSingleSMS function
-    sendSingleSMS('DITMP-OCCTNS', sha1(trim('Cctns@12345')), 'OCCTNS', $message, '9826445006', '3d8183ac-8495-4e80-ac8a-2362e0da9838', '1307169693372298480');
-
-
-});
-
 Route::post('/bookings/store', function (Request $request) {
     $booking = Booking::create($request->all());
     return back()->with('message','Your booking request has been created. We will contact you soon');
 });
 
+function post_to_url($url, $data) {
+    $fields = '';
+    foreach($data as $key => $value) {
+        $fields .= $key . '=' . urlencode($value) . '&';
+    }
+    rtrim($fields, '&');
+    $post = curl_init();
+    //curl_setopt($post, CURLOPT_SSLVERSION, 5); // uncomment for systems supporting TLSv1.1 only
+    curl_setopt($post, CURLOPT_SSLVERSION, 6); // use for systems supporting TLSv1.2 or comment the line
+    curl_setopt($post,CURLOPT_SSL_VERIFYPEER, false);
+    curl_setopt($post, CURLOPT_URL, $url);
+    curl_setopt($post, CURLOPT_POST, count($data));
+    curl_setopt($post, CURLOPT_POSTFIELDS, $fields);
+    curl_setopt($post, CURLOPT_RETURNTRANSFER, 1);
+    $result = curl_exec($post); //result from mobile seva server
+    echo $result; //output from server displayed
+    curl_close($post);
+}
+function sendSingleSMS($username,$encryp_password,$senderid,$message,$mobileno,$deptSecureKey,$templateid){
+    $key=hash('sha512',trim($username).trim($senderid).trim($message).trim($deptSecureKey));
+
+    $data = array(
+        "username" => trim($username),
+        "password" => trim($encryp_password),
+        "senderid" => trim($senderid),
+        "content" => trim($message),
+        "smsservicetype" =>"singlemsg",
+        "mobileno" =>trim($mobileno),
+        "key" => trim($key),
+        "templateid"=> trim($templateid)
+
+
+    );
+    post_to_url("https://msdgweb.mgov.gov.in/esms/sendsmsrequestDLT",$data); //calling post_to_url to send sms
+}
 
 Route::post('/otp',function (Request $request) {
     $mobile_no = $request->get('mobile_no');
     $otp_code = rand(11111,9999999);
-    $message = "Dear user Your login code is $otp_code to pay POM bill. Please dont share it with anyone. Regards POMBPL siddh";
+    $message="Dear Tittu Your login code is 5560 to pay POM bill. Please don't share it with anyone. Regards POMBPL";
+    sendSingleSMS('DITMP-OCCTNS',sha1(trim('Cctns@12345')),'OCCTNS',$message,'9826445006','3d8183ac-8495-4e80-ac8a-2362e0da9838','1307169693372298480');
+
     //$response = Http::post("http://redirect.ds3.in/submitsms.jsp?user=mpcult&key=50b09e3748XX&mobile=+91$mobile_no&message=$message&senderid=depcmp&accusage=1&entityid=1201159222234637814&tempid=1207169726108149036");
     return view('otp', compact('mobile_no', 'otp_code'));
 });
