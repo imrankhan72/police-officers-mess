@@ -94,7 +94,7 @@ Route::post('/bill-details', function (Request $request) {
      $mobile_no = $request->get('mobile_no');
 
      if($request->get('entered_otp') !== $request->get('otp_code')){
-         return back()->with('message', 'Wrong OTP');
+         return "Wrong OTP Code";
      }
 
 
