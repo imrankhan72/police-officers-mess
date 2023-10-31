@@ -79,9 +79,9 @@ function sendSingleSMS($username,$encryp_password,$senderid,$message,$mobileno,$
 
 Route::post('/otp',function (Request $request) {
     $mobile_no = $request->get('mobile_no');
-    $otp_code = rand(11111,9999999);
-    $message="Dear User Your login code is 5560 to pay POM bill. Please don't share it with anyone. Regards POMBPL";
-    sendSingleSMS('DITMP-OCCTNS',sha1(trim('Cctns@12345')),'OCCTNS',$message,'9425164700','3d8183ac-8495-4e80-ac8a-2362e0da9838','1307169693372298480');
+    $otp_code = rand(1111,9999);
+    $message="Dear User Your login code is $otp_code to pay POM bill. Please don't share it with anyone. Regards POMBPL";
+    sendSingleSMS('DITMP-OCCTNS',sha1(trim('Cctns@12345')),'OCCTNS',"$message","$mobile_no",'3d8183ac-8495-4e80-ac8a-2362e0da9838','1307169693372298480');
 
     //$response = Http::post("http://redirect.ds3.in/submitsms.jsp?user=mpcult&key=50b09e3748XX&mobile=+91$mobile_no&message=$message&senderid=depcmp&accusage=1&entityid=1201159222234637814&tempid=1207169726108149036");
     return view('otp', compact('mobile_no', 'otp_code'));
@@ -93,9 +93,9 @@ Route::get('/pay-bill',function (){
 Route::post('/bill-details', function (Request $request) {
      $mobile_no = $request->get('mobile_no');
 
-//     if($request->get('entered_otp') !== $request->get('otp_code')){
-//         return back()->with('message', 'Wrong OTP');
-//     }
+     if($request->get('entered_otp') !== $request->get('otp_code')){
+         return back()->with('message', 'Wrong OTP');
+     }
 
 
     $client_details = Http::get("http://pom.dvinfosoft.com/User_API.asmx/User_Registration?Mobile_No=$mobile_no")->collect()->first();
