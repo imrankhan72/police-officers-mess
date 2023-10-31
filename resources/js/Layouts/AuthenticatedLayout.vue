@@ -26,17 +26,17 @@ const showingNavigationDropdown = ref(false);
                             </div>
 
                             <!-- Navigation Links -->
-                            <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                                <NavLink :href="route('dashboard')" :active="route().current('dashboard')">
-                                    Dashboard
-                                </NavLink>
-                                <NavLink :href="route('bookings.index')" :active="route().current('bookings.index')">
-                                    Bookings
-                                </NavLink>
-                                <NavLink :href="route('payments.index')" :active="route().current('payments.index')">
-                                    Payments
-                                </NavLink>
-                            </div>
+<!--                            <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">-->
+<!--                                <NavLink :href="route('dashboard')" :active="route().current('dashboard')">-->
+<!--                                    Dashboard-->
+<!--                                </NavLink>-->
+<!--                                <NavLink :href="route('bookings.index')" :active="route().current('bookings.index')">-->
+<!--                                    Bookings-->
+<!--                                </NavLink>-->
+<!--                                <NavLink :href="route('payments.index')" :active="route().current('payments.index')">-->
+<!--                                    Payments-->
+<!--                                </NavLink>-->
+<!--                            </div>-->
                         </div>
 
                         <div class="hidden sm:flex sm:items-center sm:ml-6">
