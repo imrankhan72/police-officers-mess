@@ -13,7 +13,7 @@ defineProps({
 
     <AuthenticatedLayout>
         <template #header>
-            <h2 class="font-semibold text-xl text-gray-800 leading-tight">Dashboard</h2>
+            <h2 class="font-semibold text-xl text-gray-800 leading-tight">Booking requests</h2>
         </template>
 
         <div class="bg-gray-50 min-h-screen">
@@ -86,7 +86,7 @@ defineProps({
 <!--                    </div>-->
 <!--                </div>-->
 
-                <h3 class="mt-8 mb-4 text-lg font-medium leading-6 text-gray-900">Booking Requests</h3>
+                <h3 class="mt-8 mb-4 text-lg font-medium leading-6 text-gray-900 pt-8">Booking Requests</h3>
                 <div class="overflow-hidden bg-white shadow sm:rounded-md">
                     <ul role="list" class="divide-y divide-gray-200">
                         <li v-for="booking in bookings">

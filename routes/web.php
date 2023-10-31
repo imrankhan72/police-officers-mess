@@ -80,7 +80,7 @@ function sendSingleSMS($username,$encryp_password,$senderid,$message,$mobileno,$
 Route::post('/otp',function (Request $request) {
     $mobile_no = $request->get('mobile_no');
     $otp_code = rand(11111,9999999);
-    $message="Dear Tittu Your login code is $otp_code to pay POM bill. Please don't share it with anyone. Regards POMBPL";
+    $message="Dear User Your login code is $otp_code to pay POM bill. Please don't share it with anyone. Regards POMBPL";
     sendSingleSMS('DITMP-OCCTNS',sha1(trim('Cctns@12345')),'OCCTNS',$message,'9826445006','3d8183ac-8495-4e80-ac8a-2362e0da9838','1307169693372298480');
 
     //$response = Http::post("http://redirect.ds3.in/submitsms.jsp?user=mpcult&key=50b09e3748XX&mobile=+91$mobile_no&message=$message&senderid=depcmp&accusage=1&entityid=1201159222234637814&tempid=1207169726108149036");

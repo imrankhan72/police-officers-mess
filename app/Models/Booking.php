@@ -9,5 +9,10 @@ use Illuminate\Database\Eloquent\Model;
 class Booking extends Model
 {
     use HasFactory, HasUuids;
+
+    protected $casts = [
+        'created_at' => 'date:d M Y',
+        'updated_at' => 'date:d M Y',
+    ];
     protected $guarded = [];
 }
