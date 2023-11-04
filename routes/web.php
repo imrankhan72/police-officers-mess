@@ -84,7 +84,7 @@ Route::get('/verify-number',function (Request $request){
 Route::post('/otp',function (Request $request) {
     $mobile_no = $request->get('mobile_no');
     $otp_code = rand(1111,9999);
-    if($request->get('path' == 'pay-bill')){
+    if($request->get('path') == 'pay-bill'){
         $message="Dear User Your login code is $otp_code to pay POM bill. Please don't share it with anyone. Regards POMBPL";
         $template_id = 1307169693372298480;
     }else{
