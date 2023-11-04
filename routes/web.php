@@ -77,15 +77,36 @@ function sendSingleSMS($username,$encryp_password,$senderid,$message,$mobileno,$
     post_to_url("https://msdgweb.mgov.gov.in/esms/sendsmsrequestDLT",$data); //calling post_to_url to send sms
 }
 
+Route::get('/verify-number',function (Request $request){
+    return view('verify-number',['path'=>$request->get('path')]);
+});
+
 Route::post('/otp',function (Request $request) {
     $mobile_no = $request->get('mobile_no');
     $otp_code = rand(1111,9999);
-    $message="Dear User Your login code is $otp_code to pay POM bill. Please don't share it with anyone. Regards POMBPL";
-    sendSingleSMS('DITMP-OCCTNS',sha1(trim('Cctns@12345')),'OCCTNS',"$message","$mobile_no",'3d8183ac-8495-4e80-ac8a-2362e0da9838','1307169693372298480');
+    if($request->get('path' == 'pay-bill')){
+        $message="Dear User Your login code is $otp_code to pay POM bill. Please don't share it with anyone. Regards POMBPL";
+        $template_id = 1307169693372298480;
+    }else{
+        $message="Dear User, your login code is $otp_code to check your booking status. Please don't share it with anyone. Regards POMBPL";
+        $template_id = 1307169892615829190;
+    }
+
+    sendSingleSMS('DITMP-OCCTNS',sha1(trim('Cctns@12345')),'OCCTNS',"$message","$mobile_no",'3d8183ac-8495-4e80-ac8a-2362e0da9838', $template_id);
 
     //$response = Http::post("http://redirect.ds3.in/submitsms.jsp?user=mpcult&key=50b09e3748XX&mobile=+91$mobile_no&message=$message&senderid=depcmp&accusage=1&entityid=1201159222234637814&tempid=1207169726108149036");
     return view('otp', compact('mobile_no', 'otp_code'));
 });
+
+Route::post('/verify_otp',function (Request $request) {
+    $mobile_no = $request->get('mobile_no');
+
+    if($request->get('entered_otp') !== $request->get('otp_code')){
+        return "Wrong OTP Code";
+    }
+});
+
+
 
 Route::get('/pay-bill',function (){
     return view('pay-bill');
@@ -96,7 +117,6 @@ Route::post('/bill-details', function (Request $request) {
      if($request->get('entered_otp') !== $request->get('otp_code')){
          return "Wrong OTP Code";
      }
-
 
     $client_details = Http::get("http://pom.dvinfosoft.com/User_API.asmx/User_Registration?Mobile_No=$mobile_no")->collect()->first();
     if($client_details){
@@ -118,6 +138,10 @@ Route::post('/bill-details', function (Request $request) {
     return view('bill_details', compact('client_details','hotel_bill_details', 'restaurant_bill_details','total_outstanding', 'mobile_no'));
 });
 
+
+Route::get('/booking-status-otp',function (){
+    return view('booking-status-otp');
+});
 Route::get('/make-payment', function (Request $request) {
 //    $payment = $request->get('amount');
 //    $gateway_charges = $payment*.0243;

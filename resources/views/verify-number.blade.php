@@ -9,7 +9,7 @@
         <div class="sub-banner">
             <div class="container">
                 <div class="text text-center">
-                    <h2>Enter OTP</h2>
+                    <h2>Verify mobile number</h2>
                 </div>
             </div>
 
@@ -28,17 +28,18 @@
                     <div class="col-lg-offset-2 col-lg-10">
 
                         <div class="reservation_content">
+                            <form  action="/otp" method="post">
+                                {{csrf_field()}}
                                 <div class="reservation-billing-detail">
-                                    <form action="/bill-details?path=pay_bill" method="post">
+                                    <form action="/otp" method="post">
                                         {{csrf_field()}}
-                                        <label>Please enter 6 digit OTP sent to your mobile number ({{$mobile_no}}})<sup>*</sup></label>
-                                        <input type="hidden" name="mobile_no" value="{{$mobile_no}}">
-                                        <input type="hidden" name="otp_code" value="{{$otp_code}}">
-                                        <input type="text" name="entered_otp" class="form-control" required/>
+                                        <input type="hidden" name="path" value="{{$path}}">
+                                        <label>Please enter your 10 digit mobile number<sup>*</sup></label>
+                                        <input type="text" name="mobile_no" class="form-control" required/>
                                         <button type="submit" class="awe-btn awe-btn-13">SUBMIT</button>
                                     </form>
                                 </div>
-
+                            </form>
                         </div>
 
                     </div>

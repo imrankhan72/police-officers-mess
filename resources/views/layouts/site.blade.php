@@ -50,8 +50,10 @@
                 </div>
                 <div class="header_right float-right">
                         <span class="login-register">
-                            <a class="awe-btn awe-btn-custom" href="/pay-bill" style="border-right:3px solid #2C3F75;"><strong>Pay Bill</strong></a>
+                            <a class="awe-btn awe-btn-custom" href="/verify-number?path=pay-bill" style="border-right:3px solid #2C3F75;"><strong>Pay Bill</strong></a>
                             <a class="awe-btn awe-btn-custom" href="/book-now"><strong>Apply For Booking</strong></a>
+                            <a class="awe-btn awe-btn-custom" href="/verify-number?path=booking-status" style="border-left:3px solid #2C3F75;"><strong>Booking Status</strong></a>
+
                         </span>
                 </div>
             </div>
