@@ -183,10 +183,22 @@ Route::get('/{payment}/success', function (Request $request, Payment $payment) {
 
 Route::middleware(['auth', 'verified'])->prefix('admin')->group(function () {
     Route::get('/dashboard', function () {
-        $bookings= Booking::all();
-        $payments = Payment::all();
-        return Inertia::render('Dashboard', compact('bookings','payments'));
+        $bookings= Booking::orderBy('created_at', 'DESC')->get();
+        return Inertia::render('Dashboard', compact('bookings'));
     })->name('dashboard');
+    Route::get('/update_booking/{id}', function (Request $request, $id) {
+        $booking= Booking::find($id);
+        $booking->status = $request->get('status');
+        $booking->save();
+        //Send SMS
+        if($request->get('status') ==1){
+            $message="Dear $booking->name, your booking is confirmed at Police Officers' Mess, Bhopal. Regards POMBPL";
+            $template_id = 1307169892612113442;
+            sendSingleSMS('DITMP-OCCTNS',sha1(trim('Cctns@12345')),'OCCTNS',"$message","$booking->mobile",'3d8183ac-8495-4e80-ac8a-2362e0da9838', $template_id);
+        }
+
+        return redirect()->route('dashboard')->with('message', 'Booking updated successfully');
+    });
     Route::resource('bookings', BookingController::class);
     Route::resource('payments', PaymentController::class);
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

@@ -1,10 +1,16 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
-import { Head } from '@inertiajs/vue3';
+import {Head, useForm} from '@inertiajs/vue3';
 import {CalendarDaysIcon } from '@heroicons/vue/20/solid'
 defineProps({
     booking:Array
 })
+
+const form = useForm({
+    current_password: '',
+    password: '',
+    password_confirmation: '',
+});
 </script>
 
 <template>
@@ -18,9 +24,15 @@ defineProps({
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8  bg-white ">
                 <div class="py-8">
-                    <div class="px-4 sm:px-0">
-                        <h3 class="text-base font-semibold leading-7 text-gray-900">Booking Information</h3>
-                        <p class="mt-1 max-w-2xl text-sm leading-6 text-gray-500">Personal details and application.</p>
+                    <div class="flex justify-between">
+                        <div class="px-4 sm:px-0">
+                            <h3 class="text-base font-semibold leading-7 text-gray-900">Booking Information</h3>
+                            <p class="mt-1 max-w-2xl text-sm leading-6 text-gray-500">Personal details and application.</p>
+                        </div>
+                        <div v-if="booking.status ===0" >
+                            <a :href="'/admin/update_booking/'+booking.id+'?status=1'" class="cursor-pointer inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition ease-in-out duration-150">Approve</a>
+                            <a :href="'/admin/update_booking/'+booking.id+'?status=2'" class="ml-4 inline-flex items-center px-4 py-2 bg-red-600 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-red-500 active:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition ease-in-out duration-150">Reject</a>
+                        </div>
                     </div>
                     <div class="mt-6 border-t border-gray-100">
                         <dl class="divide-y divide-gray-100">
@@ -30,7 +42,7 @@ defineProps({
                             </div>
                             <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                                 <dt class="text-sm font-medium leading-6 text-gray-900">Designation</dt>
-                                <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">{{booking.designation_id}} ({{booking.service_status}})</dd>
+                                <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">{{booking.designation_id}} --  ({{booking.service_status}})</dd>
                             </div>
                             <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                                 <dt class="text-sm font-medium leading-6 text-gray-900">Email address</dt>
@@ -42,11 +54,11 @@ defineProps({
                             </div>
                             <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                                 <dt class="text-sm font-medium leading-6 text-gray-900">Booking for (Room Type)</dt>
-                                <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">{{booking.room_type}}</dd>
+                                <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">{{booking.booking_for}}</dd>
                             </div>
                             <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                                 <dt class="text-sm font-medium leading-6 text-gray-900">Booking for</dt>
-                                <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">{{booking.booking_for}} Self</dd>
+                                <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">{{booking.booking_for_self_guest}}</dd>
                             </div>
                             <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                                 <dt class="text-sm font-medium leading-6 text-gray-900">Message</dt>

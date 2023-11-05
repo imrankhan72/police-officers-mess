@@ -61,8 +61,8 @@
                                     <div class="col-sm-6">
                                         <label>Current service status<sup>*</sup></label>
                                         <select name="service_status" class="form-control">
-                                            <option  value="1" >In service</option>
-                                            <option  value="2">Retired</option>
+                                            <option  value="In service" >In service</option>
+                                            <option  value="Retired">Retired</option>
                                         </select>
                                     </div>
                                     <div class="col-sm-6">

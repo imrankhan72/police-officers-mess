@@ -13,6 +13,8 @@ class Booking extends Model
     protected $casts = [
         'created_at' => 'date:d M Y',
         'updated_at' => 'date:d M Y',
+        'booking_from' => 'date:d M Y',
+        'booking_till' => 'date:d M Y'
     ];
     protected $guarded = [];
 }
