@@ -19,7 +19,7 @@ const showingNavigationDropdown = ref(false);
                     <div class="flex justify-between h-16">
                         <div class="flex">
                             <!-- Logo -->
-                            <div class="shrink-0 flex items-center">
+                            <div class="shrink-0 flex items-center ">
                                 <Link :href="route('dashboard')">
                                     <img src="/system/images/logo.png" class="block h-12 w-auto fill-current text-gray-800"/>
                                 </Link>
@@ -149,7 +149,10 @@ const showingNavigationDropdown = ref(false);
 
             <!-- Page Content -->
             <main>
-                <slot />
+                <div v-if="$page.props.flash.message" class="max-w-7xl mx-auto p-4 my-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400" role="alert">
+                    <span class="font-medium">Success!</span> {{$page.props.flash.message}}.
+                </div>
+                <slot/>
             </main>
         </div>
     </div>
