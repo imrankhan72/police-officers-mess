@@ -83,7 +83,7 @@ Route::get('/verify-number',function (Request $request){
 
 Route::post('/otp',function (Request $request) {
     $mobile_no = $request->get('mobile_no');
-    $otp_code = rand(1111,9999);
+    $otp_code = rand(111111,999999);
     $path = $request->get('path');
     if($path == 'pay-bill'){
         $message="Dear User Your login code is $otp_code to pay POM bill. Please don't share it with anyone. Regards POMBPL";
@@ -107,7 +107,7 @@ Route::post('/check-booking-status',function (Request $request) {
 
     $status = "Pending";
 
-    $booking = Booking::where('mobile', $mobile_no)->first();
+    $booking = Booking::where('mobile', $mobile_no)->orderBy('id','DESC')->first();
     if($booking->status == 1){
         $status = "Confirmed";
     }elseif ($booking->status == 2){
