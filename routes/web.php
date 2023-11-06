@@ -104,8 +104,17 @@ Route::post('/check-booking-status',function (Request $request) {
     if($request->get('entered_otp') !== $request->get('otp_code')){
         return "Wrong OTP Code";
     }
-    return "Booking confirmed";
-    //
+
+    $status = "Pending";
+
+    $booking = Booking::where('mobile', $mobile_no)->first();
+    if($booking->status == 1){
+        $status = "Confirmed";
+    }elseif ($booking->status == 2){
+        $status = "Rejected";
+    }
+
+    return view('booking-status', compact('status', 'booking'));
 });
 
 
