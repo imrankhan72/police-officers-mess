@@ -70,10 +70,19 @@
                                         <select name="booking_for_self_guest" class="form-control">
                                             <option  value="Self" >Self</option>
                                             <option  value="Guest" >Guest</option>
+                                            <option  value="Son">Son</option>
+                                            <option  value="Daughter">Daughter</option>
                                             <option  value="Family">Family</option>
                                             <option  value="Govt Tour">Govt Tour</option>
                                             <option  value="Private Tou">Private Tour</option>
                                         </select>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <label>Name of Marriage/Birthday person (*for lawn booking only)</label>
+                                        <input name="lawn_person" type="text" class="input-text">
                                     </div>
                                 </div>
 
