@@ -39,8 +39,21 @@
 
                                 <h4>BOOKING DETAILS</h4>
 
+                                <div id="lawnDetails" class="hidden">
+                                    <p>केन्द्रीय मेस समिति द्वारा विवाह के संबंध में सामान्य प्रावधान इस प्रकार है -</p>
+                                    <ol>
+                                        <li> लाॅन आरक्षण किराया राशि रू-75000/- एक दिवस हेतु निर्धारित है।</li>
+                                        <li> लाॅन आरक्षण किराया राशि के अतिरिक्त विधुत शुल्क राशि रू-5000/- निर्धारित है।</li>
+                                        <li> लाॅन आरक्षण किराया राशि का 40 प्रतिशत अग्रिम जमा किया जाना निर्धारित है।</li>
+                                        <li> लाॅन का आरक्षण केवल पुत्र/पुत्री/स्वयं के विवाह में रिसेप्शन कार्यक्रम हेतु किया जायेगा। लाॅन
+                                            में विवाह संबंधी अन्य कोई कार्यक्रम नहीं किये जा सकेंगे।</li>
+                                        <li> लाॅन में आयोजित कार्यक्रमों में संगीत के संबंध में निर्धारित समय व ध्वनि सीमा का पालन किया
+                                            जाना आवश्यक है।</li>
+                                    </ol>
+                                </div>
+
                                 <label>Booking For<sup>*</sup></label>
-                                <select name="booking_for" class="form-control">
+                                <select name="booking_for" id="bookingFor" class="form-control">
                                     <option  value="Room" >Room</option>
                                     <option  value="Lawn">Lawn</option>
                                     <option  value="Hall" >Hall</option>
@@ -65,21 +78,26 @@
                                             <option  value="Retired">Retired</option>
                                         </select>
                                     </div>
-                                    <div class="col-sm-6">
+                                    <div class="col-sm-6" id="nonLawnDD">
                                         <label>Booking for<sup>*</sup></label>
-                                        <select name="booking_for_self_guest" class="form-control">
+                                        <select name="booking_for_self_guest"  class="form-control">
                                             <option  value="Self" >Self</option>
                                             <option  value="Guest" >Guest</option>
-                                            <option  value="Son">Son</option>
-                                            <option  value="Daughter">Daughter</option>
                                             <option  value="Family">Family</option>
                                             <option  value="Govt Tour">Govt Tour</option>
                                             <option  value="Private Tou">Private Tour</option>
                                         </select>
                                     </div>
+                                    <div class="col-sm-6 hidden" id="lawnDD">
+                                        <label>Booking for<sup>*</sup></label>
+                                        <select name="booking_for_self_guest" class="form-control">
+                                            <option  value="Son">Son</option>
+                                            <option  value="Daughter">Daughter</option>
+                                        </select>
+                                    </div>
                                 </div>
 
-                                <div class="row">
+                                <div class="row hidden" id="lawnRelation">
                                     <div class="col-sm-12">
                                         <label>Name of Marriage/Birthday person (*for lawn booking only)</label>
                                         <input name="lawn_person" type="text" class="input-text">

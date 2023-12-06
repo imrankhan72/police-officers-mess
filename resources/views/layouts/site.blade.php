@@ -241,5 +241,33 @@
 
 <!-- Custom jQuery -->
 <script type="text/javascript" src="/assets/js/scripts.js"></script>
+
+<script>
+    $(document).ready(function() {
+        // Initial check on page load
+        checkSelectedOption();
+
+        // Add change event listener to the dropdown
+        $('#bookingFor').change(function() {
+            checkSelectedOption();
+        });
+
+        // Function to check the selected option and show/hide text accordingly
+        function checkSelectedOption() {
+            var selectedOption = $('#bookingFor').val();
+            if (selectedOption === 'Lawn') {
+                $('#lawnDetails').removeClass('hidden');
+                $('#lawnRelation').removeClass('hidden');
+                $('#lawnDD').removeClass('hidden');
+                $('#nonLawnDD').addClass('hidden');
+            } else {
+                $('#lawnDetails').addClass('hidden');
+                $('#lawnRelation').addClass('hidden');
+                $('#lawnDD').addClass('hidden');
+                $('#nonLawnDD').removeClass('hidden');
+            }
+        }
+    });
+</script>
 </body>
 </html>
