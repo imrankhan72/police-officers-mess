@@ -51,11 +51,19 @@
                                             जाना आवश्यक है।</li>
                                     </ol>
                                 </div>
+                                <div id="lawnDetails2" class="hidden">
+                                    <p>केन्द्रीय मेस समिति द्वारा जन्मदिन कार्यक्रम के संबंध में सामान्य प्रावधान इस प्रकार है -</p>
+                                    <ol>
+                                        <li> पारिवार (माता, पिता, पुत्र, पुत्री , पति, पत्नि) जन्मदिवस हेतु लाॅन आरक्षण किराया राशि रू-15000/- निर्धारित है।</li>
+                                    </ol>
+                                </div>
+
 
                                 <label>Booking For<sup>*</sup></label>
                                 <select name="booking_for" id="bookingFor" class="form-control">
                                     <option  value="Room" >Room</option>
-                                    <option  value="Lawn">Lawn</option>
+                                    <option  value="Lawn for marriage">Lawn for marriage</option>
+                                    <option  value="Lawn for birthday">Lawn for birthday</option>
                                     <option  value="Hall" >Hall</option>
                                 </select>
 
@@ -93,6 +101,17 @@
                                         <select name="booking_for_self_guest" class="form-control">
                                             <option  value="Son">Son</option>
                                             <option  value="Daughter">Daughter</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6 hidden" id="lawnDD2">
+                                        <label>Booking for<sup>*</sup></label>
+                                        <select name="booking_for_self_guest" class="form-control">
+                                            <option  value="Son">Son</option>
+                                            <option  value="Daughter">Daughter</option>
+                                            <option  value="Mother">Mother</option>
+                                            <option  value="Father">Father</option>
+                                            <option  value="Wife">Wife</option>
+                                            <option  value="Self">Self</option>
                                         </select>
                                     </div>
                                 </div>

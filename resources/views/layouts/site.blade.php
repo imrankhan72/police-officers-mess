@@ -255,17 +255,32 @@
         // Function to check the selected option and show/hide text accordingly
         function checkSelectedOption() {
             var selectedOption = $('#bookingFor').val();
-            if (selectedOption === 'Lawn') {
+            if (selectedOption === 'Lawn for marriage') {
                 $('#lawnDetails').removeClass('hidden');
                 $('#lawnRelation').removeClass('hidden');
                 $('#lawnDD').removeClass('hidden');
                 $('#nonLawnDD').addClass('hidden');
-            } else {
+            }
+            else if (selectedOption === 'Lawn for birthday'){
                 $('#lawnDetails').addClass('hidden');
-                $('#lawnRelation').addClass('hidden');
+                $('#lawnDetails2').removeClass('hidden');
+
                 $('#lawnDD').addClass('hidden');
+                $('#lawnDD2').removeClass('hidden');
+
+                $('#nonLawnDD2').addClass('hidden');
+            }
+
+            else {
+                $('#lawnDetails').addClass('hidden');
+                $('#lawnDetails2').addClass('hidden');
+                $('#lawnRelation').addClass('hidden');
+                $('#lawnRelation2').addClass('hidden');
+                $('#lawnDD').addClass('hidden');
+                $('#lawnDD2').addClass('hidden');
                 $('#nonLawnDD').removeClass('hidden');
             }
+
         }
     });
 </script>
