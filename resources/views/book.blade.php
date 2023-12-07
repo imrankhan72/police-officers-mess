@@ -40,21 +40,19 @@
                                 <h4>BOOKING DETAILS</h4>
 
                                 <div id="lawnDetails" class="hidden">
-                                    <p>केन्द्रीय मेस समिति द्वारा विवाह के संबंध में सामान्य प्रावधान इस प्रकार है -</p>
+                                    <p>The general provisions regarding marriage by the Central Mess Committee are as follows -</p>
                                     <ol>
-                                        <li> लाॅन आरक्षण किराया राशि रू-75000/- एक दिवस हेतु निर्धारित है।</li>
-                                        <li> लाॅन आरक्षण किराया राशि के अतिरिक्त विधुत शुल्क राशि रू-5000/- निर्धारित है।</li>
-                                        <li> लाॅन आरक्षण किराया राशि का 40 प्रतिशत अग्रिम जमा किया जाना निर्धारित है।</li>
-                                        <li> लाॅन का आरक्षण केवल पुत्र/पुत्री/स्वयं के विवाह में रिसेप्शन कार्यक्रम हेतु किया जायेगा। लाॅन
-                                            में विवाह संबंधी अन्य कोई कार्यक्रम नहीं किये जा सकेंगे।</li>
-                                        <li> लाॅन में आयोजित कार्यक्रमों में संगीत के संबंध में निर्धारित समय व ध्वनि सीमा का पालन किया
-                                            जाना आवश्यक है।</li>
+                                        <li> Lawn reservation rental amount is Rs 75,000/- per day.</li>
+                                        <li> In addition to the lawn reservation rental amount, an electricity charge of Rs 5,000/- is determined.</li>
+                                        <li> 40% advance of the lawn reservation rental amount must be deposited.</li>
+                                        <li> Lawn reservation is only for the reception program of son/daughter/self. No other events related to marriage can be held in the lawn.</li>
+                                        <li> The specified time and sound limit must be adhered to regarding music in events organized in the lawn.</li>
                                     </ol>
                                 </div>
                                 <div id="lawnDetails2" class="hidden">
-                                    <p>केन्द्रीय मेस समिति द्वारा जन्मदिन कार्यक्रम के संबंध में सामान्य प्रावधान इस प्रकार है -</p>
+                                    <p>The general provisions regarding birthday programs by the Central Mess Committee are as follows -</p>
                                     <ol>
-                                        <li> पारिवार (माता, पिता, पुत्र, पुत्री , पति, पत्नि) जन्मदिवस हेतु लाॅन आरक्षण किराया राशि रू-15000/- निर्धारित है।</li>
+                                        <li> For family (mother, father, son, daughter, husband, wife) birthdays, the lawn reservation rental amount is Rs 15,000/-. </li>
                                     </ol>
                                 </div>
 
