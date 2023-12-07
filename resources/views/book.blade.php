@@ -55,8 +55,7 @@
                                         <li> For family (mother, father, son, daughter, husband, wife) birthdays, the lawn reservation rental amount is Rs 15,000/-. </li>
                                     </ol>
                                 </div>
-
-
+                                
                                 <label>Booking For<sup>*</sup></label>
                                 <select name="booking_for" id="bookingFor" class="form-control">
                                     <option  value="Room" >Room</option>
