@@ -35,7 +35,7 @@
                         <div class="text" style="margin-top: 0px">
                             <h2 class="heading">Banquets and lawns in Police Officers Mess</h2>
                             <div class="desc">
-                                <p>The combination of banquet halls, beautiful landscaped gardens, and lawns overlooking the scenic Lower Lake in a Police Officers' Mess creates a versatile and picturesque setting for a wide range of events and special occasions. Here's how these elements come together </p>
+                                <p>The combination of banquet halls, beautiful landscaped gardens and lawns overlooking the scenic Lower Lake in  Police Officers' Mess creates a versatile and picturesque setting for a wide range of events and special occasions. Here's how these elements come together </p>
                                 <ol style="font-size: 16px">
                                     <li>
                                         <b>Banquet Halls: </b> The presence of banquet halls allows for indoor events, formal dinners, and celebrations to be held in a controlled environment. These halls are typically well-equipped with seating, lighting, and audiovisual equipment, making them suitable for a variety of gatherings, including award ceremonies, conferences, and receptions.
