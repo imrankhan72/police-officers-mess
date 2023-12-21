@@ -264,7 +264,6 @@
 
                 $('#lawnDetails2').addClass('hidden');
                 $('#lawnDD2').addClass('hidden');
-                $('#lawnRelation2').addClass('hidden');
             }
             else if (selectedOption === 'Lawn for birthday'){
                 $('#lawnDetails').addClass('hidden');
