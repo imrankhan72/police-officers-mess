@@ -59,9 +59,9 @@
                                 <label>Booking For<sup>*</sup></label>
                                 <select name="booking_for" id="bookingFor" class="form-control">
                                     <option  value="Room" >Room</option>
-                                    <option  value="Lawn for marriage">Lawn for marriage</option>
+                                    <option  value="Lawn for marriage">Lawn for reception</option>
                                     <option  value="Lawn for birthday">Lawn for birthday</option>
-                                    <option  value="Hall" >Hall</option>
+                                    <option  value="Hall" >Banquet Hall</option>
                                 </select>
 
                                 <div class="row">
@@ -96,6 +96,7 @@
                                     <div class="col-sm-6 hidden" id="lawnDD">
                                         <label>Booking for<sup>*</sup></label>
                                         <select name="booking_for_self_guest" class="form-control">
+                                            <option  value="Self">Self</option>
                                             <option  value="Son">Son</option>
                                             <option  value="Daughter">Daughter</option>
                                         </select>
