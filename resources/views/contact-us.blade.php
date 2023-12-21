@@ -23,7 +23,7 @@
                         <h4><i class="lotus-icon-location"></i>  In Front of DG Home Guards Office, Jahangirabad, <br>Bhopal, Madhya Pradesh</h4><br>
                         <h4><i class="lotus-icon-phone"></i>0755-2443636, 91 70491 46203</h4><br>
                         <h4><i class="fa fa-envelope-o"></i><br>
-                            <span >policeofficermess1234@gmail.com</span>
+                            <span>policeofficermess1234@gmail.com</span>
                         </h4>
                     </div>
                 </div>
