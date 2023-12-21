@@ -5,15 +5,14 @@
     <section class="section-slider" style="">
         <div id="slider-revolution">
             <ul>
-                
-                <li data-transition="fade">
-                    <img src="/assets/images/slider/room-slide.jpg" data-bgposition="left center" data-duration="1000" data-bgpositionend="right center" alt="">
-                </li>
                 <li data-transition="fade">
                     <img src="/assets/images/slider/pom-slide-1.jpeg" data-bgposition="left center" data-duration="1000" data-bgpositionend="right center" alt="">
                 </li>
                 <li data-transition="fade">
                     <img src="/assets/images/slider/pom-slide-2.jpeg" data-bgposition="left center" data-duration="1000" data-bgpositionend="right center" alt="">
+                </li>
+                <li data-transition="fade">
+                    <img src="/assets/images/slider/room-slide.jpg" data-bgposition="left center" data-duration="1000" data-bgpositionend="right center" alt="">
                 </li>
                  <li data-transition="fade">
                     <img src="/assets/images/slider/ns-2.jpg" data-bgposition="left center" data-duration="8000" data-bgpositionend="right center" alt="">
