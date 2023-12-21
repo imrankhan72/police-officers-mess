@@ -46,7 +46,7 @@
             <div class="container">
                 <div class="header_left float-left">
                     <span><i class="lotus-icon-location"></i>In Front of DG Home Guards Office, Jahangirabad, Bhopal, Madhya Pradesh</span>
-                    <span><i class="lotus-icon-phone"></i>0755-2443636</span>
+                    <span><i class="lotus-icon-phone"></i>0755-2443636, 91 70491 46203</span>
                 </div>
                 <div class="header_right float-right">
                         <span class="login-register">
@@ -171,7 +171,7 @@
                                 </div>-->
                                 <div class="text">
                                     <p><i class="lotus-icon-location"></i>In Front of DG Home Guards Office, Jahangirabad, <br>Bhopal, Madhya Pradesh</p>
-                                    <p><i class="lotus-icon-phone"></i> 91 70491 46203</p>
+                                    <p><i class="lotus-icon-phone"></i> 0755-2443636, 91 70491 46203</p>
                                     <p><i class="fa fa-envelope-o"></i>
                                             <span >policeofficermess1234@gmail.com</span>
                                     </p>
