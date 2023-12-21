@@ -40,12 +40,11 @@
                                     <li><b>Private Bedrooms:</b> Each officer has their private bedroom with a comfortable bed, linens, and storage space for personal belongings.</li>
                                     <li><b>En-Suite Bathrooms:</b> Rooms have en-suite bathrooms for added privacy and convenience.</li>
                                     <li><b>Dining Facilities: </b>The Mess has dining areas where officers can have their meals.</li>
-                                    <li><b>Recreation Areas:</b> The Mess offers recreational facilities like a lounge with TV, billiards, or other forms of entertainment to help officers relax during their downtime.</li>
+                                    <li><b>Recreation Areas:</b> The Mess offers recreational facilities like a lounge with TV or other forms of entertainment to help officers relax during their downtime.</li>
                                     <li><b>Fitness Facilities:</b> The Mess has a well-equipped Gym to help officers stay fit and healthy.</li>
                                     <li><b>Internet and Communication:</b> Mess accommodation also offers internet access and communication facilities to stay connected with the outside world.</li>
                                     <li><b>Security:</b> Security is a top priority, with secure access control to ensure the safety of officers and their belongings.</li>
                                     <li><b>Cleaning and Maintenance:</b> Regular cleaning and maintenance are usually provided to keep the accommodations in good condition.</li>
-                                    <li><b>Laundry Facilities:</b> Messes often have laundry facilities or access to nearby laundry services.</li>
                                 </ol>
                                 <p>
                                     The primary goal is to provide a supportive and comfortable environment for officers who may need to stay on-site for extended periods.
