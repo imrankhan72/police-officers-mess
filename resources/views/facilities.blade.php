@@ -42,7 +42,7 @@
                                     <li><img src="/assets/images/home/ourbest/icon-6.png" alt="icon">Coffee and Tea Facilities</li>
                                     <li><img src="/assets/images/home/ourbest/icon-7.png" alt="icon">Free Wi-fi</li>
                                     <li><img src="/assets/images/home/ourbest/icon-8.png" alt="icon">Complimentary Bottled Water</li>
-                                    <li><img src="/assets/images/home/ourbest/icon-9.png" alt="icon">Minibar</li>
+                                    <li><img src="/assets/images/home/ourbest/icon-9.png" alt="icon">Cafeteria</li>
                                     <li><img src="/assets/images/home/ourbest/icon-10.png" alt="icon">In-room Safe</li>
                                     <li><img src="/assets/images/home/ourbest/icon-11.png" alt="icon">Work Desk</li>
                                 </ul>
