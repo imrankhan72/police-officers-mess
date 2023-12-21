@@ -31,9 +31,10 @@
                         "Addl. Director General Of Police (Welfare)" => "Member",
                         "Addl. Director General Of Police (Provisioning)" => "Member",
                         "Addl. Director General Of Police 03 (Nominated by DGP, MP)" => "Member",
-                        "City Police Commissioner, Bhopal" => "Member",
+                        "Commissioner of Police, Bhopal" => "Member",
                         "Inspector General Of Police (SAF, Bhopal Range)" => "Member",
-                        "Deputy. Inspector General Of Police (SAF, H.Q./Central Zone)" => "Secretary"
+                        "Deputy. Inspector General Of Police (SAF (H.Q.)/Central range)" => "Secretary",
+                        "Commandant 7th BN, SAF" => "Invited member"
                     );
                     $i = 0;
 
