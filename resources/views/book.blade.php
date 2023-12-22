@@ -55,13 +55,14 @@
                                         <li> For family (mother, father, son, daughter, husband, wife) birthdays, the lawn reservation rental amount is Rs 15,000/-. </li>
                                     </ol>
                                 </div>
-                                
+
                                 <label>Booking For<sup>*</sup></label>
                                 <select name="booking_for" id="bookingFor" class="form-control">
                                     <option  value="Room" >Room</option>
-                                    <option  value="Lawn for marriage">Lawn for reception</option>
-                                    <option  value="Lawn for birthday">Lawn for birthday</option>
+                                    <option  value="Lawn for Marriage">Lawn for Reception</option>
+                                    <option  value="Lawn for Birthday">Lawn for Birthday</option>
                                     <option  value="Hall" >Banquet Hall</option>
+                                    <option  value="Dome" >Dome</option>
                                 </select>
 
                                 <div class="row">
@@ -70,7 +71,7 @@
                                         <input name="name" type="text" class="input-text">
                                     </div>
                                     <div class="col-sm-6">
-                                        <label>Designation<sup>*</sup></label>
+                                        <label>Rank/Designation<sup>*</sup></label>
                                         <input name="designation_id" type="text" class="input-text">
                                     </div>
                                 </div>
@@ -141,6 +142,10 @@
                                         <label>Mobile<sup>*</sup></label>
                                         <input name="mobile" type="text" class="input-text">
                                     </div>
+                                    <div class="col-sm-6">
+                                        <label>Upload ID<sup>*</sup></label>
+                                        <input name="police_id" type="file" class="input-text">
+                                    </div>
                                 </div>
 
                                 <label>Message</label>
@@ -152,7 +157,7 @@
 
                     </div>
                     <!-- END / CONTENT -->
-
+{{--Will respond after two working dates--}}
                 </div>
             </div>
         </div>

@@ -77,6 +77,7 @@
                         <li><a href="/">About <span class="fa fa-caret-down"></span></a>
                             <ul class="sub-menu">
                                 <li><a href="/about-us">About Us</a></li>
+                                <li><a href="/gallery">Gallery</a></li>
                                 <li><a href="/management-committee">Management Committee</a></li>
                                 <li><a href="/rules-regulations">Rules & Regulations</a></li>
                             </ul>
