@@ -72,7 +72,15 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <label>Rank/Designation<sup>*</sup></label>
-                                        <input name="designation_id" type="text" class="input-text">
+                                        <select name="designation_id"  class="form-control">
+                                            <option  value="DSP" >DSP</option>
+                                            <option  value="Addl.S.P" >Addl.S.P</option>
+                                            <option  value="SP">SP</option>
+                                            <option  value="DIG">DIG</option>
+                                            <option  value="IG">IG</option>
+                                            <option  value="ADGP">ADGP</option>
+                                            <option  value="DGP">DGP</option>
+                                        </select>
                                     </div>
                                 </div>
 
