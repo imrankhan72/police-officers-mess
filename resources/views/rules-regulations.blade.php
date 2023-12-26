@@ -60,7 +60,7 @@
                         "Advance deposit of Rs. 10,000 is compulsory for transfer or long term assignments."
                     );
 
-                    $marriages = array("A maximum of 10 rooms at a time can be given to the member of the mess for the marriage of their own daughter/son.");
+                    $marriages = array("A maximum of 10 rooms at a time can be given to the member of the mess for the marriage for his/her own marriage or the marriage of their own daughter/son.");
 
                     $dues  = array(
                         "Officers with pending mess dues shall not be given NOC at the time of the transfer or retirement.",
