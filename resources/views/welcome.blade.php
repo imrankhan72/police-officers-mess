@@ -25,7 +25,7 @@
                         <div class="accomd-modations-header">
                             <h2 class="heading">WELCOME TO POLICE OFFICERS' MESS</h2>
                             <img src="/assets/images/icon-accmod.png" alt="icon">
-                            <p> This portal is an initiative of Madhya Pradesh Police to provide an online platform where Police Officers may apply for booking an accommodation for themselves and their guests while on visit to Bhopal. Officers may also use this portal to apply for Garden/Lawns booking for their personal events and functions.
+                            <p> The Police Officers’ Mess in Bhopal serves as a vital institution that fosters camaraderie and provides space for relaxation and professional interaction among law enforcement officers. Located in the heart of Bhopal, this mess plays a crucial role in promoting a sense of community within the police force.
 
                             </p>
                         </div>
@@ -52,7 +52,7 @@
                             <h2 class="heading">ABOUT US</h2>
                             <span class="box-border"></span>
                             <p>
-                                The Police Officers' Mess located in Bhopal is a prestigious institution designed to provide a comfortable and relaxing environment for Police Officers and their guests. The Mess is equipped with a wide range of facilities that cater to the various needs of its guests.
+                                The Police Officers' Mess, Bhopal is a prestigious institution designed to provide a comfortable and relaxing stay for Police Officers and their guests. The Mess is equipped with a wide range of facilities that caters to the various needs of its guests.
                             </p>
                             <a href="/about-us" class="awe-btn awe-btn-default">READ MORE</a>
                         </div>
