@@ -26,58 +26,58 @@
                     <?php
                     $data = array(
                         array(
-                            "Building Name" => "Abhyoday Building",
+                            "Building Name" => "Abhyuday Building",
                             "Type of Room" => "Suite Room",
                             "Govt. Rent" => 4500,
-                            "Private Rent" => 1500,
-                            "Guest Rent" => 2000,
-                            "Permanent Residence" => ""
-                        ),
-                        array(
-                            "Building Name" => "Abhyoday Building",
-                            "Type of Room" => "Single Deluxe Room Pay Grade-7600",
-                            "Govt. Rent" =>4000 ,
-                            "Private Rent" =>1000 ,
-                            "Guest Rent" =>1500 ,
-                            "Permanent Residence" => ''
-                        ),
-                        array(
-                            "Building Name" => "Abhyoday Building",
-                            "Type of Room" => "Single Deluxe Room Pay Grade - 6600",
-                            "Govt. Rent" => 3000 ,
-                            "Private Rent" => 1000 ,
-                            "Guest Rent" => 1500,
-                            "Permanent Residence" => ''
-                        ),
-                        array(
-                            "Building Name" => "Abhyoday Building",
-                            "Type of Room" => "Single Deluxe Room Pay Grade - 5400",
-                            "Govt. Rent" =>2000 ,
                             "Private Rent" => 1000,
                             "Guest Rent" => 1500,
-                            "Permanent Residence" => ''
+                            "Permanent Residence" => "NA"
+                        ),
+                        array(
+                            "Building Name" => "Abhyuday Building",
+                            "Type of Room" => "Single Deluxe Room Pay Grade-7600",
+                            "Govt. Rent" =>4000 ,
+                            "Private Rent" =>750 ,
+                            "Guest Rent" =>1000 ,
+                            "Permanent Residence" => "NA"
+                        ),
+                        array(
+                            "Building Name" => "Abhyuday Building",
+                            "Type of Room" => "Single Deluxe Room Pay Grade - 6600",
+                            "Govt. Rent" => 3000 ,
+                            "Private Rent" => 750 ,
+                            "Guest Rent" => 1000,
+                            "Permanent Residence" => "NA"
+                        ),
+                        array(
+                            "Building Name" => "Abhyuday Building",
+                            "Type of Room" => "Single Deluxe Room Pay Grade - 5400",
+                            "Govt. Rent" =>2000 ,
+                            "Private Rent" => 750,
+                            "Guest Rent" => 1000,
+                            "Permanent Residence" => "NA"
                         ),
                         array(
                             "Building Name" => "Rustom Ji Building",
-                            "Type of Room" => "Suite Room",
+                            "Type of Room" => "Deluxe Apartment",
                             "Govt. Rent" => 4500,
                             "Private Rent" => 750,
-                            "Guest Rent" => 1750,
+                            "Guest Rent" => 1250,
                             "Permanent Residence" => 500
                         ),
                         array(
                             "Building Name" => "B.G. Ghate ANNEXE",
                             "Type of Room" => "Suite Room",
                             "Govt. Rent" => 3000,
-                            "Private Rent" => 750,
-                            "Guest Rent" => 1500,
+                            "Private Rent" => 500,
+                            "Guest Rent" => 1000,
                             "Permanent Residence" => 400
                         ),
                         array(
                             "Building Name" => "North Block",
                             "Type of Room" => "Single Room",
                             "Govt. Rent" => 2000,
-                            "Private Rent" => 500,
+                            "Private Rent" => 750,
                             "Guest Rent" => 1000,
                             "Permanent Residence" => 300
                         ),
@@ -85,7 +85,7 @@
                             "Building Name" => "Duplex ANNEXE",
                             "Type of Room" => "Duplex",
                             "Govt. Rent" => 2000,
-                            "Private Rent" => 500,
+                            "Private Rent" => 750,
                             "Guest Rent" => 1000,
                             "Permanent Residence" => 300
                         )
@@ -93,12 +93,12 @@
                     $i =0;
 
                     $halls_lawns = array(
-                        ['Rooftop Area'=>['No charge for up to 15 persons', 'Charges up to 15 -40 persons - 3000/- per day', 'Charge for more than 40 persons - 7000/- per day']],
+                        ['Rooftop Area'=>['No charge for up to 15 persons', 'Charges up to 15 -40 persons - Rs.3000/- per day', 'Charge for more than 40 persons - Rs.7000/- per day']],
                         ['Dome Charge'=>['3000/- per day']],
-                        ['Parijat Party Hall'=>['Fixed rate for private program: Rs.10000 /- per day', 'Fixed rate for government program: 20000 /- per day']],
+                        ['Parijat Party Hall'=>['Fixed rate for private program: Rs.10000 /- per day', 'Fixed rate for government program: RS.20000 /- per day']],
                         ['Anandam Party Hall'=>['Fixed rate for government and private programs: Rs.3000 /- per day']],
                         ['Umang Party Hall'=>['Fixed rate for government and private programs: Rs.5000 /- per day']],
-                        ['Lawn'=>['Fixed rate for marriage and party: Rs.50,000/- per day and Rs.5000/- for electricity charges', 'Fixed rate for birthday and other events: Rs.15,000/- per day and Rs.5000/- for electricity charges']],
+                        ['Lawn'=>['Fixed rate for marriage and party: Rs.75,000/- per day and Rs.5000/- for electricity charges', 'Fixed rate for birthday and other events: Rs.15,000/- per day and Rs.5000/- for electricity charges']],
                     );
 
                     $j = 0;
