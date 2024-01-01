@@ -33,7 +33,7 @@
                     <div class="col-lg-offset-2 col-lg-10">
 
                         <div class="reservation_content">
-                            <form  action="/bookings/store" method="post">
+                            <form  action="/bookings/store" method="post" enctype="multipart/form-data">
                                 {{csrf_field()}}
                             <div class="reservation-billing-detail">
 
@@ -69,6 +69,9 @@
                                     <div class="col-sm-6">
                                         <label>Name<sup>*</sup></label>
                                         <input name="name" type="text" class="input-text">
+                                        @error('name')
+                                        <div style="color:red;">{{ $message }}</div>
+                                        @enderror
                                     </div>
                                     <div class="col-sm-6">
                                         <label>Rank/Designation<sup>*</sup></label>
@@ -133,11 +136,17 @@
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <label>From Date<sup>*</sup></label>
-                                        <input name="booking_from" type="date" class="input-text">
+                                        <input name="booking_from" id="booking_from" type="date" class="input-text">
+                                        @error('booking_from')
+                                        <div style="color:red;">{{ $message }}</div>
+                                        @enderror
                                     </div>
                                     <div class="col-sm-6">
                                         <label>Till date<sup>*</sup></label>
-                                        <input name="booking_till" type="date" class="input-text">
+                                        <input name="booking_till" id="booking_till" type="date" class="input-text">
+                                        @error('booking_till')
+                                        <div style="color:red;">{{ $message }}</div>
+                                        @enderror
                                     </div>
                                 </div>
 
@@ -149,10 +158,16 @@
                                     <div class="col-sm-6">
                                         <label>Mobile<sup>*</sup></label>
                                         <input name="mobile" type="text" class="input-text">
+                                        @error('mobile')
+                                        <div style="color:red;">{{ $message }}</div>
+                                        @enderror
                                     </div>
                                     <div class="col-sm-6">
-                                        <label>Upload ID<sup>*</sup></label>
+                                        <label>Upload ID (Aadhaar/PAN/License)<sup>*</sup></label>
                                         <input name="police_id" type="file" class="input-text">
+                                        @error('police_id')
+                                        <div style="color:red;">{{ $message }}</div>
+                                        @enderror
                                     </div>
                                 </div>
 

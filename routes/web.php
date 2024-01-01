@@ -37,7 +37,18 @@ Route::get('send_sms',function (){
 });
 
 Route::post('/bookings/store', function (Request $request) {
-    $booking = Booking::create($request->all());
+    $validatedData = $request->validate([
+        'name' => 'required|string', 'booking_from' => 'required|string', 'booking_till' => 'required|string','mobile' => 'required|string', 'police_id' => 'required|file',
+    ]);
+
+    $booking = $request->all();
+
+    if($request->police_id){
+        $file = $request->file('police_id');
+        $path = $file->store('photos','public');
+        $booking['police_id'] = $file->hashName();
+    }
+    $booking = Booking::create($booking);
     return back()->with('message','Your booking request has been created. We will contact you soon');
 });
 

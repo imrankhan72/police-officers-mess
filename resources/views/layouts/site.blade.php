@@ -244,6 +244,14 @@
 <script type="text/javascript" src="/assets/js/scripts.js"></script>
 
 <script>
+
+    // Get the current date in the format YYYY-MM-DD
+    var currentDate = new Date().toISOString().split('T')[0];
+
+    // Set the min attribute of the date input
+    document.getElementById('booking_from').min = currentDate;
+    document.getElementById('booking_till').min = currentDate;
+
     $(document).ready(function() {
         // Initial check on page load
         checkSelectedOption();
