@@ -38,7 +38,7 @@ Route::get('send_sms',function (){
 
 Route::post('/bookings/store', function (Request $request) {
     $validatedData = $request->validate([
-        'name' => 'required|string', 'booking_from' => 'required|string', 'booking_till' => 'required|string','mobile' => 'required|string', 'police_id' => 'required|file',
+        'name' => 'required|string', 'booking_from' => 'required|string', 'booking_till' => 'required|string','mobile' => 'required|string'
     ]);
 
     $booking = $request->all();
