@@ -245,26 +245,30 @@
 
 <script>
 
-    // Get the current date in the format YYYY-MM-DD
-    var currentDate = new Date().toISOString().split('T')[0];
-
-    // Set the min attribute of the date input
-    document.getElementById('booking_from').min = currentDate;
-    document.getElementById('booking_till').min = currentDate;
 
     $(document).ready(function() {
+
+        // // Get the current date in the format YYYY-MM-DD
+        // var currentDate = new Date().toISOString().split('T')[0];
+        //
+        // // Set the min attribute of the date input
+        // document.getElementById('booking_from').min = currentDate;
+        // document.getElementById('booking_till').min = currentDate;
+
         // Initial check on page load
         checkSelectedOption();
 
         // Add change event listener to the dropdown
         $('#bookingFor').change(function() {
+
             checkSelectedOption();
         });
 
         // Function to check the selected option and show/hide text accordingly
         function checkSelectedOption() {
             var selectedOption = $('#bookingFor').val();
-            if (selectedOption === 'Lawn for marriage') {
+            console.log(selectedOption);
+            if (selectedOption === 'Lawn for Marriage') {
                 $('#lawnDetails').removeClass('hidden');
                 $('#lawnRelation').removeClass('hidden');
                 $('#lawnDD').removeClass('hidden');
@@ -274,7 +278,7 @@
                 $('#lawnDetails2').addClass('hidden');
                 $('#lawnDD2').addClass('hidden');
             }
-            else if (selectedOption === 'Lawn for birthday'){
+            else if (selectedOption === 'Lawn for Birthday'){
                 $('#lawnDetails').addClass('hidden');
                 $('#lawnDetails2').removeClass('hidden');
 
