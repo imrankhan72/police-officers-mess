@@ -95,7 +95,6 @@ const form = useForm({
                                                 <div class="ml-4 flex min-w-0 flex-1 gap-2">
                                                     <span class="flex-shrink-0 text-gray-400">ID</span>
                                                     <img :src="'/storage/photos/'+booking.police_id" alt="">
-                                                    <span class="truncate font-medium">{{booking.booking_till}}</span>
                                                 </div>
                                             </div>
                                         </li>
