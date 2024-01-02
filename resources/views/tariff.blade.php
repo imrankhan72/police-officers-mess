@@ -93,12 +93,12 @@
                     $i =0;
 
                     $halls_lawns = array(
-                        ['Rooftop Area'=>['No charge for up to 15 persons', 'Charges up to 15 -40 persons - Rs.3000/- per day', 'Charge for more than 40 persons - Rs.7000/- per day']],
+                        ['Rooftop Area'=>['No charge for up to 15 persons', 'Charges up to 15 -40 persons - Rs.2000/- per day', 'Charge for more than 40 persons - Rs.5000/- per day']],
                         ['Dome Charge'=>['3000/- per day']],
-                        ['Parijat Party Hall'=>['Fixed rate for private program: Rs.10000 /- per day', 'Fixed rate for government program: RS.20000 /- per day']],
-                        ['Anandam Party Hall'=>['Fixed rate for government and private programs: Rs.3000 /- per day']],
-                        ['Umang Party Hall'=>['Fixed rate for government and private programs: Rs.5000 /- per day']],
-                        ['Lawn'=>['Fixed rate for marriage and party: Rs.75,000/- per day and Rs.5000/- for electricity charges', 'Fixed rate for birthday and other events: Rs.15,000/- per day and Rs.5000/- for electricity charges']],
+                        ['Parijat Party Hall'=>['Fixed rate for private program: Rs.7000 /- per day', 'Fixed rate for government program: RS.20000 /- per day']],
+                        ['Anandam Party Hall'=>['Fixed rate for government and private programs: Rs.2000 /- per day']],
+                        ['Umang Party Hall'=>['Fixed rate for government and private programs: Rs.4000 /- per day']],
+                        ['Lawn'=>['Fixed rate for marriage and party: Rs.75,000/- per day and Rs.10000/- for electricity charges', 'Fixed rate for birthday and other events: Rs.15,000/- per day and Rs.5000/- for electricity charges']],
                     );
 
                     $j = 0;
