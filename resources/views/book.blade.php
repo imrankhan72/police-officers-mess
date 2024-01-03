@@ -120,7 +120,7 @@
                                             <option  value="Daughter">Daughter</option>
                                             <option  value="Mother">Mother</option>
                                             <option  value="Father">Father</option>
-                                            <option  value="Wife">Wife</option>
+                                            <option  value="Spouse">Spouse</option>
                                             <option  value="Self">Self</option>
                                         </select>
                                     </div>
