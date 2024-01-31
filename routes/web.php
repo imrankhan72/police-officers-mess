@@ -24,6 +24,11 @@ Route::view('/restaurants','restaurants');
 Route::view('/gallery','gallery');
 Route::view('/contact-us','contact-us');
 Route::view('/book-now','book');
+Route::view('/disclaimer','disclaimer');
+Route::view('/privacy-policy','/privacy-policy');
+Route::view('/refund-policy','/refund-policy');
+Route::view('/cancellation','/cancellation');
+
 
 
 
