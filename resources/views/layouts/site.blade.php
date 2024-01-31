@@ -206,7 +206,7 @@
                                  <li><a href="/disclaimer">Disclaimer</a></li>
                                 <li><a href="/refund-policy">Refund policy</a></li>
                                 <li><a href="/privacy-policy">Privacy policy</a></li>
-                                <li><a href="/cancellations">Cancellations</a></li>
+                                <li><a href="/cancellation">Cancellations</a></li>
                             </ul>
                         </div>
                     </div>
