@@ -203,6 +203,10 @@
                                 <li><a href="/management-committee">Committee Member</a></li>
                                 <li><a href="/rules-regulations">Rules & Regulations</a></li>
                                 <li><a href="/contact-us">Contact Us</a></li>
+                                 <li><a href="/disclaimer">Disclaimer</a></li>
+                                <li><a href="/refund-policy">Refund policy</a></li>
+                                <li><a href="/privacy-policy">Privacy policy</a></li>
+                                <li><a href="/cancellations">Cancellations</a></li>
                             </ul>
                         </div>
                     </div>
