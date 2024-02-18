@@ -281,6 +281,9 @@
 
                 $('#lawnDetails2').addClass('hidden');
                 $('#lawnDD2').addClass('hidden');
+
+                $('#no_of_rooms').addClass('hidden');
+
             }
             else if (selectedOption === 'Lawn for Birthday'){
                 $('#lawnDetails').addClass('hidden');
@@ -290,6 +293,13 @@
                 $('#lawnDD2').removeClass('hidden');
 
                 $('#nonLawnDD2').addClass('hidden');
+
+                $('#no_of_rooms').addClass('hidden');
+            }
+
+            else if (selectedOption === 'Room'){
+                $('#no_of_rooms').removeClass('hidden');
+                $('#no_of_rooms').addClass('show');
             }
 
             else {
@@ -300,6 +310,8 @@
                 $('#lawnDD').addClass('hidden');
                 $('#lawnDD2').addClass('hidden');
                 $('#nonLawnDD').removeClass('hidden');
+                // $('#no_of_rooms').addClass('hidden');
+                // $('#no_of_rooms').addClass('show');
             }
 
         }

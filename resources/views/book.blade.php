@@ -56,14 +56,22 @@
                                     </ol>
                                 </div>
 
-                                <label>Booking For<sup>*</sup></label>
-                                <select name="booking_for" id="bookingFor" class="form-control">
-                                    <option  value="Room" >Room</option>
-                                    <option  value="Lawn for Marriage">Lawn for Reception</option>
-                                    <option  value="Lawn for Birthday">Lawn for Birthday</option>
-                                    <option  value="Hall" >Banquet Hall</option>
-                                    <option  value="Dome" >Dome</option>
-                                </select>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label>Booking For<sup>*</sup></label>
+                                        <select name="booking_for" id="bookingFor" class="form-control">
+                                            <option  value="Room" >Room</option>
+                                            <option  value="Lawn for Marriage">Lawn for Reception</option>
+                                            <option  value="Lawn for Birthday">Lawn for Birthday</option>
+                                            <option  value="Hall" >Banquet Hall</option>
+                                            <option  value="Dome" >Dome</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6" id="no_of_rooms">
+                                        <label>Number of rooms</label>
+                                        <input name="no_of_rooms_requested" type="text" class="input-text">
+                                    </div>
+                                </div>
 
                                 <div class="row">
                                     <div class="col-sm-6">

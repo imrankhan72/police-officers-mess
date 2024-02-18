@@ -1,4 +1,6 @@
 <?php
+
+use Carbon\Carbon;
 use Razorpay\Api\Api;
 
 use App\Http\Controllers\BookingController;
@@ -30,15 +32,11 @@ Route::view('/refund-policy','/refund-policy');
 Route::view('/cancellation','/cancellation');
 
 
-
-
 Route::get('send_sms',function (){
     $message = "Dear Imaad Your login code is 5560 to pay POM bill. Please don't share it with anyone. Regards POMBPL";
 
     // Call the sendSingleSMS function
     sendSingleSMS('DITMP-OCCTNS', sha1(trim('Cctns@12345')), 'OCCTNS', $message, '9826445006', '3d8183ac-8495-4e80-ac8a-2362e0da9838', '1307169693372298480');
-
-
 });
 
 Route::post('/bookings/store', function (Request $request) {
@@ -134,10 +132,11 @@ Route::post('/check-booking-status',function (Request $request) {
 });
 
 
-
 Route::get('/pay-bill',function (){
     return view('pay-bill');
 });
+
+
 Route::post('/bill-details', function (Request $request) {
      $mobile_no = $request->get('mobile_no');
 
@@ -170,23 +169,30 @@ Route::get('/booking-status-otp',function (){
     return view('booking-status-otp');
 });
 Route::get('/make-payment', function (Request $request) {
-//    $payment = $request->get('amount');
-//    $gateway_charges = $payment*.0243;
-//    $gst = $gateway_charges*.18;
-//    $fees = $payment+$gateway_charges+$gst;
-//    $api = new Api(env('RAZORPAY_KEY'), env('RAZORPAY_KEY_SECRET'));
-//    $payment_options = array( 'upi'=>'1', 'wallet'=>'1','netbanking'=>'1', 'card'=>'1');
-//
-//    $response = $api->paymentLink->create(array('amount'=>round($fees*100), 'currency'=>'INR', 'accept_partial'=>false,
-//        'description' => "Bill payment for police officers mess ", 'customer' => array('name'=>$request->get('name'),
-//            'email' => 'bill@pom.mppoice.gov.in', 'contact'=>'9826445006'),
-//        'notify'=>array('sms'=>true, 'email'=>false) , 'reminder_enable'=>false ,
-//        'options'=>array('checkout'=>array('method'=>$payment_options)),
-//        'callback_url' => "https://online.dpvipralawcollege.ac.in/success",
-//        'callback_method'=>'get'));
-//    $payment_link = $response['short_url'];
-//    return redirect()->away($payment_link);
-   return view('make_payment');
+    $params = [
+        'chargeAmount' => $request->get('amount'),
+        'chargeHead1'=> $request->get('amount'),
+        'currencyCode' => '356',
+        'desc' => $request->get('name'),
+        'dueDate' => Carbon::now()->format('d/m/Y'),
+        'invoiceNo' => 'inv' . '-' . Carbon::now()->format('Ymd') . '-' . Str::random(6),
+        'merchantId' => 'T_20280',
+        'mobileNo' => $request->get('mobile_no'),
+        'paymentReturnURL' => 'https://qa.phicommerce.com/pg/api/merchant',
+    ];
+    $key = 'abc';
+    $concatenated = '';
+    foreach ($params as $value) {
+        if (!is_null($value) && $value !== '') {
+            $concatenated .= $value;
+        }
+    }
+    $hash = hash_hmac('sha256', $concatenated, $key);
+    $secureHash = strtolower($hash);
+    $params['secureHash'] =$secureHash;
+    $response = Http::post('https://qa.phicommerce.com/pg/portal/pay/paymentInvoiceService', $params);
+    //return $response['redirectionURL'];
+    return redirect()->away($response['redirectionURL']);
 });
 
 Route::get('/{payment}/success', function (Request $request, Payment $payment) {
@@ -207,19 +213,29 @@ Route::get('/{payment}/success', function (Request $request, Payment $payment) {
 
 
 Route::middleware(['auth', 'verified'])->prefix('admin')->group(function () {
+
     Route::get('/dashboard', function () {
         $bookings= Booking::orderBy('created_at', 'DESC')->get();
         return Inertia::render('Dashboard', compact('bookings'));
     })->name('dashboard');
+
     Route::get('/update_booking/{id}', function (Request $request, $id) {
         $booking= Booking::find($id);
         $booking->status = $request->get('status');
         $booking->save();
         //Send SMS
         if($request->get('status') ==1){
-            $message="Dear $booking->name, your booking is confirmed at Police Officers' Mess, Bhopal. Regards POMBPL";
-            $template_id = 1307169892612113442;
-            sendSingleSMS('DITMP-OCCTNS',sha1(trim('Cctns@12345')),'OCCTNS',"$message","$booking->mobile",'3d8183ac-8495-4e80-ac8a-2362e0da9838', $template_id);
+            if($request->get('rooms_assigned') == 0){
+                $message="Dear $booking->name, your booking is confirmed at Police Officers' Mess, Bhopal. Regards POMBPL";
+                $template_id = 1307169892612113442;
+                sendSingleSMS('DITMP-OCCTNS',sha1(trim('Cctns@12345')),'OCCTNS',"$message","$booking->mobile",'3d8183ac-8495-4e80-ac8a-2362e0da9838', $template_id);
+
+            }else{
+                $message= "Sir/Madam dear Booking of $request->get('rooms_assigned') room/s for  $booking->from_date is confirmed. POMBPL";
+                $template_id = 1307170607635019229;
+                sendSingleSMS('DITMP-OCCTNS',sha1(trim('Cctns@12345')),'OCCTNS',"$message","$booking->mobile",'3d8183ac-8495-4e80-ac8a-2362e0da9838', $template_id);
+            }
+
         }
 
         return redirect()->route('dashboard')->with('message', 'Booking updated successfully');

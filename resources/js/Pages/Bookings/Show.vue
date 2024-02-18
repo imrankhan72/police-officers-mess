@@ -2,15 +2,13 @@
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import {Head, useForm} from '@inertiajs/vue3';
 import {CalendarDaysIcon } from '@heroicons/vue/20/solid'
+import TextInput from "@/Components/TextInput.vue";
+import {ref} from "vue";
 defineProps({
     booking:Array
 })
+let assign_rooms_count = ref(0);
 
-const form = useForm({
-    current_password: '',
-    password: '',
-    password_confirmation: '',
-});
 </script>
 
 <template>
@@ -30,7 +28,7 @@ const form = useForm({
                             <p class="mt-1 max-w-2xl text-sm leading-6 text-gray-500">Personal details and application.</p>
                         </div>
                         <div v-if="booking.status ===0" >
-                            <a :href="'/admin/update_booking/'+booking.id+'?status=1'" class="cursor-pointer inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition ease-in-out duration-150">Approve</a>
+                            <a :href="'/admin/update_booking/'+booking.id+'?status=1&rooms_assigned='+assign_rooms_count" class="cursor-pointer inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition ease-in-out duration-150">Approve</a>
                             <a :href="'/admin/update_booking/'+booking.id+'?status=2'" class="ml-4 inline-flex items-center px-4 py-2 bg-red-600 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-red-500 active:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition ease-in-out duration-150">Reject</a>
                         </div>
                     </div>
@@ -54,11 +52,15 @@ const form = useForm({
                             </div>
                             <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                                 <dt class="text-sm font-medium leading-6 text-gray-900">Booking for (Room Type)</dt>
-                                <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">{{booking.booking_for}}</dd>
+                                <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">{{booking.booking_for}}
+                                    <input v-if="booking.booking_for =='Room'" v-model="assign_rooms_count" name="assign_no_of_rooms" class="border border-indigo-400 mx-8 px-1"/>
+                                </dd>
                             </div>
                             <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                                 <dt class="text-sm font-medium leading-6 text-gray-900">Booking for</dt>
-                                <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">{{booking.booking_for_self_guest}}</dd>
+                                <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                                    {{booking.booking_for_self_guest}}
+                                </dd>
                             </div>
                             <div v-if="booking.lawn_person" class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                                 <dt class="text-sm font-medium leading-6 text-gray-900">Lawn Booking for person</dt>
