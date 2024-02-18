@@ -53,8 +53,13 @@ let assign_rooms_count = ref(0);
                             <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                                 <dt class="text-sm font-medium leading-6 text-gray-900">Booking for (Room Type)</dt>
                                 <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">{{booking.booking_for}}
-                                    <input v-if="booking.booking_for =='Room'" v-model="assign_rooms_count" name="assign_no_of_rooms" class="border border-indigo-400 mx-8 px-1"/>
+                                    <div class="flex">
+                                        Rooms requested: {{booking.no_of_rooms_requested}}  --||-   Assign rooms
+                                        <input v-if="booking.booking_for =='Room'" v-model="assign_rooms_count" name="assign_no_of_rooms" class="border border-indigo-400 mx-4 px-1"/>
+                                    </div>
                                 </dd>
+
+
                             </div>
                             <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                                 <dt class="text-sm font-medium leading-6 text-gray-900">Booking for</dt>
