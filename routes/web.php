@@ -62,7 +62,7 @@ Route::post('/bookings/store', function (Request $request) {
         'booking_from' => 'required|string',
         'booking_till' => 'required|string',
         'mobile' => 'required|string',
-        'police_id' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048', // Adjust the max file size as per your requirement
+        //'police_id' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048', // Adjust the max file size as per your requirement
     ]);
 
     $booking = $request->all();
