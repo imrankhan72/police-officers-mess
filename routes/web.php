@@ -178,7 +178,7 @@ Route::get('/make-payment', function (Request $request) {
         'invoiceNo' => 'inv' . '-' . Carbon::now()->format('Ymd') . '-' . Str::random(6),
         'merchantId' => 'P_50292',
         'mobileNo' => $request->get('mobile_no'),
-        'paymentReturnURL' => 'https://qa.phicommerce.com/pg/api/merchant',
+        'paymentReturnURL' => 'https://pom.mppolice.gov.in',
     ];
     $key = '9114c8e9151246b2a1e95e1d048336d1';
     $concatenated = '';
@@ -190,7 +190,7 @@ Route::get('/make-payment', function (Request $request) {
     $hash = hash_hmac('sha256', $concatenated, $key);
     $secureHash = strtolower($hash);
     $params['secureHash'] =$secureHash;
-    $response = Http::post('https://qa.phicommerce.com/pg/portal/pay/paymentInvoiceService', $params);
+    return $response = Http::post('https://qa.phicommerce.com/pg/portal/pay/paymentInvoiceService', $params);
     //return $response['redirectionURL'];
     return redirect()->away($response['redirectionURL']);
 });
