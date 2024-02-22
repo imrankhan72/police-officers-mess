@@ -1,249 +1,74 @@
 @extends('layouts.site')
 <!-- Header | START -->
 @section('content')
+
+
+
+        </div>
+    </div>
     <!-- GALLERY -->
     <section class="section-gallery bg-white tp_inner_padding">
-
         <div class="gallery">
             <h2 class="heading text-center">GALLERY</h2>
-
-            <!-- FILTER -->
-            <div class="gallery-cat text-center">
-                <ul class="list-inline">
-                    <li class="active"><a href="#" data-filter="*">All</a></li>
-                    <li><a href="#" data-filter=".ground">HOTEL &amp; GROUND</a></li>
-                    <li><a href="#" data-filter=".gym">GYM</a></li>
-                    <li><a href="#" data-filter=".dining">DINING</a></li>
-                    <li><a href="#" data-filter=".party-hall">Party Hall</a></li>
-                    <li><a href="#" data-filter=".roof-top">ROOF TOP</a></li>
-                    <li><a href="#" data-filter=".rooms">ROOMS</a></li>
+            <div class="container">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item active"><a class="nav-link" data-toggle="tab" href="#ground">Hotel & Ground</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#gym">Gym</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#dining">Dining</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#party-hall">Party Hall</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#roof-top">Roof Top</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#rooms">Rooms</a></li>
                 </ul>
-            </div>
-            <!-- END / FILTER -->
-
-            <!-- GALLERY CONTENT -->
-            <div class="gallery-content hover-img">
-                <div class="row">
-                    <div class="gallery-isotope col-6 pd-0">
-
-                        <!-- ITEM SIZE -->
-                        <div class="item-size"></div>
-                        <!-- END / ITEM SIZE -->
-                        <!-- ITEM -->
-
-                        <!-- ITEM -->
-                        <div class="item-isotope  suite">
-                            <div class="gallery_item">
-                                <a href="/assets/images/room/img-1.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
-                                    <img src="/assets/images/room/img-1.jpg" alt="">
-                                </a>
-                            </div>
+                <div class="tab-content" style="margin-top: 20px;">
+                    <div id="ground" class="tab-pane fade show active in ">
+                        <div class="popup-gallery" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+                            <a class="gallery-item" href="/assets/images/room/img-1.jpg" title="Room 1" style="margin-bottom: 20px; flex: 0 0 calc(33.33% - 20px);">
+                                <img src="/assets/images/room/img-1.jpg" alt="Image 1" style="width: 100%; height: auto;">
+                            </a>
+                            <a class="gallery-item" href="/assets/images/room/img-2.jpg" title="Room 2" style="margin-bottom: 20px; flex: 0 0 calc(33.33% - 20px);">
+                                <img src="/assets/images/room/img-2.jpg" alt="Image 1" style="width: 100%; height: auto;">
+                            </a>
+                            <a class="gallery-item" href="/assets/images/room/img-3.jpg" title="Room 3" style="margin-bottom: 20px; flex: 0 0 calc(33.33% - 20px);">
+                                <img src="/assets/images/room/img-3.jpg" alt="Image 1" style="width: 100%; height: auto;">
+                            </a>
+                            <a class="gallery-item" href="/assets/images/room/img-4.jpg" title="Room 4" style="margin-bottom: 20px; flex: 0 0 calc(33.33% - 20px);">
+                                <img src="/assets/images/room/img-4.jpg" alt="Image 1" style="width: 100%; height: auto;">
+                            </a>
+                            <a class="gallery-item" href="/assets/images/room/img-5.jpg" title="Room 5" style="margin-bottom: 20px; flex: 0 0 calc(33.33% - 20px);">
+                                <img src="/assets/images/room/img-5.jpg" alt="Image 1" style="width: 100%; height: auto;">
+                            </a>
+                            <a class="gallery-item" href="/assets/images/room/img-6.jpg" title="Room 6" style="margin-bottom: 20px; flex: 0 0 calc(33.33% - 20px);">
+                                <img src="/assets/images/room/img-6.jpg" alt="Image 1" style="width: 100%; height: auto;">
+                            </a>
+                            <a class="gallery-item" href="/assets/images/room/img-7.jpg" title="Room 7" style="margin-bottom: 20px; flex: 0 0 calc(33.33% - 20px);">
+                                <img src="/assets/images/room/img-7.jpg" alt="Image 1" style="width: 100%; height: auto;">
+                            </a>
+                            <a class="gallery-item" href="/assets/images/room/img-1.jpg" title="Room 8" style="margin-bottom: 20px; flex: 0 0 calc(33.33% - 20px);">
+                                <img src="/assets/images/room/img-1.jpg" alt="Image 1" style="width: 100%; height: auto;">
+                            </a>
+                            <a class="gallery-item" href="/assets/images/room/img-1.jpg" title="The Cleaner" style="margin-bottom: 20px; flex: 0 0 calc(33.33% - 20px);">
+                                <img src="/assets/images/room/img-1.jpg" alt="Image 1" style="width: 100%; height: auto;">
+                            </a>
+                            <!-- Add more gallery items as needed -->
                         </div>
-                        <!-- END / ITEM -->
-
-                        <!-- ITEM -->
-                        <div class="item-isotope  suite">
-                            <div class="gallery_item">
-                                <a href="/assets/images/room/img-2.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
-                                    <img src="/assets/images/room/img-2.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <!-- END / ITEM -->
-
-                        <div class="item-isotope  ">
-                            <div class="gallery_item">
-                                <a href="/assets/images/gallery/popup/img-1.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
-                                    <img src="/assets/images/gallery/img-1.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <!-- END / ITEM -->
-
-                        <!-- ITEM -->
-                        <div class="item-isotope  ground ">
-                            <div class="gallery_item">
-                                <a href="/assets/images/gallery/popup/img-2.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
-                                    <img src="/assets/images/gallery/img-2.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <!-- END / ITEM -->
-
-                        <!-- ITEM -->
-                        <div class="item-isotope ground ">
-                            <div class="gallery_item">
-                                <a href="/assets/images/gallery/popup/img-3.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
-                                    <img src="/assets/images/gallery/img-3.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <!-- END / ITEM -->
-
-                        <!-- ITEM -->
-                        <div class="item-isotope ">
-                            <div class="gallery_item">
-                                <a href="/assets/images/gallery/popup/img-4.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
-                                    <img src="/assets/images/gallery/img-4.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <!-- END / ITEM -->
-
-                        <!-- ITEM -->
-                        <div class="item-isotope  ground ">
-                            <div class="gallery_item">
-                                <a href="/assets/images/gallery/popup/img-5.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
-                                    <img src="/assets/images/gallery/img-5.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <!-- END / ITEM -->
-
-                        <!-- ITEM -->
-                        <div class="item-isotope ground ">
-                            <div class="gallery_item">
-                                <a href="/assets/images/gallery/popup/img-6.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
-                                    <img src="/assets/images/gallery/img-6.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <!-- END / ITEM -->
-
-                        <!-- ITEM -->
-                        <div class="item-isotope ground">
-                            <div class="gallery_item">
-                                <a href="/assets/images/gallery/popup/img-7.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
-                                    <img src="/assets/images/gallery/img-7.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <!-- END / ITEM -->
-
-                        <!-- ITEM -->
-                        <div class="item-isotope  ">
-                            <div class="gallery_item">
-                                <a href="/assets/images/gallery/popup/img-8.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
-                                    <img src="/assets/images/gallery/img-8.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <!-- END / ITEM -->
-
-                        <!-- ITEM -->
-                        <div class="item-isotope ">
-                            <div class="gallery_item">
-                                <a href="/assets/images/gallery/popup/img-9.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
-                                    <img src="/assets/images/gallery/img-9.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <!-- END / ITEM -->
-
-                        <!-- ITEM -->
-                        <div class="item-isotope ground">
-                            <div class="gallery_item">
-                                <a href="/assets/images/gallery/popup/img-10.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
-                                    <img src="/assets/images/gallery/img-10.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <!-- END / ITEM -->
-
-
-
-                        <!-- ITEM -->
-                        <div class="item-isotope bathroom">
-                            <div class="gallery_item">
-                                <a href="/assets/images/gallery/popup/img-12.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
-                                    <img src="/assets/images/gallery/img-12.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <!-- END / ITEM -->
-
-                        {{--                        Ground & outside --}}
-                        @for($x = 1; $x <= 6; $x++)
-                            <div class="item-isotope ground">
-                                <div class="gallery_item">
-                                    <a href="/assets/images/new-photos/building-front/{{$x}}.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
-                                        <img src="/assets/images/new-photos/building-front/{{$x}}.jpg">
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- END / ITEM -->
-                        @endfor
-
-                        {{-- Gym--}}
-                        @for($x = 1; $x <= 4; $x++)
-                            <div class="item-isotope gym">
-                                <div class="gallery_item">
-                                    <a href="/assets/images/new-photos/gym/{{$x}}.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
-                                        <img src="/assets/images/new-photos/gym/{{$x}}.jpg">
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- END / ITEM -->
-                        @endfor
-
-                        {{--    Dining--}}
-                        @for($x = 1; $x <= 6; $x++)
-                            <div class="item-isotope dining">
-                                <div class="gallery_item">
-                                    <a href="/assets/images/new-photos/dining/{{$x}}.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
-                                        <img src="/assets/images/new-photos/dining/{{$x}}.jpg">
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- END / ITEM -->
-                        @endfor
-
-                        {{--Party Hall--}}
-                        @for($x = 1; $x <= 10; $x++)
-                            <div class="item-isotope party-hall">
-                                <div class="gallery_item">
-                                    <a href="/assets/images/new-photos/party-hall/{{$x}}.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
-                                        <img src="/assets/images/new-photos/party-hall/{{$x}}.jpg">
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- END / ITEM -->
-                        @endfor
-
-                        {{--    Rooftop--}}
-                        @for($x = 1; $x <= 6; $x++)
-                            <div class="item-isotope roof-top">
-                                <div class="gallery_item">
-                                    <a href="/assets/images/new-photos/rooftop/{{$x}}.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
-                                        <img src="/assets/images/new-photos/rooftop/{{$x}}.jpg">
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- END / ITEM -->
-                        @endfor
-
-
-                        {{-- Rooms--}}
-                        @for($x = 1; $x <= 12; $x++)
-                            <div class="item-isotope rooms">
-                                <div class="gallery_item">
-                                    <a href="/assets/images/new-photos/rooms/{{$x}}.jpg" class="gallery-popup mfp-image" title="Police Officer's Mess, Bhopal">
-                                        <img src="/assets/images/new-photos/rooms/{{$x}}.jpg">
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- END / ITEM -->
-                        @endfor
+                    </div>
+                    <div id="gym" class="tab-pane fade ">
+                        Gym images
+                    </div>
+                    <div id="dining" class="tab-pane fade ">
+                      Dining
+                    </div>
+                    <div id="party-hall" class="tab-pane fade">
+                        Party hall
+                    </div>
+                    <div id="roof-top" class="tab-pane fade">
+                        Roof top
+                    </div>
+                    <div id="rooms" class="tab-pane fade">
+                        <!-- Content for Rooms tab goes here -->
                     </div>
                 </div>
-
-                {{--                <div class="our-gallery text-center">--}}
-                {{--                    <a href="#" class="awe-btn awe-btn-default">BROWSE OUR GALLERY</a>--}}
-                {{--                </div>--}}
-
             </div>
-            <!-- GALLERY CONTENT -->
-
         </div>
     </section>
     <!-- END / GALLERY -->

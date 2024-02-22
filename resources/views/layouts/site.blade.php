@@ -26,6 +26,10 @@
     <!-- MAIN STYLE -->
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
 
+
+
+
+
 </head>
 
 <body>
@@ -250,14 +254,9 @@
 <script>
 
 
+
     $(document).ready(function() {
 
-        // // Get the current date in the format YYYY-MM-DD
-        // var currentDate = new Date().toISOString().split('T')[0];
-        //
-        // // Set the min attribute of the date input
-        // document.getElementById('booking_from').min = currentDate;
-        // document.getElementById('booking_till').min = currentDate;
 
         // Initial check on page load
         checkSelectedOption();

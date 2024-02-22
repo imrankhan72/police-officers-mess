@@ -572,7 +572,26 @@
     GalleryPopup();
     function GalleryPopup() {
 
+        $('.popup-gallery').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            tLoading: 'Loading image #%curr%...',
+            mainClass: 'mfp-img-mobile',
+            gallery: {
+                enabled: true,
+                navigateByImgClick: true,
+                preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+            },
+            image: {
+                tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+
+            }
+        });
+
+
         if ($('.gallery_item').length) {
+
+
 
             $('.gallery_item').each(function (index, el) {
                 $(this).magnificPopup({
@@ -587,8 +606,8 @@
                     gallery: {
                         enabled: true,
                         arrowMarkup: '<button title="%title%" type="button" class="mfp-prevent-%dir% lotus-icon-%dir%-arrow"></button>',
-                        tPrev: '',
-                        tNext: ''
+                        navigateByImgClick: true,
+                        preload: [0,1] //
                     }
                 });
             });
@@ -1182,7 +1201,7 @@
 
 })(jQuery);
 
-// function for ajax 
+// function for ajax
 function sendBooking() {
     var $ = jQuery;
     $('#ajax-form-search-send').validate({

@@ -198,8 +198,8 @@ Route::get('/booking-status-otp',function (){
 
 Route::get('/make-payment', function (Request $request) {
     $params = [
-        'chargeAmount' => 250,
-        'chargeHead1'=> 250,
+        'chargeAmount' => $request->get('amount'),
+        'chargeHead1'=> $request->get('amount'),
         'currencyCode' => '356',
         'desc' => $request->get('name'),
         'dueDate' => Carbon::now()->format('d/m/Y'),
