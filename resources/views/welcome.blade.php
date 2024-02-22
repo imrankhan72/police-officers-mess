@@ -110,6 +110,20 @@
                 <div class="row">
                     <div class="col-md-12 col-lg-12">
                         <div class="guestbook-content owl-single">
+
+                             <!-- ITEM -->
+                            <div class="guestbook-item">
+                                <div class="img">
+                                    <img src="/assets/images/avatar/azadsir.jpg" alt="">
+                                </div>
+
+                                <div class="text">
+                                   <p>What an outstanding piece of work this mess is perhaps the best in the Country thanks to MP Police following the rich tradition of extending best facility and comfort to even Retd. officers. Great job ---Keep it up</p>
+                                    <span><strong>Yashowardhan Jha Azad</strong></span><br>
+                                    <span>Ex IPS - Spl.Dir. IB, Secy. Security, GOI</span>
+                                </div>
+                            </div>
+                            
                             <!-- ITEM -->
                             <div class="guestbook-item">
                                 <div class="img">
@@ -117,25 +131,14 @@
                                 </div>
 
                                 <div class="text">
-                                    <p>I had the opportunity to visit this prestigious mess of Bhopal. I has come up very well with all facilities of 5 star hotel.the ambiance is pleasuring and wonderful. The staff here is courious and attentive. Very very good experience.</p>
+                                    <p>I had the opportunity to visit this prestigious mess of Bhopal. I has come up very well with all facilities of a 5 star hotel. The ambience is pleasuring and wonderful. The staff here is courious and attentive. Very very good experience.</p>
                                     <span><strong>Avinash Chandra </strong></span><br>
-                                    <span>DG fire and Emg services</span>
+                                    <span>DG Fire and Emg. Services</span>
                                 </div>
                             </div>
                             <!-- ITEM -->
 
-                            <!-- ITEM -->
-                            <div class="guestbook-item">
-                                <div class="img">
-                                    <img src="/assets/images/avatar/azadsir.jpg" alt="">
-                                </div>
-
-                                <div class="text">
-                                   <p>What an outstanding piece of work this mess is perhaps the best in the counting thanks to mp police following the rich tradition of performing the best facilitation and comfort to even retd. officers.Great job ---Keep it up</p>
-                                    <span><strong>Yashowardhan Jha Azad</strong></span><br>
-                                    <span>Ex IPS - Spl Dir IB, Secy Security, GOI</span>
-                                </div>
-                            </div>
+                           
                             <!-- ITEM -->
                             <div class="guestbook-item">
                                 <div class="img">
@@ -143,8 +146,8 @@
                                 </div>
 
                                 <div class="text">
-                                   <p>Came to the mess after a long span of 24 years. Great to see the renovation and the mess in a completely changed in a positive direction like the tradition of mp police. Wish a great future of the madhya Pradesh police</p>
-                                    <span><strong>Pawan deo</strong></span><br>
+                                   <p>Came to the mess after a long span of 24 years. Great to see the renovation and the mess completely changed in a positive direction like the tradition of MP Police. Wish a great future of the Madhya Pradesh Police</p>
+                                    <span><strong>Pawan Deo</strong></span><br>
                                     <span>IPS</span>
                                 </div>
                             </div>
@@ -154,9 +157,9 @@
                                 </div>
 
                                 <div class="text">
-                                   <p>Visited for some work and stayed here for a day. Great ambiance and good hospitality. Very impressive reflection of great tradition and professionalism of mp police,very satisfied,Thanks </p>
-                                    <span><strong>Rishi pal</strong></span><br>
-                                    <span>IPS-Joint Commissioner of police Delhi</span>
+                                   <p>Visited for some work and stayed here for a day. Great ambience and good hospitality. Very impressive reflection of great tradition and professionalism of mp police,very satisfied,Thanks </p>
+                                    <span><strong>Rishi Pal</strong></span><br>
+                                    <span>IPS, Joint Commissioner of Police, Delhi</span>
                                 </div>
                             </div>
                         </div>
