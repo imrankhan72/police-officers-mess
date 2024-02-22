@@ -197,7 +197,7 @@ Route::get('/booking-status-otp',function (){
 });
 Route::get('/make-payment', function (Request $request) {
     $params = [
-        'chargeAmount' => $request->get('amount')/100,
+        'chargeAmount' => 70,
         'chargeHead1'=> $request->get('amount'),
         'currencyCode' => '356',
         'desc' => $request->get('name'),
