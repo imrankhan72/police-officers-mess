@@ -27,7 +27,7 @@
                     <div class="about-item">
 
                         <div class="img owl-single">
-                             <img src="/assets/images/gallery/popup/ab1.jpg" alt="">
+                             <img src="/assets/images/gallery/ab1.jpg" alt="">
                             <img src="/assets/images/gallery/ab2.jpg" alt="">
                             <img src="/assets/images/gallery/ab3.jpg" alt="">
                         </div>
