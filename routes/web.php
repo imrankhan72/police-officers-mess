@@ -217,7 +217,7 @@ Route::get('/make-payment', function (Request $request) {
     $hash = hash_hmac('sha256', $concatenated, $key);
     $secureHash = strtolower($hash);
     $params['secureHash'] =$secureHash;
-    return $response = Http::post('https://secure-ptg.payphi.com/pg/portal/pay/paymentInvoiceService', $params);
+    $response = Http::post('https://secure-ptg.payphi.com/pg/portal/pay/paymentInvoiceService', $params);
     //return $response['redirectionURL'];
     return redirect()->away($response['redirectionURL']);
 });
