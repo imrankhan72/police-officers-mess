@@ -294,6 +294,7 @@
                 $('#lawnDD').addClass('hidden');
                 $('#lawnDD2').removeClass('hidden');
 
+                $('#nonLawnDD').addClass('hidden');
                 $('#nonLawnDD2').addClass('hidden');
 
                 $('#no_of_rooms').addClass('hidden');
