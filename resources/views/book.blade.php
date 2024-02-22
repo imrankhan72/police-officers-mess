@@ -63,8 +63,10 @@
                                             <option  value="Room" >Room</option>
                                             <option  value="Lawn for Marriage">Lawn for Reception</option>
                                             <option  value="Lawn for Birthday">Lawn for Birthday</option>
-                                            <option  value="Hall" >Banquet Hall</option>
+                                            <option  value="Hall" >Banquet Hall (Parijat)</option>
+                                            <option  value="Hall2" >Anandam hall </option>
                                             <option  value="Dome" >Dome</option>
+                                            <option  value="roof-top" >Roof Top</option>
                                         </select>
                                     </div>
                                     <div class="col-sm-6" id="no_of_rooms">
@@ -178,9 +180,6 @@
                                         @enderror
                                     </div>
                                 </div>
-
-                                <label>Message</label>
-                                <textarea name="message" class="input-textarea"></textarea>
                                 <button type="submit" class="awe-btn awe-btn-13">SUBMIT</button>
                             </div>
                             </form>
