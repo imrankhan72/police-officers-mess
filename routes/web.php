@@ -203,11 +203,11 @@ Route::get('/make-payment', function (Request $request) {
         'desc' => $request->get('name'),
         'dueDate' => Carbon::now()->format('d/m/Y'),
         'invoiceNo' => 'inv' . '-' . Carbon::now()->format('Ymd') . '-' . Str::random(6),
-        'merchantId' => 'T_20280',
+        'merchantId' => 'P_50292',
         'mobileNo' => $request->get('mobile_no'),
-        'paymentReturnURL' => 'https://qa.phicommerce.com/pg/api/merchant',
+        'paymentReturnURL' => 'https://pom.mppolice.gov.in/payment_success',
     ];
-    $key = 'abc';
+    $key = '9114c8e9151246b2a1e95e1d048336d1';
     $concatenated = '';
     foreach ($params as $value) {
         if (!is_null($value) && $value !== '') {
@@ -217,25 +217,13 @@ Route::get('/make-payment', function (Request $request) {
     $hash = hash_hmac('sha256', $concatenated, $key);
     $secureHash = strtolower($hash);
     $params['secureHash'] =$secureHash;
-    $response = Http::post('https://qa.phicommerce.com/pg/portal/pay/paymentInvoiceService', $params);
+    $response = Http::post('https://secure-ptg.payphi.com/pg/portal/pay/paymentInvoiceService', $params);
     //return $response['redirectionURL'];
     return redirect()->away($response['redirectionURL']);
 });
 
-Route::get('/{payment}/success', function (Request $request, Payment $payment) {
-
-    if($request->get('razorpay_payment_link_status') == "paid"){
-        $payment->payment_status = 1;
-        $payment->razorpay_payment_id = $request->get('razorpay_payment_id');
-        $payment->razorpay_payment_link_id = $request->get('razorpay_payment_link_id');
-        $payment->razorpay_signature = $request->get('razorpay_signature');
-        $payment->paid_on = now();
-        $payment->save();
-    }
-
-
-//    User can download PDF receipt
-    return Inertia::render('Success', compact('payment'));
+Route::get('/payment_success', function (Request $request, Payment $payment) {
+    return $request->all();
 });
 
 
