@@ -12,6 +12,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Http;
 use Inertia\Inertia;
+use Intervention\Image\Facades\Image;
 
 Route::view('/', 'welcome');
 Route::view('/about-us','about');
@@ -39,20 +40,46 @@ Route::get('send_sms',function (){
     sendSingleSMS('DITMP-OCCTNS', sha1(trim('Cctns@12345')), 'OCCTNS', $message, '9826445006', '3d8183ac-8495-4e80-ac8a-2362e0da9838', '1307169693372298480');
 });
 
+//Route::post('/bookings/store', function (Request $request) {
+//    $validatedData = $request->validate([
+//        'name' => 'required|string', 'booking_from' => 'required|string', 'booking_till' => 'required|string','mobile' => 'required|string','police_id' => 'required'
+//    ]);
+//
+//    $booking = $request->all();
+//
+//    if($request->police_id){
+//        $file = $request->file('police_id');
+//        $path = $file->store('photos','public');
+//        $booking['police_id'] = $file->hashName();
+//    }
+//    $booking = Booking::create($booking);
+//    return back()->with('message','Your booking request has been created. We will contact you soon');
+//});
+
 Route::post('/bookings/store', function (Request $request) {
     $validatedData = $request->validate([
-        'name' => 'required|string', 'booking_from' => 'required|string', 'booking_till' => 'required|string','mobile' => 'required|string','police_id' => 'required'
+        'name' => 'required|string',
+        'booking_from' => 'required|string',
+        'booking_till' => 'required|string',
+        'mobile' => 'required|string',
+        'police_id' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048', // Adjust the max file size as per your requirement
     ]);
 
     $booking = $request->all();
 
-    if($request->police_id){
+    if ($request->police_id) {
         $file = $request->file('police_id');
-        $path = $file->store('photos','public');
+        $image = Image::make($file);
+
+        // Compress the image (adjust the quality as needed)
+        $image->encode('jpg', 70); // 70 is the image quality (0-100)
+
+        $path = $file->store('photos', 'public');
         $booking['police_id'] = $file->hashName();
     }
+
     $booking = Booking::create($booking);
-    return back()->with('message','Your booking request has been created. We will contact you soon');
+    return back()->with('message', 'Your booking request has been created. We will contact you soon');
 });
 
 function post_to_url($url, $data) {
