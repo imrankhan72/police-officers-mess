@@ -231,7 +231,7 @@ Route::middleware(['auth', 'verified'])->prefix('admin')->group(function () {
                 sendSingleSMS('DITMP-OCCTNS',sha1(trim('Cctns@12345')),'OCCTNS',"$message","$booking->mobile",'3d8183ac-8495-4e80-ac8a-2362e0da9838', $template_id);
 
             }else{
-                $message= "Sir/Madam dear Booking of $request->get('rooms_assigned') room/s for  $booking->from_date is confirmed. POMBPL";
+                $message= "Sir/Madam dear Booking of ". $request->get('rooms_assigned')." room/s for".$booking->from_date."is confirmed. POMBPL";
                 $template_id = 1307170607635019229;
                 sendSingleSMS('DITMP-OCCTNS',sha1(trim('Cctns@12345')),'OCCTNS',"$message","$booking->mobile",'3d8183ac-8495-4e80-ac8a-2362e0da9838', $template_id);
             }
