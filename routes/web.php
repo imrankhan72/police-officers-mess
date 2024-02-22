@@ -176,11 +176,11 @@ Route::get('/make-payment', function (Request $request) {
         'desc' => $request->get('name'),
         'dueDate' => Carbon::now()->format('d/m/Y'),
         'invoiceNo' => 'inv' . '-' . Carbon::now()->format('Ymd') . '-' . Str::random(6),
-        'merchantId' => 'T_20280',
+        'merchantId' => 'P_50292',
         'mobileNo' => $request->get('mobile_no'),
         'paymentReturnURL' => 'https://qa.phicommerce.com/pg/api/merchant',
     ];
-    $key = 'abc';
+    $key = '9114c8e9151246b2a1e95e1d048336d1';
     $concatenated = '';
     foreach ($params as $value) {
         if (!is_null($value) && $value !== '') {
