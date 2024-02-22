@@ -183,7 +183,7 @@
 
                     <div class="col-xs-4 col-lg-2">
                         <div class="widget">
-                            <h4 class="widget-title">Page site</h4>
+                            <h4 class="widget-title">Links</h4>
                             <ul>
                                 <li><a href="/accomodations">Accommodations</a></li>
                                 <li><a href="/banquets-lawns">Banquetes & Lawn</a></li>
@@ -219,7 +219,7 @@
         <!-- FOOTER BOTTOM -->
         <div class="footer_bottom">
             <div class="container">
-                <p>&copy; 2023 Police Officers' Mess.  All rights reserved.</p>
+                <p>&copy; 2024 Police Officers' Mess.  All rights reserved.</p>
             </div>
         </div>
         <!-- END / FOOTER BOTTOM -->
