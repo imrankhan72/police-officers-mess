@@ -113,13 +113,13 @@
                             <!-- ITEM -->
                             <div class="guestbook-item">
                                 <div class="img">
-                                    <img src="/assets/images/avatar/img-5.jpg" alt="">
+                                    <img src="/assets/images/avatar/avinashsir.jpg" alt="">
                                 </div>
 
                                 <div class="text">
-                                    <p>This is the best place to stay in Bhopal! I always stay in Officers' Mess while on a visit to Bhopal ! After spending the day in office routines to come back and enjoy a cup of tea while looking out lower-lake view window and then to top it all off...</p>
-                                    <span><strong>Amit Kumar Verma</strong></span><br>
-                                    <span>Dy.SP, Gwalior</span>
+                                    <p>I had the opportunity to visit this prestigious mess of Bhopal. I has come up very well with all facilities of 5 star hotel.the ambiance is pleasuring and wonderful. The staff here is courious and attentive. Very very good experience.</p>
+                                    <span><strong>Avinash Chandra </strong></span><br>
+                                    <span>DG fire and Emg services</span>
                                 </div>
                             </div>
                             <!-- ITEM -->
@@ -127,17 +127,38 @@
                             <!-- ITEM -->
                             <div class="guestbook-item">
                                 <div class="img">
-                                    <img src="/assets/images/avatar/img-5.jpg" alt="">
+                                    <img src="/assets/images/avatar/azadsir.jpg" alt="">
                                 </div>
 
                                 <div class="text">
-                                   <p>This is the best place to stay in Bhopal! I always stay in Officers' Mess while on a visit to Bhopal ! After spending the day in office routines to come back and enjoy a cup of tea while looking out lower-lake view window and then to top it all off...</p>
-                                    <span><strong>Amit Kumar Verma</strong></span><br>
-                                    <span>Dy.SP, Gwalior</span>
+                                   <p>What an outstanding piece of work this mess is perhaps the best in the counting thanks to mp police following the rich tradition of performing the best facilitation and comfort to even retd. officers.Great job ---Keep it up</p>
+                                    <span><strong>Yashowardhan Jha Azad</strong></span><br>
+                                    <span>Ex IPS - Spl Dir IB, Secy Security, GOI</span>
                                 </div>
                             </div>
                             <!-- ITEM -->
+                            <div class="guestbook-item">
+                                <div class="img">
+                                    <img src="/assets/images/avatar/pawansir.jpg" alt="">
+                                </div>
 
+                                <div class="text">
+                                   <p>Came to the mess after a long span of 24 years. Great to see the renovation and the mess in a completely changed in a positive direction like the tradition of mp police. Wish a great future of the madhya Pradesh police</p>
+                                    <span><strong>Pawan deo</strong></span><br>
+                                    <span>IPS</span>
+                                </div>
+                            </div>
+                            <div class="guestbook-item">
+                                <div class="img">
+                                    <img src="/assets/images/avatar/rishisir.jpg" alt="">
+                                </div>
+
+                                <div class="text">
+                                   <p>Visited for some work and stayed here for a day. Great ambiance and good hospitality. Very impressive reflection of great tradition and professionalism of mp police,very satisfied,Thanks </p>
+                                    <span><strong>Rishi pal</strong></span><br>
+                                    <span>IPS-Joint Commissioner of police Delhi</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -145,7 +166,6 @@
             </div>
         </div>
 
-    </div>
-    <!-- END / HOME GUEST BOOK -->
+    </div>    <!-- END / HOME GUEST BOOK -->
 
 @endsection
