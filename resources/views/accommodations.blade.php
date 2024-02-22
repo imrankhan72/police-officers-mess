@@ -27,7 +27,7 @@
 
                         <div class="img owl-single">
                             @for($x = 1; $x <= 12; $x++)
-                                <img src="/assets/images/new-photos/rooms/{{$x}}.jpg">
+                                <img src="/assets/images/new-photos/{{$x}}.jpg">
                             @endfor
                         </div>
 
