@@ -195,6 +195,7 @@ Route::post('/bill-details', function (Request $request) {
 Route::get('/booking-status-otp',function (){
     return view('booking-status-otp');
 });
+
 Route::get('/make-payment', function (Request $request) {
     $params = [
         'chargeAmount' => 250,
