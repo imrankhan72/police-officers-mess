@@ -55,6 +55,13 @@
                                         <li> For family (mother, father, son, daughter, husband, wife) birthdays, the lawn reservation rental amount is Rs 15,000/-. </li>
                                     </ol>
                                 </div>
+                                <div id="roof-top-details" class="hidden">
+                                    <p>The general provisions for roof top by the Central Mess Committee are as follows -</p>
+                                    <ol>
+                                        <li>For 15 to 40 people :  2000/- per day.</li>
+                                        <li>For 40+ people :  5000/- per day.</li>
+                                    </ol>
+                                </div>
 
                                 <div class="row">
                                     <div class="col-sm-6">
@@ -64,9 +71,9 @@
                                             <option  value="Lawn for Marriage">Lawn for Reception</option>
                                             <option  value="Lawn for Birthday">Lawn for Birthday</option>
                                             <option  value="Hall" >Banquet Hall (Parijat)</option>
-                                            <option  value="Hall2" >Anandam hall </option>
+                                            <option  value="Anandam hall" >Anandam hall </option>
                                             <option  value="Dome" >Dome</option>
-                                            <option  value="roof-top" >Roof Top</option>
+                                            <option  value="roof top" >Roof Top</option>
                                         </select>
                                     </div>
                                     <div class="col-sm-6" id="no_of_rooms">
