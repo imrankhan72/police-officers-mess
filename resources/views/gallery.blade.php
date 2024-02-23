@@ -324,13 +324,7 @@
                             <a class="gallery-item" href="/assets/images/main-gallery/gym2.jpeg" title="Police Officers' Mess, Bhopal" style="margin-bottom: 20px; flex: 0 0 calc(25% - 20px);">
                                 <img src="/assets/images/main-gallery/gym2.jpeg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
                             </a>
-                            <a class="gallery-item" href="/assets/images/main-gallery/gym3.jpeg" title="Police Officers' Mess, Bhopal" style="margin-bottom: 20px; flex: 0 0 calc(25% - 20px);">
-                                <img src="/assets/images/main-gallery/gym3.jpeg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
-                            </a>
-
-                            <a class="gallery-item" href="/assets/images/main-gallery/gym4.jpeg" title="Police Officers' Mess, Bhopal" style="margin-bottom: 20px; flex: 0 0 calc(25% - 20px);">
-                                <img src="/assets/images/main-gallery/gym4.jpeg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
-                            </a>
+                          
 
                             <a class="gallery-item" href="/assets/images/main-gallery/gym5.jpeg" title="Police Officers' Mess, Bhopal" style="margin-bottom: 20px; flex: 0 0 calc(25% - 20px);">
                                 <img src="/assets/images/main-gallery/gym5.jpeg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
