@@ -17,7 +17,6 @@
     <!-- GALLERY -->
     <section class="section-gallery bg-white tp_inner_padding">
         <div class="gallery">
-            <h2 class="heading text-center">GALLERY</h2>
             <div class="container">
                <!--  <ul class="nav nav-tabs">
                     <li class="nav-item active"><a class="nav-link" data-toggle="tab" href="#ground">Hotel & Ground</a></li>
