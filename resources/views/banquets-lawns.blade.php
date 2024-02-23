@@ -26,10 +26,11 @@
                     <div class="about-item">
 
                         <div class="img owl-single">
-                            @for($x = 1; $x <= 4; $x++)
-                                <img src="/assets/images/new-photos/party-hall/{{$x}}.jpg">
-                                <img src="/assets/images/roof top/{{$x}}.jpg">
-                            @endfor
+                           <img src="/assets/images/main-gallery/6.jpeg" alt="">
+                            <img src="/assets/images/main-gallery/8.jpeg" alt="">
+                            <img src="/assets/images/main-gallery/11.jpeg" alt="">
+                            <img src="/assets/images/main-gallery/48.jpeg" alt="">
+                           
                         </div>
 
                         <div class="text" style="margin-top: 0px">
