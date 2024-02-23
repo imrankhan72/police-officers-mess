@@ -27,9 +27,9 @@
                     <div class="about-item">
 
                         <div class="img owl-single">
-                             <img src="/assets/images/gallery/ab1.jpg" alt="">
-                            <img src="/assets/images/gallery/ab2.jpg" alt="">
-                            <img src="/assets/images/gallery/ab3.jpg" alt="">
+                             <img src="/assets/images/main-gallery/29.jpeg" alt="">
+                            <img src="/assets/images/main-gallery/15.jpeg" alt="">
+                            <img src="/assets/images/main-gallery/1.jpeg" alt="">
                         </div>
 
                         <div class="text" style="margin-top: 0px">
