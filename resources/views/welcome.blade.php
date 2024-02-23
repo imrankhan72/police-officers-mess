@@ -118,7 +118,7 @@
                                 </div>
 
                                 <div class="text">
-                                   <p>What an outstanding piece of work this mess is perhaps the best in the Country thanks to MP Police following the rich tradition of extending best facility and comfort to even Retd. officers. Great job ---Keep it up</p>
+                                   <p>What an outstanding piece of work this mess is perhaps the best in the Country. Thanks to MP Police for following the rich tradition of extending best facility and comfort to even Retd. officers. Great job ---Keep it up</p>
                                     <span><strong>Yashowardhan Jha Azad</strong></span><br>
                                     <span>Ex IPS - Spl.Dir. IB, Secy. Security, GOI</span>
                                 </div>
