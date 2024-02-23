@@ -11,17 +11,18 @@
         <div class="gallery">
             <h2 class="heading text-center">GALLERY</h2>
             <div class="container">
-                <ul class="nav nav-tabs">
+               <!--  <ul class="nav nav-tabs">
                     <li class="nav-item active"><a class="nav-link" data-toggle="tab" href="#ground">Hotel & Ground</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#gym">Gym</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#gym">Gym</a></li>
                     <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#dining">Dining</a></li>
                     <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#party-hall">Party Hall</a></li>
                     <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#roof-top">Roof Top</a></li>
-                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#hotel-lawns">Rooms</a></li> -->
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#hotel-lawns">Rooms</a></li>
                 </ul>
-               
+                -->
                 <div class="tab-content" style="margin-top: 20px;">
                     <div id="ground" class="tab-pane fade show active in ">
+                        
                         <div class="popup-gallery" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
                             
 
@@ -77,28 +78,28 @@
 
                             <!-- rooms start -->
 
-                             <a class="gallery-item" href="/assets/images/accomodation/room-1.jpeg" title="The Cleaner" style="margin-bottom: 20px; flex: 0 0 calc(33.33% - 20px);">
-                                <img src="/assets/images/accomodation/room-1.jpeg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
+                             <a class="gallery-item" href="/assets/images/accomodations/room-1.jpeg" title="The Cleaner" style="margin-bottom: 20px; flex: 0 0 calc(33.33% - 20px);">
+                                <img src="/assets/images/accomodations/room-1.jpeg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
                             </a>
 
-                             <a class="gallery-item" href="/assets/images/accomodation/room-2.jpeg" title="The Cleaner" style="margin-bottom: 20px; flex: 0 0 calc(33.33% - 20px);">
-                                <img src="/assets/images/accomodation/room-2.jpeg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
+                             <a class="gallery-item" href="/assets/images/accomodations/room-2.jpeg" title="The Cleaner" style="margin-bottom: 20px; flex: 0 0 calc(33.33% - 20px);">
+                                <img src="/assets/images/accomodations/room-2.jpeg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
                             </a>
 
-                            <a class="gallery-item" href="/assets/images/accomodation/room-3.jpeg" title="The Cleaner" style="margin-bottom: 20px; flex: 0 0 calc(33.33% - 20px);">
-                                <img src="/assets/images/accomodation/room-3.jpeg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
+                            <a class="gallery-item" href="/assets/images/accomodations/room-3.jpeg" title="The Cleaner" style="margin-bottom: 20px; flex: 0 0 calc(33.33% - 20px);">
+                                <img src="/assets/images/accomodations/room-3.jpeg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
                             </a>
 
-                             <a class="gallery-item" href="/assets/images/accomodation/room-4.jpeg" title="The Cleaner" style="margin-bottom: 20px; flex: 0 0 calc(33.33% - 20px);">
-                                <img src="/assets/images/accomodation/room-4.jpeg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
+                             <a class="gallery-item" href="/assets/images/accomodations/room-4.jpeg" title="The Cleaner" style="margin-bottom: 20px; flex: 0 0 calc(33.33% - 20px);">
+                                <img src="/assets/images/accomodations/room-4.jpeg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
                             </a>
 
-                             <a class="gallery-item" href="/assets/images/accomodation/room-5.jpeg" title="The Cleaner" style="margin-bottom: 20px; flex: 0 0 calc(33.33% - 20px);">
-                                <img src="/assets/images/accomodation/room-5.jpeg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
+                             <a class="gallery-item" href="/assets/images/accomodations/room-5.jpeg" title="The Cleaner" style="margin-bottom: 20px; flex: 0 0 calc(33.33% - 20px);">
+                                <img src="/assets/images/accomodations/room-5.jpeg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
                             </a>
 
-                             <a class="gallery-item" href="/assets/images/accomodation/room-6.jpeg" title="The Cleaner" style="margin-bottom: 20px; flex: 0 0 calc(33.33% - 20px);">
-                                <img src="/assets/images/accomodation/room-6.jpeg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
+                             <a class="gallery-item" href="/assets/images/accomodations/room-6.jpeg" title="The Cleaner" style="margin-bottom: 20px; flex: 0 0 calc(33.33% - 20px);">
+                                <img src="/assets/images/accomodations/room-6.jpeg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
                             </a>
 
 
