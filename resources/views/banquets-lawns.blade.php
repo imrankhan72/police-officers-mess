@@ -26,11 +26,11 @@
                     <div class="about-item">
 
                         <div class="img owl-single">
-                           <img src="/assets/images/main-gallery/6.jpeg" alt="">
-                            <img src="/assets/images/main-gallery/8.jpeg" alt="">
+                           <img src="/assets/images/main-gallery/9.jpeg" alt="">
                             <img src="/assets/images/main-gallery/11.jpeg" alt="">
-                            <img src="/assets/images/main-gallery/48.jpeg" alt="">
-                           
+                            <img src="/assets/images/main-gallery/14.jpeg" alt="">
+                            <img src="/assets/images/main-gallery/58.jpeg" alt="">
+                           <img src="/assets/images/main-gallery/59.jpeg" alt="">
                         </div>
 
                         <div class="text" style="margin-top: 0px">
