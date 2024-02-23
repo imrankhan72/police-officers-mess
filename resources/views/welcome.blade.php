@@ -44,7 +44,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="img">
-                            <a href="#"><img src="/assets/images/gallery/popup/img-1.jpg" alt=""></a>
+                            <a href="#"><img src="assets/images/main-gallery/7.jpeg" alt=""></a>
                         </div>
                     </div>
                     <div class="col-md-6">
