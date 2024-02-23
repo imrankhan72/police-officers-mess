@@ -25,11 +25,14 @@
                     <!-- ITEM -->
                     <div class="about-item">
 
-                        <div class="img owl-single">
-                            @for($x = 1; $x <= 6; $x++)
-                                <img src="/assets/images/accomodations/{{$x}}.jpg">
-                                
-                            @endfor
+                       <div class="img owl-single">
+                            <img src="/assets/images/accomodations/room-3.jpeg" alt="">
+                           <img src="/assets/images/accomodations/room-1.jpeg" alt="">
+                           <img src="/assets/images/accomodations/room-2.jpeg" alt="">
+                           <img src="/assets/images/accomodations/room-4.jpeg" alt="">
+                           <img src="/assets/images/accomodations/room-5.jpeg" alt="">
+                           <img src="/assets/images/accomodations/room-6.jpeg" alt="">
+                            
                         </div>
 
                         <div class="text" style="margin-top: 0px">
