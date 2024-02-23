@@ -25,7 +25,7 @@
 
                         <div class="col-md-6 col-md-push-6">
                             <div class="img">
-                                <img src="/assets/images/gallery/img-11.jpg" alt="">
+                                <img src="/assets/images/main-gallery/50.jpeg" alt="">
                             </div>
                         </div>
 
