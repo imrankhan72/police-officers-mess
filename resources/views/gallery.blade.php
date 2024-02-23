@@ -135,9 +135,7 @@
                                 <img src="/assets/images/main-gallery/1.jpeg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
                             </a>
 
-                             <a class="gallery-item" href="/assets/images/main-gallery/2.jpeg" title="POM - Bhopal" style="margin-bottom: 20px; flex: 0 0 calc(25% - 20px);">
-                                <img src="/assets/images/main-gallery/2.jpeg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
-                            </a>
+                           
 
                              <a class="gallery-item" href="/assets/images/main-gallery/3.jpeg" title="POM - Bhopal" style="margin-bottom: 20px; flex: 0 0 calc(25% - 20px);">
                                 <img src="/assets/images/main-gallery/3.jpeg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
@@ -216,13 +214,7 @@
                                 <img src="/assets/images/main-gallery/21.jpeg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
                             </a>
 
-                             <a class="gallery-item" href="/assets/images/main-gallery/22.jpeg" title="POM - Bhopal" style="margin-bottom: 20px; flex: 0 0 calc(25% - 20px);">
-                                <img src="/assets/images/main-gallery/22.jpeg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
-                            </a>
-                            
-                             <a class="gallery-item" href="/assets/images/main-gallery/23.jpeg" title="POM - Bhopal" style="margin-bottom: 20px; flex: 0 0 calc(25% - 20px);">
-                                <img src="/assets/images/main-gallery/23.jpeg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
-                            </a>
+
 
                              <a class="gallery-item" href="/assets/images/main-gallery/24.jpeg" title="POM - Bhopal" style="margin-bottom: 20px; flex: 0 0 calc(25% - 20px);">
                                 <img src="/assets/images/main-gallery/24.jpeg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
