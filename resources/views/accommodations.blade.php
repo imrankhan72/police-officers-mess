@@ -26,8 +26,9 @@
                     <div class="about-item">
 
                         <div class="img owl-single">
-                            @for($x = 1; $x <= 12; $x++)
-                                <img src="/assets/images/new-photos/{{$x}}.jpg">
+                            @for($x = 1; $x <= 6; $x++)
+                                <img src="/assets/images/accomodations/{{$x}}.jpg">
+                                
                             @endfor
                         </div>
 
