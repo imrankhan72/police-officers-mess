@@ -194,7 +194,7 @@
                                 <li><a href="/tariff">Tariff</a></li>
                                 <li><a href="/facilities">Facilities</a></li>
                                 <li><a href="/gallery">Gallery</a></li>
-                                <li><a href="/rules-regulations">Faq's</a></li>
+                                <li><a href="/rules-regulations">FAQ's</a></li>
                             </ul>
                         </div>
                     </div>
@@ -204,12 +204,12 @@
                             <h4 class="widget-title">ABOUT</h4>
                             <ul>
                                 <li><a href="/about-us">About Us</a></li>
-                                <li><a href="/management-committee">Committee Member</a></li>
+                                <li><a href="/management-committee">Committee Members</a></li>
                                 <li><a href="/rules-regulations">Rules & Regulations</a></li>
                                 <li><a href="/contact-us">Contact Us</a></li>
                                  <li><a href="/disclaimer">Disclaimer</a></li>
-                                <li><a href="/refund-policy">Refund policy</a></li>
-                                <li><a href="/privacy-policy">Privacy policy</a></li>
+                                <li><a href="/refund-policy">Refund Policy</a></li>
+                                <li><a href="/privacy-policy">Privacy Policy</a></li>
                                 <li><a href="/cancellation">Cancellations</a></li>
                             </ul>
                         </div>
