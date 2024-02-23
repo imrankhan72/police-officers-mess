@@ -3,9 +3,17 @@
 @section('content')
 
 
+<section class="section-sub-banner bg-9">
+            <div class="sub-banner">
+                <div class="container">
+                    <div class="text text-center">
+                        <h2>Photo Gallery</h2>
+                    </div>
+                </div>
 
-        </div>
-    </div>
+            </div>
+
+        </section>
     <!-- GALLERY -->
     <section class="section-gallery bg-white tp_inner_padding">
         <div class="gallery">
