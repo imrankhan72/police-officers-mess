@@ -8,7 +8,7 @@
                 <div class="container">
                     <div class="text text-center">
                         <h2>Tariff</h2>
-                        <p>Tariffs at the Police Officers Mess</p>
+                        <p>Tariffs at the Police Officers' Mess</p>
                     </div>
                 </div>
 
@@ -35,7 +35,7 @@
                         ),
                         array(
                             "Building Name" => "Abhyuday Building",
-                            "Type of Room" => "Single Deluxe Room Pay Grade-7600",
+                            "Type of Room" => "Single Deluxe Room (Grade Pay) - 7600",
                             "Govt. Rent" =>4000 ,
                             "Private Rent" =>750 ,
                             "Guest Rent" =>1000 ,
@@ -43,7 +43,7 @@
                         ),
                         array(
                             "Building Name" => "Abhyuday Building",
-                            "Type of Room" => "Single Deluxe Room Pay Grade - 6600",
+                            "Type of Room" => "Single Deluxe Room (Grade Pay) - 6600",
                             "Govt. Rent" => 3000 ,
                             "Private Rent" => 750 ,
                             "Guest Rent" => 1000,
@@ -51,7 +51,7 @@
                         ),
                         array(
                             "Building Name" => "Abhyuday Building",
-                            "Type of Room" => "Single Deluxe Room Pay Grade - 5400",
+                            "Type of Room" => "Single Deluxe Room (Grade Pay) - 5400",
                             "Govt. Rent" =>2000 ,
                             "Private Rent" => 750,
                             "Guest Rent" => 1000,
