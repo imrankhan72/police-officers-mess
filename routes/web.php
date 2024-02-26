@@ -32,6 +32,10 @@ Route::view('/privacy-policy','/privacy-policy');
 Route::view('/refund-policy','/refund-policy');
 Route::view('/cancellation','/cancellation');
 
+Route::get('/php-info',function (Request $request){
+   phpinfo( );
+});
+
 
 Route::get('send_sms',function (){
     $message = "Dear Imaad Your login code is 5560 to pay POM bill. Please don't share it with anyone. Regards POMBPL";
