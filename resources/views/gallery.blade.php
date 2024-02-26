@@ -138,8 +138,8 @@
 
                             <!-- mix -->
 
-                             <a class="gallery-item" href="/assets/images/main-gallery/1.jpeg" title="Police Officers' Mess, Bhopal" style="margin-bottom: 20px; flex: 0 0 calc(25% - 20px);">
-                                <img src="/assets/images/main-gallery/1.jpeg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
+                             <a class="gallery-item" href="/assets/images/main-gallery/7.jpeg" title="Police Officers' Mess, Bhopal" style="margin-bottom: 20px; flex: 0 0 calc(25% - 20px);">
+                                <img src="/assets/images/main-gallery/7.jpeg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
                             </a>
 
                              <a class="gallery-item" href="/assets/images/main-gallery/5.jpeg" title="Police Officers' Mess, Bhopal" style="margin-bottom: 20px; flex: 0 0 calc(25% - 20px);">
@@ -154,6 +154,48 @@
                                 <img src="/assets/images/main-gallery/7.jpeg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
                             </a>
 
+                             <a class="gallery-item" href="/assets/images/main-gallery/banquet-1.jpg" title="Police Officers' Mess, Bhopal" style="margin-bottom: 20px; flex: 0 0 calc(25% - 20px);">
+                                <img src="/assets/images/main-gallery/banquet-1.jpg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
+                            </a>
+
+                            <a class="gallery-item" href="/assets/images/main-gallery/billiards.jpg" title="Police Officers' Mess, Bhopal" style="margin-bottom: 20px; flex: 0 0 calc(25% - 20px);">
+                                <img src="/assets/images/main-gallery/billiards.jpg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
+                            </a>
+
+                             <a class="gallery-item" href="/assets/images/main-gallery/delux-room.jpg" title="Police Officers' Mess, Bhopal" style="margin-bottom: 20px; flex: 0 0 calc(25% - 20px);">
+                                <img src="/assets/images/main-gallery/delux-room.jpg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
+                            </a>
+
+                             <a class="gallery-item" href="/assets/images/main-gallery/lawn-1.jpg" title="Police Officers' Mess, Bhopal" style="margin-bottom: 20px; flex: 0 0 calc(25% - 20px);">
+                                <img src="/assets/images/main-gallery/lawn-1.jpg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
+                            </a>
+
+                             <a class="gallery-item" href="/assets/images/main-gallery/lawan-2.jpg" title="Police Officers' Mess, Bhopal" style="margin-bottom: 20px; flex: 0 0 calc(25% - 20px);">
+                                <img src="/assets/images/main-gallery/lawan-2.jpg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
+                            </a>
+
+                             <a class="gallery-item" href="/assets/images/main-gallery/reception-lobby.jpg" title="Police Officers' Mess, Bhopal" style="margin-bottom: 20px; flex: 0 0 calc(25% - 20px);">
+                                <img src="/assets/images/main-gallery/reception-lobby.jpg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
+                            </a>
+
+                            <a class="gallery-item" href="/assets/images/main-gallery/roop-top1.jpg" title="Police Officers' Mess, Bhopal" style="margin-bottom: 20px; flex: 0 0 calc(25% - 20px);">
+                                <img src="/assets/images/main-gallery/roof-top.jpg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
+                            </a>
+
+                             <a class="gallery-item" href="/assets/images/main-gallery/roop-top1.jpg" title="Police Officers' Mess, Bhopal" style="margin-bottom: 20px; flex: 0 0 calc(25% - 20px);">
+                                <img src="/assets/images/main-gallery/roof-top1.jpg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
+                            </a>
+
+                             <a class="gallery-item" href="/assets/images/main-gallery/roop-top2.jpg" title="Police Officers' Mess, Bhopal" style="margin-bottom: 20px; flex: 0 0 calc(25% - 20px);">
+                                <img src="/assets/images/main-gallery/roof-top2.jpg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
+                            </a>
+
+                            
+                            
+                            
+                            
+                            
+                            
                             <a class="gallery-item" href="/assets/images/main-gallery/8.jpeg" title="Police Officers' Mess, Bhopal" style="margin-bottom: 20px; flex: 0 0 calc(25% - 20px);">
                                 <img src="/assets/images/main-gallery/8.jpeg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
                             </a>
@@ -168,6 +210,10 @@
 
                              <a class="gallery-item" href="/assets/images/main-gallery/11.jpeg" title="Police Officers' Mess, Bhopal" style="margin-bottom: 20px; flex: 0 0 calc(25% - 20px);">
                                 <img src="/assets/images/main-gallery/11.jpeg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
+                            </a>
+
+                            <a class="gallery-item" href="/assets/images/main-gallery/1.jpeg" title="Police Officers' Mess, Bhopal" style="margin-bottom: 20px; flex: 0 0 calc(25% - 20px);">
+                                <img src="/assets/images/main-gallery/1.jpeg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
                             </a>
 
                              <a class="gallery-item" href="/assets/images/main-gallery/12.jpeg" title="Police Officers' Mess, Bhopal" style="margin-bottom: 20px; flex: 0 0 calc(25% - 20px);">
