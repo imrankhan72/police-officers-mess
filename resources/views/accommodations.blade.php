@@ -27,11 +27,11 @@
 
                        <div class="img owl-single">
                             <img src="/assets/images/accomodations/room-3.jpeg" alt="">
-                           <img src="/assets/images/accomodations/room-1.jpeg" alt="">
                            <img src="/assets/images/accomodations/room-2.jpeg" alt="">
                            <img src="/assets/images/accomodations/room-4.jpeg" alt="">
                            <img src="/assets/images/accomodations/room-5.jpeg" alt="">
                            <img src="/assets/images/accomodations/room-6.jpeg" alt="">
+                           <img src="/assets/images/accomodations/delux-room.jpg" alt="">
                             
                         </div>
 
