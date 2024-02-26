@@ -29,6 +29,7 @@
                            <img src="/assets/images/main-gallery/banquet-1.jpg" alt="">
                             <img src="/assets/images/main-gallery/lawn-1.jpg" alt="">
                             <img src="/assets/images/main-gallery/lawn-2.jpg" alt="">
+                            <img src="/assets/images/main-gallery/roof-top2.jpg" alt="">
                             <img src="/assets/images/main-gallery/11.jpeg" alt=""> 
                            <img src="/assets/images/main-gallery/9.jpeg" alt="">
                             <img src="/assets/images/main-gallery/11.jpeg" alt="">
