@@ -27,15 +27,17 @@
 
 
                         <div class="img owl-single">
+                            
                            <img src="/assets/images/new-photos/dining/1.jpg" alt="">
                              <img src="/assets/images/new-photos/dining/2.jpg" alt="">
-                             <img src="/assets/images/new-photos/dining/3.jpg" alt="">
-                             <img src="/assets/images/new-photos/dining/4.jpg" alt="">
-                             <img src="/assets/images/new-photos/dining/5.jpg" alt="">
-                             <img src="/assets/images/new-photos/dining/6.jpg" alt="">
-                             <img src="/assets/images/new-photos/dining/roof-top.jpg" alt="">
+                            <img src="/assets/images/new-photos/dining/roof-top.jpg" alt="">
                             <img src="/assets/images/new-photos/dining/roof-top1.jpg" alt="">
-                            <img src="/assets/images/new-photos/dining/roof-top2.jpg" alt="">
+                           
+                             <img src="/assets/images/new-photos/dining/3.jpg" alt="">
+                            
+                             <img src="/assets/images/new-photos/dining/5.jpg" alt="">
+                            
+                             
                             
                             
                         </div>
