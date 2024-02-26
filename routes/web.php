@@ -12,7 +12,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Http;
 use Inertia\Inertia;
-use Intervention\Image\Facades\Image;
+//use Intervention\Image\Facades\Image;
 
 Route::view('/', 'welcome');
 Route::view('/about-us','about');
@@ -72,13 +72,8 @@ Route::post('/bookings/store', function (Request $request) {
     $booking = $request->all();
 
     if ($request->police_id) {
-        $file = $request->file('police_id');
-        $image = Image::make($file);
-
-        // Compress the image (adjust the quality as needed)
-        $image->encode('jpg', 70); // 70 is the image quality (0-100)
-
-        $path = $file->store('photos', 'public');
+       $file = $request->file('police_id');
+        $path = $file->store('photos','public');
         $booking['police_id'] = $file->hashName();
     }
 
