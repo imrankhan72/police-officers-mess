@@ -65,7 +65,8 @@ Route::post('/bookings/store', function (Request $request) {
         'name' => 'required|string',
         'booking_from' => 'required|string',
         'booking_till' => 'required|string',
-        'mobile' => 'required|string'
+        'mobile' => 'required|string',
+        'police_id' => 'required'
     ]);
 
     $booking = $request->all();
