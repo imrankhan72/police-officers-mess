@@ -222,7 +222,7 @@ Route::get('/make-payment', function (Request $request) {
     return redirect()->away($response['redirectionURL']);
 });
 
-Route::get('/payment_success', function (Request $request, Payment $payment) {
+Route::post('/payment_success', function (Request $request) {
     return $request->all();
 });
 
