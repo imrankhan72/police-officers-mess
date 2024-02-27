@@ -55,7 +55,10 @@ let assign_rooms_count = ref(0);
                                 <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">{{booking.booking_for}}
                                     <div class="flex">
                                         Rooms requested: {{booking.no_of_rooms_requested}}  --||-   Assign rooms
+                                        <div  v-if="booking.status ==0">
                                         <input v-if="booking.booking_for =='Room'" v-model="assign_rooms_count" name="assign_no_of_rooms" class="border border-indigo-400 mx-4 px-1"/>
+                                        </div>
+                                        <div v-else>{{booking.no_of_rooms_requested}}</div>
                                     </div>
                                 </dd>
 
