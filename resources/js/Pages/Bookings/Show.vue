@@ -61,15 +61,8 @@ let assign_rooms_count = ref(0);
                                         <div v-else>{{booking.rooms_assigned}}</div>
                                     </div>
                                 </dd>
-
-
                             </div>
-                            <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-                                <dt class="text-sm font-medium leading-6 text-gray-900">Booking for</dt>
-                                <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                                    {{booking.booking_for_self_guest}}
-                                </dd>
-                            </div>
+                            
                             <div v-if="booking.lawn_person" class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                                 <dt class="text-sm font-medium leading-6 text-gray-900">Lawn Booking for person</dt>
                                 <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">{{booking.lawn_person}}</dd>
