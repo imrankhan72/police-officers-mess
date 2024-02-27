@@ -125,7 +125,7 @@ Route::post('/otp',function (Request $request) {
     $mobile_no = $request->get('mobile_no');
     $otp_code = rand(111111,999999);
     $path = $request->get('path');
-    if($path == 'pay-bill'){
+    if($path == 'bill-details'){
         $message="Dear User Your login code is $otp_code to pay POM bill. Please don't share it with anyone. Regards POMBPL";
         $template_id = 1307169693372298480;
     }else{
