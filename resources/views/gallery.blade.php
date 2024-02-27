@@ -67,11 +67,11 @@
                                 <img src="/assets/images/main-gallery/reception-lobby.jpg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
                             </a>
 
-                            <a class="gallery-item" href="/assets/images/main-gallery/roop-top.jpg" title="Police Officers' Mess, Bhopal" style="margin-bottom: 20px; flex: 0 0 calc(25% - 20px);">
+                            <a class="gallery-item" href="/assets/images/main-gallery/roof-top.jpg" title="Police Officers' Mess, Bhopal" style="margin-bottom: 20px; flex: 0 0 calc(25% - 20px);">
                                 <img src="/assets/images/main-gallery/roof-top.jpg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
                             </a>
 
-                             <a class="gallery-item" href="/assets/images/main-gallery/roop-top1.jpg" title="Police Officers' Mess, Bhopal" style="margin-bottom: 20px; flex: 0 0 calc(25% - 20px);">
+                             <a class="gallery-item" href="/assets/images/main-gallery/roof-top1.jpg" title="Police Officers' Mess, Bhopal" style="margin-bottom: 20px; flex: 0 0 calc(25% - 20px);">
                                 <img src="/assets/images/main-gallery/roof-top1.jpg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
                             </a>
 
@@ -79,7 +79,7 @@
                                 <img src="/assets/images/main-gallery/roof-top3.jpg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
                             </a>
 
-                              <a class="gallery-item" href="/assets/images/main-gallery/roop-top2.jpg" title="Police Officers' Mess, Bhopal" style="margin-bottom: 20px; flex: 0 0 calc(25% - 20px);">
+                              <a class="gallery-item" href="/assets/images/main-gallery/roof-top2.jpg" title="Police Officers' Mess, Bhopal" style="margin-bottom: 20px; flex: 0 0 calc(25% - 20px);">
                                 <img src="/assets/images/main-gallery/roof-top2.jpg" alt="Police Officers' Mess, Bhopal" style="width: 100%; height: auto;">
                             </a>
                             
