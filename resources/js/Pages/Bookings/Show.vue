@@ -72,10 +72,6 @@ let assign_rooms_count = ref(0);
                                 <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">{{booking.lawn_person}}</dd>
                             </div>
                             <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-                                <dt class="text-sm font-medium leading-6 text-gray-900">Message</dt>
-                                <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">{{booking.message}}</dd>
-                            </div>
-                            <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                                 <dt class="text-sm font-medium leading-6 text-gray-900">Booking Period</dt>
                                 <dd class="mt-2 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
                                     <ul role="list" class="divide-y divide-gray-100 rounded-md border border-gray-200">
