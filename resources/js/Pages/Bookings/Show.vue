@@ -58,7 +58,7 @@ let assign_rooms_count = ref(0);
                                         <div  v-if="booking.status ==0">
                                         <input v-if="booking.booking_for =='Room'" v-model="assign_rooms_count" name="assign_no_of_rooms" class="border border-indigo-400 mx-4 px-1"/>
                                         </div>
-                                        <div v-else>{{booking.no_of_rooms_requested}}</div>
+                                        <div v-else>{{booking.rooms_assigned}}</div>
                                     </div>
                                 </dd>
 

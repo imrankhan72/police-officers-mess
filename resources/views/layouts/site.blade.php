@@ -277,9 +277,11 @@
                 $('#lawnDD').removeClass('hidden');
 
                 $('#nonLawnDD').addClass('hidden');
+                $('#nonLawnDD').prop('disabled', true);
 
                 $('#lawnDetails2').addClass('hidden');
                 $('#lawnDD2').addClass('hidden');
+                $('#lawnDD2').prop('disabled', true);
 
                 $('#no_of_rooms').addClass('hidden');
 
@@ -295,6 +297,7 @@
 
                 $('#nonLawnDD').addClass('hidden');
                 $('#nonLawnDD2').addClass('hidden');
+                $('#lawnDD2').prop('disabled', true);
 
                 $('#no_of_rooms').addClass('hidden');
 
@@ -308,6 +311,7 @@
                 $('#lawnDetails').addClass('hidden');
                 $('#lawnDD').addClass('hidden');
                 $('#lawnDD2').removeClass('hidden');
+                $('#lawnDD2').prop('disabled', false);
 
                 $('#nonLawnDD2').addClass('hidden');
 
@@ -326,8 +330,11 @@
                 $('#lawnRelation').addClass('hidden');
                 $('#lawnRelation2').addClass('hidden');
                 $('#lawnDD').addClass('hidden');
+                $('#lawnDD').prop('disabled', true);
                 $('#lawnDD2').addClass('hidden');
+                $('#lawnDD2').prop('disabled', true);
                 $('#nonLawnDD').removeClass('hidden');
+                $('#nonLawnDD').prop('disabled', false);
                 $('#roof-top-details').addClass('hidden');
                 // $('#no_of_rooms').addClass('hidden');
                 // $('#no_of_rooms').addClass('show');

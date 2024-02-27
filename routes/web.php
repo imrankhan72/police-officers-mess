@@ -235,17 +235,22 @@ Route::middleware(['auth', 'verified'])->prefix('admin')->group(function () {
     })->name('dashboard');
 
     Route::get('/update_booking/{id}', function (Request $request, $id) {
-        $booking= Booking::find($id);
-        $booking->status = $request->get('status');
-        $booking->save();
+
         //Send SMS
         if($request->get('status') ==1){
             if($request->get('rooms_assigned') == 0){
+                $booking= Booking::find($id);
+                $booking->status = $request->get('status');
+                $booking->save();
                 $message="Dear $booking->name, your booking is confirmed at Police Officers' Mess, Bhopal. Regards POMBPL";
                 $template_id = 1307169892612113442;
                 sendSingleSMS('DITMP-OCCTNS',sha1(trim('Cctns@12345')),'OCCTNS',"$message","$booking->mobile",'3d8183ac-8495-4e80-ac8a-2362e0da9838', $template_id);
 
             }else{
+                $booking= Booking::find($id);
+                $booking->status = $request->get('status');
+                $booking->rooms_assigned = $request->get('rooms_assigned');
+                $booking->save();
                 $message= "Sir/Madam dear Booking of ". $request->get('rooms_assigned')." room/s for ".$booking->booking_from. "is confirmed. POMBPL";
                 $template_id = 1307170607635019229;
                 sendSingleSMS('DITMP-OCCTNS',sha1(trim('Cctns@12345')),'OCCTNS',"$message","$booking->mobile",'3d8183ac-8495-4e80-ac8a-2362e0da9838', $template_id);
