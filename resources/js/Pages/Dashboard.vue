@@ -14,7 +14,7 @@ defineProps({
 
     <AuthenticatedLayout>
         <template #header>
-            <h2 class="font-semibold text-xl text-gray-800 leading-tight">Booking requestss</h2>
+            <h2 class="font-semibold text-xl text-gray-800 leading-tight">Booking requests</h2>
         </template>
 
         <div class="bg-gray-50 min-h-screen">
