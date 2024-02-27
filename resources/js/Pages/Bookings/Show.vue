@@ -12,7 +12,7 @@ let assign_rooms_count = ref(0);
 </script>
 
 <template>
-    <Head title="Booking Details" />
+    <Head title="Booking Detailssss" />
 
     <AuthenticatedLayout>
         <template #header>
