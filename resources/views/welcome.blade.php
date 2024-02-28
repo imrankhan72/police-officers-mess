@@ -3,7 +3,23 @@
 @section('content')
     <!-- BANNER SLIDER -->
     <section class="section-slider" style="">
-        <div id="slider-revolution">
+        <div class="img owl-single">
+                            
+                           <img src="/assets/images/slider/slide-1.jpg" alt="">
+                           <img src="/assets/images/slider/slide-2.jpg" alt="">
+                           <img src="/assets/images/slider/slide-3.jpg" alt="">
+                           <img src="/assets/images/slider/slide-4.jpg" alt="">
+                           <img src="/assets/images/slider/slide-5.jpg" alt="">
+                           <img src="/assets/images/slider/slide-6.jpg" alt="">
+                           <img src="/assets/images/slider/slide-7.jpg" alt="">
+                           <img src="/assets/images/slider/slide-8.jpg" alt="">
+                             
+                            
+                             
+                            
+                            
+        </div>
+        <!-- <div id="slider-revolution">
             
             <ul>
                 @for($i = 1; $i < 8; $i++)
@@ -12,7 +28,7 @@
                     </li>
                 @endfor
             </ul>
-        </div>
+        </div> -->
 
     </section>
     <!-- END / BANNER SLIDER -->
