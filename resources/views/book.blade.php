@@ -180,7 +180,7 @@
                                         @enderror
                                     </div>
                                     <div class="col-sm-6">
-                                        <label>Upload ID (Aadhaar/PAN/License)<sup>*</sup></label>
+                                        <label>Upload ID (only Official Police ID)<sup>*</sup></label>
                                         <input name="police_id" type="file" class="input-text">
                                         @error('police_id')
                                         <div style="color:red;">{{ $message }}</div>
