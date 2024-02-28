@@ -163,6 +163,33 @@ Route::get('/pay-bill',function (){
 });
 
 
+Route::get('/bd', function (Request $request) {
+    $mobile_no = "9826445006";
+
+//    if($request->get('entered_otp') !== $request->get('otp_code')){
+//        return "Wrong OTP Code";
+//    }
+
+    $client_details = Http::get("http://pom.dvinfosoft.com/User_API.asmx/User_Registration?Mobile_No=$mobile_no")->collect()->first();
+    if($client_details){
+        $client_id = $client_details['Client_ID'];
+        $hotel_bill_details = Http::get("http://pom.dvinfosoft.com/User_API.asmx/ClientHotelBills?Client_ID=$client_id")->collect();
+        $restaurant_bill_details = Http::get("http://pom.dvinfosoft.com/User_API.asmx/ClientFoodBills?Client_ID=$client_id")->collect();
+        $total_outstanding = Http::get("http://pom.dvinfosoft.com/User_API.asmx/ClientOutStanding?Client_ID=$client_id")->collect()->first();
+        if ($total_outstanding){
+            $total_outstanding = $hotel_bill_details->sum('NetAmt') + $restaurant_bill_details->sum('NetAmt');
+        }else{
+            $total_outstanding =  $total_outstanding['Rwmanig_Amount'];
+        }
+    }else {
+        $restaurant_bill_details = null;
+        $hotel_bill_details = null;
+        $total_outstanding = null;
+    }
+
+    return view('bill_details', compact('client_details','hotel_bill_details', 'restaurant_bill_details','total_outstanding', 'mobile_no'));
+});
+
 Route::post('/bill-details', function (Request $request) {
      $mobile_no = $request->get('mobile_no');
 
@@ -176,7 +203,7 @@ Route::post('/bill-details', function (Request $request) {
         $hotel_bill_details = Http::get("http://pom.dvinfosoft.com/User_API.asmx/ClientHotelBills?Client_ID=$client_id")->collect();
         $restaurant_bill_details = Http::get("http://pom.dvinfosoft.com/User_API.asmx/ClientFoodBills?Client_ID=$client_id")->collect();
         $total_outstanding = Http::get("http://pom.dvinfosoft.com/User_API.asmx/ClientOutStanding?Client_ID=$client_id")->collect()->first();
-        if (!$total_outstanding){
+        if ($total_outstanding){
             $total_outstanding = $hotel_bill_details->sum('NetAmt') + $restaurant_bill_details->sum('NetAmt');
         }else{
             $total_outstanding =  $total_outstanding['Rwmanig_Amount'];
