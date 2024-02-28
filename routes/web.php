@@ -164,7 +164,7 @@ Route::get('/pay-bill',function (){
 
 
 Route::get('/bd', function (Request $request) {
-    $mobile_no = "9826445006";
+    $mobile_no = $request->get('mobile_no');
 
 //    if($request->get('entered_otp') !== $request->get('otp_code')){
 //        return "Wrong OTP Code";
