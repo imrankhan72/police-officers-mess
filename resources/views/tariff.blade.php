@@ -19,7 +19,7 @@
 
         <!-- ABOUT -->
         <section class="section-about">
-            <div class="container">
+           <div class="container overflow" style="overflow: auto;">
 
                 <div class="about" style="margin-top: 30px">
 
