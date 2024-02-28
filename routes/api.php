@@ -19,6 +19,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::post('/payment_success', function (Request $request) {
-    return view('payment-success')
+    return view('payment-success');
     return $request->all();
 });
