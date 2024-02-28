@@ -2,7 +2,7 @@
 <!-- Header | START -->
 @section('content')
     <!-- BANNER SLIDER -->
-    <section class="section-slider" style="">
+    <section class="section-slider" style="padding-top:100px;">
         <div class="img owl-single">
                             
                            <img src="/assets/images/slider/slide-1.jpg" alt="">
