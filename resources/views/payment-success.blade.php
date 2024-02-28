@@ -20,7 +20,7 @@
         <section class="section-about">
             <div class="container">
                 <div class="about" style="margin-top: 4px">
-                  Your payment was successfull. The 
+                  Your Payment was successfully captured. Your payment status will updated in the next 24 Hours. Thank you;
                 </div>
 
             </div>
