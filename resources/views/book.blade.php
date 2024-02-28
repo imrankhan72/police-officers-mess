@@ -169,7 +169,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <label>Email<sup>*</sup></label>
+                                        <label>Email</label>
                                         <input name="email" type="text" class="input-text">
                                     </div>
                                     <div class="col-sm-6">
