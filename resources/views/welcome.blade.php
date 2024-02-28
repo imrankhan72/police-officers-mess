@@ -4,10 +4,11 @@
     <!-- BANNER SLIDER -->
     <section class="section-slider" style="">
         <div id="slider-revolution">
+            
             <ul>
                 @for($i = 1; $i < 8; $i++)
                     <li data-transition="fade">
-                        <img src="/assets/images/slider/slide-{{$i}}.jpg" data-bgposition="left center" data-duration="1000" data-bgpositionend="right center" alt="">
+                       <div class="img <img src="/assets/images/slider/slide-{{$i}}.jpg" data-bgposition="left center" data-duration="1000" data-bgpositionend="right center" alt=""></div>
                     </li>
                 @endfor
             </ul>
