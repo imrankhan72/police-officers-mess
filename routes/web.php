@@ -205,7 +205,7 @@ Route::get('/make-payment', function (Request $request) {
         'invoiceNo' => 'inv' . '-' . Carbon::now()->format('Ymd') . '-' . Str::random(6),
         'merchantId' => 'P_50292',
         'mobileNo' => $request->get('mobile_no'),
-        'paymentReturnURL' => 'https://pom.mppolice.gov.in/payment_success',
+        'paymentReturnURL' => 'https://pom.mppolice.gov.in/api/payment_success',
     ];
     $key = '9114c8e9151246b2a1e95e1d048336d1';
     $concatenated = '';
@@ -222,9 +222,7 @@ Route::get('/make-payment', function (Request $request) {
     return redirect()->away($response['redirectionURL']);
 });
 
-Route::post('/payment_success', function (Request $request) {
-    return $request->all();
-});
+
 
 
 Route::middleware(['auth', 'verified'])->prefix('admin')->group(function () {
