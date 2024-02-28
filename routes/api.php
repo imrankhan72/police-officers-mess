@@ -19,6 +19,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::post('/payment_success', function (Request $request) {
-    return "Your Payment was successfully captured. Your payment status will updated in the next 24 Hours. Thank you";
+    return view('payment-success')
     return $request->all();
 });
