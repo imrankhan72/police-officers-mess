@@ -134,8 +134,7 @@
                                         <label>Booking for<sup>*</sup></label>
                                         <select name="booking_for_self_guest" class="form-control">
                                             <option  value="Self">Self</option>
-                                            <option  value="Son">Son</option>
-                                            <option  value="Daughter">Daughter</option>
+                                            <option  value="Son">Organisation</option>
                                         </select>
                                     </div>
                                     <div class="col-sm-6 hidden" id="lawnDD2">
@@ -147,7 +146,6 @@
                                             <option  value="Father">Father</option>
                                             <option  value="Spouse">Spouse</option>
                                             <option  value="Self">Self</option>
-                                            <option  value="Self">Organisation</option>
                                         </select>
                                     </div>
                                 </div>
