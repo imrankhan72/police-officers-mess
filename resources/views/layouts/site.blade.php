@@ -279,6 +279,9 @@
                 $('#nonLawnDD').addClass('hidden');
                 $('#nonLawnDD').prop('disabled', true);
 
+                $('#domDD').addClass('hidden');
+                $('#domDD').prop('disabled', true);
+
                 $('#lawnDetails2').addClass('hidden');
                 $('#lawnDD2').addClass('hidden');
                 $('#lawnDD2').prop('disabled', true);
@@ -294,6 +297,9 @@
 
                 $('#lawnDD').addClass('hidden');
                 $('#lawnDD2').removeClass('hidden');
+
+                $('#domDD').addClass('hidden');
+                $('#domDD').prop('disabled', true);
 
                 $('#nonLawnDD').addClass('hidden');
                 $('#nonLawnDD2').addClass('hidden');
@@ -321,6 +327,21 @@
             else if (selectedOption === 'Room'){
                 $('#no_of_rooms').removeClass('hidden');
                 $('#no_of_rooms').addClass('show');
+                $('#roof-top-details').addClass('hidden');
+            }
+
+            else if (selectedOption === 'Hall' || selectedOption === 'Anandam hall' || selectedOption === 'Dome'){
+                $('#lawnDetails').addClass('hidden');
+                $('#lawnDetails2').addClass('hidden');
+                $('#lawnRelation').addClass('hidden');
+                $('#lawnRelation2').addClass('hidden');
+                $('#lawnDD').addClass('hidden');
+                $('#lawnDD').prop('disabled', true);
+                $('#lawnDD2').addClass('hidden');
+                $('#lawnDD2').prop('disabled', true);
+                $('#domDD').removeClass('hidden');
+                $('#domDD').addClass('show');
+                $('#nonLawnDD').prop('disabled', false);
                 $('#roof-top-details').addClass('hidden');
             }
 

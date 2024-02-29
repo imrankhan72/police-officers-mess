@@ -116,13 +116,21 @@
                                         <label>Booking for<sup>*</sup></label>
                                         <select name="booking_for_self_guest"  class="form-control">
                                             <option  value="Self" >Self</option>
-                                            <option  value="Organisation" >Organisation</option>
-{{--                                            <option  value="Family">Family</option>--}}
-{{--                                            <option  value="Govt Tour">Govt Tour</option>--}}
-{{--                                            <option  value="Private Tou">Private Tour</option>--}}
+                                            <option  value="Guest" >Guest</option>
+                                            <option  value="Family">Family</option>
+                                            <option  value="Govt Tour">Govt Tour</option>
+                                            <option  value="Private Tou">Private Tour</option>
                                         </select>
                                     </div>
                                     <div class="col-sm-6 hidden" id="lawnDD">
+                                        <label>Booking for<sup>*</sup></label>
+                                        <select name="booking_for_self_guest" class="form-control">
+                                            <option  value="Self">Self</option>
+                                            <option  value="Son">Son</option>
+                                            <option  value="Daughter">Daughter</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6 hidden" id="domDD">
                                         <label>Booking for<sup>*</sup></label>
                                         <select name="booking_for_self_guest" class="form-control">
                                             <option  value="Self">Self</option>
