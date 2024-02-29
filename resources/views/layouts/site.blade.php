@@ -320,6 +320,7 @@
                 $('#lawnDD2').prop('disabled', false);
 
                 $('#nonLawnDD2').addClass('hidden');
+                $('#nonLawnDD2').removeClass('show');
 
                 $('#no_of_rooms').addClass('hidden');
             }
