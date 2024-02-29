@@ -316,7 +316,7 @@
 
                 $('#lawnDetails').addClass('hidden');
                 $('#lawnDD').addClass('hidden');
-                //$('#lawnDD2').removeClass('hidden');
+                $('#lawnDD2').removeClass('show');
                 $('#lawnDD2').prop('disabled', false);
 
                 $('#nonLawnDD2').addClass('hidden');
