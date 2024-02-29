@@ -176,9 +176,7 @@ Route::get('/bd', function (Request $request) {
         $hotel_bill_details = Http::get("http://pom.dvinfosoft.com/User_API.asmx/ClientHotelBills?Client_ID=$client_id")->collect();
         $restaurant_bill_details = Http::get("http://pom.dvinfosoft.com/User_API.asmx/ClientFoodBills?Client_ID=$client_id")->collect();
         $total_outstanding = Http::get("http://pom.dvinfosoft.com/User_API.asmx/ClientOutStanding?Client_ID=$client_id")->collect()->first();
-        if ($total_outstanding){
-            $total_outstanding = $hotel_bill_details->sum('NetAmt') + $restaurant_bill_details->sum('NetAmt');
-        }
+        $total_outstanding =  $total_outstanding['OutstandingAmt'];
     }else {
         $restaurant_bill_details = null;
         $hotel_bill_details = null;
@@ -208,10 +206,10 @@ Route::post('/bill-details', function (Request $request) {
 //        else{
 //            $total_outstanding =  $total_outstanding['OutstandingAmt'];
 //        }
-//    }else {
-//        $restaurant_bill_details = null;
-//        $hotel_bill_details = null;
-//        $total_outstanding = null;
+    }else {
+        $restaurant_bill_details = null;
+        $hotel_bill_details = null;
+        $total_outstanding = null;
     }
 
     return view('bill_details', compact('client_details','hotel_bill_details', 'restaurant_bill_details','total_outstanding', 'mobile_no'));
