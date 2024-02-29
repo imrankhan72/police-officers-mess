@@ -323,6 +323,9 @@
                 $('#nonLawnDD2').removeClass('show');
 
                 $('#no_of_rooms').addClass('hidden');
+
+                $('#domDD').removeClass('hidden');
+                $('#domDD').addClass('show');
             }
 
             else if (selectedOption === 'Room'){
