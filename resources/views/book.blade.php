@@ -120,7 +120,7 @@
 {{--                                            <option  value="Family">Family</option>--}}
 {{--                                            <option  value="Govt Tour">Govt Tour</option>--}}
 {{--                                            <option  value="Private Tou">Private Tour</option>--}}
-{{--                                        </select>--}}
+                                        </select>
                                     </div>
                                     <div class="col-sm-6 hidden" id="lawnDD">
                                         <label>Booking for<sup>*</sup></label>
