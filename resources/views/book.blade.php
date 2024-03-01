@@ -77,8 +77,11 @@
                                         </select>
                                     </div>
                                     <div class="col-sm-6" id="no_of_rooms">
-                                        <label>Number of rooms</label>
-                                        <input name="no_of_rooms_requested" type="text" class="input-text">
+                                        <label>Number of rooms<sup>*</sup></label>
+                                        <select name="booking_for_self_guest" class="form-control">
+                                            <option  value="1">1</option>
+                                            <option  value="2">2</option>
+                                        </select>
                                     </div>
                                 </div>
 

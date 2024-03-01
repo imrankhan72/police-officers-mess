@@ -148,12 +148,13 @@ Route::post('/check-booking-status',function (Request $request) {
     $status = "Pending";
 
     $booking = Booking::where('mobile', $mobile_no)->orderBy('id','DESC')->first();
-    if($booking->status == 1){
-        $status = "Confirmed";
-    }elseif ($booking->status == 2){
-        $status = "Rejected";
+    if($booking){
+        if($booking->status == 1){
+            $status = "Confirmed";
+        }elseif ($booking->status == 2){
+            $status = "Rejected";
+        }
     }
-
     return view('booking-status', compact('status', 'booking'));
 });
 

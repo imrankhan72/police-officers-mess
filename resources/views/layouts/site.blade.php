@@ -329,9 +329,11 @@
             }
 
             else if (selectedOption === 'Room'){
+                $('#domDD').addClass('hidden');
                 $('#no_of_rooms').removeClass('hidden');
                 $('#no_of_rooms').addClass('show');
                 $('#roof-top-details').addClass('hidden');
+
             }
 
             else if (selectedOption === 'Hall' || selectedOption === 'Anandam hall' || selectedOption === 'Dome'){
