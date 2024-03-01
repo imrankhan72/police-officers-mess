@@ -35,7 +35,7 @@
                                         {{csrf_field()}}
                                         <input type="hidden" name="path" value="{{$path}}">
                                         <label>Please enter your 10 digit mobile number<sup>*</sup></label>
-                                        <input type="text" name="mobile_no" class="form-control" required/>
+                                        <input type="text" name="mobile_no" class="form-control" maxlength="10" required/>
                                         <button type="submit" class="awe-btn awe-btn-13">SUBMIT</button>
                                     </form>
                                 </div>

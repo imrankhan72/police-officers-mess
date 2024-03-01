@@ -292,6 +292,7 @@
 
             }
             else if (selectedOption === 'Lawn for Birthday'){
+                $('#lawnRelation').removeClass('hidden');
                 $('#lawnDetails').addClass('hidden');
                 $('#lawnDetails2').removeClass('hidden');
 
@@ -315,24 +316,39 @@
                 $('#roof-top-details').removeClass('hidden');
 
                 $('#lawnDetails').addClass('hidden');
+
+                $('#lawnDD').removeClass('show');
                 $('#lawnDD').addClass('hidden');
+
                 $('#lawnDD2').removeClass('show');
                 $('#lawnDD2').prop('disabled', false);
 
-                $('#nonLawnDD2').addClass('hidden');
                 $('#nonLawnDD2').removeClass('show');
+                $('#nonLawnDD2').addClass('hidden');
+
+                $('#nonLawnDD').removeClass('show');
+                $('#nonLawnDD').addClass('hidden');
+
 
                 $('#no_of_rooms').addClass('hidden');
 
                 $('#domDD').removeClass('hidden');
                 $('#domDD').addClass('show');
+
+
             }
 
             else if (selectedOption === 'Room'){
+                $('#lawnRelation').addClass('hidden');
                 $('#domDD').addClass('hidden');
                 $('#no_of_rooms').removeClass('hidden');
                 $('#no_of_rooms').addClass('show');
                 $('#roof-top-details').addClass('hidden');
+
+                $('#lawnDD').addClass('hidden');
+
+                $('#nonLawnDD').removeClass('hidden');
+                $('#nonLawnDD').addClass('show');
 
             }
 
@@ -349,6 +365,8 @@
                 $('#domDD').addClass('show');
                 $('#nonLawnDD').prop('disabled', false);
                 $('#roof-top-details').addClass('hidden');
+                $('#nonLawnDD').removeClass('show');
+                $('#nonLawnDD').addClass('hidden');
             }
 
             else {
