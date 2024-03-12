@@ -232,6 +232,7 @@ Route::get('/make-payment', function (Request $request) {
         'merchantId' => 'P_50292',
         'mobileNo' => $request->get('mobile_no'),
         'paymentReturnURL' => 'https://pom.mppolice.gov.in/api/payment_success',
+        'userName'=>$request->get('name'),
     ];
     $key = '9114c8e9151246b2a1e95e1d048336d1';
     $concatenated = '';
