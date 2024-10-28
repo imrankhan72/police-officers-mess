@@ -1,23 +1,18 @@
 @extends('layouts.site')
 @section('content')
-    <main>
-        <!-- SUB BANNER -->
-        <section class="section-sub-banner bg-9">
-            <div class="sub-banner">
-                <div class="container">
-                    <div class="text text-center">
-                        <h2>Refund policy</h2>
-                    </div>
-                </div>
+<section class="container section-title" data-aos="fade-up" 
+    style="background-image: url(assets/img/img-9.jpeg); 
+           background-size: cover;
+           background-position: center;
+           max-width: 1280px;
+           padding-top: 68px; padding-bottom: 30px;">
+    <p style="color: white; font-size: 32px; font-weight: bold;"><span>REFUND POLICY
+</span></p>
+</section>
 
-            </div>
-
-        </section>
-        <!-- END / SUB BANNER -->
-
-        <!-- CONTACT -->
-        <section class="section-contact">
-            <div class="container">
+<section class="section-contact">
+            <div class="container" style="padding-top: 50px;
+    padding-bottom: 50px;font-weight: 600;">
                 <div class="contact">
                     <div>
                        <ul>
@@ -31,6 +26,4 @@
                 </div>
             </div>
         </section>
-        <!-- END / CONTACT -->
-    </main>
 @stop

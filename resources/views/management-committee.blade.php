@@ -1,84 +1,92 @@
 @extends('layouts.site')
 @section('content')
-    <main>
-        <!-- SUB BANNER -->
-        <section class="section-sub-banner bg-9">
-            <div class="awe-overlay"></div>
-            <div class="sub-banner">
-                <div class="container">
-                    <div class="text text-center">
-                        <h2>Management Committee</h2>
-                        <p>Management Committee of the Police Officers Mess</p>
-                    </div>
-                </div>
+<section class="container section-title " data-aos="fade-up" style="
+            background-image: url(assets/img/img-9.jpeg); 
+           
+            background-size: cover;
+            background-position: center;
+            max-width: 1280px;
+            padding-top: 68px;">
 
-            </div>
+          <p style="color: white;"><span>MANAGEMENT COMMITTEE</span></p>
+         
 
+          <p class="fst" style="
+            max-width: 635px;
+            font-size: 15px;
+            margin: 10px auto 20px;
+            font-weight: 500;
+            color: white;">
+            Management Committee of the Police Officers Mess
+          </p>
         </section>
-        <!-- END / SUB BANNER -->
-
-        <!-- ABOUT -->
-        <section class="section-about">
-            <div class="container">
-
-                <div class="about" style="margin-top: 30px">
-
-                    <?php
-                    $committee = array(
-                        "Director General Of Police, MP" => "President",
-                        "Addl. Director General Of Police (SAF)" => "Vice President",
-                        "Addl. Director General Of Police (Planning)" => "Member",
-                        "Addl. Director General Of Police (Welfare)" => "Member",
-                        "Addl. Director General Of Police (Provisioning)" => "Member",
-                        "Addl. Director General Of Police 03 (Nominated by DGP, MP)" => "Member",
-                        "Commissioner of Police, Bhopal" => "Member",
-                        "Inspector General Of Police (SAF, Bhopal Range)" => "Member",
-                        "Deputy. Inspector General Of Police (SAF, Bhopal Range)" => "Secretary",
-                        "Commandant 7th BN, SAF" => "Invited member"
-                    );
-                    $i = 0;
-
-                    $organization = array(
-                        "Addl. Director General Of Police (SAF)" => "President",
-                        "Commandant 7th BN, SAF" => "Secretary"
-                    );
-                    $j = 0;
-                    ?>
-                    <h4 style="margin-bottom: 8px">Central Mess Committee:</h4>
-                    <table class="table table-bordered">
-                        <tbody>
-
-                        @foreach($committee as $key => $value)
-                                <?php $i = $i + 1; ?>
-                            <tr>
-                                <th scope="row">{{$i}} )</th>
-                                <td>{{$key}}</td>
-                                <td>{{$value}}</td>
-                            </tr>
-                        @endforeach
-                        </tbody>
-                    </table>
-
-                    <h4 style="margin-bottom: 8px">District Mess Organization (Bhopal):</h4>
-                    <table class="table table-bordered">
-                        <tbody>
-
-                        @foreach($organization as $key => $value)
-                                <?php $j = $j + 1; ?>
-                            <tr>
-                                <th scope="row">{{$j}} )</th>
-                                <td>{{$key}}</td>
-                                <td>{{$value}}</td>
-                            </tr>
-                        @endforeach
-                        </tbody>
-                    </table>
+  
 
 
-                </div>
+        <section id="about" class="about section light-background">
+         
+            <!-- Section Title -->
+            <!-- End Section Title -->
+          
+            <div class="container" style="padding-top: 50px; padding-bottom: 50px;">
+              <h3 style="color: #2b2b2b;">Central Mess Committee:</h3>
+              <table class="table table-bordered">
+                <tbody>
 
+                                                                            <tr>
+                        <th scope="row">1 )</th>
+                        <td>Director General Of Police, MP</td>
+                        <td>President</td>
+                    </tr>
+                                                                            <tr>
+                        <th scope="row">2 )</th>
+                        <td>Addl. Director General Of Police (SAF)</td>
+                        <td>Vice President</td>
+                    </tr>
+                                                                            <tr>
+                        <th scope="row">3 )</th>
+                        <td>Addl. Director General Of Police (Planning)</td>
+                        <td>Member</td>
+                    </tr>
+                                                                            <tr>
+                        <th scope="row">4 )</th>
+                        <td>Addl. Director General Of Police (Welfare)</td>
+                        <td>Member</td>
+                    </tr>
+                                                                            <tr>
+                        <th scope="row">5 )</th>
+                        <td>Addl. Director General Of Police (Provisioning)</td>
+                        <td>Member</td>
+                    </tr>
+                                                                            <tr>
+                        <th scope="row">6 )</th>
+                        <td>Addl. Director General Of Police 03 (Nominated by DGP, MP)</td>
+                        <td>Member</td>
+                    </tr>
+                                                                            <tr>
+                        <th scope="row">7 )</th>
+                        <td>Commissioner of Police, Bhopal</td>
+                        <td>Member</td>
+                    </tr>
+                                                                            <tr>
+                        <th scope="row">8 )</th>
+                        <td>Inspector General Of Police (SAF, Bhopal Range)</td>
+                        <td>Member</td>
+                    </tr>
+                                                                            <tr>
+                        <th scope="row">9 )</th>
+                        <td>Deputy. Inspector General Of Police (SAF, Bhopal Range)</td>
+                        <td>Secretary</td>
+                    </tr>
+                                                                            <tr>
+                        <th scope="row">10 )</th>
+                        <td>Commandant 7th BN, SAF</td>
+                        <td>Invited member</td>
+                    </tr>
+                                        </tbody>
+            </table>
             </div>
-        </section>
-
-    </main>
+          
+          </section>
+          
 @endsection

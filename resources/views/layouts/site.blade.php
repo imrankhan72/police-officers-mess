@@ -1,256 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <!-- TITLE -->
-    <title>Police Officers' Mess, Bhopal</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Police Officers' Mess, Bhopal </title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="shortcut icon" href="/assets/images/favicon.png">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <!-- GOOGLE FONT -->
-    <link href="https://fonts.googleapis.com/css?family=Hind:400,300,500,600%7cMontserrat:400,700" rel='stylesheet' type='text/css'>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <!-- CSS LIBRARY -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/lib/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/lib/font-lotusicon.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/lib/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/lib/owl.carousel.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/lib/jquery-ui.min.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/lib/magnific-popup.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/lib/settings.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/lib/bootstrap-select.min.css">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    <!-- MAIN STYLE -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
-
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 </head>
 
-<body>
-<!-- PRELOADER -->
-<div id="preloader">
-    <span class="preloader-dot"></span>
+<header id="header" class="header sticky-top">
+
+   <!-- Desktop View -->
+
+
+<!-- Mobile View -->
+<!-- Topbar for Both Desktop and Mobile -->
+<div class="topbar d-flex align-items-center">
+  <div class="container d-flex justify-content-between align-items-center flex-wrap">
+    
+    <!-- Desktop View -->
+    <div class="desktop-view d-none d-md-flex align-items-center flex-wrap">
+      <!-- Contact Info -->
+      <div class="contact-info d-flex align-items-center flex-wrap">
+        <i class="bi bi-map d-flex align-items-center">&nbsp; In Front of DG Home Guards Office, Jahangirabad, Bhopal, Madhya Pradesh</i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+91 0755-2443636, 70491 46203</span></i>
+      </div>
+      
+      <!-- Buttons (Pay Bill, Apply for Booking, Booking Status) -->
+      <div class="d-flex align-items-center flex-wrap justify-content-center" style="padding-left: 80px;
+    padding-top: 6px;">
+        <a class="btn btn-get-started me-2 mb-2" href="/verify-number?path=bill-details"
+          style="background-color: #e1bd85;color: white;border-radius: 0px;--bs-btn-font-size: 12px;">PAY BILL</a>
+        <a class="btn btn-get-started me-2 mb-2" href="/book-now"
+          style="background-color: #e1bd85;color: white;border-radius: 0px;--bs-btn-font-size: 12px;">APPLY FOR BOOKING</a>
+        <a class="btn btn-get-started mb-2" href="/verify-number?path=check-booking-status"
+          style="background-color: #e1bd85;color: white;border-radius: 0px;--bs-btn-font-size: 12px;">BOOKING STATUS</a>
+      </div>
+    </div>
+    
+    <!-- Mobile View -->
+    <div class="mobile-view d-flex d-md-none align-items-center flex-wrap" style="padding-bottom: 45px;">
+      <!-- Contact Info -->
+      <div class="contact-info d-flex align-items-center flex-wrap">
+        <i class="bi bi-map d-flex align-items-center">&nbsp; In Front of DG Home Guards Office, Jahangirabad, Bhopal, Madhya Pradesh</i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+91 0755-2443636, 70491 46203</span></i>
+      </div>
+      
+      <!-- Buttons (Pay Bill, Apply for Booking, Booking Status) -->
+      <div class="d-flex align-items-center flex-wrap justify-content-center">
+        <a class="btn btn-get-started me-2 mb-2" href="verify-number.php"
+          style="background-color: #e1bd85;color: white;border-radius: 0px;--bs-btn-font-size: 12px;">PAY BILL</a>
+        <a class="btn btn-get-started me-2 mb-2" href="book-now.php"
+          style="background-color: #e1bd85;color: white;border-radius: 0px;--bs-btn-font-size: 12px;">APPLY FOR BOOKING</a>
+        <a class="btn btn-get-started mb-2" href="/verify-status.php"
+          style="background-color: #e1bd85;color: white;border-radius: 0px;--bs-btn-font-size: 12px;">BOOKING STATUS</a>
+      </div>
+    </div>
+
+  </div>
 </div>
-<!-- END / PRELOADER -->
 
-<!-- PAGE WRAP -->
-<div id="page-wrap">
 
-    <!-- HEADER -->
-    <header id="header">
 
-        <!-- HEADER TOP -->
-        <div class="header_top">
-            <div class="container">
-                <div class="header_left float-left">
-                    <span><i class="lotus-icon-location"></i>In Front of DG Home Guards Office, Jahangirabad, Bhopal, Madhya Pradesh</span>
-                    <span><i class="lotus-icon-phone"></i>0755-2443636, 91 70491 46203</span>
-                </div>
-                <div class="header_right float-right">
-                        <span class="login-register">
-                            <a class="awe-btn awe-btn-custom" href="/verify-number?path=bill-details" style="border-right:3px solid #2C3F75;"><strong>Pay Bill</strong></a>
-                            <a class="awe-btn awe-btn-custom" href="/book-now"><strong>Apply For Booking</strong></a>
-                            <a class="awe-btn awe-btn-custom" href="/verify-number?path=check-booking-status" style="border-left:3px solid #2C3F75;"><strong>Booking Status</strong></a>
+      </div>
+    </div><!-- End Top Bar -->
 
-                        </span>
-                </div>
-            </div>
-        </div>
-        <!-- END / HEADER TOP -->
+    <div class="branding d-flex align-items-cente">
 
-        <!-- HEADER LOGO & MENU -->
-        <div class="header_content" id="header_content">
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.php" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="assets/img/logo.png" alt="">
+          <!-- <h1 class="sitename">BizLand</h1> -->
+        </a>
 
-            <div class="container">
-                <!-- HEADER LOGO -->
-                <div class="header_logo">
-                    <a href="/"><img src="/assets/images/pom-logo-1.png" alt="logo"></a>
-                </div>
-                <!-- END / HEADER LOGO -->
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#hero" class="active" style="background-color: #e1bd85;
+    height: 84px;
+    color: white;">Home</a></li>
+             <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="/about-us">About Us</a></li>
+                <li><a href="/gallery">Gallery</a></li>
+                <li><a href="/management-committee">Management Committee</a></li>
+                <li><a href="/rules-regulations">Rules & Regulations</a></li>
+               </ul>
+            </li>
+            <li class="dropdown"><a href="#"><span>Explore Mess</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="/accommodations">Accomodations</a></li>
+                <li><a href="/banquets-lawns">Banquets & Lawns</a></li>
+                <li><a href="/restaurants">Restaurant</a></li>
+                <li><a href="/tariff">Tariff</a></li>
+               </ul>
+            </li>
 
-                <!-- HEADER MENU -->
-                <nav class="header_menu">
-                    <ul class="menu">
-                        <li class="current-menu-item"><a href="/">Home </a></li>
-                        <li><a href="/">About <span class="fa fa-caret-down"></span></a>
-                            <ul class="sub-menu">
-                                <li><a href="/about-us">About Us</a></li>
-                                <li><a href="/gallery">Gallery</a></li>
-                                <li><a href="/management-committee">Management Committee</a></li>
-                                <li><a href="/rules-regulations">Rules & Regulations</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Explore Mess<span class="fa fa-caret-down"></span></a>
-                            <ul class="sub-menu">
-                                <li><a href="/accommodations">Accommodations</a></li>
-                                <li><a href="/banquets-lawns">Banquets & Lawn</a></li>
-                                <li><a href="/restaurants">Restaurant</a></li>
-                                <li><a href="/tariff">Tariff</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="/facilities">Facilities</a>
-{{--                            <ul class="sub-menu">--}}
-{{--                                <li><a href="/sports">Sport</a></li>--}}
-{{--                                <li><a href="/restaurants">Restaurant</a></li>--}}
-{{--                            </ul>--}}
-                        </li>
-{{--                        <li><a href="/gallery">Gallery</a></li>--}}
-                        <li><a href="/contact-us">Contact</a></li>
-                    </ul>
-                </nav>
-                <!-- END / HEADER MENU -->
+            <li><a href="/facilities">Facilities</a></li>
+           
+            <li><a href="/contact-us">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
 
-                <!-- MENU BAR -->
-                <span class="menu-bars">
-                        <span></span>
-                    </span>
-                <!-- END / MENU BAR -->
-            </div>
-        </div>
-        <!-- END / HEADER LOGO & MENU -->
+      </div>
 
-    </header>
-    <!-- END / HEADER -->
+    </div>
 
+  </header>
+
+<body>
       @yield('content')
 
-    <!-- FOOTER -->
-    <footer id="footer">
+      <footer id="footer" class="footer">
 
-        <!-- FOOTER TOP -->
-{{--        <div class="footer_top">--}}
-{{--            <div class="container">--}}
-{{--                <div class="row">--}}
 
-{{--                    <!-- WIDGET MAILCHIMP -->--}}
-{{--                    <div class="col-lg-9">--}}
-{{--                        <div class="mailchimp">--}}
-{{--                            <h4>Pay Bill</h4>--}}
-{{--                            <div class="mailchimp-form">--}}
-{{--                                <form action="#" method="POST">--}}
-{{--                                    <input type="text" name="mobile" placeholder="Your 10 digit mobile number" class="input-text">--}}
-{{--                                    <button class="awe-btn">Submit</button>--}}
-{{--                                </form>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <!-- END / WIDGET MAILCHIMP -->--}}
 
-{{--                    <!-- WIDGET SOCIAL -->--}}
-{{--                    <div class="col-lg-3">--}}
-{{--                        <div class="social">--}}
-{{--                            <div class="social-content">--}}
-{{--                                <a href="#"><i class="fa fa-pinterest"></i></a>--}}
-{{--                                <a href="#"><i class="fa fa-facebook"></i></a>--}}
-{{--                                <a href="#"><i class="fa fa-twitter"></i></a>--}}
-{{--                                <a href="#"><i class="fa fa-google-plus"></i></a>--}}
-{{--                                <a href="#"><i class="fa fa-instagram"></i></a>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <!-- END / WIDGET SOCIAL -->--}}
+<div class="container footer-top">
+  <div class="row gy-4">
+    <div class="col-lg-5 col-md-6 footer-about">
+      <!-- <a href="index.html" class="d-flex align-items-center">
+        <span class="sitename">BizLand</span>
+      </a> -->
+      <div class="footer-contact pt-3">
+        <p>
+          <i class="fa fa-map-marker" aria-hidden="true" style="margin-right: 8px; font-size: 18px; "></i>
+          <span>In Front of DG Home Guards Office, Jahangirabad, <br>Bhopal, Madhya Pradesh</span>
+        </p>
+        <!-- <p>New York, NY 535022</p> -->
+        <p>
+          <i class="fa fa-phone" aria-hidden="true" style="margin-right: 8px; font-size: 18px;"></i>
+          <span>0755-2443636, +91 70491 46203</span>
+        </p>
 
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-        <!-- END / FOOTER TOP -->
+        <!-- Font Awesome CSS -->
 
-        <!-- FOOTER CENTER -->
-        <div class="footer_center">
-            <div class="container">
-                <div class="row">
 
-                    <div class="col-xs-12 col-lg-5">
-                        <div class="widget widget_logo">
-                            <div class="widget-logo">
-                                <!--<div class="img">
-                                    <a href="#"><img src="/assets/images/logo-footer.png" alt=""></a>
-                                </div>-->
-                                <div class="text">
-                                    <p><i class="lotus-icon-location"></i>In Front of DG Home Guards Office, Jahangirabad, <br>Bhopal, Madhya Pradesh</p>
-                                    <p><i class="lotus-icon-phone"></i> 0755-2443636, 91 70491 46203</p>
-                                    <p><i class="fa fa-envelope-o"></i>
-                                            <span >policeofficermess1234@gmail.com</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <p>
+          <i class="fa fa-envelope-o" aria-hidden="true" style="margin-right: 8px;"></i>
+          <span>policeofficermess1234@gmail.com</span>
+        </p>
 
-                    <div class="col-xs-4 col-lg-2">
-                        <div class="widget">
-                            <h4 class="widget-title">Links</h4>
-                            <ul>
-                                <li><a href="/accomodations">Accommodations</a></li>
-                                <li><a href="/banquets-lawns">Banquetes & Lawn</a></li>
-                                <li><a href="/tariff">Tariff</a></li>
-                                <li><a href="/facilities">Facilities</a></li>
-                                <li><a href="/gallery">Gallery</a></li>
-                                <li><a href="/rules-regulations">FAQ's</a></li>
-                            </ul>
-                        </div>
-                    </div>
+        <!-- Add Font Awesome CSS -->
 
-                    <div class="col-xs-4 col-lg-2">
-                        <div class="widget">
-                            <h4 class="widget-title">ABOUT</h4>
-                            <ul>
-                                <li><a href="/about-us">About Us</a></li>
-                                <li><a href="/management-committee">Committee Members</a></li>
-                                <li><a href="/rules-regulations">Rules & Regulations</a></li>
-                                <li><a href="/contact-us">Contact Us</a></li>
-                                 <li><a href="/disclaimer">Disclaimer</a></li>
-                                <li><a href="/refund-policy">Refund Policy</a></li>
-                                <li><a href="/privacy-policy">Privacy Policy</a></li>
-                                <li><a href="/cancellation">Cancellations</a></li>
-                            </ul>
-                        </div>
-                    </div>
 
-                </div>
-            </div>
-        </div>
-        <!-- END / FOOTER CENTER -->
+      </div>
+    </div>
 
-        <!-- FOOTER BOTTOM -->
-        <div class="footer_bottom">
-            <div class="container">
-                <p>&copy; 2024 Police Officers' Mess.  All rights reserved.</p>
-            </div>
-        </div>
-        <!-- END / FOOTER BOTTOM -->
+    <div class="col-lg-3 col-md-3 footer-links">
+      <h4>Links</h4>
+      <ul>
+        <li><i class="bi bi-chevron-right"></i> <a href="/accommodations">Accommodations</a></li>
+        <li><i class="bi bi-chevron-right"></i> <a href="/banquets-lawns">Banquetes & Lawn</a></li>
+        <li><i class="bi bi-chevron-right"></i> <a href="/tariff">Tariff</a></li>
+        <li><i class="bi bi-chevron-right"></i> <a href="/facilities">Facilities</a></li>
+        <li><i class="bi bi-chevron-right"></i> <a href="/gallery">Gallery</a></li>
+        <li><i class="bi bi-chevron-right"></i> <a href="#">FAQ's</a></li>
+      </ul>
+    </div>
 
-    </footer>
-    <!-- END / FOOTER -->
+    <div class="col-lg-3 col-md-3 footer-links">
+      <h4>About</h4>
+      <ul>
+        <li><i class="bi bi-chevron-right"></i> <a href="/about-us">About Us</a></li>
+        <li><i class="bi bi-chevron-right"></i> <a href="/management-committee">Committee Members</a></li>
+        <li><i class="bi bi-chevron-right"></i> <a href="/rules-regulations">Rules & Regulations</a></li>
+        <li><i class="bi bi-chevron-right"></i> <a href="/contact-us">Contact Us</a></li>
+        <li><i class="bi bi-chevron-right"></i> <a href="/disclaimer">Disclaimer</a></li>
+        <li><i class="bi bi-chevron-right"></i> <a href="/refund-policy">Refund Policy</a></li>
+        <li><i class="bi bi-chevron-right"></i> <a href="/privacy-policy">Privacy Policy</a></li>
+        <li><i class="bi bi-chevron-right"></i> <a href="/cancellation">Cancellations</a></li>
 
+      </ul>
+    </div>
+
+
+
+  </div>
 </div>
-<!-- END / PAGE WRAP -->
 
+<div class="container copyright text-center mt-4">
+  <p>© <span>Copyright</span> <strong class="px-1 sitename">Police Officers' Mess, Bhopal</strong> <span>All Rights
+      Reserved</span></p>
+  <div class="credits">
+    <!-- All the links in the footer should remain intact. -->
+    <!-- You can delete the links only if you've purchased the pro version. -->
+    <!-- Licensing information: https://bootstrapmade.com/license/ -->
+    <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
 
-<!-- LOAD JQUERY -->
-<script type="text/javascript" src="/assets/js/lib/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="/assets/js/lib/jquery-ui.min.js"></script>
-<script type="text/javascript" src="/assets/js/lib/bootstrap.min.js"></script>
-<script type="text/javascript" src="/assets/js/lib/isotope.pkgd.min.js"></script>
-<script type="text/javascript" src="/assets/js/lib/jquery.themepunch.revolution.min.js"></script>
-<script type="text/javascript" src="/assets/js/lib/jquery.themepunch.tools.min.js"></script>
-<script type="text/javascript" src="/assets/js/lib/owl.carousel.js"></script>
-<script type="text/javascript" src="/assets/js/lib/jquery.appear.min.js"></script>
-<script type="text/javascript" src="/assets/js/lib/jquery.parallax-1.1.3.js"></script>
-<script type="text/javascript" src="/assets/js/lib/jquery.magnific-popup.min.js"></script>
-<script type="text/javascript" src="/assets/js/lib/SmoothScroll.js"></script>
+  </div>
+</div>
 
-<!-- Custom jQuery -->
-<script type="text/javascript" src="/assets/js/scripts.js"></script>
+</footer>
 
+<!-- Scroll Top -->
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+  class="bi bi-arrow-up-short"></i></a>
+
+<!-- Preloader -->
+<div id="preloader">
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+</div>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+<!-- Main JS File -->
+<script src="assets/js/main.js"></script>
 <script>
 
 

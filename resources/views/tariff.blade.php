@@ -1,171 +1,206 @@
 @extends('layouts.site')
 @section('content')
-    <main>
-        <!-- SUB BANNER -->
-        <section class="section-sub-banner bg-9">
-            <div class="awe-overlay"></div>
-            <div class="sub-banner">
-                <div class="container">
-                    <div class="text text-center">
-                        <h2>Tariff</h2>
-                        <p>Tariffs at the Police Officers' Mess</p>
-                    </div>
-                </div>
+<section class="container section-title " data-aos="fade-up" style="
+            background-image: url(assets/img/img-9.jpeg); 
+           
+            background-size: cover;
+            background-position: center;
+            max-width: 1280px;
+            padding-top: 68px;">
+
+          <p style="color: white;"><span>TARIFF</span></p>
+         
+
+          <p class="fst" style="
+            max-width: 635px;
+            font-size: 15px;
+            margin: 10px auto 20px;
+            font-weight: 500;
+            color: white;">
+            Tariffs at the Police Officers' Mess
+          </p>
+        </section>
+  
+
+
+        <section id="about" class="about section light-background">
+         
+            <!-- Section Title -->
+            <!-- End Section Title -->
+          
+            <div class="container" style="padding-top: 50px; padding-bottom: 50px;">
+              <h3 style="color: #2b2b2b;">Central Mess Committee:</h3>
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                      <th scope="col"><strong>#</strong></th>
+                      <th scope="col"><strong>Building Name</strong></th>
+                      <th scope="col"><strong>Type of Room</strong></th>
+                      <th scope="col"><strong>Govt. Rent</strong></th>
+                      <th scope="col"><strong>Private Rent</strong></th>
+                      <th scope="col"><strong>Guest Rent</strong></th>
+                      <th scope="col"><strong>Long Term Stay</strong></th>
+                  </tr>
+              </thead>
+              
+                <tbody>
+                                                                            <tr>
+                        <th scope="row">1 ) </th>
+                        <td>Abhyuday Building</td>
+                        <td>Suite Room</td>
+                        <td>4500</td>
+                        <td>1000</td>
+                        <td>1500</td>
+                        <td>NA</td>
+                    </tr>
+                                                                            <tr>
+                        <th scope="row">2 ) </th>
+                        <td>Abhyuday Building</td>
+                        <td>Single Deluxe Room (Grade Pay) - 7600</td>
+                        <td>4000</td>
+                        <td>750</td>
+                        <td>1000</td>
+                        <td>NA</td>
+                    </tr>
+                                                                            <tr>
+                        <th scope="row">3 ) </th>
+                        <td>Abhyuday Building</td>
+                        <td>Single Deluxe Room (Grade Pay) - 6600</td>
+                        <td>3000</td>
+                        <td>750</td>
+                        <td>1000</td>
+                        <td>NA</td>
+                    </tr>
+                                                                            <tr>
+                        <th scope="row">4 ) </th>
+                        <td>Abhyuday Building</td>
+                        <td>Single Deluxe Room (Grade Pay) - 5400</td>
+                        <td>2000</td>
+                        <td>750</td>
+                        <td>1000</td>
+                        <td>NA</td>
+                    </tr>
+                                                                            <tr>
+                        <th scope="row">5 ) </th>
+                        <td>Rustom Ji Building</td>
+                        <td>Deluxe Apartment</td>
+                        <td>4500</td>
+                        <td>750</td>
+                        <td>1250</td>
+                        <td>500</td>
+                    </tr>
+                                                                            <tr>
+                        <th scope="row">6 ) </th>
+                        <td>B.G. Ghate ANNEXE</td>
+                        <td>Suite Room</td>
+                        <td>3000</td>
+                        <td>500</td>
+                        <td>1000</td>
+                        <td>400</td>
+                    </tr>
+                                                                            <tr>
+                        <th scope="row">7 ) </th>
+                        <td>North Block</td>
+                        <td>Single Room</td>
+                        <td>2000</td>
+                        <td>750</td>
+                        <td>1000</td>
+                        <td>300</td>
+                    </tr>
+                                                                            <tr>
+                        <th scope="row">8 ) </th>
+                        <td>Duplex ANNEXE</td>
+                        <td>Duplex</td>
+                        <td>2000</td>
+                        <td>750</td>
+                        <td>1000</td>
+                        <td>300</td>
+                    </tr>
+                                        </tbody>
+            </table>
+
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th scope="col"><strong>#</strong></th>
+                    <th scope="col"><strong>Hall/Lawn Name</strong></th>
+                    <th scope="col"><strong>Tariff</strong></th>
+                </tr>
+                </thead>
+                <tbody>
+                                                                            <tr>
+                        <th scope="row">1 ) </th>
+
+                                                                <td>Rooftop Area </td>
+                            <td>
+                                                                            No charge for up to 15 persons
+                                    <br/>
+                                                                            Charges up to 15 -40 persons - Rs.2000/- per day
+                                    <br/>
+                                                                            Charge for more than 40 persons - Rs.5000/- per day
+                                    <br/>
+                                                                    </td>
+                            
+                    </tr>
+                                                                            <tr>
+                        <th scope="row">2 ) </th>
+
+                                                                <td>Dome Charge </td>
+                            <td>
+                                                                            3000/- per day
+                                    <br/>
+                                                                    </td>
+                            
+                    </tr>
+                                                                            <tr>
+                        <th scope="row">3 ) </th>
+
+                                                                <td>Parijat Party Hall </td>
+                            <td>
+                                                                            Fixed rate for private program: Rs.7000 /- per day
+                                    <br/>
+                                                                            Fixed rate for government program: RS.20000 /- per day
+                                    <br/>
+                                                                    </td>
+                            
+                    </tr>
+                                                                            <tr>
+                        <th scope="row">4 ) </th>
+
+                                                                <td>Anandam Party Hall </td>
+                            <td>
+                                                                            Fixed rate for government and private programs: Rs.2000 /- per day
+                                    <br/>
+                                                                    </td>
+                            
+                    </tr>
+                                                                            <tr>
+                        <th scope="row">5 ) </th>
+
+                                                                <td>Umang Party Hall </td>
+                            <td>
+                                                                            Fixed rate for government and private programs: Rs.4000 /- per day
+                                    <br/>
+                                                                    </td>
+                            
+                    </tr>
+                                                                            <tr>
+                        <th scope="row">6 ) </th>
+
+                                                                <td>Lawn </td>
+                            <td>
+                                                                            Fixed rate for marriage and party: Rs.75,000/- per day and Rs.10000/- for electricity charges
+                                    <br/>
+                                                                            Fixed rate for birthday and other events: Rs.15,000/- per day and Rs.5000/- for electricity charges
+                                    <br/>
+                                                                    </td>
+                            
+                    </tr>
+                                        </tbody>
+            </table>
 
             </div>
-
-        </section>
-        <!-- END / SUB BANNER -->
-
-        <!-- ABOUT -->
-        <section class="section-about">
-           <div class="container overflow" style="overflow: auto;">
-
-                <div class="about" style="margin-top: 30px">
-
-                    <?php
-                    $data = array(
-                        array(
-                            "Building Name" => "Abhyuday Building",
-                            "Type of Room" => "Suite Room",
-                            "Govt. Rent" => 4500,
-                            "Private Rent" => 1000,
-                            "Guest Rent" => 1500,
-                            "Permanent Residence" => "NA"
-                        ),
-                        array(
-                            "Building Name" => "Abhyuday Building",
-                            "Type of Room" => "Single Deluxe Room (Grade Pay) - 7600",
-                            "Govt. Rent" =>4000 ,
-                            "Private Rent" =>750 ,
-                            "Guest Rent" =>1000 ,
-                            "Permanent Residence" => "NA"
-                        ),
-                        array(
-                            "Building Name" => "Abhyuday Building",
-                            "Type of Room" => "Single Deluxe Room (Grade Pay) - 6600",
-                            "Govt. Rent" => 3000 ,
-                            "Private Rent" => 750 ,
-                            "Guest Rent" => 1000,
-                            "Permanent Residence" => "NA"
-                        ),
-                        array(
-                            "Building Name" => "Abhyuday Building",
-                            "Type of Room" => "Single Deluxe Room (Grade Pay) - 5400",
-                            "Govt. Rent" =>2000 ,
-                            "Private Rent" => 750,
-                            "Guest Rent" => 1000,
-                            "Permanent Residence" => "NA"
-                        ),
-                        array(
-                            "Building Name" => "Rustom Ji Building",
-                            "Type of Room" => "Deluxe Apartment",
-                            "Govt. Rent" => 4500,
-                            "Private Rent" => 750,
-                            "Guest Rent" => 1250,
-                            "Permanent Residence" => 500
-                        ),
-                        array(
-                            "Building Name" => "B.G. Ghate ANNEXE",
-                            "Type of Room" => "Suite Room",
-                            "Govt. Rent" => 3000,
-                            "Private Rent" => 500,
-                            "Guest Rent" => 1000,
-                            "Permanent Residence" => 400
-                        ),
-                        array(
-                            "Building Name" => "North Block",
-                            "Type of Room" => "Single Room",
-                            "Govt. Rent" => 2000,
-                            "Private Rent" => 750,
-                            "Guest Rent" => 1000,
-                            "Permanent Residence" => 300
-                        ),
-                        array(
-                            "Building Name" => "Duplex ANNEXE",
-                            "Type of Room" => "Duplex",
-                            "Govt. Rent" => 2000,
-                            "Private Rent" => 750,
-                            "Guest Rent" => 1000,
-                            "Permanent Residence" => 300
-                        )
-                    );
-                    $i =0;
-
-                    $halls_lawns = array(
-                        ['Rooftop Area'=>['No charge for up to 15 persons', 'Charges up to 15 -40 persons - Rs.2000/- per day', 'Charge for more than 40 persons - Rs.5000/- per day']],
-                        ['Dome Charge'=>['3000/- per day']],
-                        ['Parijat Party Hall'=>['Fixed rate for private program: Rs.7000 /- per day', 'Fixed rate for government program: RS.20000 /- per day']],
-                        ['Anandam Party Hall'=>['Fixed rate for government and private programs: Rs.2000 /- per day']],
-                        ['Umang Party Hall'=>['Fixed rate for government and private programs: Rs.4000 /- per day']],
-                        ['Lawn'=>['Fixed rate for marriage and party: Rs.75,000/- per day and Rs.10000/- for electricity charges', 'Fixed rate for birthday and other events: Rs.15,000/- per day and Rs.5000/- for electricity charges']],
-                    );
-
-                    $j = 0;
-                    ?>
-
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Building Name</th>
-                                <th scope="col">Type of Room</th>
-                                <th scope="col">Govt. Rent</th>
-                                <th scope="col">Private Rent</th>
-                                <th scope="col">Guest Rent</th>
-                                <th scope="col">Long Term Stay</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        @foreach($data as $data)
-                                <?php $i = $i + 1; ?>
-                            <tr>
-                                <th scope="row">{{$i}} ) </th>
-                                <td>{{$data['Building Name']}}</td>
-                                <td>{{$data['Type of Room']}}</td>
-                                <td>{{$data['Govt. Rent']}}</td>
-                                <td>{{$data['Private Rent']}}</td>
-                                <td>{{$data['Guest Rent']}}</td>
-                                <td>{{$data['Permanent Residence']}}</td>
-                            </tr>
-                        @endforeach
-                        </tbody>
-                    </table>
-
-                    <table class="table table-bordered">
-                        <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Hall/Lawn Name</th>
-                            <th scope="col">Tariff</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        @foreach($halls_lawns as $key => $value)
-                                <?php $j = $j + 1; ?>
-                            <tr>
-                                <th scope="row">{{$j}} ) </th>
-
-                                    @foreach($value as $k=>$v)
-                                    <td>{{$k}} </td>
-                                    <td>
-                                        @foreach($v as $vk)
-                                            {{$vk}}
-                                            <br/>
-                                        @endforeach
-                                    </td>
-                                    @endforeach
-
-                            </tr>
-                        @endforeach
-                        </tbody>
-                    </table>
-
-
-                </div>
-
-            </div>
-        </section>
-
-    </main>
+          
+          </section>
+          
 @endsection
