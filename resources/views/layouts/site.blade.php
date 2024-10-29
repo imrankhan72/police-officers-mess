@@ -30,6 +30,12 @@
 
 <script src="/assets/bootstrap.bundle.min.js"></script>
 
+<style>
+  .hidden {
+    display: none;
+}
+  </style>
+
 </head>
 
 <header id="header" class="header sticky-top">
@@ -242,13 +248,31 @@
 
 <!-- Main JS File -->
 <script src="assets/js/main.js"></script>
-<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+
+<!-- Include jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Magnific Popup CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.css">
+
+<!-- Magnific Popup JS -->
+<script src="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js"></script>
+
+<!-- Custom Script for Popup -->
 <script>
-
-
-
-    $(document).ready(function() {
-
+$(document).ready(function() {
+    $('.popup-gallery').magnificPopup({
+        delegate: 'a', // child items selector, by clicking on it popup will open
+        type: 'image', // this is important
+        gallery: {
+            enabled: true // enable gallery mode
+        },
+        image: {
+            titleSrc: function(item) {
+                return item.el.attr('title'); // get title from the link's title attribute
+            }
+        }
+    });
 
         // Initial check on page load
         checkSelectedOption();
@@ -378,7 +402,10 @@
             }
 
         }
-    });
+});
 </script>
+
+
+
 </body>
 </html>
