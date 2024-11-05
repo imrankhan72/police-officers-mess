@@ -60,27 +60,16 @@
 <section id="about" class="about section light-background">
 
 <!-- Section Title -->
-<section class="container section-title awe-parallax" data-aos="fade-up" style="
-background-image: url(assets/img/img-14.jpeg); 
-background-attachment: fixed;
-background-size: cover;
-background-position: center;
-max-width: 1280px;
-padding-top: 68px;">
-
-<p><span>Welcome to</span> <span class="description-title">Police Officers' Mess</span></p>
-<img src="assets/img/icon-accmod.png" alt="icon">
-
-<p class="fst" style="
-max-width: 635px;
-font-size: 15px;
-margin: 10px auto 20px;
-font-weight: 500;">
-The Police Officers’ Mess in Bhopal serves as a vital institution that fosters camaraderie and provides space
-for relaxation and professional interaction among law enforcement officers. Located in the heart of Bhopal,
-this mess plays a crucial role in promoting a sense of community within the police force.
-</p>
+<section id="welcome" class="container section-title awe-parallax" data-aos="fade-up">
+  <p><span>Welcome to</span> <span class="description-title">Police Officers' Mess</span></p>
+  <img src="assets/img/icon-accmod.png" alt="icon">
+  <p class="fst">
+      The Police Officers’ Mess in Bhopal serves as a vital institution that fosters camaraderie and provides space
+      for relaxation and professional interaction among law enforcement officers. Located in the heart of Bhopal,
+      this mess plays a crucial role in promoting a sense of community within the police force.
+  </p>
 </section>
+
 
 
 
@@ -88,7 +77,7 @@ this mess plays a crucial role in promoting a sense of community within the poli
 
 
 
-<div class="container" style="padding-top: 50px;">
+<div class="container mt-5" >
 
 <div class="row gy-3">
 
@@ -98,7 +87,7 @@ this mess plays a crucial role in promoting a sense of community within the poli
 
 <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
   <div class="about-content ps-0 ps-lg-3">
-    <h3 style="color: #444444;">ABOUT US</h3>
+    <h3 >ABOUT US</h3>
     <span class="box-border"></span>
     <p class="fst">
       The Police Officers' Mess, Bhopal is a prestigious institution designed to provide a comfortable and
@@ -116,11 +105,11 @@ this mess plays a crucial role in promoting a sense of community within the poli
 
 
 
-<div class="container" style="padding-top: 75px;">
+<div class="container" id="home_facilities">
 <div class="row gy-3">
 <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
   <div class="about-content ps-0 ps-lg-3">
-    <h3 style=" color: #232323;">BEST FACILITIES</h3>
+    <h3>BEST FACILITIES</h3>
     <p class="fst">
       Police Officers' Mess provides its guests with some of the best facilities for a relaxing stay.
     </p>

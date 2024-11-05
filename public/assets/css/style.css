@@ -81,6 +81,15 @@ background-color: #337ab7;
 #facilities .about-content h3 {
     color: #232323;
 }
+
+#home_facilities{
+    padding-top: 75px;
+}
+
+#home_facilities .about-content h3 {
+    color: #232323;
+}
+
 .popup-gallery{
     display: flex; flex-wrap: wrap; justify-content: space-between;
 }
@@ -108,3 +117,21 @@ list-style-type: lower-latin;
 .section-reservation-page .bookform{
 padding: 89px;
 }
+
+#welcome {
+    background-image: url(assets/img/img-14.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    max-width: 1280px;
+    padding-top: 68px;
+}
+
+#welcome .fst {
+    max-width: 635px;
+    font-size: 15px;
+    margin: 10px auto 20px;
+    font-weight: 500;
+}
+
+  
