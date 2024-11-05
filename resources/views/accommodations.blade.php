@@ -1,22 +1,8 @@
 @extends('layouts.site')
 @section('content')
-<section class="container section-title " data-aos="fade-up" style="
-            background-image: url(assets/img/img-9.jpeg); 
-           
-            background-size: cover;
-            background-position: center;
-            max-width: 1280px;
-            padding-top: 68px;">
-
-          <p style="color: white;"><span>ACCOMMODATIONS</span></p>
-         
-
-          <!-- <p class="fst" style="
-            max-width: 635px;
-            font-size: 15px;
-            margin: 10px auto 20px;
-            font-weight: 500;
-            color: white;">
+<section class="container section-title " data-aos="fade-up">
+          <p id="title"><span>ACCOMMODATIONS</span></p>
+          <!-- <p id="fst">
             About The Police Officers Mess
           </p> -->
         </section>
@@ -28,7 +14,7 @@
             <!-- Section Title -->
             <!-- End Section Title -->
           
-            <div class="container" style="padding-top: 50px; padding-bottom: 50px;">
+            <div class="container pt-5 pb-5" >
           
               <div class="row gy-3">
           
@@ -76,13 +62,13 @@
           
                 <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
                   <div class="about-content ps-0 ps-lg-3">
-                    <h3 style="color: #444444;">ACCOMMODATION AT<br> POLICE OFFICERS MESS</h3>
+                    <h3 >ACCOMMODATION AT<br> POLICE OFFICERS MESS</h3>
                     <span class="box-border"></span>
                     <p class="fst">
                       Police Officers' Mess provides comfortable and well-equipped accommodations for Police Officers and sometimes other law enforcement personnel. These accommodations are designed to offer a comfortable and safe environment for officers who may be on duty or on call, away from their regular homes.
                     </p>
                     <p class="fst">Some common features of police officers' mess accommodations may include:</p>
-                    <ol style="font-size: 16px">
+                    <ol >
                       <li><b>Private Bedrooms:</b> Each officer has their private bedroom with a comfortable bed, linens, and storage space for personal belongings.</li>
                       <li><b>En-Suite Bathrooms:</b> Rooms have en-suite bathrooms for added privacy and convenience.</li>
                       <li><b>Dining Facilities: </b>The Mess has dining areas where officers can have their meals.</li>

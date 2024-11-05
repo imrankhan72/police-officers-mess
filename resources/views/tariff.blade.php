@@ -1,35 +1,18 @@
 @extends('layouts.site')
 @section('content')
-<section class="container section-title " data-aos="fade-up" style="
-            background-image: url(assets/img/img-9.jpeg); 
-           
-            background-size: cover;
-            background-position: center;
-            max-width: 1280px;
-            padding-top: 68px;">
-
-          <p style="color: white;"><span>TARIFF</span></p>
-         
-
-          <p class="fst" style="
-            max-width: 635px;
-            font-size: 15px;
-            margin: 10px auto 20px;
-            font-weight: 500;
-            color: white;">
+<section class="container section-title " data-aos="fade-up" >
+          <p id="title"><span>TARIFF</span></p>
+          <p class="fst" >
             Tariffs at the Police Officers' Mess
           </p>
         </section>
-  
-
-
         <section id="about" class="about section light-background">
          
             <!-- Section Title -->
             <!-- End Section Title -->
           
-            <div class="container" style="padding-top: 50px; padding-bottom: 50px;">
-              <h3 style="color: #2b2b2b;">Central Mess Committee:</h3>
+            <div class="container management py-5">
+              <h3>Central Mess Committee:</h3>
               <table class="table table-bordered">
                 <thead>
                   <tr>

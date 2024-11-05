@@ -1,38 +1,21 @@
 @extends('layouts.site')
 @section('content')
-<section class="container section-title " data-aos="fade-up" style="
-            background-image: url(assets/img/img-9.jpeg); 
-           
-            background-size: cover;
-            background-position: center;
-            max-width: 1280px;
-            padding-top: 68px;">
-
-          <p style="color: white;"><span>RULES & REGULATIONS</span></p>
-         
-
-          <p class="fst" style="
-            max-width: 635px;
-            font-size: 15px;
-            margin: 10px auto 20px;
-            font-weight: 500;
-            color: white;">
+<section class="container section-title " data-aos="fade-up" >
+          <p id="title"><span>RULES & REGULATIONS</span></p>
+          <p id="fst" >
             Rules & regulations for the Police Officers Mess
           </p>
         </section>
-  
-
-
         <section id="about" class="about section light-background">
          
             <!-- Section Title -->
             <!-- End Section Title -->
           
-            <div class="container" style="padding-top: 50px; padding-bottom: 50px;">
+            <div class="container py-5">
               <section class="section-about">
                 <div class="container">
     
-                    <div class="about" style="margin-top: 4px">
+                    <div class="about mt-1" >
     
                         
                         <div class="list-group">

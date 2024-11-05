@@ -19,7 +19,7 @@
         <!-- ABOUT -->
         <section class="section-about">
             <div class="container">
-                <div class="about" style="margin-top: 4px">
+                <div class="about mt-1">
                   Your Payment was successfully captured. Your payment status will updated in the next 24 Hours. Thank you;
                 </div>
 

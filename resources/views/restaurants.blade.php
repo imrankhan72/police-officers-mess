@@ -1,34 +1,17 @@
 @extends('layouts.site')
 @section('content')
-<section class="container section-title " data-aos="fade-up" style="
-            background-image: url(assets/img/img-9.jpeg); 
-           
-            background-size: cover;
-            background-position: center;
-            max-width: 1280px;
-            padding-top: 68px;">
-
-          <p style="color: white;"><span>RESTAURANTS</span></p>
-         
-
-          <!-- <p class="fst" style="
-            max-width: 635px;
-            font-size: 15px;
-            margin: 10px auto 20px;
-            font-weight: 500;
-            color: white;">
+<section class="container section-title " data-aos="fade-up" >
+          <p id="title"><span>RESTAURANTS</span></p>
+          <!-- <p id="fst">
             About The Police Officers Mess
           </p> -->
         </section>
-  
-
-
         <section id="about" class="about section light-background">
 
             <!-- Section Title -->
             <!-- End Section Title -->
           
-            <div class="container" style="padding-top: 50px; padding-bottom: 50px;">
+            <div class="container py-5">
           
               <div class="row gy-3">
           
@@ -96,14 +79,14 @@
           
                 <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
                   <div class="about-content ps-0 ps-lg-3">
-                    <h3 style="color: #444444;">RESTAURANT IN POLICE <br>OFFICERS MESS
+                    <h3 >RESTAURANT IN POLICE <br>OFFICERS MESS
                     </h3>
                     <span class="box-border"></span>
                     <p class="fst">
                       Our multi-cuisine restaurant offers a variety of quality and tasty delicacies and is a great addition to the facilities and services provided.<br>Here are some key features of the mess a restaurant:
                     </p>
                     
-                    <ol style="font-size: 16px">
+                    <ol >
                       <li><b>Culinary Diversity:</b> A multi-cuisine restaurant caters to a wide range of tastes and preferences, offering officers and other personnel a diverse selection of dishes from different cuisines. This variety ensures that there's something for everyone.</li>
                       <li><b>Quality Food:</b> Emphasizing the quality of the dishes served is crucial to provide officers with delicious and satisfying meals. Using fresh ingredients and skilled chefs contribute to the restaurant's reputation.</li>
                       <li><b>Convenience:</b> Having a restaurant on-site in the mess offers convenience to officers and staff who may not have the time to dine outside. It eliminates the need to travel for a good meal.</li>

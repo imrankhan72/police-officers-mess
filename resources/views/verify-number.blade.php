@@ -1,13 +1,8 @@
 @extends('layouts.site')
 <!-- Header | START -->
 @section('content')
-<section class="container section-title" data-aos="fade-up" 
-    style="background-image: url(assets/img/img-9.jpeg); 
-           background-size: cover;
-           background-position: center;
-           max-width: 1280px;
-           padding-top: 68px; padding-bottom: 30px;">
-    <p style="color: white; font-size: 32px; font-weight: bold;"><span>VERIFY MOBILE NUMBER</span></p>
+<section class="container section-title" data-aos="fade-up" >
+    <p id="title"><span>VERIFY MOBILE NUMBER</span></p>
 </section>
 
 <section class="section-contact" style="background-color: #f9f9f9;">

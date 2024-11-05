@@ -1,29 +1,22 @@
 @extends('layouts.site')
 @section('content')
-<section class="container section-title" data-aos="fade-up" 
-    style="background-image: url(assets/img/img-9.jpeg); 
-           background-size: cover;
-           background-position: center;
-           max-width: 1280px;
-           padding-top: 68px; padding-bottom: 30px;">
-    <p style="color: white; font-size: 32px; font-weight: bold;"><span>Privacy POLICY
+
+<section class="container section-title" data-aos="fade-up" >
+    <p id="title"><span>Privacy POLICY
 </span></p>
 </section>
 
-<section class="section-contact">
-            <div class="container" style="padding-top: 50px;
-    padding-bottom: 50px;">
-                <div class="contact">
+<section class="section ">
+            <div class="container pt-5 pb-5">
+                <div class="privacy-policy">
                     <div class="text-center">
-                       <h4 style="font-size: 25px;
-    font-weight: 600;">General</h4>
+                       <h4 >General</h4>
 				<p>
 					By using, accessing or participating in the Service, you agree to the terms of this privacy policy (the "Privacy Policy"). Capitalized terms not defined in this Privacy Policy have the meanings set forth in the Terms and Conditions, located <a class="gpmpt" href="/terms-of-use">here</a>. We reserve the right to change our Privacy Policy at any time. If we do this, we will post a notice that we have made changes to this Privacy Policy on the Website for at least 7 days after the changes are posted and will indicate at the bottom of the Privacy Policy the date these terms were last revised. Any revisions to this Privacy Policy will become effective the earlier of (i) the end of the foregoing 7-day period or (ii) the first time you access or use the Service after any such changes. If you do not agree to abide by this Privacy Policy, you are not authorized to use, access or participate in the Service.
 				</p>
 
 				<br>
-				<h4 style="font-size: 25px;
-    font-weight: 600;">Information We Collect</h4>
+				<h4 >Information We Collect</h4>
 				<p>
 					When you use the Service you provide us with two types of information: (i) information you submit via the Service and (ii) information regarding your use of the Service collected by us as you interact with the Service.
 				</p>
@@ -36,8 +29,7 @@
 				</p>
 
 				<br>
-				<h4 style="font-size: 25px;
-    font-weight: 600;">User Of Information Obtained by Police officers mess</h4>
+				<h4 >User Of Information Obtained by Police officers mess</h4>
 				<p>
 					We may use your contact information to send you notifications regarding new services offered by Police officers mess and its partners that we think you may find valuable. Police officers mess may also send you service-related announcements from time to time through the general operation of the Service. Generally, you may opt out of such emails, although Police officers mess reserves the right to send you notices about your account even if you opt out of all voluntary email notifications.
 				</p>
@@ -49,20 +41,18 @@
 				</p>
 
 				<br>
-				<h4 style="font-size: 25px;
-    font-weight: 600;">Sharing Your Personally-Identifiable Information with Third Parties</h4>
+				<h4 >Sharing Your Personally-Identifiable Information with Third Parties</h4>
 				<p>
 					Police officers mess shares your personally-identifiable information only in limited circumstances where Police officers mess believes such sharing is reasonably necessary to offer the Service, legally required or, permitted by you.
 				</p>
-				<h4 style="font-size: 25px;
-    font-weight: 600;">For example:</h4>
+				<h4 >For example:</h4>
 				<p>
 					We may provide personally-identifiable information to service providers who help us bring you the Service, such as hosting the Service at a co-location facility or sending email updates. In connection with these operations, our service providers may have access to personally-identifiable information for use for a limited time. Where we utilize service providers for the processing of any of personally-identifiable information, we implement reasonable contractual protections limiting the use of that personally-identifiable information to the provision of services to Police officers mess.
 				</p>
-                <div>
+                <div class='privacy-list'>
                     <p>Notwithstanding anything else in this policy, we may work with partners who use mobile SDKs, including the OneSignal Messaging SDK, to passively collect information (collectively, “SDK Information”), which generally helps us deliver personalized notifications. This data may also be used to identify you in a unique manner across other devices or browsers for the purposes of customizing ads or content. Depending on the permissions granted to this application, this information may include personally identifiable information (PII) including your e-mail address. This information may also include precise location (i.e. GPS-level data) or WiFi information, apps you have installed and enabled, and your mobile identifier (e.g., Android Advertising ID).<br><br>
 						Consumer Control &amp; Opt-Out Options</p>
-                    <ol style="list-style-type: lower-latin">
+                    <ol>
                         <li>Opting-out of OneSignal Push Notifications - You may in most cases opt out of receiving push notifications by going to your device “Settings” and clicking on “Notifications,” and then changing those settings for some or all of the apps on your device. (Different device configurations, or updates to devices, may affect or change how these settings work.)</li>
                         <li>Opting Out of “Cross-App” Advertising on Mobile Devices - You can opt out of having your mobile advertising identifiers used for certain types of interest-based (also called “cross-app”) mobile behavioral advertising, by accessing the “settings” on your Apple or Android mobile device, as follows: By opening the Google Settings app on your device, selecting Ads, and then selecting the option to opt-out of interest-based ads. (Different device configurations, or updates to devices, may affect or change how these settings work.)</li>
                     </ol>
@@ -75,8 +65,7 @@
 				</p>
 
 				<br>
-				<h4 style="font-size: 25px;
-    font-weight: 600;">Links</h4>
+				<h4 >Links</h4>
 				<p>
 					The Service may contain links to other websites. We are not responsible for the privacy practices of other websites. We encourage users to be aware when they leave the Service to read the privacy statements of other websites that collect personally identifiable information. This Privacy Policy applies solely to information collected by Police officers mess via the Service.
 				</p>

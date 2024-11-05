@@ -1,22 +1,8 @@
 @extends('layouts.site')
 @section('content')
-<section class="container section-title " data-aos="fade-up" style="
-            background-image: url(assets/img/img-9.jpeg); 
-           
-            background-size: cover;
-            background-position: center;
-            max-width: 1280px;
-            padding-top: 68px;">
-
-          <p style="color: white;"><span>BANQUETS & LAWNS</span></p>
-         
-
-          <!-- <p class="fst" style="
-            max-width: 635px;
-            font-size: 15px;
-            margin: 10px auto 20px;
-            font-weight: 500;
-            color: white;">
+<section class="container section-title " data-aos="fade-up">
+          <p id="title"><span>BANQUETS & LAWNS</span></p>
+          <!-- <p id="fst">
             About The Police Officers Mess
           </p> -->
         </section>
@@ -28,7 +14,7 @@
             <!-- Section Title -->
             <!-- End Section Title -->
           
-            <div class="container" style="padding-top: 50px; padding-bottom: 50px;">
+            <div class="container pt-5 pb-5">
           
               <div class="row gy-3">
           
@@ -108,13 +94,13 @@
           
                 <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
                   <div class="about-content ps-0 ps-lg-3">
-                    <h3 style="color: #444444;">BANQUETS AND LAWNS IN<br> POLICE OFFICERS MESS
+                    <h3 >BANQUETS AND LAWNS IN<br> POLICE OFFICERS MESS
                     </h3>
                     <span class="box-border"></span>
                     <p class="fst">
                       The combination of banquet halls, beautiful landscaped gardens and lawns overlooking the scenic Lower Lake in Police Officers' Mess creates a versatile and picturesque setting for a wide range of events and special occasions. Here's how these elements come together
                     </p>
-                    <ol style="font-size: 16px">
+                    <ol >
                       <li>
                           <b>Banquet Halls: </b> The presence of banquet halls allows for indoor events, formal dinners, and celebrations to be held in a controlled environment. These halls are typically well-equipped with seating, lighting, and audiovisual equipment, making them suitable for a variety of gatherings, including award ceremonies, conferences, and receptions.
                       </li>

@@ -1,47 +1,18 @@
 @extends('layouts.site')
 @section('content')
-<section class="container section-title " data-aos="fade-up" style="
-            background-image: url(assets/img/img-9.jpeg); 
-           
-            background-size: cover;
-            background-position: center;
-            max-width: 1280px;
-            padding-top: 68px;">
-
-          <p style="color: white;"><span>FACILITIES</span></p>
-         
-
-          <p class="fst" style="
-            max-width: 635px;
-            font-size: 15px;
-            margin: 10px auto 20px;
-            font-weight: 500;
-            color: white;">
+<section class="container section-title " data-aos="fade-up" >
+          <p id="title"><span>FACILITIES</span></p>
+          <p id="fst" >
             Facilities in Officers Mess
           </p>
         </section>
-  
-
-
-        <section id="about" class="about section light-background">
-
-         
-  
-  
-  
+        <section id="facilities" class="about section light-background">
           <!-- End Section Title -->
-  
-  
-  
-        
-  
-  
-  
-          <div class="container" style="padding-top: 75px;">
+          <div class="container" >
             <div class="row gy-3">
               <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
                 <div class="about-content ps-0 ps-lg-3">
-                  <h3 style=" color: #232323;">BEST FACILITIES</h3>
+                  <h3 >BEST FACILITIES</h3>
                   <p class="fst">
                   A police officers mess in Bhopal is a versatile and welcoming establishment, which provides its attendees with a comfortable and enjoyable experience, providing a comfortable and welcoming environment.
                   </p>

@@ -1,3 +1,9 @@
+body {
+    font-family: var(--default-font);
+  }
+  .hidden {
+    display: none;
+}  
 .table-bordered>:not(caption)>*>*{
     font-size: 13px;
     font-weight: 600;
@@ -25,5 +31,80 @@ background-color: #337ab7;
 .fst{
     font-size: 15px;
     font-weight: 500;
+}
 
+  .section-title{
+    background-image: url(/assets/img/img-9.jpeg); 
+    background-size: cover;
+            background-position: center;
+            max-width: 1280px;
+            padding-top: 68px;
+  }
+  #title{
+    color: white;
+  }
+#fst{
+  max-width: 635px;
+            font-size: 15px;
+            margin: 10px auto 20px;
+            font-weight: 500;
+            color: white;
+}
+
+.about-content h3{
+    color: #444444;
+}
+
+.about-content ol{
+    font-size: 16px;
+}
+
+.section-disclaimer {
+    background-color: #f9f9f9;
+}
+
+.section-padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.font-weight-bold {
+    font-weight: 600;
+}
+
+/* Set padding-top for the container inside the facilities section */
+#facilities .container {
+    padding-top: 75px;
+}
+
+/* Set color for the h3 element inside the about-content of the facilities section */
+#facilities .about-content h3 {
+    color: #232323;
+}
+.popup-gallery{
+    display: flex; flex-wrap: wrap; justify-content: space-between;
+}
+.gallery-item {
+margin-bottom: 20px;
+flex: 0 0 calc(25% - 20px); /* Adjust width */
+}
+
+.gallery-item img {
+width: 100%;
+height: auto; /* Maintain aspect ratio */
+}
+
+.management h3{
+    color: #2b2b2b;
+}
+
+.privacy-policy h4 {
+    font-size: 25px; font-weight: 600;
+}
+.privacy-list ol{
+list-style-type: lower-latin;
+}
+
+.section-reservation-page .bookform{
+padding: 89px;
 }

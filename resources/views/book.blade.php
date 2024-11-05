@@ -3,8 +3,7 @@
 @section('content')
 <section 
     class="container-fluid section-title" 
-    data-aos="fade-up" 
-    style="background: url(assets/img/img-9.jpeg) center/cover no-repeat; padding-top: 68px;">
+    data-aos="fade-up">
     
     <div class="container text-center">
         <p class="text-white"><span>APPLY FOR BOOKING</span></p>
@@ -12,7 +11,7 @@
 </section>
 
 <section class="section-reservation-page bg-white">
-    <div class="container" style="padding: 89px;">
+    <div class="container bookform" >
             @if(Session::has('message'))
                         <div class="alert alert-success">
                             <strong>Success!</strong> {{Session::get('message')}}.

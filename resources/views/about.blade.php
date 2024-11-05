@@ -1,34 +1,22 @@
 @extends('layouts.site')
 @section('content')
-<section class="container section-title " data-aos="fade-up" style="
-            background-image: url(assets/img/img-9.jpeg); 
-           
-            background-size: cover;
-            background-position: center;
-            max-width: 1280px;
-            padding-top: 68px;">
 
-          <p style="color: white;"><span>ABOUT US</span></p>
-         
-
-          <p class="fst" style="
-            max-width: 635px;
-            font-size: 15px;
-            margin: 10px auto 20px;
-            font-weight: 500;
-            color: white;">
+        <section class="container section-title " data-aos="fade-up">
+          <p id="title"><span>ABOUT US</span></p>
+          <p id="fst">
             About The Police Officers Mess
           </p>
         </section>
-  
 
+      
 
         <section id="about" class="about section light-background">
 
             <!-- Section Title -->
             <!-- End Section Title -->
           
-            <div class="container" style="padding-top: 50px; padding-bottom: 50px;">
+            <div class="container pt-5 pb-5">
+
           
               <div class="row gy-3">
           
@@ -67,7 +55,9 @@
           
                 <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
                   <div class="about-content ps-0 ps-lg-3">
-                    <h3 style="color: #444444;">ABOUT THE POLICE<br> OFFICERS MESS</h3>
+                    
+                    <h3 >ABOUT THE POLICE<br>OFFICERS MESS</h3>
+
                     <span class="box-border"></span>
                     <p class="fst">
                         The Police Officers Mess, Bhopal is a prestigious institution designed to provide a comfortable and relaxing stay for Police Officers and their guests. The Mess is equipped with a wide range of facilities that cater to the various needs of its guests.

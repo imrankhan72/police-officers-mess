@@ -11,10 +11,6 @@
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,15 +22,13 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="assets/css/magnific-popup.css" rel="stylesheet">
+  
+
 
 <script src="/assets/bootstrap.bundle.min.js"></script>
 
-<style>
-  .hidden {
-    display: none;
-}
-  </style>
+
 
 </head>
 
@@ -248,164 +242,11 @@
 
 <!-- Main JS File -->
 <script src="assets/js/main.js"></script>
-
-<!-- Include jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<!-- Magnific Popup CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.css">
-
-<!-- Magnific Popup JS -->
-<script src="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/magnific-popup.min.js"></script>
 
 <!-- Custom Script for Popup -->
-<script>
-$(document).ready(function() {
-    $('.popup-gallery').magnificPopup({
-        delegate: 'a', // child items selector, by clicking on it popup will open
-        type: 'image', // this is important
-        gallery: {
-            enabled: true // enable gallery mode
-        },
-        image: {
-            titleSrc: function(item) {
-                return item.el.attr('title'); // get title from the link's title attribute
-            }
-        }
-    });
-
-        // Initial check on page load
-        checkSelectedOption();
-
-        // Add change event listener to the dropdown
-        $('#bookingFor').change(function() {
-
-            checkSelectedOption();
-        });
-
-        // Function to check the selected option and show/hide text accordingly
-        function checkSelectedOption() {
-            var selectedOption = $('#bookingFor').val();
-            console.log(selectedOption);
-            if (selectedOption === 'Lawn for Marriage') {
-                $('#lawnDetails').removeClass('hidden');
-                $('#lawnRelation').removeClass('hidden');
-                $('#lawnDD').removeClass('hidden');
-
-                $('#nonLawnDD').addClass('hidden');
-                $('#nonLawnDD').prop('disabled', true);
-
-                $('#domDD').addClass('hidden');
-                $('#domDD').prop('disabled', true);
-
-                $('#lawnDetails2').addClass('hidden');
-                $('#lawnDD2').addClass('hidden');
-                $('#lawnDD2').prop('disabled', true);
-
-                $('#no_of_rooms').addClass('hidden');
-
-                $('#roof-top-details').addClass('hidden');
-
-            }
-            else if (selectedOption === 'Lawn for Birthday'){
-                $('#lawnRelation').removeClass('hidden');
-                $('#lawnDetails').addClass('hidden');
-                $('#lawnDetails2').removeClass('hidden');
-
-                $('#lawnDD').addClass('hidden');
-                $('#lawnDD2').removeClass('hidden');
-
-                $('#domDD').addClass('hidden');
-                $('#domDD').prop('disabled', true);
-
-                $('#nonLawnDD').addClass('hidden');
-                $('#nonLawnDD2').addClass('hidden');
-                $('#lawnDD2').prop('disabled', true);
-
-                $('#no_of_rooms').addClass('hidden');
-
-                $('#roof-top-details').addClass('hidden');
-            }
-
-            else if (selectedOption === 'roof top'){
-                $('#roof-top-details').addClass('show');
-                $('#roof-top-details').removeClass('hidden');
-
-                $('#lawnDetails').addClass('hidden');
-
-                $('#lawnDD').removeClass('show');
-                $('#lawnDD').addClass('hidden');
-
-                $('#lawnDD2').removeClass('show');
-                $('#lawnDD2').prop('disabled', false);
-
-                $('#nonLawnDD2').removeClass('show');
-                $('#nonLawnDD2').addClass('hidden');
-
-                $('#nonLawnDD').removeClass('show');
-                $('#nonLawnDD').addClass('hidden');
-
-
-                $('#no_of_rooms').addClass('hidden');
-
-                $('#domDD').removeClass('hidden');
-                $('#domDD').addClass('show');
-
-
-            }
-
-            else if (selectedOption === 'Room'){
-                $('#lawnRelation').addClass('hidden');
-                $('#domDD').addClass('hidden');
-                $('#no_of_rooms').removeClass('hidden');
-                $('#no_of_rooms').addClass('show');
-                $('#roof-top-details').addClass('hidden');
-
-                $('#lawnDD').addClass('hidden');
-
-                $('#nonLawnDD').removeClass('hidden');
-                $('#nonLawnDD').addClass('show');
-
-            }
-
-            else if (selectedOption === 'Hall' || selectedOption === 'Anandam hall' || selectedOption === 'Dome'){
-                $('#lawnDetails').addClass('hidden');
-                $('#lawnDetails2').addClass('hidden');
-                $('#lawnRelation').addClass('hidden');
-                $('#lawnRelation2').addClass('hidden');
-                $('#lawnDD').addClass('hidden');
-                $('#lawnDD').prop('disabled', true);
-                $('#lawnDD2').addClass('hidden');
-                $('#lawnDD2').prop('disabled', true);
-                $('#domDD').removeClass('hidden');
-                $('#domDD').addClass('show');
-                $('#nonLawnDD').prop('disabled', false);
-                $('#roof-top-details').addClass('hidden');
-                $('#nonLawnDD').removeClass('show');
-                $('#nonLawnDD').addClass('hidden');
-            }
-
-            else {
-                $('#lawnDetails').addClass('hidden');
-                $('#lawnDetails2').addClass('hidden');
-                $('#lawnRelation').addClass('hidden');
-                $('#lawnRelation2').addClass('hidden');
-                $('#lawnDD').addClass('hidden');
-                $('#lawnDD').prop('disabled', true);
-                $('#lawnDD2').addClass('hidden');
-                $('#lawnDD2').prop('disabled', true);
-                $('#nonLawnDD').removeClass('hidden');
-                $('#nonLawnDD').prop('disabled', false);
-                $('#roof-top-details').addClass('hidden');
-                // $('#no_of_rooms').addClass('hidden');
-                // $('#no_of_rooms').addClass('show');
-            }
-
-        }
-});
-</script>
-
-
+<script src="assets/js/custom.js"></script>
 
 </body>
 </html>
