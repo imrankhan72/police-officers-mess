@@ -39,6 +39,8 @@
 
 
 <!-- Mobile View -->
+
+
 <!-- Topbar for Both Desktop and Mobile -->
 <div class="topbar d-flex align-items-center">
   <div class="container d-flex justify-content-between align-items-center flex-wrap">
@@ -50,35 +52,28 @@
         <i class="bi bi-map d-flex align-items-center">&nbsp; In Front of DG Home Guards Office, Jahangirabad, Bhopal, Madhya Pradesh</i>
         <i class="bi bi-phone d-flex align-items-center ms-4"><span>+91 0755-2443636, 70491 46203</span></i>
       </div>
-      
+
       <!-- Buttons (Pay Bill, Apply for Booking, Booking Status) -->
-      <div class="d-flex align-items-center flex-wrap justify-content-center" style="padding-left: 80px;
-    padding-top: 6px;">
-        <a class="btn btn-get-started me-2 mb-2" href="/verify-number?path=bill-details"
-          style="background-color: #e1bd85;color: white;border-radius: 0px;--bs-btn-font-size: 12px;">PAY BILL</a>
-        <a class="btn btn-get-started me-2 mb-2" href="/book-now"
-          style="background-color: #e1bd85;color: white;border-radius: 0px;--bs-btn-font-size: 12px;">APPLY FOR BOOKING</a>
-        <a class="btn btn-get-started mb-2" href="/verify-number?path=check-booking-status"
-          style="background-color: #e1bd85;color: white;border-radius: 0px;--bs-btn-font-size: 12px;">BOOKING STATUS</a>
+      <div class="d-flex align-items-center flex-wrap justify-content-center" id="bt1" >
+        <a class="btn btn-get-started me-2 mb-2" href="/verify-number?path=bill-details">PAY BILL</a>
+        <a class="btn btn-get-started me-2 mb-2" href="/book-now" >APPLY FOR BOOKING</a>
+        <a class="btn btn-get-started mb-2" href="/verify-number?path=check-booking-status" >BOOKING STATUS</a>
       </div>
     </div>
     
     <!-- Mobile View -->
-    <div class="mobile-view d-flex d-md-none align-items-center flex-wrap" style="padding-bottom: 45px;">
+    <div class="mobile-view d-flex d-md-none align-items-center flex-wrap" id="top-info">
       <!-- Contact Info -->
       <div class="contact-info d-flex align-items-center flex-wrap">
         <i class="bi bi-map d-flex align-items-center">&nbsp; In Front of DG Home Guards Office, Jahangirabad, Bhopal, Madhya Pradesh</i>
         <i class="bi bi-phone d-flex align-items-center ms-4"><span>+91 0755-2443636, 70491 46203</span></i>
       </div>
-      
+     
       <!-- Buttons (Pay Bill, Apply for Booking, Booking Status) -->
-      <div class="d-flex align-items-center flex-wrap justify-content-center">
-        <a class="btn btn-get-started me-2 mb-2" href="verify-number.php"
-          style="background-color: #e1bd85;color: white;border-radius: 0px;--bs-btn-font-size: 12px;">PAY BILL</a>
-        <a class="btn btn-get-started me-2 mb-2" href="book-now.php"
-          style="background-color: #e1bd85;color: white;border-radius: 0px;--bs-btn-font-size: 12px;">APPLY FOR BOOKING</a>
-        <a class="btn btn-get-started mb-2" href="/verify-status.php"
-          style="background-color: #e1bd85;color: white;border-radius: 0px;--bs-btn-font-size: 12px;">BOOKING STATUS</a>
+      <div class="d-flex align-items-center flex-wrap justify-content-center" id="bt2">
+        <a class="btn btn-get-started me-2 mb-2" href="verify-number.php">PAY BILL</a>
+        <a class="btn btn-get-started me-2 mb-2" href="book-now.php">APPLY FOR BOOKING</a>
+        <a class="btn btn-get-started mb-2" href="/verify-status.php">BOOKING STATUS</a>
       </div>
     </div>
 
@@ -101,9 +96,7 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="#hero" class="active" style="background-color: #e1bd85;
-    height: 84px;
-    color: white;">Home</a></li>
+            <li><a href="#hero" id="home" class="active">Home</a></li>
              <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <li><a href="/about-us">About Us</a></li>
@@ -149,27 +142,19 @@
       </a> -->
       <div class="footer-contact pt-3">
         <p>
-          <i class="fa fa-map-marker" aria-hidden="true" style="margin-right: 8px; font-size: 18px; "></i>
-          <span>In Front of DG Home Guards Office, Jahangirabad, <br>Bhopal, Madhya Pradesh</span>
+            <i class="fa fa-map-marker contact-icon" aria-hidden="true"></i>
+            <span>In Front of DG Home Guards Office, Jahangirabad, <br>Bhopal, Madhya Pradesh</span>
         </p>
-        <!-- <p>New York, NY 535022</p> -->
         <p>
-          <i class="fa fa-phone" aria-hidden="true" style="margin-right: 8px; font-size: 18px;"></i>
-          <span>0755-2443636, +91 70491 46203</span>
+            <i class="fa fa-phone contact-icon" aria-hidden="true"></i>
+            <span>0755-2443636, +91 70491 46203</span>
         </p>
-
-        <!-- Font Awesome CSS -->
-
-
         <p>
-          <i class="fa fa-envelope-o" aria-hidden="true" style="margin-right: 8px;"></i>
-          <span>policeofficermess1234@gmail.com</span>
+            <i class="fa fa-envelope-o contact-icon" aria-hidden="true"></i>
+            <span>policeofficermess1234@gmail.com</span>
         </p>
-
-        <!-- Add Font Awesome CSS -->
-
-
-      </div>
+    </div>
+    
     </div>
 
     <div class="col-lg-3 col-md-3 footer-links">

@@ -51,7 +51,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div style="margin-bottom: 60px">
+                            <div id="bookfor">
                                 <label class="">Booking for</label>
                                 <select name="booking_for_self_guest" class="children">
                                     <option selected value="1">Self</option>
@@ -67,8 +67,8 @@
                     </form>
                 </div>
                 <!-- Contact Form | END -->
-                <h2 style="margin:0;"><strong>+91 8 3456 7890</strong></h2>
-                <p style="margin:0;"><a href="mailto:stay@pom.com">stay@pom.com</a><br />
+                <h2 id="m0" ><strong>+91 8 3456 7890</strong></h2>
+                <p id="m0"><a href="mailto:stay@pom.com">stay@pom.com</a><br />
                     7C26+CHF, Jahangirabad, Bhopal, Madhya Pradesh 462008<br />
                     <a href="#"><i class="fa fa-map-marker"></i> Explore Our Location</a></p>
             </div>

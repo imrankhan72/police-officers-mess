@@ -38,7 +38,7 @@
                                 @endif
                             </h4>
                         </div>
-                        <div style="display: flex; margin-top: 16px; ">
+                        <div id="payment">
                             <form action="/make-payment" method="get">
                                 {{csrf_field()}}
                                 <input type="hidden" name="name" value="{{$client_details['Client_Name']}}">
@@ -50,7 +50,7 @@
                             </form>
                         </div>
 
-                        <div id="bill_details" style=" padding-top: 32px;">
+                        <div id="bill_details" >
                             @if($hotel_bill_details)
                             <div class="container">
                                 <h5>Hotel Bill Details</h5>

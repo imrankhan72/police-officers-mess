@@ -5,25 +5,21 @@
     <p id="title"><span>VERIFY MOBILE NUMBER</span></p>
 </section>
 
-<section class="section-contact" style="background-color: #f9f9f9;">
+
+<section class="section-contact" id="verify_number">
     <div class="container">
-        <div class="contact text-center" style="padding: 60px 0;">
+        <div class="contact text-center" >
            
 
-            <div class="reservation_content" style="max-width: 400px; margin: 0 auto;" >
-                <form action="/otp" method="post" style="text-align: left;">
+            <div class="reservation_content" >
+                <form action="/otp" method="post" >
                 {{csrf_field()}}
                 <input type="hidden" name="path" value="{{$path}}">
                     <div class="form-group mb-4" >
-                        <label for="mobile_no" style="font-weight: 500; font-size: 16px;">Enter your 10-digit mobile number<sup>*</sup></label>
-                        <input type="text" id="mobile_no" name="mobile_no" class="form-control" 
-                               maxlength="10" required placeholder="Enter mobile number"
-                               style="padding: 10px; font-size: 16px; margin-top: 8px; border-radius: 4px; border: 1px solid #ddd;">
+                        <label for="mobile_no" >Enter your 10-digit mobile number<sup>*</sup></label>
+                        <input type="text" id="mobile_no" name="mobile_no" class="form-control"  maxlength="10" required placeholder="Enter mobile number">
                     </div>
-
-                    <button type="submit" class="awe-btn awe-btn-13" 
-                            style="background-color: #e1bd85; color: white; padding: 10px 30px; 
-                                   font-size: 18px; border-radius: 4px; border: none;">
+                    <button type="submit" class="awe-btn awe-btn-13">
                         SUBMIT
                     </button>
                 </form>

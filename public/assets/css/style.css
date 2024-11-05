@@ -134,4 +134,86 @@ padding: 89px;
     font-weight: 500;
 }
 
-  
+#bt1{
+    padding-left: 80px;
+    padding-top: 6px;
+  }
+#bt2{
+    flex: none;
+
+  }
+  #bt1 a{
+    background-color: #e1bd85;color: white;border-radius: 0px;--bs-btn-font-size: 12px;
+  }
+  #bt2 a{
+    background-color: #e1bd85;color: white;border-radius: 0px;--bs-btn-font-size: 12px;
+  }
+
+  #top-info{
+    padding-bottom: 45px;
+  }
+
+  #home{
+    background-color: #e1bd85; height: 84px; color: white;
+  }
+
+  .footer-contact .contact-icon {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+
+#payment{
+    display: flex; margin-top: 16px;
+}
+#bill_details{
+    padding-top: 32px;
+}
+
+#bookfor{
+
+margin-bottom: 60px
+} 
+
+#m0{
+    margin:0;
+}
+
+
+#verify_number {
+    background-color: #f9f9f9;
+}
+
+#verify_number .contact {
+    padding: 60px 0;
+}
+
+#verify_number .reservation_content {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#verify_number form {
+    text-align: left;
+}
+
+#verify_number .form-group label {
+    font-weight: 500; font-size: 16px;
+}
+
+#verify_number .form-group input.form-control {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+#verify_number .awe-btn {
+    background-color: #e1bd85;
+    color: white;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 4px;
+    border: none;
+}

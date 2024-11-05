@@ -141,3 +141,12 @@ $(document).ready(function() {
 
         }
 });
+
+function toggleBillDetails() {
+    var x = document.getElementById("bill_details");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
