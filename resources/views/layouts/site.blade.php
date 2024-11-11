@@ -6,6 +6,7 @@
   <title>Police Officers' Mess, Bhopal </title>
   <meta name="description" content="">
   <meta name="keywords" content="">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self';">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
