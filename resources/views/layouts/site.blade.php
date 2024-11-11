@@ -6,7 +6,7 @@
   <title>Police Officers' Mess, Bhopal </title>
   <meta name="description" content="">
   <meta name="keywords" content="">
-  
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://pom.bharatunited.com; style-src 'self' https://pom.bharatunited.com; img-src 'self' https://pom.bharatunited.com;">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
