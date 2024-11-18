@@ -66,7 +66,7 @@ Route::post('/bookings/store', function (Request $request) {
         'name' => 'required|string',
         'booking_from' => 'required|string',
         'booking_till' => 'required|string',
-        'mobile' => 'required|string',
+        'mobile' => 'required|numeric|digits:10',
         'police_id' => 'required'
     ]);
 
@@ -149,6 +149,9 @@ Route::post('/otp', function (Request $request) {
 });
 
 Route::post('/check-booking-status', function (Request $request) {
+    $validated = $request->validate([
+        'mobile_no' => 'required|numeric|digits:10',
+    ]);
     $mobile_no = $request->get('mobile_no');
     if ($request->get('entered_otp') !== $request->get('otp_code')) {
         return "Wrong OTP Code";
@@ -197,6 +200,9 @@ Route::get('/bd', function (Request $request) {
 });
 
 Route::post('/bill-details', function (Request $request) {
+    $validated = $request->validate([
+        'mobile_no' => 'required|numeric|digits:10',
+    ]);
     $mobile_no = $request->get('mobile_no');
 
     if ($request->get('entered_otp') !== $request->get('otp_code')) {
