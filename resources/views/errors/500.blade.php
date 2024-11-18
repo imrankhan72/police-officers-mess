@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>500 - Server Error</title>
-    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="flex items-center justify-center min-h-screen bg-gray-100">
-<div class="text-center">
-    <h1 class="text-6xl font-bold text-red-600">500</h1>
-    <h2 class="mt-4 text-2xl font-semibold text-gray-800">Server Error</h2>
-    <p class="mt-2 text-gray-600">Sorry, something went wrong on our end.</p>
-    <a href="{{ url('/') }}" class="mt-6 inline-block px-4 py-2 text-white bg-red-600 rounded hover:bg-red-700">Return
+<body
+    style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f8f9fa; color: #333; display: flex; justify-content: center; align-items: center; height: 100vh;">
+<div style="text-align: center;">
+    <h1 style="font-size: 80px; font-weight: bold; color: #dc3545;">500</h1>
+    <h2 style="font-size: 24px; margin-top: 10px;">Server Error</h2>
+    <p style="font-size: 16px; margin-top: 10px;">Sorry, something went wrong on our end.</p>
+    <a href="{{ url('/') }}"
+       style="display: inline-block; margin-top: 20px; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px;">Return
         to Home</a>
 </div>
 </body>
