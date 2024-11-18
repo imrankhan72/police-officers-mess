@@ -82,44 +82,44 @@ Route::post('/bookings/store', function (Request $request) {
     return back()->with('message', 'Your booking request has been created. We will contact you soon');
 });
 
-function post_to_url($url, $data)
-{
-    $fields = '';
-    foreach ($data as $key => $value) {
-        $fields .= $key . '=' . urlencode($value) . '&';
-    }
-    rtrim($fields, '&');
-    $post = curl_init();
-    //curl_setopt($post, CURLOPT_SSLVERSION, 5); // uncomment for systems supporting TLSv1.1 only
-    curl_setopt($post, CURLOPT_SSLVERSION, 6); // use for systems supporting TLSv1.2 or comment the line
-    curl_setopt($post, CURLOPT_SSL_VERIFYPEER, false);
-    curl_setopt($post, CURLOPT_URL, $url);
-    curl_setopt($post, CURLOPT_POST, count($data));
-    curl_setopt($post, CURLOPT_POSTFIELDS, $fields);
-    curl_setopt($post, CURLOPT_RETURNTRANSFER, 1);
-    $result = curl_exec($post); //result from mobile seva server
-    echo $result; //output from server displayed
-    curl_close($post);
-}
-
-function sendSingleSMS($username, $encryp_password, $senderid, $message, $mobileno, $deptSecureKey, $templateid)
-{
-    $key = hash('sha512', trim($username) . trim($senderid) . trim($message) . trim($deptSecureKey));
-
-    $data = array(
-        "username" => trim($username),
-        "password" => trim($encryp_password),
-        "senderid" => trim($senderid),
-        "content" => trim($message),
-        "smsservicetype" => "singlemsg",
-        "mobileno" => trim($mobileno),
-        "key" => trim($key),
-        "templateid" => trim($templateid)
-
-
-    );
-    post_to_url("https://msdgweb.mgov.gov.in/esms/sendsmsrequestDLT", $data); //calling post_to_url to send sms
-}
+//function post_to_url($url, $data)
+//{
+//    $fields = '';
+//    foreach ($data as $key => $value) {
+//        $fields .= $key . '=' . urlencode($value) . '&';
+//    }
+//    rtrim($fields, '&');
+//    $post = curl_init();
+//    //curl_setopt($post, CURLOPT_SSLVERSION, 5); // uncomment for systems supporting TLSv1.1 only
+//    curl_setopt($post, CURLOPT_SSLVERSION, 6); // use for systems supporting TLSv1.2 or comment the line
+//    curl_setopt($post, CURLOPT_SSL_VERIFYPEER, false);
+//    curl_setopt($post, CURLOPT_URL, $url);
+//    curl_setopt($post, CURLOPT_POST, count($data));
+//    curl_setopt($post, CURLOPT_POSTFIELDS, $fields);
+//    curl_setopt($post, CURLOPT_RETURNTRANSFER, 1);
+//    $result = curl_exec($post); //result from mobile seva server
+//    echo $result; //output from server displayed
+//    curl_close($post);
+//}
+//
+//function sendSingleSMS($username, $encryp_password, $senderid, $message, $mobileno, $deptSecureKey, $templateid)
+//{
+//    $key = hash('sha512', trim($username) . trim($senderid) . trim($message) . trim($deptSecureKey));
+//
+//    $data = array(
+//        "username" => trim($username),
+//        "password" => trim($encryp_password),
+//        "senderid" => trim($senderid),
+//        "content" => trim($message),
+//        "smsservicetype" => "singlemsg",
+//        "mobileno" => trim($mobileno),
+//        "key" => trim($key),
+//        "templateid" => trim($templateid)
+//
+//
+//    );
+//    post_to_url("https://msdgweb.mgov.gov.in/esms/sendsmsrequestDLT", $data); //calling post_to_url to send sms
+//}
 
 Route::get('/verify-number', function (Request $request) {
     return view('verify-number', ['path' => $request->get('path')]);
