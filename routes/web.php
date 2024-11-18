@@ -12,32 +12,33 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Http;
 use Inertia\Inertia;
+
 //use Intervention\Image\Facades\Image;
 
 Route::view('/', 'welcome');
-Route::view('/about-us','about');
-Route::view('/management-committee','management-committee');
-Route::view('/rules-regulations','rules-regulations');
-Route::view('/accommodations','accommodations');
-Route::view('/banquets-lawns','banquets-lawns');
-Route::view('/tariff','tariff');
-Route::view('/facilities','facilities');
-Route::view('/sports','sports');
-Route::view('/restaurants','restaurants');
-Route::view('/gallery','gallery');
-Route::view('/contact-us','contact-us');
-Route::view('/book-now','book');
-Route::view('/disclaimer','disclaimer');
-Route::view('/privacy-policy','/privacy-policy');
-Route::view('/refund-policy','/refund-policy');
-Route::view('/cancellation','/cancellation');
+Route::view('/about-us', 'about');
+Route::view('/management-committee', 'management-committee');
+Route::view('/rules-regulations', 'rules-regulations');
+Route::view('/accommodations', 'accommodations');
+Route::view('/banquets-lawns', 'banquets-lawns');
+Route::view('/tariff', 'tariff');
+Route::view('/facilities', 'facilities');
+Route::view('/sports', 'sports');
+Route::view('/restaurants', 'restaurants');
+Route::view('/gallery', 'gallery');
+Route::view('/contact-us', 'contact-us');
+Route::view('/book-now', 'book');
+Route::view('/disclaimer', 'disclaimer');
+Route::view('/privacy-policy', '/privacy-policy');
+Route::view('/refund-policy', '/refund-policy');
+Route::view('/cancellation', '/cancellation');
 
-Route::get('/php-info',function (Request $request){
-   phpinfo( );
-});
+//Route::get('/php-info',function (Request $request){
+//   phpinfo( );
+//});
 
 
-Route::get('send_sms',function (){
+Route::get('send_sms', function () {
     $message = "Dear Imaad Your login code is 5560 to pay POM bill. Please don't share it with anyone. Regards POMBPL";
 
     // Call the sendSingleSMS function
@@ -72,8 +73,8 @@ Route::post('/bookings/store', function (Request $request) {
     $booking = $request->all();
 
     if ($request->police_id) {
-       $file = $request->file('police_id');
-        $path = $file->store('photos','public');
+        $file = $request->file('police_id');
+        $path = $file->store('photos', 'public');
         $booking['police_id'] = $file->hashName();
     }
 
@@ -81,16 +82,17 @@ Route::post('/bookings/store', function (Request $request) {
     return back()->with('message', 'Your booking request has been created. We will contact you soon');
 });
 
-function post_to_url($url, $data) {
+function post_to_url($url, $data)
+{
     $fields = '';
-    foreach($data as $key => $value) {
+    foreach ($data as $key => $value) {
         $fields .= $key . '=' . urlencode($value) . '&';
     }
     rtrim($fields, '&');
     $post = curl_init();
     //curl_setopt($post, CURLOPT_SSLVERSION, 5); // uncomment for systems supporting TLSv1.1 only
     curl_setopt($post, CURLOPT_SSLVERSION, 6); // use for systems supporting TLSv1.2 or comment the line
-    curl_setopt($post,CURLOPT_SSL_VERIFYPEER, false);
+    curl_setopt($post, CURLOPT_SSL_VERIFYPEER, false);
     curl_setopt($post, CURLOPT_URL, $url);
     curl_setopt($post, CURLOPT_POST, count($data));
     curl_setopt($post, CURLOPT_POSTFIELDS, $fields);
@@ -99,59 +101,66 @@ function post_to_url($url, $data) {
     echo $result; //output from server displayed
     curl_close($post);
 }
-function sendSingleSMS($username,$encryp_password,$senderid,$message,$mobileno,$deptSecureKey,$templateid){
-    $key=hash('sha512',trim($username).trim($senderid).trim($message).trim($deptSecureKey));
+
+function sendSingleSMS($username, $encryp_password, $senderid, $message, $mobileno, $deptSecureKey, $templateid)
+{
+    $key = hash('sha512', trim($username) . trim($senderid) . trim($message) . trim($deptSecureKey));
 
     $data = array(
         "username" => trim($username),
         "password" => trim($encryp_password),
         "senderid" => trim($senderid),
         "content" => trim($message),
-        "smsservicetype" =>"singlemsg",
-        "mobileno" =>trim($mobileno),
+        "smsservicetype" => "singlemsg",
+        "mobileno" => trim($mobileno),
         "key" => trim($key),
-        "templateid"=> trim($templateid)
+        "templateid" => trim($templateid)
 
 
     );
-    post_to_url("https://msdgweb.mgov.gov.in/esms/sendsmsrequestDLT",$data); //calling post_to_url to send sms
+    post_to_url("https://msdgweb.mgov.gov.in/esms/sendsmsrequestDLT", $data); //calling post_to_url to send sms
 }
 
-Route::get('/verify-number',function (Request $request){
-    return view('verify-number',['path'=>$request->get('path')]);
+Route::get('/verify-number', function (Request $request) {
+    return view('verify-number', ['path' => $request->get('path')]);
 });
 
-Route::post('/otp',function (Request $request) {
+Route::post('/otp', function (Request $request) {
+    //validate mobile number
+    $validated = $request->validate([
+        'mobile_no' => 'required|numeric|digits:10',
+    ]);
+
     $mobile_no = $request->get('mobile_no');
-    $otp_code = rand(111111,999999);
+    $otp_code = rand(111111, 999999);
     $path = $request->get('path');
-    if($path == 'bill-details'){
-        $message="Dear User Your login code is $otp_code to pay POM bill. Please don't share it with anyone. Regards POMBPL";
+    if ($path == 'bill-details') {
+        $message = "Dear User Your login code is $otp_code to pay POM bill. Please don't share it with anyone. Regards POMBPL";
         $template_id = 1307169693372298480;
-    }else{
-        $message="Dear User, your login code is $otp_code to check your booking status. Please don't share it with anyone. Regards POMBPL";
+    } else {
+        $message = "Dear User, your login code is $otp_code to check your booking status. Please don't share it with anyone. Regards POMBPL";
         $template_id = 1307169892615829190;
     }
 
-    sendSingleSMS('DITMP-OCCTNS',sha1(trim('Cctns@12345')),'OCCTNS',"$message","$mobile_no",'3d8183ac-8495-4e80-ac8a-2362e0da9838', $template_id);
+    sendSingleSMS('DITMP-OCCTNS', sha1(trim('Cctns@12345')), 'OCCTNS', "$message", "$mobile_no", '3d8183ac-8495-4e80-ac8a-2362e0da9838', $template_id);
 
     //$response = Http::post("http://redirect.ds3.in/submitsms.jsp?user=mpcult&key=50b09e3748XX&mobile=+91$mobile_no&message=$message&senderid=depcmp&accusage=1&entityid=1201159222234637814&tempid=1207169726108149036");
     return view('otp', compact('mobile_no', 'otp_code', 'path'));
 });
 
-Route::post('/check-booking-status',function (Request $request) {
+Route::post('/check-booking-status', function (Request $request) {
     $mobile_no = $request->get('mobile_no');
-    if($request->get('entered_otp') !== $request->get('otp_code')){
+    if ($request->get('entered_otp') !== $request->get('otp_code')) {
         return "Wrong OTP Code";
     }
 
     $status = "Pending";
 
-    $booking = Booking::where('mobile', $mobile_no)->orderBy('id','DESC')->first();
-    if($booking){
-        if($booking->status == 1){
+    $booking = Booking::where('mobile', $mobile_no)->orderBy('id', 'DESC')->first();
+    if ($booking) {
+        if ($booking->status == 1) {
             $status = "Confirmed";
-        }elseif ($booking->status == 2){
+        } elseif ($booking->status == 2) {
             $status = "Rejected";
         }
     }
@@ -159,7 +168,7 @@ Route::post('/check-booking-status',function (Request $request) {
 });
 
 
-Route::get('/pay-bill',function (){
+Route::get('/pay-bill', function () {
     return view('pay-bill');
 });
 
@@ -172,59 +181,59 @@ Route::get('/bd', function (Request $request) {
 //    }
 
     $client_details = Http::get("http://pom.dvinfosoft.com/User_API.asmx/User_Registration?Mobile_No=$mobile_no")->collect()->first();
-    if($client_details){
+    if ($client_details) {
         $client_id = $client_details['Client_ID'];
         $hotel_bill_details = Http::get("http://pom.dvinfosoft.com/User_API.asmx/ClientHotelBills?Client_ID=$client_id")->collect();
         $restaurant_bill_details = Http::get("http://pom.dvinfosoft.com/User_API.asmx/ClientFoodBills?Client_ID=$client_id")->collect();
         $total_outstanding = Http::get("http://pom.dvinfosoft.com/User_API.asmx/ClientOutStanding?Client_ID=$client_id")->collect()->first();
-        $total_outstanding =  $total_outstanding['OutstandingAmt'];
-    }else {
+        $total_outstanding = $total_outstanding['OutstandingAmt'];
+    } else {
         $restaurant_bill_details = null;
         $hotel_bill_details = null;
         $total_outstanding = null;
     }
 
-    return view('bill_details', compact('client_details','hotel_bill_details', 'restaurant_bill_details','total_outstanding', 'mobile_no'));
+    return view('bill_details', compact('client_details', 'hotel_bill_details', 'restaurant_bill_details', 'total_outstanding', 'mobile_no'));
 });
 
 Route::post('/bill-details', function (Request $request) {
-     $mobile_no = $request->get('mobile_no');
+    $mobile_no = $request->get('mobile_no');
 
-     if($request->get('entered_otp') !== $request->get('otp_code')){
-         return "Wrong OTP Code";
-     }
+    if ($request->get('entered_otp') !== $request->get('otp_code')) {
+        return "Wrong OTP Code";
+    }
 
     $client_details = Http::get("http://pom.dvinfosoft.com/User_API.asmx/User_Registration?Mobile_No=$mobile_no")->collect()->first();
-    if($client_details){
+    if ($client_details) {
         $client_id = $client_details['Client_ID'];
         $hotel_bill_details = Http::get("http://pom.dvinfosoft.com/User_API.asmx/ClientHotelBills?Client_ID=$client_id")->collect();
         $restaurant_bill_details = Http::get("http://pom.dvinfosoft.com/User_API.asmx/ClientFoodBills?Client_ID=$client_id")->collect();
         $total_outstanding = Http::get("http://pom.dvinfosoft.com/User_API.asmx/ClientOutStanding?Client_ID=$client_id")->collect()->first();
-        $total_outstanding =  $total_outstanding['OutstandingAmt'];
+        $total_outstanding = $total_outstanding['OutstandingAmt'];
 //        if ($total_outstanding){
 //            $total_outstanding = $hotel_bill_details->sum('NetAmt') + $restaurant_bill_details->sum('NetAmt');
 //        }
 //        else{
 //            $total_outstanding =  $total_outstanding['OutstandingAmt'];
 //        }
-    }else {
+    } else {
         $restaurant_bill_details = null;
         $hotel_bill_details = null;
         $total_outstanding = null;
     }
 
-    return view('bill_details', compact('client_details','hotel_bill_details', 'restaurant_bill_details','total_outstanding', 'mobile_no'));
+    return view('bill_details', compact('client_details', 'hotel_bill_details', 'restaurant_bill_details', 'total_outstanding', 'mobile_no'));
 });
 
 
-Route::get('/booking-status-otp',function (){
+Route::get('/booking-status-otp', function () {
     return view('booking-status-otp');
 });
 
 Route::get('/make-payment', function (Request $request) {
     $params = [
         'chargeAmount' => $request->get('amount'),
-        'chargeHead1'=> $request->get('amount'),
+        'chargeHead1' => $request->get('amount'),
         'currencyCode' => '356',
         'desc' => $request->get('name'),
         'dueDate' => Carbon::now()->format('d/m/Y'),
@@ -232,7 +241,7 @@ Route::get('/make-payment', function (Request $request) {
         'merchantId' => 'P_50292',
         'mobileNo' => $request->get('mobile_no'),
         'paymentReturnURL' => 'https://pom.mppolice.gov.in/api/payment_success',
-        'userName'=>$request->get('name'),
+        'userName' => $request->get('name'),
     ];
     $key = '9114c8e9151246b2a1e95e1d048336d1';
     $concatenated = '';
@@ -243,42 +252,40 @@ Route::get('/make-payment', function (Request $request) {
     }
     $hash = hash_hmac('sha256', $concatenated, $key);
     $secureHash = strtolower($hash);
-    $params['secureHash'] =$secureHash;
+    $params['secureHash'] = $secureHash;
     $response = Http::post('https://secure-ptg.payphi.com/pg/portal/pay/paymentInvoiceService', $params);
     //return $response['redirectionURL'];
     return redirect()->away($response['redirectionURL']);
 });
 
 
-
-
 Route::middleware(['auth', 'verified'])->prefix('admin')->group(function () {
 
     Route::get('/dashboard', function () {
-        $bookings= Booking::orderBy('created_at', 'DESC')->get();
+        $bookings = Booking::orderBy('created_at', 'DESC')->get();
         return Inertia::render('Dashboard', compact('bookings'));
     })->name('dashboard');
 
     Route::get('/update_booking/{id}', function (Request $request, $id) {
 
         //Send SMS
-        if($request->get('status') ==1){
-            if($request->get('rooms_assigned') == 0){
-                $booking= Booking::find($id);
+        if ($request->get('status') == 1) {
+            if ($request->get('rooms_assigned') == 0) {
+                $booking = Booking::find($id);
                 $booking->status = $request->get('status');
                 $booking->save();
-                $message="Dear $booking->name, your booking is confirmed at Police Officers' Mess, Bhopal. Regards POMBPL";
+                $message = "Dear $booking->name, your booking is confirmed at Police Officers' Mess, Bhopal. Regards POMBPL";
                 $template_id = 1307169892612113442;
-                sendSingleSMS('DITMP-OCCTNS',sha1(trim('Cctns@12345')),'OCCTNS',"$message","$booking->mobile",'3d8183ac-8495-4e80-ac8a-2362e0da9838', $template_id);
+                sendSingleSMS('DITMP-OCCTNS', sha1(trim('Cctns@12345')), 'OCCTNS', "$message", "$booking->mobile", '3d8183ac-8495-4e80-ac8a-2362e0da9838', $template_id);
 
-            }else{
-                $booking= Booking::find($id);
+            } else {
+                $booking = Booking::find($id);
                 $booking->status = $request->get('status');
                 $booking->rooms_assigned = $request->get('rooms_assigned');
                 $booking->save();
-                $message= "Sir/Madam dear Booking of ". $request->get('rooms_assigned')." room/s for ".$booking->booking_from. "is confirmed. POMBPL";
+                $message = "Sir/Madam dear Booking of " . $request->get('rooms_assigned') . " room/s for " . $booking->booking_from . "is confirmed. POMBPL";
                 $template_id = 1307170607635019229;
-                sendSingleSMS('DITMP-OCCTNS',sha1(trim('Cctns@12345')),'OCCTNS',"$message","$booking->mobile",'3d8183ac-8495-4e80-ac8a-2362e0da9838', $template_id);
+                sendSingleSMS('DITMP-OCCTNS', sha1(trim('Cctns@12345')), 'OCCTNS', "$message", "$booking->mobile", '3d8183ac-8495-4e80-ac8a-2362e0da9838', $template_id);
             }
 
         }
@@ -292,4 +299,4 @@ Route::middleware(['auth', 'verified'])->prefix('admin')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
